@@ -4,12 +4,12 @@ import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import dianneGuilianelliImage from '@/images/avatars/dianne-guilianelli.jpg'
-import erhartCockrinImage from '@/images/avatars/erhart-cockrin.jpg'
-import jaquelinIschImage from '@/images/avatars/jaquelin-isch.jpg'
-import parkerJohnsonImage from '@/images/avatars/parker-johnson.jpg'
-import ronniCantadoreImage from '@/images/avatars/ronni-cantadore.jpg'
-import stevenMchailImage from '@/images/avatars/steven-mchail.jpg'
+// import dianneGuilianelliImage from '@/images/avatars/dianne-guilianelli.jpg'
+// import erhartCockrinImage from '@/images/avatars/erhart-cockrin.jpg'
+// import jaquelinIschImage from '@/images/avatars/jaquelin-isch.jpg'
+// import parkerJohnsonImage from '@/images/avatars/parker-johnson.jpg'
+// import ronniCantadoreImage from '@/images/avatars/ronni-cantadore.jpg'
+// import stevenMchailImage from '@/images/avatars/steven-mchail.jpg'
 
 const days = [
   {
@@ -17,36 +17,36 @@ const days = [
     date: 'October 14th',
     dateTime: '2022-10-14',
     speakers: [
-      {
-        name: 'Steven McHail',
-        role: 'Designer at Globex Corporation',
-        image: stevenMchailImage,
-      },
-      {
-        name: 'Jaquelin Isch',
-        role: 'UX Design at InGen',
-        image: jaquelinIschImage,
-      },
-      {
-        name: 'Dianne Guilianelli',
-        role: 'General Manager at Initech',
-        image: dianneGuilianelliImage,
-      },
-      {
-        name: 'Ronni Cantadore',
-        role: 'Design Engineer at Weyland-Yutani',
-        image: ronniCantadoreImage,
-      },
-      {
-        name: 'Erhart Cockrin',
-        role: 'Product Lead at Cyberdyne Systems',
-        image: erhartCockrinImage,
-      },
-      {
-        name: 'Parker Johnson',
-        role: 'UI Designer at MomCorp',
-        image: parkerJohnsonImage,
-      },
+      // {
+      //   name: 'Steven McHail',
+      //   role: 'Designer at Globex Corporation',
+      //   image: stevenMchailImage,
+      // },
+      // {
+      //   name: 'Jaquelin Isch',
+      //   role: 'UX Design at InGen',
+      //   image: jaquelinIschImage,
+      // },
+      // {
+      //   name: 'Dianne Guilianelli',
+      //   role: 'General Manager at Initech',
+      //   image: dianneGuilianelliImage,
+      // },
+      // {
+      //   name: 'Ronni Cantadore',
+      //   role: 'Design Engineer at Weyland-Yutani',
+      //   image: ronniCantadoreImage,
+      // },
+      // {
+      //   name: 'Erhart Cockrin',
+      //   role: 'Product Lead at Cyberdyne Systems',
+      //   image: erhartCockrinImage,
+      // },
+      // {
+      //   name: 'Parker Johnson',
+      //   role: 'UI Designer at MomCorp',
+      //   image: parkerJohnsonImage,
+      // },
     ],
   },
 ]
