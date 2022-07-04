@@ -8,152 +8,118 @@ import backgroundImage from '@/images/background.jpg'
 
 const schedule = [
   {
-    date: 'April 4',
+    date: 'October 14',
     dateTime: '2022-04-04',
     summary:
       'The first day of the conference is focused on dark patterns for ecommerce.',
     timeSlots: [
       {
-        name: 'Steven McHail',
-        description: 'Not so one-time payments',
+        name: 'Event Organisers',
+        description: 'Opening Welcome',
         start: '9:00AM',
-        end: '10:00AM',
+        end: '09:15AM',
       },
       {
-        name: 'Jaquelin Isch',
-        description: 'The finer print',
-        start: '10:00AM',
-        end: '11:00AM',
+        name: 'Slot 1',
+        description: '',
+        start: '09:15AM',
+        end: '09:45AM'
       },
       {
-        name: 'Dianne Guilianelli',
-        description: 'Post-purchase blackmail',
-        start: '11:00AM',
-        end: '12:00PM',
+        name: 'Slot 2',
+        description: '',
+        start: '09:45AM',
+        end: '10:10AM'
+      },
+      {
+        name: 'Slot 3',
+        description: '',
+        start: '10:10AM',
+        end: '10:45AM'
+      },
+      {
+        name: 'Morning Break',
+        description: 'Coffee, Snacks, Sponsors, Chat!',
+        start: '10:45AM',
+        end: '11:15AM'
+      },
+      {
+        name: 'Slot 4',
+        description: '',
+        start: '11:15AM',
+        end: '11:45AM'
+      },
+      {
+        name: 'Slot 5',
+        description: '',
+        start: '11:45AM',
+        end: '12:15AM'
+      },
+      {
+        name: 'Ignites Session 1 (6 talks)',
+        description: '',
+        start: '12:15PM',
+        end: '12:45PM'
       },
       {
         name: 'Lunch',
-        description: null,
-        start: '12:00PM',
-        end: '1:00PM',
+        description: 'Food, Coffee, Sponsors, Chat!',
+        start: '12:45PM',
+        end: '13:45PM'
       },
       {
-        name: 'Ronni Cantadore',
-        description: 'Buy or die',
-        start: '1:00PM',
-        end: '2:00PM',
+        name: 'Slot 6',
+        description: '',
+        start: '13:45PM',
+        end: '14:15PM'
       },
       {
-        name: 'Erhart Cockrin',
-        description: 'In-person cancellation',
-        start: '2:00PM',
-        end: '3:00PM',
+        name: 'Slot 7',
+        description: '',
+        start: '14:15PM',
+        end: '14:45PM'
       },
       {
-        name: 'Parker Johnson',
-        description: 'The pay/cancel switcheroo',
-        start: '3:00PM',
-        end: '4:00PM',
-      },
-    ],
-  },
-  {
-    date: 'April 5',
-    dateTime: '2022-04-05',
-    summary:
-      'Next we spend the day talking about deceiving people with technology.',
-    timeSlots: [
-      {
-        name: 'Damaris Kimura',
-        description: 'The invisible card reader',
-        start: '9:00AM',
-        end: '10:00AM',
+        name: 'Slot 8',
+        description: '',
+        start: '14:45PM',
+        end: '15:15PM'
       },
       {
-        name: 'Ibrahim Frasch',
-        description: 'Stealing fingerprints',
-        start: '10:00AM',
-        end: '11:00AM',
+        name: 'Afternoon Break',
+        description: '',
+        start: '14:15PM',
+        end: '14:45PM'
       },
       {
-        name: 'Cathlene Burrage',
-        description: 'Voting machines',
-        start: '11:00AM',
-        end: '12:00PM',
+        name: 'Slot 9',
+        description: '',
+        start: '14:45PM',
+        end: '15:15PM'
       },
       {
-        name: 'Lunch',
-        description: null,
-        start: '12:00AM',
-        end: '1:00PM',
+        name: 'Slot 10',
+        description: '',
+        start: '15:15PM',
+        end: '15:45PM'
       },
       {
-        name: 'Rinaldo Beynon',
-        description: 'Blackhat SEO that works',
-        start: '1:00PM',
-        end: '2:00PM',
+        name: 'Slot 11',
+        description: '',
+        start: '15:45PM',
+        end: '16:15PM'
       },
       {
-        name: 'Waylon Hyden',
-        description: 'Turning your audience into a botnet',
-        start: '2:00PM',
-        end: '3:00PM',
+        name: 'Ignites Session 2 (6 talks)',
+        description: '',
+        start: '16:15PM',
+        end: '16:45PM'
       },
       {
-        name: 'Giordano Sagucio',
-        description: 'Fly phishing',
-        start: '3:00PM',
-        end: '4:00PM',
-      },
-    ],
-  },
-  {
-    date: 'April 6',
-    dateTime: '2022-04-06',
-    summary:
-      'We close out the event previewing new techniques that are still in development.',
-    timeSlots: [
-      {
-        name: 'Andrew Greene',
-        description: 'Neuralink dark patterns',
-        start: '9:00AM',
-        end: '10:00AM',
-      },
-      {
-        name: 'Heather Terry',
-        description: 'DALL-E for passports',
-        start: '10:00AM',
-        end: '11:00AM',
-      },
-      {
-        name: 'Piers Wilkins',
-        description: 'Quantum password cracking',
-        start: '11:00AM',
-        end: '12:00PM',
-      },
-      {
-        name: 'Lunch',
-        description: null,
-        start: '12:00PM',
-        end: '1:00PM',
-      },
-      {
-        name: 'Gordon Sanderson',
-        description: 'SkyNet is coming',
-        start: '1:00PM',
-        end: '2:00PM',
-      },
-      {
-        name: 'Kimberly Parsons',
-        description: 'Dark patterns for the metaverse',
-        start: '2:00PM',
-        end: '3:00PM',
-      },
-      {
-        name: 'Richard Astley',
-        description: 'Knowing the game and playing it',
-        start: '3:00PM',
-        end: '4:00PM',
+          name: 'Event Organisers',
+          description: 'Closing remarks',
+          start: '16:45PM',
+          end: '17:00PM',
       },
     ],
   },
@@ -270,7 +236,7 @@ function TimeSlots({ day, className }) {
             <time dateTime={`${day.dateTime}T${timeSlot.end}-08:00`}>
               {timeSlot.end}
             </time>{' '}
-            PST
+            GMT
           </p>
         </div>
       ))}
@@ -280,7 +246,7 @@ function TimeSlots({ day, className }) {
 
 function ScheduleStatic() {
   return (
-    <div className="hidden lg:grid lg:grid-cols-3 lg:gap-x-8">
+    <div className="hidden lg:grid lg:grid-cols-1 lg:gap-x-8">
       {schedule.map((day) => (
         <section key={day.dateTime}>
           <DaySummary day={day} />
@@ -304,13 +270,10 @@ export function Schedule() {
       <Container className="relative z-10">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
           <p className="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl">
-            Our three day schedule is jam-packed with brilliant, creative, evil
-            geniuses.
+            Our schedule is jam-packed with brilliant speakers.
           </p>
           <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
-            The worst people in our industry giving the best talks you’ve ever
-            seen. Nothing will be recorded and every attendee has to sign an NDA
-            to watch the talks.
+            We are working hard to bring the best speakers in the world to Birmingham.
           </p>
         </div>
       </Container>
