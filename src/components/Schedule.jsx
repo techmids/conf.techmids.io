@@ -4,7 +4,7 @@ import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import backgroundImage from '@/images/background.jpg'
+// import backgroundImage from '@/images/background.jpg'
 
 const schedule = [
   {
@@ -193,10 +193,10 @@ function ScheduleTabbed() {
 function DaySummary({ day }) {
   return (
     <>
-      <h3 className="text-2xl font-semibold tracking-tight text-blue-900">
+      <h3 className="text-2xl font-semibold tracking-tight text-yellow-900">
         <time dateTime={day.dateTime}>{day.date}</time>
       </h3>
-      <p className="mt-1.5 text-base tracking-tight text-blue-900">
+      <p className="mt-1.5 text-base tracking-tight text-yellow-900">
         {day.summary}
       </p>
     </>
@@ -208,21 +208,21 @@ function TimeSlots({ day, className }) {
     <div
       className={clsx(
         className,
-        'space-y-8 bg-white/60 py-14 px-10 text-center shadow-xl shadow-blue-900/5 backdrop-blur'
+        'space-y-8 bg-white/60 py-14 px-10 text-center shadow-xl shadow-yellow-900/5 backdrop-blur'
       )}
     >
       {day.timeSlots.map((timeSlot, timeSlotIndex) => (
         <div key={timeSlot.start}>
           {timeSlotIndex > 0 && (
-            <div className="mx-auto mb-8 h-px w-48 bg-indigo-500/10" />
+            <div className="mx-auto mb-8 h-px w-48 bg-yellow-500/10" />
           )}
-          <h4 className="text-lg font-semibold tracking-tight text-blue-900">
+          <h4 className="text-lg font-semibold tracking-tight text-yellow-900">
             {timeSlot.name}
           </h4>
           {timeSlot.description && (
             <>
               <p className="sr-only">talking about</p>
-              <p className="mt-1 tracking-tight text-blue-900">
+              <p className="mt-1 tracking-tight text-yellow-900">
                 {timeSlot.description}
               </p>
             </>
@@ -269,25 +269,25 @@ export function Schedule() {
       </h2>
       <Container className="relative z-10">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
-          <p className="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl">
+          <p className="font-display text-4xl font-medium tracking-tighter text-yellow-600 sm:text-5xl">
             Our schedule is jam-packed with brilliant speakers.
           </p>
-          <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
+          <p className="mt-4 font-display text-2xl tracking-tight text-yellow-900">
             We are working hard to bring the best speakers in the world to Birmingham.
           </p>
         </div>
       </Container>
       <div className="relative mt-14 sm:mt-24">
-        <div className="absolute -inset-x-0 -top-40 -bottom-32 overflow-hidden bg-indigo-50">
+        <div className="absolute -inset-x-0 -top-40 -bottom-32 overflow-hidden bg-yellow-50">
           <div className="absolute left-full top-0 translate-y-[0%] -translate-x-[50%] sm:left-1/2 sm:-translate-y-[15%] sm:-translate-x-[20%] md:translate-x-[0%] lg:translate-x-[5%] lg:translate-y-[4%] xl:-translate-y-[8%] xl:translate-x-[27%]">
-            <Image
-              src={backgroundImage}
-              alt=""
-              layout="fixed"
-              width={918}
-              height={1495}
-              unoptimized
-            />
+            {/*<Image*/}
+            {/*  src={""}*/}
+            {/*  alt=""*/}
+            {/*  layout="fixed"*/}
+            {/*  width={918}*/}
+            {/*  height={1495}*/}
+            {/*  unoptimized*/}
+            {/*/>*/}
           </div>
           <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white" />
           <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white" />
