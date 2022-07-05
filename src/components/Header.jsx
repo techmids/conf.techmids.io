@@ -29,7 +29,7 @@ export function Header() {
           </div>
         </div>
         <div className="hidden sm:mt-10 sm:flex lg:mt-0 lg:grow lg:basis-0 lg:justify-end">
-          <ButtonLink href="#">Get your tickets</ButtonLink>
+          <ButtonLink href="https://ti.to/tech-events-birmingham/tech-mids-conference-2022" rel="noopener" target="_blank">Get your tickets</ButtonLink>
         </div>
       </Container>
     </header>
