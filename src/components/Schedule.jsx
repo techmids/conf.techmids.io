@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import Image from 'next/image'
 import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 
@@ -16,23 +15,17 @@ const schedule = [
       {
         name: 'Event Organisers',
         description: 'Opening Welcome',
-        start: '9:00AM',
-        end: '09:15AM',
+        start: '9:30AM',
+        end: '09:45AM',
       },
       {
         name: 'Slot 1',
-        description: '',
-        start: '09:15AM',
-        end: '09:45AM'
-      },
-      {
-        name: 'Slot 2',
         description: '',
         start: '09:45AM',
         end: '10:10AM'
       },
       {
-        name: 'Slot 3',
+        name: 'Slot 2',
         description: '',
         start: '10:10AM',
         end: '10:45AM'
@@ -44,13 +37,13 @@ const schedule = [
         end: '11:15AM'
       },
       {
-        name: 'Slot 4',
+        name: 'Slot 3',
         description: '',
         start: '11:15AM',
         end: '11:45AM'
       },
       {
-        name: 'Slot 5',
+        name: 'Slot 4',
         description: '',
         start: '11:45AM',
         end: '12:15AM'
@@ -68,19 +61,19 @@ const schedule = [
         end: '13:45PM'
       },
       {
-        name: 'Slot 6',
+        name: 'Slot 5',
         description: '',
         start: '13:45PM',
         end: '14:15PM'
       },
       {
-        name: 'Slot 7',
+        name: 'Slot 6',
         description: '',
         start: '14:15PM',
         end: '14:45PM'
       },
       {
-        name: 'Slot 8',
+        name: 'Slot 7',
         description: '',
         start: '14:45PM',
         end: '15:15PM'
@@ -92,34 +85,28 @@ const schedule = [
         end: '14:45PM'
       },
       {
-        name: 'Slot 9',
+        name: 'Slot 8',
         description: '',
         start: '14:45PM',
         end: '15:15PM'
       },
       {
-        name: 'Slot 10',
+        name: 'Slot 9',
         description: '',
         start: '15:15PM',
         end: '15:45PM'
       },
       {
-        name: 'Slot 11',
+        name: 'Ignites Session 2 (6 talks)',
         description: '',
         start: '15:45PM',
         end: '16:15PM'
       },
       {
-        name: 'Ignites Session 2 (6 talks)',
-        description: '',
-        start: '16:15PM',
-        end: '16:45PM'
-      },
-      {
           name: 'Event Organisers',
           description: 'Closing remarks',
-          start: '16:45PM',
-          end: '17:00PM',
+          start: '16:15PM',
+          end: '17:30PM',
       },
     ],
   },
