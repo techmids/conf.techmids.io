@@ -25,30 +25,42 @@ export function Hero() {
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
           <h1 className="font-display text-5xl font-bold tracking-tighter text-yellow-600 sm:text-7xl">
-            <span className="sr-only">TechMidsConf - </span>A technical conference
-            for us.
+            <span className="sr-only">TechMidsConf - </span>
+            <span className="text-yellow-700">Fri 14th Oct</span>
+            <br /> All of Birmingham&apos;s tech, all at once
           </h1>
           <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-yellow-900">
             <p>
-              The next movement in a more connected Birmingham has started. Come
-              join the launch of TechMids with an all-day conference from world class
-              speakers, networking opportunities and a chance to get involved with the community.
+              Join the launch of TechMids, Birmingham's meetups coming together,
+              for{' '}
+              <b>an all day full stack conference, on Friday October 14th</b>{' '}
+              from world class speakers, social chatter, and a chance to get
+              involved with the community.
             </p>
             <p>
-              TechMidsConf is a community run, not for profit conference which doubles as the launch event
-              of the new TechMids community. We are partnered with all your favourite meetups from Brum.js to Fusion and
-              everything in-between.
+              The next movement in a more connected Birmingham has started, this
+              time it's started at the grassroots. TechMids is made up of all
+              your favourite meetups from <b>Brum.js</b> to <b>Fusion</b>, to{' '}
+              <b>Golang</b>, to <b>DevOps</b> and everything in-between.
+            </p>
+            <p>
+              TechMidsConf is a community run, not for profit conference which
+              doubles as the launch event of the new TechMids community.{' '}
             </p>
           </div>
-          <ButtonLink href="#" className="mt-10 w-full sm:hidden">
-            Get your tickets
+          <ButtonLink
+            href="https://ti.to/tech-events-birmingham/tech-mids-conference-2022"
+            rel="noopener"
+            target="_blank"
+            className="mt-10 w-full"
+          >
+            Get your free tickets
           </ButtonLink>
           <dl className="mt-10 grid grid-cols-2 gap-y-6 gap-x-10 sm:mt-16 sm:gap-y-10 sm:gap-x-16 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
             {[
-              ['Speakers', 'To Be Confirmed'],
-              ['People Attending', '350'],
+              ['Spaces', 'Limited to 350 seats'],
               ['Venue', 'Millennium Point'],
-              ['Location', 'Birmingham UK'],
+              ['Location', 'Birmingham, UK'],
             ].map(([name, value]) => (
               <div key={name}>
                 <dt className="font-mono text-sm text-yellow-600">{name}</dt>
