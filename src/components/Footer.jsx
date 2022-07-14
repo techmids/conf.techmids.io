@@ -9,7 +9,10 @@ export function Footer() {
           <Logo className="h-12 w-auto text-slate-900" />
         </a>
         <div>
-          <a href="/code-of-conduct" className="underline">
+          <a
+            href="/code-of-conduct"
+            className="mt-10 block text-center underline md:mt-0 md:text-left"
+          >
             Code of Conduct
           </a>
           <p className="mt-6 text-base text-slate-500 md:mt-0">
