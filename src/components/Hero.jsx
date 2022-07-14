@@ -25,7 +25,7 @@ export function Hero() {
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
           <h1 className="font-display text-5xl font-bold tracking-tighter text-yellow-600 sm:text-7xl">
-            <span className="sr-only">TechMidsConf - </span>
+            <span className="sr-only">TechMids Conf - </span>
             <span className="text-yellow-700">Fri 14th Oct</span>
             <br /> All of Birmingham&apos;s tech, all at once
           </h1>
@@ -44,7 +44,7 @@ export function Hero() {
               <b>Golang</b>, to <b>DevOps</b> and everything in-between.
             </p>
             <p>
-              TechMidsConf is a community run, not for profit conference which
+              TechMids Conf is a community run, not for profit conference which
               doubles as the launch event of the new TechMids community.{' '}
             </p>
           </div>
