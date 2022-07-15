@@ -15,6 +15,12 @@ export function Footer() {
           >
             Code of Conduct
           </a>
+          <a
+            href="/covid"
+            className="mt-10 block text-center underline md:mt-0 md:text-left"
+          >
+            COVID Policy
+          </a>
           <p className="mt-6 text-base text-slate-500 md:mt-0">
             Copyright &copy; {new Date().getFullYear()} Tech Events Birmingham
             Limited. All rights reserved.
