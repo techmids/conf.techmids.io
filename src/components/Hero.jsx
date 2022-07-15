@@ -38,10 +38,10 @@ export function Hero() {
               involved with the community.
             </p>
             <p>
-              The next movement in a more connected Birmingham has started, this
-              time it's started at the grassroots. TechMids is made up of all
-              your favourite meetups from <b>Brum.js</b> to <b>Fusion</b>, to{' '}
-              <b>Golang</b>, to <b>DevOps</b> and everything in-between.
+              A new, more connected Birmingham is emerging, this time it's at
+              the grassroots. TechMids is made up of all your favourite meetups
+              from <b>Brum.js</b> to <b>Fusion</b>, to <b>Golang</b>, to{' '}
+              <b>DevOps</b> and everything in-between.
             </p>
             <p>
               TechMids Conf is a community run, not for profit conference which
