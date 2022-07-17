@@ -31,22 +31,24 @@ export function Hero() {
           </h1>
           <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-yellow-900">
             <p>
-              Join the launch of TechMids, Birmingham's meetups coming together,
-              for{' '}
-              <b>an all day full stack conference, on Friday October 14th</b>{' '}
-              from world class speakers, social chatter, and a chance to get
-              involved with the community.
+              Join us for the launch of TechMids, Birmingham's tech meetups
+              coming together for the first time.
             </p>
             <p>
-              A new, more connected Birmingham is emerging, this time it's at
-              the grassroots. TechMids is made up of all your favourite meetups
-              from <b>Brum.js</b> to <b>Fusion</b>, to <b>Golang</b>, to{' '}
+              <b>
+                TechMids Conf is an all day full stack conference, on Friday
+                October 14th
+              </b>{' '}
+              with world class speakers delivering inspiring talks, social
+              chatter, and a chance to get involved with the community.
+            </p>
+            <p>
+              A new, more connected Birmingham is emerging at the grassroots.
+              TechMids is made up of all your favourite meetups from{' '}
+              <b>Brum.js</b> to <b>Fusion</b>, to <b>Golang</b>, to{' '}
               <b>DevOps</b> and everything in-between.
             </p>
-            <p>
-              TechMids Conf is a community run, not for profit conference which
-              doubles as the launch event of the new TechMids community.{' '}
-            </p>
+            <p>TechMids Conf is a community run, not for profit conference.</p>
           </div>
           <ButtonLink
             href="https://ti.to/tech-events-birmingham/tech-mids-conference-2022"
