@@ -37,9 +37,9 @@ export function Hero() {
             <p>
               <b>
                 TechMids Conf is an all day full stack conference, on Friday
-                October 14th
+                October 14th.
               </b>{' '}
-              with world class speakers delivering inspiring talks, social
+              With world class speakers delivering inspiring talks, social
               chatter, and a chance to get involved with the community.
             </p>
             <p>
