@@ -8,30 +8,30 @@ export function Meetups() {
           </h2>
         </div>
         <div className="grid grid-cols-2 items-center gap-8 md:grid-cols-7">
-          <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+          <div className="col-span-1 flex justify-center grayscale backdrop-opacity-10  md:col-span-2 lg:col-span-1">
             <img
               className="h-20"
               src="/fusion-events.png"
               alt="Fusion Events"
             />
           </div>
-          <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+          <div className="col-span-1 flex justify-center grayscale backdrop-opacity-10 md:col-span-2 lg:col-span-1">
             <img className="h-16" src="/brum-php.png" alt="BrumPHP" />
           </div>
-          <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+          <div className="col-span-1 flex justify-center grayscale backdrop-opacity-10 md:col-span-2 lg:col-span-1">
             <img className="h-16" src="/brum-js.png" alt="Brum.js" />
           </div>
-          <div className="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
+          <div className="col-span-1 flex justify-center grayscale backdrop-opacity-10 md:col-span-3 lg:col-span-1">
             <img className="h-16" src="/golang.png" alt="Golang Birmingham" />
           </div>
-          <div className="col-span-2 flex justify-center md:col-span-3 lg:col-span-1">
+          <div className="col-span-1 flex justify-center grayscale backdrop-opacity-10 md:col-span-3 lg:col-span-1">
             <img
               className="h-16"
               src="/you-equal-tech.png"
               alt="#YouEqualTech Midlands"
             />
           </div>
-          <div className="col-span-2 flex justify-center md:col-span-3 lg:col-span-1">
+          <div className="col-span-1 flex justify-center grayscale backdrop-opacity-10 md:col-span-3 lg:col-span-1">
             <img className="h-16" src="/devops.png" alt="DevOps Birmingham" />
           </div>
           <div className="col-span-2 flex justify-center md:col-span-3 lg:col-span-1">

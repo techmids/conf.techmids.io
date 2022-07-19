@@ -9,6 +9,7 @@ import { Speakers } from '@/components/Speakers'
 import { Sponsors } from '@/components/Sponsors'
 import { Meetups } from '@/components/Meetups'
 import { ButtonLink } from '@/components/Button'
+import { BirminghamTechWeek } from '@/components/BirminghamTechWeek'
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <main>
         <Hero />
         <Meetups />
+        <BirminghamTechWeek />
         {/* <Speakers /> */}
         {/* <Schedule /> */}
         <Sponsors />

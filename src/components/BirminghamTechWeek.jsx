@@ -1,14 +1,14 @@
 export function BirminghamTechWeek() {
   return (
-    <>
-      <h2 className="mx-auto max-w-2xl text-center font-display text-4xl font-medium tracking-tighter text-yellow-900 sm:text-5xl">
-        TechMids Conf is running in
-      </h2>
+    <section className="mt-20 bg-btw-blue py-10 lg:px-12">
+      <h3 className="mb-10 text-center font-display text-4xl font-medium tracking-tighter text-white">
+        TechMids Conf is proudly part of
+      </h3>
       <img
         src="/birmingham-tech-week.png"
         alt="Birmingham Tech Week"
-        className="mx-auto my-10 h-24"
+        className="mx-auto w-64 sm:max-h-24 sm:w-fit"
       />
-    </>
+    </section>
   )
 }
