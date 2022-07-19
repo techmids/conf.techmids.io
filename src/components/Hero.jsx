@@ -58,6 +58,14 @@ export function Hero() {
           >
             Get your free tickets
           </ButtonLink>
+          <ButtonLink
+              href="https://forms.gle/ccSVnycWFHYZD6Td9"
+              rel="noopener"
+              target="_blank"
+              className="mt-10 w-full"
+          >
+            Submit a talk
+          </ButtonLink>
           <dl className="mt-10 grid grid-cols-2 gap-y-6 gap-x-10 sm:mt-16 sm:gap-y-10 sm:gap-x-16 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
             {[
               ['Spaces', 'Limited to 350 seats'],

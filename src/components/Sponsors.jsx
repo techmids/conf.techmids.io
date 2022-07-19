@@ -84,6 +84,14 @@ export function Sponsors() {
           >
             Get your free tickets
           </ButtonLink>
+          <ButtonLink
+              href="https://forms.gle/ccSVnycWFHYZD6Td9"
+              rel="noopener"
+              target="_blank"
+              className="mt-10 w-full"
+          >
+            Submit a talk
+          </ButtonLink>
         </div>
       </Container>
     </section>
