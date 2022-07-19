@@ -11,7 +11,7 @@ export default function CoC() {
         <title>TechMids Conf - A community-driven tech conference</title>
         <meta
           name="description"
-          content="TechMids is running a conference! Come join your community. Get tickets, become a sponsor and get involved!"
+          content="TechMids Conf is an full stack all day conference on Fri Oct 14th 2022! Come along to a day of inspiring talks, social chatter and fun."
         />
       </Head>
       <Header />
