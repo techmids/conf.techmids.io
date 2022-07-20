@@ -5,7 +5,7 @@ export function BirminghamTechWeek() {
         TechMids Conf is proudly part of
       </h3>
       <img
-        src="/birmingham-tech-week.png"
+        src="/birmingham-tech-week-black.png"
         alt="Birmingham Tech Week"
         className="mx-auto w-64 sm:max-h-24 sm:w-fit grayscale"
       />
