@@ -127,7 +127,10 @@ export function Speakers() {
               >
                 {day.speakers.map((speaker, speakerIndex) => (
                   <a
-                    href={speaker.name.replace(' ', '-').toLowerCase()}
+                    href={
+                      '/speakers/' +
+                      speaker.name.replace(' ', '-').toLowerCase()
+                    }
                     key={speakerIndex}
                   >
                     <div>
