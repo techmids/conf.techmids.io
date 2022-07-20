@@ -4,50 +4,14 @@ import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-// import dianneGuilianelliImage from '@/images/avatars/dianne-guilianelli.jpg'
-// import erhartCockrinImage from '@/images/avatars/erhart-cockrin.jpg'
-// import jaquelinIschImage from '@/images/avatars/jaquelin-isch.jpg'
-// import parkerJohnsonImage from '@/images/avatars/parker-johnson.jpg'
-// import ronniCantadoreImage from '@/images/avatars/ronni-cantadore.jpg'
-// import stevenMchailImage from '@/images/avatars/steven-mchail.jpg'
+import confSpeakers from 'speakers'
 
 const days = [
   {
     name: 'Main Event',
     date: 'October 14th',
     dateTime: '2022-10-14',
-    speakers: [
-      // {
-      //   name: 'Steven McHail',
-      //   role: 'Designer at Globex Corporation',
-      //   image: stevenMchailImage,
-      // },
-      // {
-      //   name: 'Jaquelin Isch',
-      //   role: 'UX Design at InGen',
-      //   image: jaquelinIschImage,
-      // },
-      // {
-      //   name: 'Dianne Guilianelli',
-      //   role: 'General Manager at Initech',
-      //   image: dianneGuilianelliImage,
-      // },
-      // {
-      //   name: 'Ronni Cantadore',
-      //   role: 'Design Engineer at Weyland-Yutani',
-      //   image: ronniCantadoreImage,
-      // },
-      // {
-      //   name: 'Erhart Cockrin',
-      //   role: 'Product Lead at Cyberdyne Systems',
-      //   image: erhartCockrinImage,
-      // },
-      // {
-      //   name: 'Parker Johnson',
-      //   role: 'UI Designer at MomCorp',
-      //   image: parkerJohnsonImage,
-      // },
-    ],
+    speakers: confSpeakers,
   },
 ]
 
@@ -162,8 +126,9 @@ export function Speakers() {
                 unmount={false}
               >
                 {day.speakers.map((speaker, speakerIndex) => (
-                  <div key={speakerIndex}>
-                    <div className="group relative h-[17.5rem] transform overflow-hidden rounded-4xl">
+                    <a href={speaker.name.replace(" ", "-").toLowerCase()}>
+                      <div key={speakerIndex}>
+                      <div className="group relative h-[17.5rem] transform overflow-hidden rounded-4xl">
                       <div
                         className={clsx(
                           'absolute top-0 left-0 right-4 bottom-6 rounded-4xl border transition duration-300 group-hover:scale-95 xl:right-6',
@@ -178,24 +143,25 @@ export function Speakers() {
                         className="absolute inset-0 bg-yellow-50"
                         style={{ clipPath: `url(#${id}-${speakerIndex % 3})` }}
                       >
-                        <Image
-                          className="transition duration-300 group-hover:scale-110"
-                          src={speaker.image}
-                          alt=""
-                          layout="fill"
-                          objectFit="cover"
-                          priority
-                          sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
-                        />
+                          <Image
+                              className="transition duration-300 group-hover:scale-110"
+                              src={speaker.image}
+                              alt=""
+                              layout="fill"
+                              objectFit="cover"
+                              priority
+                              sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
+                          />
                       </div>
-                    </div>
+                      </div>
                     <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-slate-900">
                       {speaker.name}
                     </h3>
                     <p className="mt-1 text-base tracking-tight text-slate-500">
-                      {speaker.role}
+                      {speaker.jobTitle}
                     </p>
                   </div>
+                    </a>
                 ))}
               </Tab.Panel>
             ))}
