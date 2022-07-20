@@ -76,6 +76,7 @@ export function Sponsors() {
           {/*    </ul>*/}
           {/*  </li>*/}
           {/*</ul>*/}
+          <hr className="mt-20" />
           <ButtonLink
             href="https://ti.to/tech-events-birmingham/tech-mids-conference-2022"
             rel="noopener"
@@ -85,10 +86,10 @@ export function Sponsors() {
             Get your free tickets
           </ButtonLink>
           <ButtonLink
-              href="https://forms.gle/ccSVnycWFHYZD6Td9"
-              rel="noopener"
-              target="_blank"
-              className="mt-10 w-full"
+            href="https://forms.gle/ccSVnycWFHYZD6Td9"
+            rel="noopener"
+            target="_blank"
+            className="mt-10 w-full"
           >
             Submit a talk
           </ButtonLink>

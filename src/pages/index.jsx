@@ -25,9 +25,9 @@ export default function Home() {
       <main>
         <Hero />
         <Meetups />
-        <BirminghamTechWeek />
         <Speakers />
         {/* <Schedule /> */}
+        <BirminghamTechWeek />
         <Sponsors />
         {/* <Newsletter /> */}
       </main>
