@@ -21,10 +21,6 @@ const meetups = [
   },
   {
     name: "DevOps Birmingham",
-    image: "/devops.png",
-  },
-  {
-    name: "DevOpsDays Birmingham",
     image: "/devopsdays.png",
   },
   {
