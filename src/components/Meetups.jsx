@@ -53,8 +53,10 @@ export function Meetups() {
               />
             </div>
           ))}
+          <div className="col-span-1 flex justify-center py-8 backdrop-opacity-10  md:col-span-2 lg:col-span-1">
+            <p className="text-center">... and more</p>
+          </div>
         </div>
-        <p className="text-center">... and more</p>
       </div>
     </div>
   )
