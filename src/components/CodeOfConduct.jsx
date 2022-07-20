@@ -195,7 +195,7 @@ export function CodeOfConduct() {
               The TechMids Conf Code of Conduct is based on{' '}
               <a
                 className="text-yellow-600 underline"
-                href={'https://codeofconduct.com'}
+                href={'https://confcodeofconduct.com'}
               >
                 confcodeofconduct.com.
               </a>
