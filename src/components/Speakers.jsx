@@ -62,7 +62,9 @@ export function Speakers() {
             Speakers
           </h2>
           <p className="mt-4 font-display text-2xl tracking-tight text-yellow-900">
-            Learn from the experts at the cutting-edge of their fields.
+            Come away inspired from a day of talks from experts, ranging from
+            front end engineering, to cloud platforms and operations, with
+            everything in between.
           </p>
         </div>
         <Tab.Group
