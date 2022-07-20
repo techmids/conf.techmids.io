@@ -1,3 +1,39 @@
+const meetups = [
+  {
+    name: "Fusion Events",
+    image: "/fusion-events.png",
+  },
+  {
+    name: "Brum PHP",
+    image: "/brum-php.png",
+  },
+  {
+    name: "BrumJS",
+    image: "/brum-js.png",
+  },
+  {
+    name: "Golang Birmingham",
+    image: "/golang.png",
+  },
+  {
+    name: "#YouEqualTech Midlands",
+    image: "you-equal-tech.png",
+  },
+  {
+    name: "DevOps Birmingham",
+    image: "/devops.png",
+  },
+  {
+    name: "DevOpsDays Birmingham",
+    image: "/devopsdays.png",
+  },
+  {
+    name: "BrumAI",
+    image: "/brumai.png"
+  },
+]
+
+
 export function Meetups() {
   return (
     <div className="mt-10 bg-white">
@@ -7,34 +43,18 @@ export function Meetups() {
             Backed by your favourite meetups
           </h2>
         </div>
-        <div className="grid grid-cols-2 items-center gap-8 md:grid-cols-7">
-          <div className="col-span-1 flex justify-center grayscale backdrop-opacity-10  md:col-span-2 lg:col-span-1">
-            <img
-              className="h-20"
-              src="/fusion-events.png"
-              alt="Fusion Events"
-            />
-          </div>
-          <div className="col-span-1 flex justify-center grayscale backdrop-opacity-10 md:col-span-2 lg:col-span-1">
-            <img className="h-16" src="/brum-php.png" alt="BrumPHP" />
-          </div>
-          <div className="col-span-1 flex justify-center grayscale backdrop-opacity-10 md:col-span-2 lg:col-span-1">
-            <img className="h-16" src="/brum-js.png" alt="Brum.js" />
-          </div>
-          <div className="col-span-1 flex justify-center grayscale backdrop-opacity-10 md:col-span-3 lg:col-span-1">
-            <img className="h-16" src="/golang.png" alt="Golang Birmingham" />
-          </div>
-          <div className="col-span-1 flex justify-center grayscale backdrop-opacity-10 md:col-span-3 lg:col-span-1">
-            <img
-              className="h-16"
-              src="/you-equal-tech.png"
-              alt="#YouEqualTech Midlands"
-            />
-          </div>
-          <div className="col-span-1 flex justify-center grayscale backdrop-opacity-10 md:col-span-3 lg:col-span-1">
-            <img className="h-16" src="/devops.png" alt="DevOps Birmingham" />
-          </div>
-          <div className="col-span-2 flex justify-center md:col-span-3 lg:col-span-1">
+        <div className="grid grid-cols-2 items-center gap-4 md:grid-cols-4">
+          {meetups.map(meetup => (
+            <div className="py-8 col-span-1 flex justify-center backdrop-opacity-10  md:col-span-2 lg:col-span-1" id={meetup.name}>
+              <img
+                  className="h-16"
+                  src={meetup.image}
+                  alt={meetup.name}
+                  title={meetup.name}
+              />
+            </div>
+          ))}
+          <div className="py-8 col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
             <p>...and more</p>
           </div>
         </div>
