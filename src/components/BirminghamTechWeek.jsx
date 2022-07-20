@@ -7,7 +7,7 @@ export function BirminghamTechWeek() {
       <img
         src="/birmingham-tech-week-black.png"
         alt="Birmingham Tech Week"
-        className="mx-auto"
+        className="mx-auto w-64 sm:w-72 lg:w-96"
       />
     </section>
   )
