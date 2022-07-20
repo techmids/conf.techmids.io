@@ -126,42 +126,47 @@ export function Speakers() {
                 unmount={false}
               >
                 {day.speakers.map((speaker, speakerIndex) => (
-                    <a href={speaker.name.replace(" ", "-").toLowerCase()}>
-                      <div key={speakerIndex}>
+                  <a
+                    href={speaker.name.replace(' ', '-').toLowerCase()}
+                    key={speakerIndex}
+                  >
+                    <div>
                       <div className="group relative h-[17.5rem] transform overflow-hidden rounded-4xl">
-                      <div
-                        className={clsx(
-                          'absolute top-0 left-0 right-4 bottom-6 rounded-4xl border transition duration-300 group-hover:scale-95 xl:right-6',
-                          [
-                            'border-yellow-300',
-                            'border-yellow-300',
-                            'border-sky-300',
-                          ][speakerIndex % 3]
-                        )}
-                      />
-                      <div
-                        className="absolute inset-0 bg-yellow-50"
-                        style={{ clipPath: `url(#${id}-${speakerIndex % 3})` }}
-                      >
+                        <div
+                          className={clsx(
+                            'absolute top-0 left-0 right-4 bottom-6 rounded-4xl border transition duration-300 group-hover:scale-95 xl:right-6',
+                            [
+                              'border-yellow-300',
+                              'border-yellow-300',
+                              'border-sky-300',
+                            ][speakerIndex % 3]
+                          )}
+                        />
+                        <div
+                          className="absolute inset-0 bg-yellow-50"
+                          style={{
+                            clipPath: `url(#${id}-${speakerIndex % 3})`,
+                          }}
+                        >
                           <Image
-                              className="transition duration-300 group-hover:scale-110"
-                              src={speaker.image}
-                              alt=""
-                              layout="fill"
-                              objectFit="cover"
-                              priority
-                              sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
+                            className="transition duration-300 group-hover:scale-110"
+                            src={speaker.image}
+                            alt=""
+                            layout="fill"
+                            objectFit="cover"
+                            priority
+                            sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
                           />
+                        </div>
                       </div>
-                      </div>
-                    <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-slate-900">
-                      {speaker.name}
-                    </h3>
-                    <p className="mt-1 text-base tracking-tight text-slate-500">
-                      {speaker.jobTitle}
-                    </p>
-                  </div>
-                    </a>
+                      <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-slate-900">
+                        {speaker.name}
+                      </h3>
+                      <p className="mt-1 text-base tracking-tight text-slate-500">
+                        {speaker.jobTitle}
+                      </p>
+                    </div>
+                  </a>
                 ))}
               </Tab.Panel>
             ))}
