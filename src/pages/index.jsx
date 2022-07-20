@@ -26,7 +26,7 @@ export default function Home() {
         <Hero />
         <Meetups />
         <BirminghamTechWeek />
-        {/* <Speakers /> */}
+        <Speakers />
         {/* <Schedule /> */}
         <Sponsors />
         {/* <Newsletter /> */}
