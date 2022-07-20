@@ -42,7 +42,7 @@ export function Meetups() {
             Backed by your favourite meetups
           </h2>
         </div>
-        <div className="grid grid-cols-2 items-center gap-4 md:grid-cols-4">
+        <div className="grid grid-cols-2 items-center gap-4 sm:grid-cols-4 lg:grid-cols-8">
           {meetups.map((meetup, index) => (
             <div
               className="col-span-1 flex justify-center py-8 backdrop-opacity-10  md:col-span-2 lg:col-span-1"
@@ -57,10 +57,8 @@ export function Meetups() {
               />
             </div>
           ))}
-          <div className="col-span-full flex justify-center py-8 md:col-span-2 lg:col-span-1">
-            <p>...and more</p>
-          </div>
         </div>
+        <p className="text-center">... and more</p>
       </div>
     </div>
   )
