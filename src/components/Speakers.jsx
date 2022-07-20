@@ -4,45 +4,14 @@ import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import kunalImg from '@/images/avatars/kunal.png'
+import confSpeakers from 'speakers'
 
 const days = [
   {
     name: 'Main Event',
     date: 'October 14th',
     dateTime: '2022-10-14',
-    speakers: [
-      {
-        name: 'Kunal Kushwaha',
-        role: 'Developer Advocate at Civo',
-        image: kunalImg,
-      },
-      // {
-      //   name: 'Jaquelin Isch',
-      //   role: 'UX Design at InGen',
-      //   image: jaquelinIschImage,
-      // },
-      // {
-      //   name: 'Dianne Guilianelli',
-      //   role: 'General Manager at Initech',
-      //   image: dianneGuilianelliImage,
-      // },
-      // {
-      //   name: 'Ronni Cantadore',
-      //   role: 'Design Engineer at Weyland-Yutani',
-      //   image: ronniCantadoreImage,
-      // },
-      // {
-      //   name: 'Erhart Cockrin',
-      //   role: 'Product Lead at Cyberdyne Systems',
-      //   image: erhartCockrinImage,
-      // },
-      // {
-      //   name: 'Parker Johnson',
-      //   role: 'UI Designer at MomCorp',
-      //   image: parkerJohnsonImage,
-      // },
-    ],
+    speakers: confSpeakers,
   },
 ]
 
@@ -189,7 +158,7 @@ export function Speakers() {
                       {speaker.name}
                     </h3>
                     <p className="mt-1 text-base tracking-tight text-slate-500">
-                      {speaker.role}
+                      {speaker.jobTitle}
                     </p>
                   </div>
                     </a>

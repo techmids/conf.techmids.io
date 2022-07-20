@@ -1,11 +1,10 @@
 
 import Image from 'next/image'
-import {ButtonLink} from "@/components/Button";
 import {Container} from "@/components/Container";
 import {ButtonCTA} from "@/components/ButtonCTA";
 
 export function Speaker(props) {
-    const{speaker : {name, jobTitle, talkTitle, bio, description, speakerImg, twitter, linkedin, website} } = props
+    const{speaker : {name, jobTitle, talkTitle, bio, description, image, twitter, linkedin, website} } = props
     const twitterURL = `https://twitter.com/${twitter}`
     const linkedinURL = `https://www.linkedin.com/in/${linkedin}`
     return (
@@ -18,7 +17,7 @@ export function Speaker(props) {
                             <div className="aspect-w-10 aspect-h-6 rounded-xl shadow-xl overflow-hidden sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
                                 <Image
                                     className="object-cover lg:h-full lg:w-full"
-                                    src={speakerImg}
+                                    src={image}
                                     alt=""
                                     layout="fill"
                                     objectFit="cover"

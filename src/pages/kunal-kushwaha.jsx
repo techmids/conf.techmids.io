@@ -3,19 +3,9 @@ import {Header} from "@/components/Header";
 import {Sponsors} from "@/components/Sponsors";
 import {Footer} from "@/components/Footer";
 import {Speaker} from "@/components/Speaker";
-import kunalImg from '@/images/avatars/kunal.png'
+import speakers from "speakers";
 
-const speaker = {
-    name: "Kunal Kushwaha",
-    jobTitle: "Developer Advocate at Civo",
-    bio: "",
-    talkTitle: "Check back later to see",
-    description: "This talk is not yet ready to be published",
-    speakerImg: kunalImg,
-    twitter: "kunalstwt",
-    linkedin: "",
-    website: "https://www.kunalkushwaha.com/"
-}
+const speaker = speakers.filter(speaker => speaker["name"] === 'Kunal Kushwaha')[0]
 
 
 export default function KunalKushwaha() {
