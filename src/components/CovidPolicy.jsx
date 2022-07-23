@@ -126,7 +126,7 @@ export function CovidPolicy() {
           </p>
 
           <h2>
-            <span className="mt-2 block text-center text-xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-xl">
+            <span className="mt-8 block text-center text-2xl font-extrabold leading-8 tracking-tight text-gray-900">
               On arrival at the event
             </span>
           </h2>
@@ -190,7 +190,7 @@ export function CovidPolicy() {
             around their social distancing requirements.
           </p>
           <h2>
-            <span className="mt-2 block text-center text-xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-xl">
+            <span className="mt-8 block text-center text-2xl font-extrabold leading-8 tracking-tight text-gray-900">
               Throughout the conference
             </span>
           </h2>
@@ -207,7 +207,7 @@ export function CovidPolicy() {
           </p>
 
           <h2>
-            <span className="mt-2 block text-center text-xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-xl">
+            <span className="mt-8 block text-center text-2xl font-extrabold leading-8 tracking-tight text-gray-900">
               Thank you for your patience
             </span>
           </h2>
@@ -221,7 +221,7 @@ export function CovidPolicy() {
             feels safe and relaxed and can enjoy the event.
           </p>
           <h2>
-            <span className="mt-2 block text-center text-xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-xl">
+            <span className="mt-8 block text-center text-2xl font-extrabold leading-8 tracking-tight text-gray-900">
               Changes
             </span>
           </h2>
