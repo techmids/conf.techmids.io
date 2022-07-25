@@ -36,12 +36,12 @@ export function Speaker(props) {
                                     </h1>
                                 </div>
                                 <div>
-                                    <h2 className="space- font-display text-3xl font-bold tracking-tighter text-black sm:text-4xl">
+                                    <h2 className="space- font-display text-md font-bold tracking-tighter text-black sm:text-lg">
                                         <br /> {bio}
                                     </h2>
                                 </div>
                                 <div>
-                                    <h2 className="space- font-display text-xl font-bold tracking-tighter text-black sm:text-2xl">
+                                    <h2 className="space- font-display text-lg font-bold tracking-tighter text-black sm:text-xl">
                                         <br /> {jobTitle}
                                     </h2>
                                 </div>
