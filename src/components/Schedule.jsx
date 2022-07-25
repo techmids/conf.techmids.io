@@ -9,104 +9,115 @@ const schedule = [
   {
     date: 'October 14',
     dateTime: '2022-04-04',
-    summary:
-      'The first day of the conference is focused on dark patterns for ecommerce.',
+    summary: '',
     timeSlots: [
       {
-        name: 'Event Organisers',
-        description: 'Opening Welcome',
+        name: 'Registration',
+        description: 'Registration',
+        start: '08:30AM',
+        end: '09:15AM'
+      },
+      {
+        name: 'Opening Welcome',
+        description: 'The event organisers',
         start: '9:30AM',
         end: '09:45AM',
       },
       {
-        name: 'Slot 1',
-        description: '',
-        start: '09:45AM',
-        end: '10:10AM'
+        name: 'The Event',
+        description: 'Schedule to be announced',
+        start: '9:45AM',
+        end: '16:15PM',
       },
+      // {
+      //   name: 'Slot 1',
+      //   description: '',
+      //   start: '09:45AM',
+      //   end: '10:10AM'
+      // },
+      // {
+      //   name: 'Slot 2',
+      //   description: '',
+      //   start: '10:10AM',
+      //   end: '10:45AM'
+      // },
+      // {
+      //   name: 'Morning Break',
+      //   description: 'Coffee, Snacks, Sponsors, Chat!',
+      //   start: '10:45AM',
+      //   end: '11:15AM'
+      // },
+      // {
+      //   name: 'Slot 3',
+      //   description: '',
+      //   start: '11:15AM',
+      //   end: '11:45AM'
+      // },
+      // {
+      //   name: 'Slot 4',
+      //   description: '',
+      //   start: '11:45AM',
+      //   end: '12:15AM'
+      // },
+      // {
+      //   name: 'Ignites Session 1 (6 talks)',
+      //   description: '',
+      //   start: '12:15PM',
+      //   end: '12:45PM'
+      // },
+      // {
+      //   name: 'Lunch',
+      //   description: 'Food, Coffee, Sponsors, Chat!',
+      //   start: '12:45PM',
+      //   end: '13:45PM'
+      // },
+      // {
+      //   name: 'Slot 5',
+      //   description: '',
+      //   start: '13:45PM',
+      //   end: '14:15PM'
+      // },
+      // {
+      //   name: 'Slot 6',
+      //   description: '',
+      //   start: '14:15PM',
+      //   end: '14:45PM'
+      // },
+      // {
+      //   name: 'Slot 7',
+      //   description: '',
+      //   start: '14:45PM',
+      //   end: '15:15PM'
+      // },
+      // {
+      //   name: 'Afternoon Break',
+      //   description: '',
+      //   start: '14:15PM',
+      //   end: '14:45PM'
+      // },
+      // {
+      //   name: 'Slot 8',
+      //   description: '',
+      //   start: '14:45PM',
+      //   end: '15:15PM'
+      // },
+      // {
+      //   name: 'Slot 9',
+      //   description: '',
+      //   start: '15:15PM',
+      //   end: '15:45PM'
+      // },
+      // {
+      //   name: 'Ignites Session 2 (6 talks)',
+      //   description: '',
+      //   start: '15:45PM',
+      //   end: '16:15PM'
+      // },
       {
-        name: 'Slot 2',
-        description: '',
-        start: '10:10AM',
-        end: '10:45AM'
-      },
-      {
-        name: 'Morning Break',
-        description: 'Coffee, Snacks, Sponsors, Chat!',
-        start: '10:45AM',
-        end: '11:15AM'
-      },
-      {
-        name: 'Slot 3',
-        description: '',
-        start: '11:15AM',
-        end: '11:45AM'
-      },
-      {
-        name: 'Slot 4',
-        description: '',
-        start: '11:45AM',
-        end: '12:15AM'
-      },
-      {
-        name: 'Ignites Session 1 (6 talks)',
-        description: '',
-        start: '12:15PM',
-        end: '12:45PM'
-      },
-      {
-        name: 'Lunch',
-        description: 'Food, Coffee, Sponsors, Chat!',
-        start: '12:45PM',
-        end: '13:45PM'
-      },
-      {
-        name: 'Slot 5',
-        description: '',
-        start: '13:45PM',
-        end: '14:15PM'
-      },
-      {
-        name: 'Slot 6',
-        description: '',
-        start: '14:15PM',
-        end: '14:45PM'
-      },
-      {
-        name: 'Slot 7',
-        description: '',
-        start: '14:45PM',
-        end: '15:15PM'
-      },
-      {
-        name: 'Afternoon Break',
-        description: '',
-        start: '14:15PM',
-        end: '14:45PM'
-      },
-      {
-        name: 'Slot 8',
-        description: '',
-        start: '14:45PM',
-        end: '15:15PM'
-      },
-      {
-        name: 'Slot 9',
-        description: '',
-        start: '15:15PM',
-        end: '15:45PM'
-      },
-      {
-        name: 'Ignites Session 2 (6 talks)',
-        description: '',
-        start: '15:45PM',
-        end: '16:15PM'
-      },
-      {
-          name: 'Event Organisers',
-          description: 'Closing remarks',
+          name: 'Closing remarks',
+          description: 'The event organisers',
           start: '16:15PM',
-          end: '17:30PM',
+          end: '16:30PM',
       },
     ],
   },

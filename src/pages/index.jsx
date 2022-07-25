@@ -22,16 +22,16 @@ export default function Home() {
         />
       </Head>
       <Header />
-      <main>
-        <Hero />
-        <Meetups />
-        <Speakers />
-        {/* <Schedule /> */}
-        <BirminghamTechWeek />
-        <Sponsors />
-        {/* <Newsletter /> */}
-      </main>
-      <Footer />
+        <main>
+            <Hero />
+            <Meetups />
+            <Speakers />
+            <Schedule />
+            <BirminghamTechWeek />
+            <Sponsors />
+            {/* <Newsletter /> */}
+        </main>
+        <Footer />
     </>
   )
 }
