@@ -93,7 +93,7 @@ export function Speaker(props) {
                     <h1 className="space-y-12 font-display text-5xl font-bold tracking-tighter text-yellow-600 sm:text-7xl">
                         <br /> {talkTitle}
                     </h1>
-                    <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-black sm:text-4xl">
+                    <div className="mt-6 space-y-6 font-display text-md tracking-tight text-black sm:text-lg">
                         {description}
                     </div>
                     <ButtonCTA/>
