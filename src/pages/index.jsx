@@ -9,6 +9,7 @@ import { Speakers } from '@/components/Speakers'
 import { Meetups } from '@/components/Meetups'
 import { ButtonLink } from '@/components/Button'
 import { Sponsors } from '@/components/Sponsors'
+import { Images } from '@/components/Images'
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <main>
         <Hero />
         <Meetups />
+        <Images />
         <Speakers />
         <Schedule />
         <Sponsors />
