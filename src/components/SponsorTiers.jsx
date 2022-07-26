@@ -2,7 +2,7 @@ export function SponsorTiers() {
   return (
     <div className="mt-16 mb-8 bg-white lg:mt-0">
       <h3 className="mb-6 text-center font-display text-4xl font-medium tracking-tighter text-yellow-900 sm:text-5xl">
-        Our partners have made this possible
+        Our sponsors have made this event possible
       </h3>
       <div className="mx-auto max-w-6xl py-8 px-4 sm:px-4 lg:py-12 lg:px-4">
         <p className="text-center text-base font-semibold uppercase tracking-wider text-gray-600">
