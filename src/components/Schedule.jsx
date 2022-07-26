@@ -7,24 +7,24 @@ import { Container } from '@/components/Container'
 
 const schedule = [
   {
-    date: 'October 14',
-    dateTime: '2022-04-04',
+    date: 'October 14th',
+    dateTime: '2022-10-14',
     summary: '',
     timeSlots: [
       {
         name: 'Registration',
         description: 'Registration',
         start: '08:30AM',
-        end: '09:15AM'
+        end: '09:15AM',
       },
       {
         name: 'Opening Welcome',
-        description: 'The event organisers',
+        description: 'Event organisers',
         start: '9:30AM',
         end: '09:45AM',
       },
       {
-        name: 'The Event',
+        name: 'Main Event',
         description: 'Schedule to be announced',
         start: '9:45AM',
         end: '16:15PM',
@@ -114,10 +114,10 @@ const schedule = [
       //   end: '16:15PM'
       // },
       {
-          name: 'Closing remarks',
-          description: 'The event organisers',
-          start: '16:15PM',
-          end: '16:30PM',
+        name: 'Closing remarks',
+        description: 'Event organisers',
+        start: '16:15PM',
+        end: '16:30PM',
       },
     ],
   },
@@ -268,10 +268,11 @@ export function Schedule() {
       <Container className="relative z-10">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
           <p className="font-display text-4xl font-medium tracking-tighter text-yellow-600 sm:text-5xl">
-            Our schedule is jam-packed with brilliant speakers.
+            Exciting and inspiring speakers to be announced
           </p>
           <p className="mt-4 font-display text-2xl tracking-tight text-yellow-900">
-            We are working hard to bring the best speakers in the world to Birmingham.
+            We're bringing some of the best speakers in the world to Birmingham,
+            as well as highlighting local talent.
           </p>
         </div>
       </Container>

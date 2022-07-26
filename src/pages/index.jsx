@@ -8,7 +8,6 @@ import { Schedule } from '@/components/Schedule'
 import { Speakers } from '@/components/Speakers'
 import { Meetups } from '@/components/Meetups'
 import { ButtonLink } from '@/components/Button'
-import { BirminghamTechWeek } from '@/components/BirminghamTechWeek'
 import { Sponsors } from '@/components/Sponsors'
 
 export default function Home() {
@@ -22,16 +21,15 @@ export default function Home() {
         />
       </Head>
       <Header />
-        <main>
-            <Hero />
-            <Meetups />
-            <Speakers />
-            <Schedule />
-            <BirminghamTechWeek />
-            <Sponsors />
-            {/* <Newsletter /> */}
-        </main>
-        <Footer />
+      <main>
+        <Hero />
+        <Meetups />
+        <Speakers />
+        <Schedule />
+        <Sponsors />
+        {/* <Newsletter /> */}
+      </main>
+      <Footer />
     </>
   )
 }
