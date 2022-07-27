@@ -5,14 +5,14 @@ const images = [
     class: '',
   },
   {
-    name: 'DevOpsDays Social',
-    source: '/purecraft-devopsdays.jpg',
-    class: '',
+    name: 'DevOpsDays',
+    source: '/katie.jpg',
+    class: 'hidden lg:flex',
   },
   {
-    name: 'DevOpsDays',
-    source: '/devopsdays-group.jpg',
-    class: 'hidden lg:flex',
+    name: 'DevOpsDays small group at social',
+    source: '/purecraft-small-group-devopsdays.jpg',
+    class: '',
   },
   {
     name: 'Millenium Point',
@@ -20,14 +20,14 @@ const images = [
     class: 'hidden sm:flex',
   },
   {
-    name: 'Golang Meetup',
-    source: '/golang-meetup.jpeg',
-    class: 'hidden sm:flex',
-  },
-  {
     name: 'Millenium Point',
     source: '/mp-leon-adato.jpg',
     class: 'hidden lg:flex',
+  },
+  {
+    name: 'DevOpsDays attendee',
+    source: '/dave.jpg',
+    class: 'hidden sm:flex',
   },
 ]
 

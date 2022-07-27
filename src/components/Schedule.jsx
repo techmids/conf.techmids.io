@@ -164,8 +164,7 @@ function ScheduleTabbed() {
                   ...day,
                   date: (
                     <Tab className="[&:not(:focus-visible)]:focus:outline-none">
-                      <span className="absolute inset-0" />
-                      {day.date}
+                      Schedule
                     </Tab>
                   ),
                 }}
