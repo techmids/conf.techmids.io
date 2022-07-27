@@ -41,8 +41,10 @@ export function Images() {
         >
           {images.map((image, index) => (
             <li
-              className="relative col-span-1 justify-center backdrop-opacity-10"
-              className={image.class}
+              className={
+                'relative col-span-1 justify-center backdrop-opacity-10 ' +
+                image.class
+              }
               id={image.name}
               key={index}
             >
