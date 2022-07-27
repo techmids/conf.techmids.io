@@ -167,10 +167,10 @@ export function Speakers() {
                       <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-slate-900">
                         {speaker.name}
                       </h3>
-                      <p className="mt-1 text-base tracking-tight text-slate-500">
+                      <p>
                         {speaker.jobTitle}
                       </p>
-                      <p>
+                        <p className="mt-1 text-base tracking-tight text-slate-500">
                         {speaker.fullSession?  "30 Minute Session": "5 Minute Ignite"}
                       </p>
                     </div>
