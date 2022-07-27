@@ -4,7 +4,7 @@ import {Container} from "@/components/Container";
 import {ButtonCTA} from "@/components/ButtonCTA";
 
 export function Speaker(props) {
-    const{speaker : {name, jobTitle, talkTitle, bio, description, image, twitter, linkedin, website} } = props
+    const{speaker : {name, jobTitle, talkTitle, bio, description, image, twitter, linkedin, website, fullSession} } = props
     const twitterURL = `https://twitter.com/${twitter}`
     const linkedinURL = `https://www.linkedin.com/in/${linkedin}`
     return (
@@ -93,6 +93,9 @@ export function Speaker(props) {
                     <h1 className="space-y-12 font-display text-5xl font-bold tracking-tighter text-yellow-600 sm:text-7xl">
                         <br /> {talkTitle}
                     </h1>
+                    <h3 className="space-y-12 font-display text-2xl font-bold tracking-tighter text-yellow-400 sm:text-2xl">
+                        <br /> Session Type: {fullSession? "30 Minute Session": "5 Minute Ignite"}
+                    </h3>
                     <div className="mt-6 space-y-6 font-display text-md tracking-tight text-black sm:text-lg">
                         {description}
                     </div>

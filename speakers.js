@@ -23,6 +23,7 @@ const speakers = [
     twitter: "kunalstwt",
     linkedin: "kunal-kushwaha",
     website: 'https://www.kunalkushwaha.com/',
+    fullSession: true,
   },
   {
     name: "Ollie Stevenson",
@@ -34,6 +35,7 @@ const speakers = [
     </>,
     image: OllieImage,
     twitter: "digital_ollie",
+    fullSession: false,
   },
 ]
 
