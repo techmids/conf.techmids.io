@@ -29,7 +29,7 @@ export function Sponsors() {
                 <span aria-hidden="true">↓</span>
               </h3>
               <ButtonLink
-                href="https://ti.to/tech-events-birmingham/tech-mids-conference-2022"
+                href="mailto:hello@techmids.io"
                 rel="noopener"
                 target="_blank"
                 className="my-4 w-full"
