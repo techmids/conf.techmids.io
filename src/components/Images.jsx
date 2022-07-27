@@ -26,7 +26,7 @@ const images = [
   },
   {
     name: 'DevOpsDays attendee',
-    source: '/dave.jpg',
+    source: '/becky.jpg',
     class: 'hidden sm:flex',
   },
 ]
