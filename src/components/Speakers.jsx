@@ -143,7 +143,7 @@ export function Speakers() {
                             [
                               'border-yellow-300',
                               'border-yellow-300',
-                              'border-sky-300',
+                              'border-yellow-300',
                             ][speakerIndex % 3]
                           )}
                         />

@@ -1,6 +1,6 @@
 import KunalImage from '@/images/avatars/kunal.png'
 import OllieImage from '@/images/avatars/ollie.jpg'
-
+import JessImage from '@/images/avatars/jess.jpg'
 
 const speakers = [
   {
@@ -36,6 +36,18 @@ const speakers = [
     image: OllieImage,
     twitter: "digital_ollie",
     fullSession: false,
+  },
+  {
+    name: "Jessica Rose",
+    jobTitle: "Developer Outreach",
+    bio: "",
+    talkTitle: "Scaling Beyond Code",
+    description: <>
+      <p>Sometimes in building software, we need to scale up our delivery, development or support of our products. And this need to expand our reach happens in tech in non-code contexts. In the same way that throwing more developers at a technical challenge won’t fix it faster, just throwing more time and energy at non-code challenges won’t hurry them along. Together we’ll explore a specific problem in scaling non-code delivery, how a need to better serve technical learners stretched a small meetup into a project serving over 30,000 learners globally. Through exploring this together we’ll also learn about how and where to look for opportunities to scale your own projects, companies and communities.</p>
+    </>,
+    image: JessImage,
+    twitter: "jesslynnrose",
+    fullSession: true,
   },
 ]
 
