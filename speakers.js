@@ -80,7 +80,7 @@ const speakers = [{
     },
     {
         name: "Becky Pauley",
-        jobTitle: "",
+        jobTitle: "Cloud Engineer at Jetstack",
         bio: <>
             <p> Working as a primary school teacher,
         I started learning Python in my spare time - and got hooked on the feeling of solving problems.A year and a half ago,
