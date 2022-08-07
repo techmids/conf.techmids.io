@@ -12,13 +12,13 @@ export function Header() {
           </a>
         </div>
         <div className="order-first -mx-4 flex flex-auto basis-full overflow-x-auto whitespace-nowrap border-b border-yellow-600/10 py-4 font-mono text-sm text-yellow-600 sm:-mx-6 lg:order-none lg:mx-0 lg:basis-auto lg:border-0 lg:py-0">
-          <div className="mx-auto flex flex-col items-center space-x-4 px-4 md:flex-row">
+          <div className="mx-auto flex flex-col items-center space-x-4 px-4 sm:flex-row">
             <p>
               <time dateTime="2022-10-14">14th October 2022</time>
             </p>
             <svg
               aria-hidden="true"
-              className="invisible h-1.5 w-1.5 overflow-visible fill-current stroke-current md:visible"
+              className="invisible h-1.5 w-1.5 overflow-visible fill-current stroke-current sm:visible"
             >
               <path
                 d="M3 0L6 3L3 6L0 3Z"
