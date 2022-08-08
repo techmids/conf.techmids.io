@@ -2,6 +2,9 @@ import KunalImage from '@/images/avatars/kunal.png'
 import OllieImage from '@/images/avatars/ollie.jpg'
 import JessImage from '@/images/avatars/jess.jpg'
 import BeckyImage from '@/images/avatars/becky.jpeg'
+import PiperImage from '@/images/avatars/piper.jpg'
+import SaraImage from '@/images/avatars/sara.png'
+import CarlyImage from '@/images/avatars/carly.jpeg'
 
 const speakers = [{
         name: "Kunal Kushwaha",
@@ -103,6 +106,20 @@ const speakers = [{
         twitter: "beckypauley",
         linkedin: "https://uk.linkedin.com/in/beckypauley",
         fullSession: true,
+    },
+    {
+        name: "Piper Bates",
+        jobTitle: "Junior Software Engineer",
+        bio: <>
+            <p>Previously a retail monkey turned illustrator, who took a leap of faith during the pandemic to change careers via School of Code. Now I work for Bamboo Auctions as a junior software engineer.</p>
+        </>,
+        talkTitle: "Diversity in Tech - Why We Need More Bootcampers, and how to support them",
+        description: <>
+            <p>I came into the industry as a bootcamper, and am now a year into the industry. I'll talk a little about my journey into tech, why we need more bootcampers in the industry, and how we can better support junior developers </p>
+            </>,
+        image: PiperImage,
+        linkedin: "https://www.linkedin.com/in/piperbates/",
+        fullSession: false,
     },
 ]
 
