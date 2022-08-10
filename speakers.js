@@ -136,7 +136,7 @@ const speakers = [{
             <p>In this talk, I will use my experience in building applications in investment banking to discuss the reasons why obtaining long-term feedback on feature adoption can be difficult to validate. We will also outline how real user monitoring and performance capabilities in tools such as Elastic User Experience or other RUM collectors can help you quantify user experience satisfaction and adoption to ensure we are providing effective experiences for users.</p>
             </>,
         image: CarlyImage,
-        twitter: "https://twitter.com/CarlyLRichmond",
+        twitter: "CarlyLRichmond",
         website: "https://carlyrichmond.com/",
         linkedin: "https://www.linkedin.com/in/carly-richmond-b4b03563/",
         GitHub: "https://github.com/carlyrichmond",
