@@ -140,7 +140,7 @@ const speakers = [{
         website: "https://carlyrichmond.com/",
         linkedin: "https://www.linkedin.com/in/carly-richmond-b4b03563/",
         GitHub: "https://github.com/carlyrichmond",
-        fullSession: false,
+        fullSession: true,
     },
 ]
 
