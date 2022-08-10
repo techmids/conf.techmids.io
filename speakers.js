@@ -138,7 +138,7 @@ const speakers = [{
         image: CarlyImage,
         twitter: "CarlyLRichmond",
         website: "https://carlyrichmond.com/",
-        linkedin: "https://www.linkedin.com/in/carly-richmond-b4b03563/",
+        linkedin: "carly-richmond-b4b03563/",
         GitHub: "https://github.com/carlyrichmond",
         fullSession: true,
     },
