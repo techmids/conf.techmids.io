@@ -121,6 +121,27 @@ const speakers = [{
         linkedin: "https://www.linkedin.com/in/piperbates/",
         fullSession: false,
     },
+    {
+        name: "Carly Richmond",
+        jobTitle: "Developer Advocate at Elastic",
+        bio: <>
+            <p>Carly is a Developer Advocate at Elastic, based in London, UK. Before joining Elastic in 2022, she spent over 10 years working as a technologist at a large investment bank, specialising in Frontend Web development and agility. Outside of work, she is an agile evangelist, UI enthusiast, and regular blogger on her personal site and Medium.</p>
+
+            <p>In her spare time, she enjoys cooking, photography, drinking tea and chasing after her toddler son.</p>
+        </>,
+        talkTitle: "Are They Really Using It? Monitoring Digital Experience to Determine Feature Effectiveness",
+        description: <>
+            <p>Building beloved user applications is a challenging yet rewarding pursuit for us working in technology today. While real user monitoring, or RUM, metrics are added early for external-facing applications, it is often added as an afterthought in the building of applications when building applications for users within organisations. Instead, we rely on anecdotal discussions and review feedback that, for many reasons, can leave us with an incomplete or accurate picture of the adoption of the software we build.</p>
+
+            <p>In this talk, I will use my experience in building applications in investment banking to discuss the reasons why obtaining long-term feedback on feature adoption can be difficult to validate. We will also outline how real user monitoring and performance capabilities in tools such as Elastic User Experience or other RUM collectors can help you quantify user experience satisfaction and adoption to ensure we are providing effective experiences for users.</p>
+            </>,
+        image: CarlyImage,
+        twitter: "https://twitter.com/CarlyLRichmond",
+        website: "https://carlyrichmond.com/",
+        linkedin: "https://www.linkedin.com/in/carly-richmond-b4b03563/",
+        GitHub: "https://github.com/carlyrichmond",
+        fullSession: true,
+    },
 ]
 
 export default speakers
