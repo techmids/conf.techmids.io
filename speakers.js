@@ -110,7 +110,7 @@ const speakers = [{
 },
 {
     name: "Piper Bates",
-    jobTitle: "Junior Software Engineer",
+    jobTitle: "Junior Software Engineer at Bamboo Auctions",
     bio: <>
         <p>Previously a retail monkey turned illustrator, who took a leap of faith during the pandemic to change careers via School of Code. Now I work for Bamboo Auctions as a junior software engineer.</p>
     </>,
