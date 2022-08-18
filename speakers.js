@@ -144,7 +144,7 @@ const speakers = [{
     fullSession: true,
 },
 {
-    name: "Max Wolf",
+    name: "Max Woolf",
     jobTitle: "Senior Backend Engineer at GitLab",
     bio: <>
         <p>A lapsed musician, enthusiastic dog owner, community lover and supposedly a senior software engineer, I've been building iOS applications and web applications, mainly in Ruby, since 2009. Currently I work at GitLab in a global team that spans the globe from the US West Coast to New Zealand, via Birmingham of course.</p>
