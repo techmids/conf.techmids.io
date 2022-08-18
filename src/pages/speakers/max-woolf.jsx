@@ -5,10 +5,10 @@ import { Footer } from "@/components/Footer";
 import { Speaker } from "@/components/Speaker";
 import speakers from "speakers";
 
-const speaker = speakers.filter(speaker => speaker["name"] === 'Max Wolf')[0]
+const speaker = speakers.filter(speaker => speaker["name"] === 'Max Woolf')[0]
 
 
-export default function MaxWolf() {
+export default function MaxWoolf() {
     return (
         <>
             <Head>
