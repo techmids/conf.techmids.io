@@ -6,8 +6,67 @@ import PiperImage from '@/images/avatars/piper.jpg'
 import SaraImage from '@/images/avatars/sara.png'
 import CarlyImage from '@/images/avatars/carly.jpeg'
 import MaxImage from '@/images/avatars/max.jpg'
+import RebekahImage from '@/images/avatars/bek.jpeg'
 
 const speakers = [
+  {
+    name: 'Rebekah Kulidzan',
+    jobTitle: 'Solutions Architect at AWS',
+    bio: (
+      <>
+        <p>
+          Rebekah is a Solutions Architect in the UK&I Public Sector team at
+          Amazon Web Services (AWS), Public Speaker, and Mental Health Advocate.
+          Rebekah is a member of AWS’ Serverless Community and has a strong
+          interest in microservices architectures and event-driven design.
+        </p>
+
+        <p>
+          Alongside her career, Rebekah created a Twitter Spaces series called
+          #TechTable where she interviewed some of her favourite people in tech
+          on topics from cloud computing to open source and learning to
+          developer relations. In 2020, Rebekah switched careers and writes
+          about her career journey and interests on{' '}
+          <a href="https://rkulidzan.com" target="_blank" rel="noopener">
+            rkulidzan.com
+          </a>
+          .
+        </p>
+      </>
+    ),
+    talkTitle:
+      'Thinking Asynchronously: application integration patterns for microservices',
+    description: (
+      <>
+        <p>
+          When applying a microservices architecture a lot of communication is
+          done over the network. For better resilience and flexibility, this
+          communication should happen asynchronously and in a loosely coupled
+          manner.
+        </p>
+        <p>In this session, you will:</p>{' '}
+        <ul>
+          <li>
+            Explore some fundamental integration- and conversation-patterns
+          </li>
+          <li>
+            Connect them to real-world use cases (which aren’t only to
+            microservices)
+          </li>
+          <li>
+            Learn how end-user clients can communicate using synchronous APIs
+            whilst still taking advantage of asynchronous communication for the
+            processing under the hood.
+          </li>
+        </ul>
+      </>
+    ),
+    image: RebekahImage,
+    linkedin: 'rebekahkulidzan',
+    twitter: 'rkulidzan',
+    website: 'https://rkulidzan.com',
+    fullSession: true,
+  },
   {
     name: 'Carly Richmond',
     jobTitle: 'Developer Advocate at Elastic',
