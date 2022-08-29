@@ -21,7 +21,7 @@ export function SponsorTiers() {
           </div>
         </div>
       </div>
-      <div className="mx-auto max-w-6xl py-8 lg:py-12">
+      <div className="py-8 lg:py-12">
         <p className="text-center text-base font-semibold uppercase tracking-wider text-gray-600">
           Gold Sponsors
         </p>
