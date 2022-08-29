@@ -35,11 +35,7 @@ export function Speakers() {
   }, [])
 
   return (
-    <section
-      id="speakers"
-      aria-labelledby="speakers-title"
-      className="py-20 sm:py-32"
-    >
+    <section id="speakers" aria-labelledby="speakers-title" className="py-10">
       <svg aria-hidden="true" width={0} height={0}>
         <defs>
           <clipPath id={`${id}-0`} clipPathUnits="objectBoundingBox">
@@ -167,11 +163,11 @@ export function Speakers() {
                       <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-slate-900">
                         {speaker.name}
                       </h3>
-                      <p>
-                        {speaker.jobTitle}
-                      </p>
-                        <p className="mt-1 text-base tracking-tight text-slate-500">
-                        {speaker.fullSession?  "30 Minute Session": "5 Minute Ignite"}
+                      <p>{speaker.jobTitle}</p>
+                      <p className="mt-1 text-base tracking-tight text-slate-500">
+                        {speaker.fullSession
+                          ? '30 Minute Session'
+                          : '5 Minute Ignite'}
                       </p>
                     </div>
                   </a>

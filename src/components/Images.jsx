@@ -34,7 +34,7 @@ const images = [
 export function Images() {
   return (
     <div className="mt-10 bg-white">
-      <div className="mx-auto max-w-7xl px-6 pb-12 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-6xl pb-12">
         <ul
           role="list"
           className="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2 sm:gap-x-10 lg:grid-cols-3 xl:gap-x-8"

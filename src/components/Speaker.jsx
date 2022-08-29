@@ -22,7 +22,7 @@ export function Speaker(props) {
   return (
     <div className="bg-white pt-4 lg:py-12">
       <div className="bg-yellow-300 px-4 pb-6 sm:px-6 lg:relative lg:z-10 lg:pb-0">
-        <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-8 lg:gap-8 lg:px-8">
+        <div className="lg:mx-auto lg:grid lg:max-w-6xl lg:grid-cols-8 lg:gap-8 lg:px-8">
           <div className="relative lg:col-span-3 lg:-my-8">
             <div
               aria-hidden="true"
@@ -147,7 +147,6 @@ export function Speaker(props) {
           <div className="text-md mt-6 space-y-6 font-display tracking-tight text-black sm:text-lg">
             {description}
           </div>
-          <ButtonCTA />
         </div>
       </Container>
     </div>

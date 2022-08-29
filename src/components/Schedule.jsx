@@ -256,25 +256,10 @@ function ScheduleStatic() {
 
 export function Schedule() {
   return (
-    <section
-      id="schedule"
-      aria-labelledby="schedule-title"
-      className="py-20 sm:py-32"
-    >
+    <section id="schedule" aria-labelledby="schedule-title">
       <h2 id="schedule-title" className="sr-only">
         Schedule
       </h2>
-      <Container className="relative z-10">
-        <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
-          <p className="font-display text-4xl font-medium tracking-tighter text-yellow-600 sm:text-5xl">
-            Exciting and inspiring speakers to be announced
-          </p>
-          <p className="mt-4 font-display text-2xl tracking-tight text-yellow-900">
-            We're bringing some of the best speakers in the world to Birmingham,
-            as well as highlighting local talent.
-          </p>
-        </div>
-      </Container>
       <div className="relative mt-14 sm:mt-24">
         <div className="absolute -inset-x-0 -top-40 -bottom-32 overflow-hidden bg-yellow-50">
           <div className="absolute left-full top-0 translate-y-[0%] -translate-x-[50%] sm:left-1/2 sm:-translate-y-[15%] sm:-translate-x-[20%] md:translate-x-[0%] lg:translate-x-[5%] lg:translate-y-[4%] xl:-translate-y-[8%] xl:translate-x-[27%]">

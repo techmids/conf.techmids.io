@@ -3,10 +3,10 @@ import OllieImage from '@/images/avatars/ollie.jpg'
 import JessImage from '@/images/avatars/jess.jpg'
 import BeckyImage from '@/images/avatars/becky.jpeg'
 import PiperImage from '@/images/avatars/piper.jpg'
-import SaraImage from '@/images/avatars/sara.png'
 import CarlyImage from '@/images/avatars/carly.jpeg'
 import MaxImage from '@/images/avatars/max.jpg'
 import RebekahImage from '@/images/avatars/bek.jpeg'
+import JenImage from '@/images/avatars/jen.jpg'
 
 const speakers = [
   {
@@ -150,6 +150,56 @@ const speakers = [
     fullSession: true,
   },
   {
+    name: 'Jen Lambourne',
+    jobTitle: 'Knowledge Management Lead at Monzo',
+    bio: (
+      <>
+        <p>
+          Jen is a technical writer who loves a gnarly content problem.
+          Previously Head of Technical Writing for the Government Digital
+          Service, she now leads the technical writing and knowledge management
+          discipline at Monzo.
+        </p>
+        <p>
+          Having moved from government to banking, she recognises she&apos;s
+          drawn to creating inclusive and user-centred content in traditionally
+          unfriendly industries.
+        </p>
+        <p>
+          She likes using developer tools to manage docs, demystifying the
+          writing process, and presenting her adventures in documentation at
+          conferences. She is the co-author of{' '}
+          <em>
+            Docs for Developers: An Engineer’s Field Guide to Technical Writing
+          </em>
+          .{' '}
+        </p>
+      </>
+    ),
+    talkTitle: 'How to avoid writing terrible instructions: Step 1',
+    description: (
+      <>
+        <p>
+          We’ve all been there. Got stuck, searched the depths of the
+          documentation, and found something that looks helpful. Huzzah!
+        </p>{' '}
+        <p>But three lines in you realise these docs are no good at all.</p>
+        Instructions, step-by-steps, how-tos, whatever name you give them, are
+        one of the most common types of documentation, and one of the easiest to
+        get wrong.{' '}
+        <p>
+          In this session, we’ll deconstruct some bad instructions so you know
+          how to write great ones.
+        </p>
+      </>
+    ),
+    image: JenImage,
+    twitter: 'Jenny__Anne',
+    website: 'https://docsfordevelopers.com/',
+    linkedin: 'jenniferlambourne',
+    fullSession: true,
+  },
+  {
     name: 'Becky Pauley',
     jobTitle: 'Cloud Engineer at Jetstack',
     bio: (
@@ -190,7 +240,7 @@ const speakers = [
     ),
     image: BeckyImage,
     twitter: 'beckypauley',
-    linkedin: 'https://uk.linkedin.com/in/beckypauley',
+    linkedin: 'beckypauley',
     fullSession: true,
   },
   {

@@ -35,12 +35,11 @@ module.exports = {
         btw: {
           blue: '#171D29',
           cyan: '#23FFF3',
+          'cyan-dark': '#009189',
           dark: '#1e2836',
         },
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
+  plugins: [require('@tailwindcss/typography')],
 }
