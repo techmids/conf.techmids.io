@@ -49,7 +49,7 @@ export function Images() {
               key={index}
             >
               <img
-                className="h-100 overflow-hidden rounded-2xl"
+                className="h-100 overflow-hidden md:rounded-2xl"
                 src={image.source}
                 alt={image.name}
                 title={image.name}
