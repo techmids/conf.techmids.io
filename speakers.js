@@ -89,7 +89,7 @@ const speakers = [
       </>
     ),
     talkTitle:
-    'Are They Really Using It? Monitoring Digital Experience to Determine Feature Effectiveness',
+      'Are They Really Using It? Monitoring Digital Experience to Determine Feature Effectiveness',
     description: (
       <>
         <p>
@@ -207,22 +207,41 @@ const speakers = [
     bio: (
       <>
         <p>
-        Nic Jackson is a developer advocate at HashiCorp and the author of “Building Microservices in Go” a book which examines the best patterns and practices for building microservices with the Go programming language.
+          Nic Jackson is a developer advocate at HashiCorp and the author of
+          “Building Microservices in Go” a book which examines the best patterns
+          and practices for building microservices with the Go programming
+          language.
         </p>
         <p>
-        Additionally, Nic is the author of Service Mesh Patterns, a book that looks at patterns and operational best practices to help you deploy and use service meshes in a way that meets your company's goals and needs.
+          Additionally, Nic is the author of Service Mesh Patterns, a book that
+          looks at patterns and operational best practices to help you deploy
+          and use service meshes in a way that meets your company's goals and
+          needs.
         </p>
       </>
     ),
-    talkTitle:
-      'A Developers Guide to Managing Infrastructure',
+    talkTitle: 'A Developers Guide to Managing Infrastructure',
     description: (
       <>
         <p>
-        Year on year, developers are taking more responsibility for managing their applications infrastructure. Thankfully advances in cloud products have dramatically simplified this task by providing preconfigured managed resources that we can leverage. However, even with managed resources, you must take a measured and sustainable approach to your infrastructure to ensure consistency and reproducibility.
+          Year on year, developers are taking more responsibility for managing
+          their applications infrastructure. Thankfully advances in cloud
+          products have dramatically simplified this task by providing
+          preconfigured managed resources that we can leverage. However, even
+          with managed resources, you must take a measured and sustainable
+          approach to your infrastructure to ensure consistency and
+          reproducibility.
         </p>
         <p>
-        In this talk, you will learn how managing infrastructure is very similar to your workflow for writing code. Using the popular open-source tool Terraform, you will discover two different approaches: a configuration-based approach using Terraform's domain-specific language and a code-based approach using the Terraform CDK and your programming language of choice, such as Python, Typescript, Go, or C#. We will look at the pros and cons of each approach and a continuous integration workflow for applying GitOps principles to infrastructure code.
+          In this talk, you will learn how managing infrastructure is very
+          similar to your workflow for writing code. Using the popular
+          open-source tool Terraform, you will discover two different
+          approaches: a configuration-based approach using Terraform's
+          domain-specific language and a code-based approach using the Terraform
+          CDK and your programming language of choice, such as Python,
+          Typescript, Go, or C#. We will look at the pros and cons of each
+          approach and a continuous integration workflow for applying GitOps
+          principles to infrastructure code.
         </p>
       </>
     ),
@@ -237,29 +256,33 @@ const speakers = [
     bio: (
       <>
         <p>
-        Ben Foxall is a full-stack engineer at Wayve, where he helps build web-based tooling for the next generation of self-driving cars.
+          Ben Foxall is a full-stack engineer at Wayve, where he helps build
+          web-based tooling for the next generation of self-driving cars.
         </p>
         <p>
-        He loves the web, data visualisation, and exploring human-technology interactions.
+          He loves the web, data visualisation, and exploring human-technology
+          interactions.
         </p>
         <p>
-        He spends his time hacking on projects or out biking into the wilderness.
+          He spends his time hacking on projects or out biking into the
+          wilderness.
         </p>
       </>
     ),
-    talkTitle:
-      'Connecting a web browser to a motorbike',
+    talkTitle: 'Connecting a web browser to a motorbike',
     description: (
       <>
         <p>
-        I'll give an introduction to how data flows around a vehicle and is shared between components, we’ll draw parallels with how we architect more traditional data services or networks.
+          I'll give an introduction to how data flows around a vehicle and is
+          shared between components, we’ll draw parallels with how we architect
+          more traditional data services or networks.
         </p>
         <p>
-        We'll then look at browser capabilities and platform APIs that allow us to connect to data sources and how we can architect frontend solutions that are robust to handle various data formats and rates.
+          We'll then look at browser capabilities and platform APIs that allow
+          us to connect to data sources and how we can architect frontend
+          solutions that are robust to handle various data formats and rates.
         </p>
-        <p>
-        No prior knowledge (or interest) in motorbikes is required!
-        </p>
+        <p>No prior knowledge (or interest) in motorbikes is required!</p>
       </>
     ),
     image: BenImage,
@@ -448,7 +471,7 @@ const speakers = [
   },
   {
     name: 'Piper Bates',
-    jobTitle: 'Junior Software Engineer at Bamboo Auctions',
+    jobTitle: 'Front End Engineer at SteelBuy',
     bio: (
       <>
         <p>
