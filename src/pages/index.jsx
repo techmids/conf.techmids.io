@@ -7,7 +7,6 @@ import { Newsletter } from '@/components/Newsletter'
 import { Schedule } from '@/components/Schedule'
 import { Speakers } from '@/components/Speakers'
 import { Meetups } from '@/components/Meetups'
-import { ButtonLink } from '@/components/Button'
 import { Sponsors } from '@/components/Sponsors'
 import { Images } from '@/components/Images'
 
@@ -26,9 +25,9 @@ export default function Home() {
         <Hero />
         <Images />
         <Speakers />
+        <Schedule />
         <Sponsors />
         <Meetups />
-        {/* <Schedule /> */}
         {/* <Newsletter /> */}
       </main>
       <Footer />

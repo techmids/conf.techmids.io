@@ -5,7 +5,7 @@ import { SponsorTiers } from './SponsorTiers'
 
 export function Sponsors() {
   return (
-    <section>
+    <section className="pt-16">
       <div className="relative overflow-hidden pt-64 pb-10 md:max-w-6xl lg:mx-10 lg:rounded-2xl lg:shadow-xl xl:mx-auto">
         <img
           className="absolute inset-0 h-full w-full object-cover"
