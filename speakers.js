@@ -475,9 +475,10 @@ const speakers = [
     bio: (
       <>
         <p>
-          Previously a retail monkey turned illustrator, who took a leap of
-          faith during the pandemic to change careers via School of Code. Now I
-          work for Bamboo Auctions as a junior software engineer.
+          Previously a retail monkey turned illustrator, who took a leap of faith
+          during the pandemic to change careers via School of Code. Now I work for
+          SteelBuy as a front end engineer, building a digital marketplace that
+          will revolutionise the steel industry! Watch this space.
         </p>
       </>
     ),
