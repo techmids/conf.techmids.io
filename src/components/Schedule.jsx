@@ -37,12 +37,12 @@ const talks = [
   Ben,
   Jessica,
   Nic,
-  Rebekah,
-  Kunal,
   Carly,
+  Kunal,
+  Jen,
   Max,
   Becky,
-  Jen,
+  Rebekah,
 ]
 
 const schedule = [
