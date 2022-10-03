@@ -9,7 +9,7 @@ const speaker = speakers.filter(
   (speaker) => speaker['name'] === 'Rebekah Kulidzan'
 )[0]
 
-export default function MaxWoolf() {
+export default function RebekahKulidzan() {
   return (
     <>
       <Head>
