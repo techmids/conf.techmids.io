@@ -11,6 +11,8 @@ import BenImage from '@/images/avatars/ben.jpeg'
 import NicImage from '@/images/avatars/nic.jpeg'
 import stuartImage from '@/images/avatars/stuart.jpg'
 import steveImage from '@/images/avatars/steve.png'
+import TomMImage from '@/images/avatars/tom-morrissey.jpg'
+import MarkImage from '@/images/avatars/mark-perkin.jpg'
 
 const speakers = [
   {
@@ -552,7 +554,71 @@ const speakers = [
     twitter: 'mrsteveheyes',
     website: 'https://steveheyes.co.uk',
   },
-
+  {
+    name: 'Thomas Morrissey',
+    jobTitle: 'Managing Director in Engineering at Goldman Sachs',
+    bio: (
+        <>
+          <p>
+            Thomas Morrissey is a Managing Director in Engineering at Goldman Sachs, leading teams of full-stack software engineers who develop financial risk management platforms for capital and liquidity. Thomas graduated with an MEng in Computer Science from Bristol University in 2001 and has spent 21 years at Goldman Sachs, serving in a number of engineering roles the firm’s offices internationally across  London, Tokyo and Birmingham.
+          </p>
+        </>
+    ),
+    talkTitle: 'Adoption of cloud technology in finance',
+    description: (
+        <>
+          <p>
+            In their joint session Thomas and Mark will talk from their perspective as developers and architects on the experience of adopting cloud technologies to accelerate innovation in financial and risk platforms.
+          </p>
+        </>
+    ),
+    image: TomMImage,
+    fullSession: true,
+  },
+  {
+    name: 'Mark Perkin',
+    jobTitle: 'Executive Director, Goldman Sachs Accelerate Business Entrepreneur',
+    bio: (
+        <>
+          <p>
+            Executive Director, Goldman Sachs Accelerate Business Entrepreneur. Engineering leader and cloud architect with over 25 years’ experience.
+          </p>
+        </>
+    ),
+    talkTitle: 'Adoption of cloud technology in finance',
+    description: (
+        <>
+          <p>
+            In their joint session Thomas and Mark will talk from their perspective as developers and architects on the experience of adopting cloud technologies to accelerate innovation in financial and risk platforms.
+          </p>
+        </>
+    ),
+    image: MarkImage,
+    fullSession: true,
+  },
 ]
 
 export default speakers
+
+
+//{
+// name: '',
+//     jobTitle: '',
+//     bio: (
+//     <>
+//       <p>
+//       </p>
+//     </>
+// ),
+//     talkTitle: '',
+//     description: (
+//     <>
+//       <p>
+//       </p>
+//     </>
+// ),
+//     image: '',
+//     twitter: '',
+//     website: '',
+//     fullSession: true,
+// },

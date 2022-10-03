@@ -27,8 +27,8 @@ const Jessica = speakers.filter(
 )[0]
 
 const Goldman = {
-  name: 'TBA',
-  talkTitle: '',
+  name: 'Mark Perkin and Thomas Morrissey',
+  talkTitle: 'Adoption of cloud technology in finance',
 }
 
 // Order the talks here
