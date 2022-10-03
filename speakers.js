@@ -9,6 +9,8 @@ import RebekahImage from '@/images/avatars/bek.jpeg'
 import JenImage from '@/images/avatars/jen.jpg'
 import BenImage from '@/images/avatars/ben.jpeg'
 import NicImage from '@/images/avatars/nic.jpeg'
+import stuartImage from '@/images/avatars/stuart.jpg'
+import steveImage from '@/images/avatars/steve.png'
 
 const speakers = [
   {
@@ -498,6 +500,59 @@ const speakers = [
     linkedin: 'https://www.linkedin.com/in/piperbates/',
     fullSession: false,
   },
+  {
+    name: 'Stuart Langridge',
+    jobTitle: 'Kryogenix Consulting',
+    bio: (
+        <>
+          <p>
+            Stuart is a consultant CTO, software architect, and developer to
+            startups and small firms on strategy, custom development, and how to
+            best work with the dev team. Code and writings are to be found at
+            <a href="https://kryogenix.org" className="underline"> kryogenix.org</a> and @sil on Twitter; Stuart himself is mostly to be
+            found playing D&D or looking for the best vodka Collins in town.
+          </p>
+        </>
+    ),
+    talkTitle:
+        'Why You Should Do Public Speaking, And How',
+    description: (
+        <>
+          <p>
+          </p>
+        </>
+    ),
+    image: stuartImage,
+    fullSession: false,
+    twitter: 'sil',
+    website: 'https://kryogenix.org',
+  },
+  {
+    name: 'Steve Heyes',
+    image: steveImage,
+    bio: (
+        <>
+          <p>
+            Steve is a Technical Leader based in Birmingham, UK. He shapes teams that use tech to build awesome things that makes peoples lives better. Currently Steve works at Birdie as a Senior Software Engineer with an Engineering Management slant. He is also one of the co-founders of ManageOps - a monthly meet-up for engineer managers and technical leaders in the Midlands.
+            Outside of work you can find him drinking delicious coffee and playing Pokemon with his kids.
+          </p>
+        </>
+    ),
+    talkTitle:
+        'Should I Even Be Here? - A short story about imposter syndrome, what I wished I knew and how we all have it',
+    description: (
+        <>
+          <p>
+            9 out of 10 people have or currently deal with Imposter Syndrome, including this speaker. 1 out of 10 people also lie. If we all have it, why doesn’t anyone want to talk about it? This short talk will break down Imposter Syndrome, what to do about it and give language on how to speak about it.
+          </p>
+        </>
+    ),
+    jobTitle: 'Senior Full Stack Software Engineer at Birdie',
+    fullSession: false,
+    twitter: 'mrsteveheyes',
+    website: 'https://steveheyes.co.uk',
+  },
+
 ]
 
 export default speakers
