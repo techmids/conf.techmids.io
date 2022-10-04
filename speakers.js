@@ -13,6 +13,7 @@ import stuartImage from '@/images/avatars/stuart.jpg'
 import steveImage from '@/images/avatars/steve.png'
 import TomMImage from '@/images/avatars/tom-morrissey.jpg'
 import MarkImage from '@/images/avatars/mark-perkin.jpg'
+import ekipImage from '@/images/avatars/ekip.jpg'
 
 const speakers = [
   {
@@ -594,6 +595,35 @@ const speakers = [
         </>
     ),
     image: MarkImage,
+    fullSession: true,
+  },
+  {
+    name: 'Ekip Kalir',
+    jobTitle: 'Full Stack Engineer/Consultant at InfinityWorks',
+    bio: (
+        <>
+          <p>
+            I am a Full Stack Engineer/Consultant and joined InfinityWorks/Accenture in March 2022. In the past few years, I have been involved in many aspects of modern software development from mobile app development, through microservices running in the cloud, to front-end design and implementation. I have a strong background and skills in programming, project management, business analysis, team building and team management.  I have skills and experience in React/React Native, Swift/SwiftUI with frontend and backend capabilities and Scala/Scala Play framework.
+          </p>
+        </>
+    ),
+    talkTitle: 'GraphQL versus Rest API Models',
+    description: (
+        <>
+          <p>
+            Over the past decade, REST has become the standard (yet a fuzzy one) for designing web APIs. It offers some great ideas, such as stateless servers and structured access to resources. However, REST APIs have shown to be too inflexible to keep up with the rapidly changing requirements of the clients that access them.
+          </p>
+          <p>
+            GraphQL was developed by Meta (Facebook) to cope with the need for more flexibility and efficiency! It solves many of the shortcomings and inefficiencies that developers experience when interacting with REST APIs. GraphQL API design is getting more granularity and many companies explore the usability instead of the Rest API.
+          </p>
+          <p>
+            This talk will cover a bit of history of API in general and then Rest and GraphQL API designs.
+          </p>
+        </>
+    ),
+    image: ekipImage,
+    twitter: 'ekipkalir',
+    linkedin: 'ekip-kalir-428b02177',
     fullSession: true,
   },
 ]
