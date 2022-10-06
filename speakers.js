@@ -624,7 +624,7 @@ const speakers = [
     image: ekipImage,
     twitter: 'ekipkalir',
     linkedin: 'ekip-kalir-428b02177',
-    fullSession: true,
+    fullSession: false,
   },
 ]
 
