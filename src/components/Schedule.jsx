@@ -49,7 +49,7 @@ const schedule = [
   {
     timeOfDay: 'Morning Session',
     date: '2022-10-14',
-    summary: '08:30 - 13:45 BST',
+    summary: '08:30 - 13:15 BST',
     timeSlots: [
       {
         name: 'Registration',
@@ -110,7 +110,7 @@ const schedule = [
   {
     timeOfDay: 'Afternoon Session',
     date: '2022-10-14',
-    summary: '13:45 - 17:00 BST',
+    summary: '13:15 - 17:00 BST',
     timeSlots: [
       {
         name: talks[4].name,

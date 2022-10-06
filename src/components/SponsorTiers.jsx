@@ -37,7 +37,8 @@ export function SponsorTiers() {
         <p className="text-center text-base font-semibold uppercase tracking-wider text-gray-600">
           Silver Sponsors
         </p>
-        <div className="mt-6 grid grid-cols-1 gap-0.5 lg:mt-8">
+        <div className="mt-6 grid grid-cols-6 gap-0.5 lg:mt-8">
+          <div className="col-span-2"></div>
           <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
             <a
               href="https://www.infinityworks.com/"
@@ -48,6 +49,19 @@ export function SponsorTiers() {
                 className="max-h-12"
                 src="/infinityworks.png"
                 alt="Infinity Works"
+              />
+            </a>
+          </div>
+          <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
+            <a
+                href="https://www.elastic.co/"
+                target="_blank"
+                rel="noopener"
+            >
+              <img
+                  className="max-h-12"
+                  src="/elastic.png"
+                  alt="Elastic"
               />
             </a>
           </div>
