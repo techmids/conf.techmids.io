@@ -5,7 +5,8 @@ export function SponsorTiers() {
         <p className="text-center text-base font-semibold uppercase tracking-wider text-gray-600">
           Platinum Sponsors
         </p>
-        <div className="mt-6 grid grid-cols-1 gap-0.5 lg:mt-8">
+        <div className="mt-6 grid grid-cols-3 gap-0.5 lg:mt-8">
+          <div className="col-span-1"/>
           <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
             <a
               href="https://www.goldmansachs.com/careers/discover/birmingham-office/"
@@ -25,7 +26,8 @@ export function SponsorTiers() {
         <p className="text-center text-base font-semibold uppercase tracking-wider text-gray-600">
           Gold Sponsors
         </p>
-        <div className="mt-6 grid grid-cols-1 gap-0.5 lg:mt-8">
+        <div className="mt-6 grid grid-cols-3 gap-0.5 lg:mt-8">
+          <div className="col-span-1"/>
           <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
             <a href="https://jump24.co.uk/" target="_blank" rel="noopener">
               <img className="max-h-12" src="/jump24.png" alt="Jump24" />
@@ -37,8 +39,8 @@ export function SponsorTiers() {
         <p className="text-center text-base font-semibold uppercase tracking-wider text-gray-600">
           Silver Sponsors
         </p>
-        <div className="mt-6 grid grid-cols-6 gap-0.5 lg:mt-8">
-          <div className="col-span-2"></div>
+        <div className="mt-6 grid grid-cols-4 gap-0.5 lg:mt-8">
+          <div className="col-span-1"/>
           <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
             <a
               href="https://www.infinityworks.com/"
