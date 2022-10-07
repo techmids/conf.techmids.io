@@ -41,7 +41,7 @@ export function SponsorTiers() {
         </p>
         <div className="mt-6 grid grid-cols-4 gap-0.5 lg:mt-8">
           <div className="col-span-1"/>
-          <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
+          <div className="col-span-1 flex justify-center bg-gray-50 py-9">
             <a
               href="https://www.infinityworks.com/"
               target="_blank"
