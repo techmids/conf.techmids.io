@@ -181,7 +181,7 @@ export function CodeOfConduct() {
               conference staff immediately.
             </p>
             <p className="mt-8 text-xl leading-8 text-gray-500">
-              Conference staff can be identified by distinct staff badges.
+              Conference staff can be identified by a TechMids t-shirt.
               Conference staff will be happy to help participants contact
               hotel/venue security or local law enforcement, provide escorts, or
               otherwise assist those experiencing harassment to feel safe for
