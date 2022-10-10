@@ -127,36 +127,12 @@ export function CovidPolicy() {
 
           <h2>
             <span className="mt-8 block text-center text-2xl font-extrabold leading-8 tracking-tight text-gray-900">
-              On arrival at the event
+              Before the event
             </span>
           </h2>
           <p className="mt-8 text-xl leading-8 text-gray-500">
-            When you arrive we will do the following:
+            Ask that you ensure you have at least three Covid vaccinations
           </p>
-          <p className="mt-8 text-xl leading-8 text-gray-500">
-            Check your temperature
-          </p>
-          <p className="mt-8 text-xl leading-8 text-gray-500">
-            We will do this by using a “thermometer gun,” a device that is
-            equipped with an infrared sensor that can quickly measure surface
-            temperature without making any contact with a person&rsquo;s skin.
-          </p>
-          <p className="mt-8 text-xl leading-8 text-gray-500">
-            Ask you to provide proof of at least three Covid vaccinations
-          </p>
-          <p className="mt-8 text-xl leading-8 text-gray-500">
-            You can do this via the paper card you carry in your wallet or by
-            showing us your digital “NHS Covid Pass”. To get the NHS Covid Pass
-            you’ll need to register on the NHS App and download it to your phone
-            ahead of time. To register, the process takes around 5-10 mins but
-            it can take up to 24 hours for the NHS to process so please do this
-            ahead of time. You can then save the pass into your digital wallet
-            for easy access.
-          </p>
-          <li className="mt-8 text-xl leading-8 text-gray-500">
-            International attendees should provide an equivalent certification
-            from their country.
-          </li>
           <li className="mt-8 text-xl leading-8 text-gray-500">
             If you have medical reasons why you have not been vaccinated please
             let the volunteers know. We understand there will need to be
@@ -174,16 +150,8 @@ export function CovidPolicy() {
             Lateral flow tests can be ordered online from most pharmacies.
           </p>
           <p className="mt-8 text-xl leading-8 text-gray-500">
-            Ask you to choose a wrist band.
-          </p>
-          <p className="mt-8 text-xl leading-8 text-gray-500">
-            The wrist band will indicate if you are socially distancing or not.
-          </p>
-          <p className="mt-8 text-xl leading-8 text-gray-500">
-            Red band: Please keep your distance.
-          </p>
-          <p className="mt-8 text-xl leading-8 text-gray-500">
-            Green band: I&rsquo;m not socially distancing.
+            You will have space on your lanyard badge to indicate your social
+            disatancing and communication preferences if you wish to do so.
           </p>
           <p className="mt-8 text-xl leading-8 text-gray-500">
             We thank you in advance for being respectful about peoples choices
@@ -200,39 +168,6 @@ export function CovidPolicy() {
             respectful of others who may want to keep their distance. Face mask
             wearing will be optional, depending on your comfort levels. We
             strongly encourage mask wearing during the event.
-          </p>
-          <p className="mt-8 text-xl leading-8 text-gray-500">
-            We will provide hand sanitiser around the venue for use throughout
-            the day
-          </p>
-
-          <h2>
-            <span className="mt-8 block text-center text-2xl font-extrabold leading-8 tracking-tight text-gray-900">
-              Thank you for your patience
-            </span>
-          </h2>
-          <p className="mt-8 text-xl leading-8 text-gray-500">
-            These additional checks will mean it takes a little longer to check
-            you in than we would usually like, but hope you understand we are
-            taking these precautions so that everyone feels safe and relaxed and
-            can enjoy the event. These additional checks will mean it takes a
-            little longer to check you in than we would usually like, but hope
-            you understand we are taking these precautions so that everyone
-            feels safe and relaxed and can enjoy the event.
-          </p>
-          <h2>
-            <span className="mt-8 block text-center text-2xl font-extrabold leading-8 tracking-tight text-gray-900">
-              Changes
-            </span>
-          </h2>
-          <h2></h2>
-          <p className="mt-8 text-xl leading-8 text-gray-500">
-            These additional checks will mean it takes a little longer to check
-            you in than we would usually like, but hope you understand we are
-            taking these precautions so that everyone feels safe and relaxed and
-            can enjoy the event. We may need to amend these policies due to
-            local or national guidance or legislation. We will be in touch prior
-            to the event to confirm the COVID requirements.
           </p>
         </div>
       </div>
