@@ -489,15 +489,26 @@ const speakers = [
         </>
     ),
     talkTitle:
-        'Why You Should Do Public Speaking, And How',
+        "You really don't need all that JavaScript, I promise",
     description: (
         <>
           <p>
+            JavaScript is your behaviour layer; the way to add interactivity to
+            your sites, to provide a slick and delightful user experience, to make
+            everything fast and easy and clean. But at some point everything
+            changed: the tail started to wag the dog instead and development
+            became Javascript-first.
+          </p>
+          <p>
+            We'll talk about how you maybe shouldn't rely on JS as much as you're
+            told to, and some practical strategies for how to build sites without
+            reaching for a JavaScript framework as first, last, and only tool for
+            making the web happen.
           </p>
         </>
     ),
     image: stuartImage,
-    fullSession: false,
+    fullSession: true,
     twitter: 'sil',
     website: 'https://kryogenix.org',
   },

@@ -12,8 +12,8 @@ const Becky = speakers.filter(
 const Rebekah = speakers.filter(
   (speaker) => speaker['name'] === 'Rebekah Kulidzan'
 )[0]
-const Carly = speakers.filter(
-  (speaker) => speaker['name'] === 'Carly Richmond'
+const Stuart = speakers.filter(
+  (speaker) => speaker['name'] === 'Stuart Langridge'
 )[0]
 const Max = speakers.filter((speaker) => speaker['name'] === 'Max Woolf')[0]
 const Jen = speakers.filter((speaker) => speaker['name'] === 'Jen Lambourne')[0]
@@ -39,7 +39,7 @@ const talks = [
   Nic,
   Jen,
   Kunal,
-  Carly,
+  Stuart,
   Max,
   Becky,
   Rebekah,
