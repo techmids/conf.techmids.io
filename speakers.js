@@ -2,8 +2,7 @@ import KunalImage from '@/images/avatars/kunal.png'
 import OllieImage from '@/images/avatars/ollie.jpg'
 import JessImage from '@/images/avatars/jess.jpg'
 import BeckyImage from '@/images/avatars/becky.jpeg'
-import PiperImage from '@/images/avatars/piper.jpg'
-import CarlyImage from '@/images/avatars/carly.jpeg'
+import JamesImage from '@/images/avatars/james.jpg'
 import MaxImage from '@/images/avatars/max.jpg'
 import RebekahImage from '@/images/avatars/bek.jpeg'
 import JenImage from '@/images/avatars/jen.jpg'
@@ -72,58 +71,6 @@ const speakers = [
     linkedin: 'rebekahkulidzan',
     twitter: 'rkulidzan',
     website: 'https://rkulidzan.com',
-    fullSession: true,
-  },
-  {
-    name: 'Carly Richmond',
-    jobTitle: 'Developer Advocate at Elastic',
-    bio: (
-      <>
-        <p>
-          Carly is a Developer Advocate at Elastic, based in London, UK. Before
-          joining Elastic in 2022, she spent over 10 years working as a
-          technologist at a large investment bank, specialising in Frontend Web
-          development and agility. Outside of work, she is an agile evangelist,
-          UI enthusiast, and regular blogger on her personal site and Medium.
-        </p>
-
-        <p>
-          In her spare time, she enjoys cooking, photography, drinking tea and
-          chasing after her toddler son.
-        </p>
-      </>
-    ),
-    talkTitle:
-      'Are They Really Using It? Monitoring Digital Experience to Determine Feature Effectiveness',
-    description: (
-      <>
-        <p>
-          Building beloved user applications is a challenging yet rewarding
-          pursuit for us working in technology today. While real user
-          monitoring, or RUM, metrics are added early for external-facing
-          applications, it is often added as an afterthought in the building of
-          applications when building applications for users within
-          organisations. Instead, we rely on anecdotal discussions and review
-          feedback that, for many reasons, can leave us with an incomplete or
-          accurate picture of the adoption of the software we build.
-        </p>
-
-        <p>
-          In this talk, I will use my experience in building applications in
-          investment banking to discuss the reasons why obtaining long-term
-          feedback on feature adoption can be difficult to validate. We will
-          also outline how real user monitoring and performance capabilities in
-          tools such as Elastic User Experience or other RUM collectors can help
-          you quantify user experience satisfaction and adoption to ensure we
-          are providing effective experiences for users.
-        </p>
-      </>
-    ),
-    image: CarlyImage,
-    twitter: 'CarlyLRichmond',
-    website: 'https://carlyrichmond.com/',
-    linkedin: 'carly-richmond-b4b03563/',
-    GitHub: 'https://github.com/carlyrichmond',
     fullSession: true,
   },
   {
@@ -348,7 +295,10 @@ const speakers = [
       <>
         <p>
           {' '}
-          In this session, you’ll learn how to use empathy driven development as your superpower to become a better engineer. The talk would start by demystifying the myths, followed by how to embed empathy in your engineering practices.{' '}
+          In this session, you’ll learn how to use empathy driven development as
+          your superpower to become a better engineer. The talk would start by
+          demystifying the myths, followed by how to embed empathy in your
+          engineering practices.{' '}
         </p>
       </>
     ),
@@ -446,66 +396,72 @@ const speakers = [
     fullSession: true,
   },
   {
-    name: 'Piper Bates',
-    jobTitle: 'Front End Engineer at SteelBuy',
+    name: 'James Seconde',
+    jobTitle: 'Senior Developer Advocate at Vonage',
     bio: (
       <>
         <p>
-          Previously a retail monkey turned illustrator, who took a leap of faith
-          during the pandemic to change careers via School of Code. Now I work for
-          SteelBuy as a front end engineer, building a digital marketplace that
-          will revolutionise the steel industry! Watch this space.
+          A trained actor with a curious background: from Theatre Studies, to
+          Q/A, to Business Intelligence development, to full stack web
+          development, I am the resident specialist PHP Developer Advocate at
+          Global Cloud Communications giant Vonage. I founded Birmingham, UK's
+          current PHP usergroup BrumPHP, as well as being on the Fusion Meetup
+          team. I mentor, write and speak on PHP, Javascript, DevOps, DevRel and
+          tech culture. I pretended to be a DJ on the way.
         </p>
       </>
     ),
-    talkTitle:
-      'Diversity in Tech - Why We Need More Bootcampers, and how to support them',
+    talkTitle: 'Speed Run! A 5 minute OpenAPI Migration',
     description: (
       <>
         <p>
-          I came into the industry as a bootcamper, and am now a year into the
-          industry. I'll talk a little about my journey into tech, why we need
-          more bootcampers in the industry, and how we can better support junior
-          developers{' '}
+          Got an existing REST API doing CRUD stuff? Cool. Ever harnessed the
+          power of OpenAPI to port it to enable cloud tooling? Sounds complex,
+          right? Well, I've got 5 mins to show you how to port it to Tyk Cloud
+          as simply as possible. Let's go.
         </p>
       </>
     ),
-    image: PiperImage,
-    linkedin: 'https://www.linkedin.com/in/piperbates/',
+    image: JamesImage,
+    twitter: 'secondej',
+    linkedin: 'secondej',
     fullSession: false,
   },
   {
     name: 'Stuart Langridge',
     jobTitle: 'Kryogenix Consulting',
     bio: (
-        <>
-          <p>
-            Stuart is a consultant CTO, software architect, and developer to
-            startups and small firms on strategy, custom development, and how to
-            best work with the dev team. Code and writings are to be found at
-            <a href="https://kryogenix.org" className="underline"> kryogenix.org</a> and @sil on Twitter; Stuart himself is mostly to be
-            found playing D&D or looking for the best vodka Collins in town.
-          </p>
-        </>
+      <>
+        <p>
+          Stuart is a consultant CTO, software architect, and developer to
+          startups and small firms on strategy, custom development, and how to
+          best work with the dev team. Code and writings are to be found at
+          <a href="https://kryogenix.org" className="underline">
+            {' '}
+            kryogenix.org
+          </a>{' '}
+          and @sil on Twitter; Stuart himself is mostly to be found playing D&D
+          or looking for the best vodka Collins in town.
+        </p>
+      </>
     ),
-    talkTitle:
-        "You really don't need all that JavaScript, I promise",
+    talkTitle: "You really don't need all that JavaScript, I promise",
     description: (
-        <>
-          <p>
-            JavaScript is your behaviour layer; the way to add interactivity to
-            your sites, to provide a slick and delightful user experience, to make
-            everything fast and easy and clean. But at some point everything
-            changed: the tail started to wag the dog instead and development
-            became Javascript-first.
-          </p>
-          <p>
-            We'll talk about how you maybe shouldn't rely on JS as much as you're
-            told to, and some practical strategies for how to build sites without
-            reaching for a JavaScript framework as first, last, and only tool for
-            making the web happen.
-          </p>
-        </>
+      <>
+        <p>
+          JavaScript is your behaviour layer; the way to add interactivity to
+          your sites, to provide a slick and delightful user experience, to make
+          everything fast and easy and clean. But at some point everything
+          changed: the tail started to wag the dog instead and development
+          became Javascript-first.
+        </p>
+        <p>
+          We'll talk about how you maybe shouldn't rely on JS as much as you're
+          told to, and some practical strategies for how to build sites without
+          reaching for a JavaScript framework as first, last, and only tool for
+          making the web happen.
+        </p>
+      </>
     ),
     image: stuartImage,
     fullSession: true,
@@ -516,21 +472,30 @@ const speakers = [
     name: 'Steve Heyes',
     image: steveImage,
     bio: (
-        <>
-          <p>
-            Steve is a Technical Leader based in Birmingham, UK. He shapes teams that use tech to build awesome things that makes peoples lives better. Currently Steve works at Birdie as a Senior Software Engineer with an Engineering Management slant. He is also one of the co-founders of ManageOps - a monthly meet-up for engineer managers and technical leaders in the Midlands.
-            Outside of work you can find him drinking delicious coffee and playing Pokemon with his kids.
-          </p>
-        </>
+      <>
+        <p>
+          Steve is a Technical Leader based in Birmingham, UK. He shapes teams
+          that use tech to build awesome things that makes peoples lives better.
+          Currently Steve works at Birdie as a Senior Software Engineer with an
+          Engineering Management slant. He is also one of the co-founders of
+          ManageOps - a monthly meet-up for engineer managers and technical
+          leaders in the Midlands. Outside of work you can find him drinking
+          delicious coffee and playing Pokemon with his kids.
+        </p>
+      </>
     ),
     talkTitle:
-        'Should I Even Be Here? - A short story about imposter syndrome, what I wished I knew and how we all have it',
+      'Should I Even Be Here? - A short story about imposter syndrome, what I wished I knew and how we all have it',
     description: (
-        <>
-          <p>
-            9 out of 10 people have or currently deal with Imposter Syndrome, including this speaker. 1 out of 10 people also lie. If we all have it, why doesn’t anyone want to talk about it? This short talk will break down Imposter Syndrome, what to do about it and give language on how to speak about it.
-          </p>
-        </>
+      <>
+        <p>
+          9 out of 10 people have or currently deal with Imposter Syndrome,
+          including this speaker. 1 out of 10 people also lie. If we all have
+          it, why doesn’t anyone want to talk about it? This short talk will
+          break down Imposter Syndrome, what to do about it and give language on
+          how to speak about it.
+        </p>
+      </>
     ),
     jobTitle: 'Senior Full Stack Software Engineer at Birdie',
     fullSession: false,
@@ -541,40 +506,54 @@ const speakers = [
     name: 'Thomas Morrissey',
     jobTitle: 'Managing Director in Engineering at Goldman Sachs',
     bio: (
-        <>
-          <p>
-            Thomas Morrissey is a Managing Director in Engineering at Goldman Sachs, leading teams of full-stack software engineers who develop financial risk management platforms for capital and liquidity. Thomas graduated with an MEng in Computer Science from Bristol University in 2001 and has spent 21 years at Goldman Sachs, serving in a number of engineering roles the firm’s offices internationally across  London, Tokyo and Birmingham.
-          </p>
-        </>
+      <>
+        <p>
+          Thomas Morrissey is a Managing Director in Engineering at Goldman
+          Sachs, leading teams of full-stack software engineers who develop
+          financial risk management platforms for capital and liquidity. Thomas
+          graduated with an MEng in Computer Science from Bristol University in
+          2001 and has spent 21 years at Goldman Sachs, serving in a number of
+          engineering roles the firm’s offices internationally across London,
+          Tokyo and Birmingham.
+        </p>
+      </>
     ),
     talkTitle: 'Adoption of cloud technology in finance',
     description: (
-        <>
-          <p>
-            In their joint session Thomas and Mark will talk from their perspective as developers and architects on the experience of adopting cloud technologies to accelerate innovation in financial and risk platforms.
-          </p>
-        </>
+      <>
+        <p>
+          In their joint session Thomas and Mark will talk from their
+          perspective as developers and architects on the experience of adopting
+          cloud technologies to accelerate innovation in financial and risk
+          platforms.
+        </p>
+      </>
     ),
     image: TomMImage,
     fullSession: true,
   },
   {
     name: 'Mark Perkin',
-    jobTitle: 'Executive Director, Goldman Sachs Accelerate Business Entrepreneur',
+    jobTitle:
+      'Executive Director, Goldman Sachs Accelerate Business Entrepreneur',
     bio: (
-        <>
-          <p>
-            Executive Director, Goldman Sachs Accelerate Business Entrepreneur. Engineering leader and cloud architect with over 25 years’ experience.
-          </p>
-        </>
+      <>
+        <p>
+          Executive Director, Goldman Sachs Accelerate Business Entrepreneur.
+          Engineering leader and cloud architect with over 25 years’ experience.
+        </p>
+      </>
     ),
     talkTitle: 'Adoption of cloud technology in finance',
     description: (
-        <>
-          <p>
-            In their joint session Thomas and Mark will talk from their perspective as developers and architects on the experience of adopting cloud technologies to accelerate innovation in financial and risk platforms.
-          </p>
-        </>
+      <>
+        <p>
+          In their joint session Thomas and Mark will talk from their
+          perspective as developers and architects on the experience of adopting
+          cloud technologies to accelerate innovation in financial and risk
+          platforms.
+        </p>
+      </>
     ),
     image: MarkImage,
     fullSession: true,
@@ -583,25 +562,42 @@ const speakers = [
     name: 'Ekip Kalir',
     jobTitle: 'Full Stack Engineer/Consultant at InfinityWorks',
     bio: (
-        <>
-          <p>
-            I am a Full Stack Engineer/Consultant and joined InfinityWorks/Accenture in March 2022. In the past few years, I have been involved in many aspects of modern software development from mobile app development, through microservices running in the cloud, to front-end design and implementation. I have a strong background and skills in programming, project management, business analysis, team building and team management.  I have skills and experience in React/React Native, Swift/SwiftUI with frontend and backend capabilities and Scala/Scala Play framework.
-          </p>
-        </>
+      <>
+        <p>
+          I am a Full Stack Engineer/Consultant and joined
+          InfinityWorks/Accenture in March 2022. In the past few years, I have
+          been involved in many aspects of modern software development from
+          mobile app development, through microservices running in the cloud, to
+          front-end design and implementation. I have a strong background and
+          skills in programming, project management, business analysis, team
+          building and team management. I have skills and experience in
+          React/React Native, Swift/SwiftUI with frontend and backend
+          capabilities and Scala/Scala Play framework.
+        </p>
+      </>
     ),
     talkTitle: 'GraphQL versus Rest API Models',
     description: (
-        <>
-          <p>
-            Over the past decade, REST has become the standard (yet a fuzzy one) for designing web APIs. It offers some great ideas, such as stateless servers and structured access to resources. However, REST APIs have shown to be too inflexible to keep up with the rapidly changing requirements of the clients that access them.
-          </p>
-          <p>
-            GraphQL was developed by Meta (Facebook) to cope with the need for more flexibility and efficiency! It solves many of the shortcomings and inefficiencies that developers experience when interacting with REST APIs. GraphQL API design is getting more granularity and many companies explore the usability instead of the Rest API.
-          </p>
-          <p>
-            This talk will cover a bit of history of API in general and then Rest and GraphQL API designs.
-          </p>
-        </>
+      <>
+        <p>
+          Over the past decade, REST has become the standard (yet a fuzzy one)
+          for designing web APIs. It offers some great ideas, such as stateless
+          servers and structured access to resources. However, REST APIs have
+          shown to be too inflexible to keep up with the rapidly changing
+          requirements of the clients that access them.
+        </p>
+        <p>
+          GraphQL was developed by Meta (Facebook) to cope with the need for
+          more flexibility and efficiency! It solves many of the shortcomings
+          and inefficiencies that developers experience when interacting with
+          REST APIs. GraphQL API design is getting more granularity and many
+          companies explore the usability instead of the Rest API.
+        </p>
+        <p>
+          This talk will cover a bit of history of API in general and then Rest
+          and GraphQL API designs.
+        </p>
+      </>
     ),
     image: ekipImage,
     twitter: 'ekipkalir',
@@ -611,7 +607,6 @@ const speakers = [
 ]
 
 export default speakers
-
 
 //{
 // name: '',

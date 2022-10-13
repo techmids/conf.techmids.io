@@ -35,8 +35,8 @@ const Goldman = {
 const talks = [
   Goldman,
   Ben,
-  Jessica,
   Nic,
+  Jessica,
   Jen,
   Kunal,
   Stuart,
