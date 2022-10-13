@@ -13,6 +13,7 @@ import steveImage from '@/images/avatars/steve.png'
 import TomMImage from '@/images/avatars/tom-morrissey.jpg'
 import MarkImage from '@/images/avatars/mark-perkin.jpg'
 import ekipImage from '@/images/avatars/ekip.jpg'
+import KirstyImage from '@/images/avatars/kirsty.jpg'
 
 const speakers = [
   {
@@ -503,6 +504,33 @@ const speakers = [
     website: 'https://steveheyes.co.uk',
   },
   {
+    name: 'Kirsty Thomas-Brown',
+    jobTitle: 'Organiser of #YouEqualTech / Consultant at Spinks',
+    bio: (
+        <>
+          <p>
+            Kirsty is a consultant at Spinks, spending her day finding the best JavaScript talent for start-up's and scale-ups across the West Midlands and the wider UK.
+          </p>
+          <p>
+            On-top of this, she works within an internal group to champion DE&amp;I within Spinks and the wider Nash Squared group and is also a co-organiser of #YouEqualTech.
+          </p>
+        </>
+    ),
+    talkTitle: 'Diversity & Inclusion - An Open Conversation',
+    description: (
+        <>
+          <p>The people who get it, get it. The people who don't, don't.</p>
+          <p>This talk will explore how we can reframe the conversation to reach that second group whilst keep the conversation fresh and engaging for the first. Most importantly, it will explore how we keep it open, authentic and genuine.</p>
+          <p>No tickboxes</p>
+          <p>No hashtags</p>
+          <p>Just conversation</p>
+        </>
+    ),
+    image: KirstyImage,
+    linkedin: 'kirsty-thomas-brown-151165211',
+    fullSession: false,
+  },
+  {
     name: 'Thomas Morrissey',
     jobTitle: 'Managing Director in Engineering at Goldman Sachs',
     bio: (
@@ -603,7 +631,7 @@ const speakers = [
     twitter: 'ekipkalir',
     linkedin: 'ekip-kalir-428b02177',
     fullSession: false,
-  },
+  }
 ]
 
 export default speakers
