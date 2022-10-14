@@ -5,7 +5,7 @@ export function ButtonCTA() {
     <>
       <div className="my-10 grid grid-cols-1 gap-10">
         <ButtonLink
-          href="https://www.youtube.com/watch?v=LUKr9GQphOY"
+          href="https://www.youtube.com/watch?v=pyFzlyiOoxA"
           rel="noopener"
           target="_blank"
           className="w-full"
