@@ -31,11 +31,11 @@ export function Header() {
         </div>
         <div className="hidden sm:mt-10 sm:flex lg:mt-0 lg:grow lg:basis-0 lg:justify-end">
           <ButtonLink
-            href="https://ti.to/tech-events-birmingham/tech-mids-conference-2022"
+            href="https://www.youtube.com/watch?v=LUKr9GQphOY"
             rel="noopener"
             target="_blank"
           >
-            Get your free tickets
+            Join the stream from 9am
           </ButtonLink>
         </div>
       </Container>
