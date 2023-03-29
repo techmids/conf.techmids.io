@@ -13,11 +13,12 @@ const sponsorTiers = {
 
         name: "Silver Sponsors",
         sponsors: [
-            {
-                name: "Open UK",
-                image: "/sponsors/openuk.png",
-                url: "https://www.openuk.uk/"
-            }
+            // Cant get this to work...
+            // {
+            //     name: "Open UK",
+            //     image: "/sponsors/openuk.png",
+            //     url: "https://www.openuk.uk/"
+            // }
         ]
     },
     bronze: {
