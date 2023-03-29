@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const sponsorTiers = {
     platinum: {
         name: "Platinum Sponsors",
@@ -35,13 +37,13 @@ export function SponsorTiers() {
                 <div className="mt-6 grid grid-cols-3 gap-0.5 lg:mt-8">
                     <div className="col-span-1"/>
                     {sponsorTiers.platinum.sponsors.map((sponsor) => (
-                        <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
+                        <div key={sponsor.name} className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
                             <a
                                 href={sponsor.url}
                                 target="_blank"
-                                rel="noopener"
+                                rel="noreferrer"
                             >
-                                <img
+                                <Image
                                     className="max-h-20"
                                     src={sponsor.image}
                                     alt={sponsor.name}
@@ -58,13 +60,13 @@ export function SponsorTiers() {
                 <div className="mt-6 grid grid-cols-3 gap-0.5 lg:mt-8">
                     <div className="col-span-1"/>
                     {sponsorTiers.gold.sponsors.map((sponsor) => (
-                        <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
+                        <div key={sponsor.name} className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
                             <a
                                 href={sponsor.url}
                                 target="_blank"
-                                rel="noopener"
+                                rel="noreferrer"
                             >
-                                <img
+                                <Image
                                     className="max-h-20"
                                     src={sponsor.image}
                                     alt={sponsor.name}
@@ -81,13 +83,13 @@ export function SponsorTiers() {
                 <div className="mt-6 grid grid-cols-4 gap-0.5 lg:mt-8">
                     <div className="col-span-1"/>
                     {sponsorTiers.silver.sponsors.map((sponsor) => (
-                        <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
+                        <div key={sponsor.name} className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
                             <a
                                 href={sponsor.url}
                                 target="_blank"
-                                rel="noopener"
+                                rel="noreferrer"
                             >
-                                <img
+                                <Image
                                     className="max-h-20"
                                     src={sponsor.image}
                                     alt={sponsor.name}
@@ -104,13 +106,13 @@ export function SponsorTiers() {
                 <div className="mt-6 grid grid-cols-4 gap-0.5 lg:mt-8">
                     <div className="col-span-1"/>
                     {sponsorTiers.bronze.sponsors.map((sponsor) => (
-                        <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
+                        <div key={sponsor.name} className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
                             <a
                                 href={sponsor.url}
                                 target="_blank"
-                                rel="noopener"
+                                rel="noreferrer"
                             >
-                                <img
+                                <Image
                                     className="max-h-20"
                                     src={sponsor.image}
                                     alt={sponsor.name}
