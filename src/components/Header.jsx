@@ -14,7 +14,7 @@ export function Header() {
         <div className="order-first -mx-4 flex flex-auto basis-full overflow-x-auto whitespace-nowrap border-b border-yellow-600/10 py-4 font-mono text-sm text-yellow-600 sm:-mx-6 lg:order-none lg:mx-0 lg:basis-auto lg:border-0 lg:py-0">
           <div className="mx-auto flex flex-col items-center space-x-4 px-4 sm:flex-row">
             <p>
-              <time dateTime="2022-10-14">14th October 2022</time>
+              <time>15-16th June 2023</time>
             </p>
             <svg
               aria-hidden="true"
@@ -26,16 +26,16 @@ export function Header() {
                 strokeLinejoin="round"
               />
             </svg>
-            <p>Part of Birmingham Tech Week</p>
+            <p>Part of DevOpsDays Birmingham</p>
           </div>
         </div>
         <div className="hidden sm:mt-10 sm:flex lg:mt-0 lg:grow lg:basis-0 lg:justify-end">
           <ButtonLink
-            href="https://www.youtube.com/watch?v=pyFzlyiOoxA"
+            href="https://ti.to/tech-events-birmingham/devopsdays-birmingham-uk-2023"
             rel="noopener"
             target="_blank"
           >
-            Join the stream from 9am
+            Get your tickets now
           </ButtonLink>
         </div>
       </Container>

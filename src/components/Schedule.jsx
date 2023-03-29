@@ -4,52 +4,52 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 
-import speakers from 'speakers'
-
-const Becky = speakers.filter(
-  (speaker) => speaker['name'] === 'Becky Pauley'
-)[0]
-const Rebekah = speakers.filter(
-  (speaker) => speaker['name'] === 'Rebekah Kulidzan'
-)[0]
-const Stuart = speakers.filter(
-  (speaker) => speaker['name'] === 'Stuart Langridge'
-)[0]
-const Max = speakers.filter((speaker) => speaker['name'] === 'Max Woolf')[0]
-const Jen = speakers.filter((speaker) => speaker['name'] === 'Jen Lambourne')[0]
-const Nic = speakers.filter((speaker) => speaker['name'] === 'Nic Jackson')[0]
-const Ben = speakers.filter((speaker) => speaker['name'] === 'Ben Foxall')[0]
-const Kunal = speakers.filter(
-  (speaker) => speaker['name'] === 'Kunal Kushwaha'
-)[0]
-const Jessica = speakers.filter(
-  (speaker) => speaker['name'] === 'Jessica Rose'
-)[0]
-
-const Goldman = {
-  name: 'Mark Perkin and Thomas Morrissey',
-  talkTitle: 'Adoption of cloud technology in finance',
-}
+//
+// const Becky = speakers.filter(
+//   (speaker) => speaker['name'] === 'Becky Pauley'
+// )[0]
+// const Rebekah = speakers.filter(
+//   (speaker) => speaker['name'] === 'Rebekah Kulidzan'
+// )[0]
+// const Stuart = speakers.filter(
+//   (speaker) => speaker['name'] === 'Stuart Langridge'
+// )[0]
+// const Max = speakers.filter((speaker) => speaker['name'] === 'Max Woolf')[0]
+// const Jen = speakers.filter((speaker) => speaker['name'] === 'Jen Lambourne')[0]
+// const Nic = speakers.filter((speaker) => speaker['name'] === 'Nic Jackson')[0]
+// const Ben = speakers.filter((speaker) => speaker['name'] === 'Ben Foxall')[0]
+// const Kunal = speakers.filter(
+//   (speaker) => speaker['name'] === 'Kunal Kushwaha'
+// )[0]
+// const Jessica = speakers.filter(
+//   (speaker) => speaker['name'] === 'Jessica Rose'
+// )[0]
+//
+// const Goldman = {
+//   name: 'Mark Perkin and Thomas Morrissey',
+//   talkTitle: 'Adoption of cloud technology in finance',
+// }
 
 // Order the talks here
 const talks = [
-  Goldman,
-  Ben,
-  Nic,
-  Jessica,
-  Jen,
-  Kunal,
-  Stuart,
-  Max,
-  Becky,
-  Rebekah,
+  // Goldman,
+  // Ben,
+  // Nic,
+  // Jessica,
+  // Jen,
+  // Kunal,
+  // Stuart,
+  // Max,
+  // Becky,
+  // Rebekah,
 ]
 
 const schedule = [
   {
-    timeOfDay: 'Morning Session',
-    date: '2022-10-14',
+    timeOfDay: 'Morning Session Day 1',
+    date: '2023-06-15',
     summary: '08:30 - 13:15 BST',
+    dayName: "Day 1",
     timeSlots: [
       {
         name: 'Registration',
@@ -64,14 +64,14 @@ const schedule = [
         end: '09:15AM',
       },
       {
-        name: talks[0].name,
-        description: talks[0].talkTitle,
+        // name: talks[0].name,
+        // description: talks[0].talkTitle,
         start: '09:15AM',
         end: '09:45AM',
       },
       {
-        name: talks[1].name,
-        description: talks[1].talkTitle,
+        // name: talks[1].name,
+        // description: talks[1].talkTitle,
         start: '09:45AM',
         end: '10:15AM',
       },
@@ -82,14 +82,14 @@ const schedule = [
         end: '10:45AM',
       },
       {
-        name: talks[2].name,
-        description: talks[2].talkTitle,
+        // name: talks[2].name,
+        // description: talks[2].talkTitle,
         start: '10:45AM',
         end: '11:15AM',
       },
       {
-        name: talks[3].name,
-        description: talks[3].talkTitle,
+        // name: talks[3].name,
+        // description: talks[3].talkTitle,
         start: '11:15AM',
         end: '11:45AM',
       },
@@ -108,25 +108,26 @@ const schedule = [
     ],
   },
   {
-    timeOfDay: 'Afternoon Session',
-    date: '2022-10-14',
+    timeOfDay: 'Afternoon Session Day 1',
+    date: '2023-06-15',
     summary: '13:15 - 17:00 BST',
+    dayName: "Day 1",
     timeSlots: [
       {
-        name: talks[4].name,
-        description: talks[4].talkTitle,
+        // name: talks[4].name,
+        // description: talks[4].talkTitle,
         start: '13:15PM',
         end: '13:45PM',
       },
       {
-        name: talks[5].name,
-        description: talks[5].talkTitle,
+        // name: talks[5].name,
+        // description: talks[5].talkTitle,
         start: '13:45PM',
         end: '14:15PM',
       },
       {
-        name: talks[6].name,
-        description: talks[6].talkTitle,
+        // name: talks[6].name,
+        // description: talks[6].talkTitle,
         start: '14:15PM',
         end: '14:45PM',
       },
@@ -137,20 +138,138 @@ const schedule = [
         end: '15:15PM',
       },
       {
-        name: talks[7].name,
-        description: talks[7].talkTitle,
+        // name: talks[7].name,
+        // description: talks[7].talkTitle,
         start: '15:15PM',
         end: '15:45PM',
       },
       {
-        name: talks[8].name,
-        description: talks[8].talkTitle,
+        // name: talks[8].name,
+        // description: talks[8].talkTitle,
         start: '15:45PM',
         end: '16:15PM',
       },
       {
-        name: talks[9].name,
-        description: talks[9].talkTitle,
+        // name: talks[9].name,
+        // description: talks[9].talkTitle,
+        start: '16:15PM',
+        end: '16:45PM',
+      },
+      {
+        name: 'Closing remarks',
+        description: 'Event organisers',
+        start: '16:45PM',
+        end: '17:00PM',
+      },
+    ],
+  },
+  {
+    timeOfDay: 'Morning Session Day 2',
+    date: '2023-06-16',
+    summary: '08:30 - 13:15 BST',
+    dayName: "Day 2",
+    timeSlots: [
+      {
+        name: 'Registration',
+        description: '',
+        start: '08:30AM',
+        end: '08:50AM',
+      },
+      {
+        name: 'Opening Welcome',
+        description: 'Event organisers',
+        start: '09:00AM',
+        end: '09:15AM',
+      },
+      {
+        // name: talks[0].name,
+        // description: talks[0].talkTitle,
+        start: '09:15AM',
+        end: '09:45AM',
+      },
+      {
+        // name: talks[1].name,
+        // description: talks[1].talkTitle,
+        start: '09:45AM',
+        end: '10:15AM',
+      },
+      {
+        name: 'Morning Break',
+        description: 'Coffee, Snacks, Sponsors, Chat!',
+        start: '10:15AM',
+        end: '10:45AM',
+      },
+      {
+        // name: talks[2].name,
+        // description: talks[2].talkTitle,
+        start: '10:45AM',
+        end: '11:15AM',
+      },
+      {
+        // name: talks[3].name,
+        // description: talks[3].talkTitle,
+        start: '11:15AM',
+        end: '11:45AM',
+      },
+      {
+        name: 'Ignite talks',
+        description: '(6 x 5 minute sessions)',
+        start: '11:45PM',
+        end: '12:15PM',
+      },
+      {
+        name: 'Lunch',
+        description: 'Food, Coffee, Sponsors, Chat!',
+        start: '12:15PM',
+        end: '13:15PM',
+      },
+    ],
+  },
+  {
+    timeOfDay: 'Afternoon Session Day 2',
+    date: '2023-06-16',
+    summary: '13:15 - 17:00 BST',
+    dayName: "Day 2",
+    timeSlots: [
+      {
+        // name: talks[4].name,
+        // description: talks[4].talkTitle,
+        start: '13:15PM',
+        end: '13:45PM',
+      },
+      {
+        // name: talks[5].name,
+        // description: talks[5].talkTitle,
+        start: '13:45PM',
+        end: '14:15PM',
+      },
+      {
+        // name: talks[6].name,
+        // description: talks[6].talkTitle,
+        start: '14:15PM',
+        end: '14:45PM',
+      },
+      {
+        name: 'Afternoon Break',
+        description: 'Coffee, Snacks, Sponsors, Chat!',
+        start: '14:45PM',
+        end: '15:15PM',
+      },
+      {
+        // name: talks[7].name,
+        // description: talks[7].talkTitle,
+        start: '15:15PM',
+        end: '15:45PM',
+      },
+      {
+        // name: talks[8].name,
+        // description: talks[8].talkTitle,
+        start: '15:45PM',
+        end: '16:15PM',
+      },
+      {
+        // name: talks[9].name,
+        // description: talks[9].talkTitle,
         start: '16:15PM',
         end: '16:45PM',
       },

@@ -3,7 +3,6 @@ import Head from 'next/head'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
-import { Newsletter } from '@/components/Newsletter'
 import { Schedule } from '@/components/Schedule'
 import { Speakers } from '@/components/Speakers'
 import { Meetups } from '@/components/Meetups'
@@ -28,7 +27,6 @@ export default function Home() {
         <Speakers />
         <Sponsors />
         <Meetups />
-        {/* <Newsletter /> */}
       </main>
       <Footer />
     </>

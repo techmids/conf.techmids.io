@@ -15,13 +15,13 @@ export function Hero() {
         <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
           <h1 className="font-display text-5xl font-bold tracking-tighter text-yellow-600 sm:text-7xl">
             <span className="sr-only">TechMids Conf - </span>
-            <span className="text-yellow-700">Fri 14th Oct</span>
+            <span className="text-yellow-700">Thursday and Friday 15-16th June 2023</span>
             <br /> All day, full stack conference
           </h1>
           <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-yellow-900">
             <p>
-              <b>TechMids Conf is an all day full stack conference</b>, on
-              Friday October 14th, as <b>part of Birmingham Tech Week 2022.</b>{' '}
+              <b>TechMids Conf is an two day full stack conference</b>, on
+              15th and 16th June 2023, as a co-located event <b><a href="https://devopsdaysbirmingham.co.uk/" className="underline">part of DevOpsDays Birmingham 2023.</a></b>{' '}
             </p>
             <p>
               Hear from world class speakers, engage in social chatter, and find
