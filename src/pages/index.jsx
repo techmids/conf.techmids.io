@@ -18,6 +18,7 @@ export default function Home() {
           name="description"
           content="TechMids Conf is an all day, full stack conference on 15&16th June 2023! Come along for a day of inspiring talks, social chatter and fun."
         />
+        <meta name="image" property="og:image" content="/launch.png"/>
       </Head>
       <Header />
       <main>
