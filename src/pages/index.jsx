@@ -16,7 +16,7 @@ export default function Home() {
         <title>TechMids Conf - A community-driven tech conference</title>
         <meta
           name="description"
-          content="TechMids Conf is an all day, full stack conference on Fri Oct 14th 2022! Come along for a day of inspiring talks, social chatter and fun."
+          content="TechMids Conf is an all day, full stack conference on 15&16th June 2023! Come along for a day of inspiring talks, social chatter and fun."
         />
       </Head>
       <Header />
