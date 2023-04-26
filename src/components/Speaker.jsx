@@ -15,12 +15,12 @@ export function Speaker(props) {
       linkedin,
       website,
       youtube,
-      fullSession,
+      sessionType,
     },
   } = props
-  const twitterURL = `https://twitter.com/${twitter}`
-  const linkedinURL = `https://www.linkedin.com/in/${linkedin}`
-  const youtubeURL = `https://www.youtube.com/c/${youtube}`
+  const twitterURL = twitter?.startsWith("http")? twitter: `https://twitter.com/${twitter}`
+  const linkedinURL = linkedin?.startsWith("http")? linkedin: `https://www.linkedin.com/in/${linkedin}`
+  const youtubeURL = youtube?.startsWith("http")? youtube: `https://www.youtube.com/c/${youtube}`
 
   return (
     <div className="bg-white pt-4 lg:py-12">
@@ -60,8 +60,6 @@ export function Speaker(props) {
                   className="transition duration-300 group-hover:scale-110"
                   src={image}
                   alt=""
-                  layout="fill"
-                  objectFit="cover"
                   priority
                   sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
                 />
@@ -78,7 +76,7 @@ export function Speaker(props) {
                     </h1>
                   </div>
                   <div>
-                    <h2 className="space- text-md font-display font-bold tracking-tighter text-yellow-800 sm:text-lg">
+                    <h2 className="space-y-6 text-md font-display font-bold tracking-tighter text-yellow-800 sm:text-lg">
                       <br /> {bio}
                     </h2>
                   </div>
@@ -190,7 +188,7 @@ export function Speaker(props) {
           </h2>
           <h3 className="space-y-12 font-display text-2xl font-bold tracking-tighter text-yellow-400 sm:text-2xl">
             <br /> Session Type:{' '}
-            {fullSession ? '30 Minute Session' : '5 Minute Ignite'}
+            {sessionType !== 'ignite'? '30 Minute Session' : '5 Minute Ignite'}
           </h3>
           <div className="text-md mt-6 space-y-6 font-display tracking-tight text-black sm:text-lg">
             {description}

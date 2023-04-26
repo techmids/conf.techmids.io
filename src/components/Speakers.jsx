@@ -4,14 +4,14 @@ import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import {SpeakersDay1, SpeakersDay2} from "../../speakers";
+import {SessionsDay1, SpeakersDay2} from "../../speakers";
 
 const days = [
   {
     name: 'Day 1',
     date: 'June 15th',
     dateTime: '2023-06-15',
-    speakers: SpeakersDay1,
+    speakers: SessionsDay1,
   },
   {
     name: 'Day 2',
@@ -159,8 +159,6 @@ export function Speakers() {
                             className="transition duration-300 group-hover:scale-110"
                             src={speaker.image}
                             alt=""
-                            layout="fill"
-                            objectFit="cover"
                             priority
                             sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
                           />
@@ -171,7 +169,7 @@ export function Speakers() {
                       </h3>
                       <p>{speaker.jobTitle}</p>
                       <p className="mt-1 text-base tracking-tight text-slate-500">
-                        {speaker.fullSession
+                        {speaker.sessionType === 'session'
                           ? '30 Minute Session'
                           : '5 Minute Ignite'}
                       </p>

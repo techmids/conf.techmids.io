@@ -27,9 +27,20 @@ const sponsorTiers = {
                 name: "The StackWizards",
                 image: "/sponsors/stackwizards.png",
                 url: "https://stackwizards.com/"
-            }
+            },
+
         ]
     },
+    lanyard: {
+        name: "Lanyard Sponsor",
+        sponsors: [
+            {
+                name: "Vonage",
+                image: "/sponsors/vonage.png",
+                url: "https://vonage.dev/"
+            }
+        ]
+    }
 }
 
 const imageDimensions = {
@@ -72,6 +83,8 @@ export function SponsorTiers() {
             {printSponsors("Gold", sponsorTiers.gold.sponsors)}
             {printSponsors("Silver", sponsorTiers.silver.sponsors)}
             {printSponsors("Bronze", sponsorTiers.bronze.sponsors, 0.5)}
+            {printSponsors("Lanyard", sponsorTiers.lanyard.sponsors, 0.5)}
+
         </div>
     )
 }
