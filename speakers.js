@@ -14,8 +14,7 @@ import KrisztianImage from '@/images/avatars/krisztian-fekete.jpg'
 import  AnaisImage from '@/images/avatars/anais-urlichs.png'
 import BaruchImage from '@/images/avatars/baruch-sadogursky.jpg'
 import SimonImage from '@/images/avatars/simon-gurney.jpg'
-export const SpeakersDay2 = []
-export const SessionsDay1 = []
+
 
 export const Sessions= {
     "antonio-cobo": {
@@ -517,3 +516,6 @@ export const Sessions= {
         sessionType: 'session'
     }
 }
+
+export const SpeakersDay2 = []
+export const SessionsDay1 = []
