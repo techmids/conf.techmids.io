@@ -40,6 +40,16 @@ const sponsorTiers = {
                 url: "https://vonage.dev/"
             }
         ]
+    },
+    talent: {
+        name: "Talent Solutions Sponsor",
+        sponsors: [
+            {
+                name: "Spinks",
+                image: "/sponsors/spinks.png",
+                url: "https://www.wearespinks.com/"
+            },
+            ]
     }
 }
 

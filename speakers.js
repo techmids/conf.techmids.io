@@ -516,6 +516,3 @@ export const Sessions= {
         sessionType: 'session'
     }
 }
-
-export const SpeakersDay2 = []
-export const SessionsDay1 = []

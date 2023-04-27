@@ -17,7 +17,7 @@ export default function SpeakerPage() {
     const speakerProfile = Sessions[speaker]
 
     if (!speakerProfile) {
-        router.replace(`/`)
+        router.replace(`/speakers`)
         return <div></div>
     }
     return (
