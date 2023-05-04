@@ -116,6 +116,7 @@ const reasons = [
     "We are the best way to get in front of the West Midlands developer community",
     "We sell out of tickets every year, filling the 350+ seater venue",
     "We have a great reputation in the community",
+    "Run by a team of volunteers, we are a not-for-profit event",
 ]
 
 function classNames(...classes) {
