@@ -5,35 +5,33 @@ import {Footer} from "@/components/Footer";
 import {Images} from "@/components/Images";
 import SponsorUsCTA from "@/components/SponsorUsCTA";
 import {EVENT} from "../../event";
+import {Sponsors} from "@/components/Sponsors";
 
 const tiers = [
-    // {
-    //     name: 'Lanyard',
-    //     id: 'tier-lanyard',
-    //     quantity: 1,
-    //     quantitySold: 0,
-    //     price: "£2500 + VAT",
-    //     features: [
-    //         'Ability to leave your stickers/swag at our swag drop table',
-    //         'Your logo on our lanyards',
-    //         'Two free tickets',
-    //     ],
-    //     featured: false,
-    // },
-    // {
-    //     name: 'Tote Bag',
-    //     id: 'tier-tote',
-    //     quantity: 1,
-    //     quantitySold: 0,
-    //     price: "£2500 + VAT",
-    //     features: [
-    //         'Ability to leave your stickers/swag at our swag drop table',
-    //         'Your logo on our Tote Bags given to each attendee',
-    //         'You can provide stickers/leaflet to go into the bags',
-    //         'Two free tickets',
-    //     ],
-    //     featured: false,
-    // },
+    {
+        name: 'Lanyard',
+        id: 'tier-lanyard',
+        quantity: 1,
+        quantitySold: 1,
+        price: "SOLD OUT",
+        features: [
+            'Ability to leave your stickers/swag at our swag drop table',
+            'Your logo on our lanyards',
+        ],
+        featured: false,
+    },
+    {
+        name: ' Talent Solutions',
+        id: 'tier-talent',
+        quantity: 1,
+        quantitySold: 1,
+        price: "SOLD OUT",
+        features: [
+            'Ability to leave your stickers/swag at our swag drop table',
+            'A table at the conference to provide talent solutions to attendees',
+        ],
+        featured: false,
+    },
     {
         name: 'Badge',
         id: 'tier-badge',
@@ -117,13 +115,14 @@ const reasons = [
     "We sell out of tickets every year, filling the 350+ seater venue",
     "We have a great reputation in the community",
     "Run by a team of volunteers, we are a not-for-profit event",
+    "Associate yourself with a great event and a great community",
 ]
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function Sponsorship() {
     return (
         <>
             <Head>
@@ -136,13 +135,11 @@ export default function Example() {
             </Head>
             <Header />
             <main>
-
-
-                <div className="bg-white py-24 sm:py-32">
+                <div className="bg-white py-12 sm:py-24">
                     <div className="mx-auto px-6 lg:px-8 lg:max-w-[75%]">
                         <div className="mx-auto max-w-4xl text-center">
                             <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-                                Pricing for Sponsorship of the next TechMids Conf
+                                Why Sponsor Us?
                             </p>
 
                         </div>
@@ -250,6 +247,7 @@ export default function Example() {
                     </div>
                     <Images/>
                     <SponsorUsCTA/>
+                    <Sponsors/>
                 </div>
             </main>
             <Footer />
