@@ -94,6 +94,18 @@ const tiers = [
         featured: false,
     },
     {
+        name: 'Live-Stream',
+        id: 'tier-live',
+        quantity: 1,
+        quantitySold: 0,
+        price: "£6000 + VAT",
+        features: [
+            'Ability to leave your stickers/swag at our swag drop table',
+            'Exclusive branding on the main-track live-stream and recordings',
+        ],
+        featured: false,
+    },
+    {
         name: 'Custom',
         id: 'tier-custom',
         price: 'Custom',
