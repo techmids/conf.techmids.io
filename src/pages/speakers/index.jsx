@@ -13,7 +13,7 @@ export const SpeakersPage = () => {
                 <title>TechMids Conf - A community-driven tech conference</title>
                 <meta
                     name="description"
-                    content="Our 2023 Speaker lineup"
+                    content="Our Speaker lineup"
                 />
             </Head>
             <Header/>

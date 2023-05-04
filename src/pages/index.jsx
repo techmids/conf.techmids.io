@@ -8,6 +8,7 @@ import { Speakers } from '@/components/Speakers'
 import { Meetups } from '@/components/Meetups'
 import { Sponsors } from '@/components/Sponsors'
 import { Images } from '@/components/Images'
+import {EVENT} from "../../event";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
         <title>TechMids Conf - A community-driven tech conference</title>
         <meta
           name="description"
-          content="TechMids Conf is an all day, full stack conference on 15&16th June 2023! Come along for a day of inspiring talks, social chatter and fun."
+          content={`TechMids Conf is an all day, full stack conference on ${EVENT.date} Come along for a day of inspiring talks, social chatter and fun.`}
         />
         <meta name="image" property="og:image" content="/launch.png"/>
       </Head>
