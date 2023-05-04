@@ -194,7 +194,7 @@ export default function Sponsorship() {
                                     </h3>
                                     <p className={classNames(tier.featured ? 'text-gray-300' : 'text-gray-600', 'mt-4 text-sm leading-6')}>
                                         {tier.quantitySold < tier.quantity?
-                                            `${tier.quantity - tier.quantitySold} of ${tier.quantity} available`:
+                                            `${tier.quantity - tier.quantitySold} available`:
                                             `Sold out`}
 
                                     </p>
@@ -226,7 +226,7 @@ export default function Sponsorship() {
                                             'mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2'
                                         )}
                                     >
-                                        {tier.quantitySold !== tier.quantity? `Contact Us`: `Sold Out`}
+                                        {tier.quantitySold < tier.quantity? `Contact Us`: `Sold Out`}
                                     </a>
                                     <ul
                                         role="list"
