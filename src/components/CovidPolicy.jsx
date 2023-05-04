@@ -131,14 +131,6 @@ export function CovidPolicy() {
             </span>
           </h2>
           <p className="mt-8 text-xl leading-8 text-gray-500">
-            Ask that you ensure you have at least three Covid vaccinations
-          </p>
-          <li className="mt-8 text-xl leading-8 text-gray-500">
-            If you have medical reasons why you have not been vaccinated please
-            let the volunteers know. We understand there will need to be
-            exemptions for some cases.
-          </li>
-          <p className="mt-8 text-xl leading-8 text-gray-500">
             We ask you to take a lateral flow test prior to attending the event
           </p>
           <p className="mt-8 text-xl leading-8 text-gray-500">
@@ -148,10 +140,6 @@ export function CovidPolicy() {
           </p>
           <p className="mt-8 text-xl leading-8 text-gray-500">
             Lateral flow tests can be ordered online from most pharmacies.
-          </p>
-          <p className="mt-8 text-xl leading-8 text-gray-500">
-            You will have space on your lanyard badge to indicate your social
-            disatancing and communication preferences if you wish to do so.
           </p>
           <p className="mt-8 text-xl leading-8 text-gray-500">
             We thank you in advance for being respectful about peoples choices
