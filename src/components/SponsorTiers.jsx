@@ -18,6 +18,11 @@ const sponsorTiers = {
                 image: "/sponsors/openuk.png",
                 url: "https://www.openuk.uk/"
             },
+            {
+                name: "Jump24",
+                image: "/sponsors/jump24.svg",
+                url: "https://jump24.co.uk/"
+            }
         ],
     },
     bronze: {
