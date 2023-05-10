@@ -93,6 +93,21 @@ const tiers = [
         featured: false,
     },
     {
+        name: 'Evening Event',
+        id: 'tier-evening',
+        price: "£6000 + VAT",
+        quantity: 1,
+        quantitySold: 0,
+        features: [
+            'Exclusive sponsorship of the evening event',
+            'Dedicated sponsorship and branding (e.g. rollup banners) at the evening event',
+            'Large logos on our website',
+            'A dedicated tweet and LinkedIn post',
+            'Large logo on our slide deck',
+        ],
+        featured: false,
+    },
+    {
         name: 'Live-Stream',
         id: 'tier-live',
         quantity: 1,
