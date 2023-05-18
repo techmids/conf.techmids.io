@@ -17,7 +17,6 @@ import SimonImage from '@/images/avatars/simon-gurney.jpg'
 import BenImage from '@/images/avatars/ben-madley.png'
 import BenHImage from '@/images/avatars/ben-hirschberg.jpg'
 import CarlyImage from '@/images/avatars/carly-richmond.jpeg'
-import LianImage from '@/images/avatars/lian-li.png'
 import AndyImage from '@/images/avatars/andy-burgin.png'
 export const Sessions= {
     "antonio-cobo": {
@@ -773,43 +772,6 @@ export const Sessions= {
         linkedin: "https://www.linkedin.com/in/carly-richmond-b4b03563/",
         twitter: "CarlyLRichmond",
         website: "",
-        sessionType: "session",
-    },
-    "lian-li": {
-        name: "Lian Li",
-        jobTitle: "Developer Advocate",
-        bio: (
-            <>
-                <p>
-                </p>
-                Lian always wanted to save the world
-                <p>
-                    After a failed attempt at becoming a lawyer, she decided to do something with computers instead. Working as a Fullstack Software Engineer, she got into attending tech events and giving talks on Machine Learning. During this time, she fell in love with the tech community and discovered her passion for building community and providing a safe and productive environment for all, which led to her co-organising the community conference ServerlessDays Amsterdam.
-                </p>
-                <p>
-                    Currently, Lian lives in Amsterdam and works as Developer Advocate at Loft Labs, trying to make developing on Kubernetes easy and fun.
-                </p>
-            </>
-        ),
-        talkTitle:
-            "Systems Thinking for Dev Organisations",
-        description: (
-            <>
-                <p>
-                    Systems thinking has been a hot button topic inside and outside the tech industry, as it promises a straightforward and structured approach to make sense of the world and its complexities. By looking at systems in terms of elements and their relationships, Systems Thinkers can understand and predict behaviors, as well as affect long-lasting change.
-                </p>
-                <p>
-                    Understanding that tech organizations, dev teams and their individual members are themselves systems, following their own purposes and structures, can help us better support developers in their goals.
-                </p>
-                <p>
-                    In this talk, we will learn about the basics and mechanisms that inform systems thinking. We will look at examples from the real world to understand why systems behave the way they do and how we can enable change. Finally, we will adapt what we learned to development organizations and discuss how systems thinking can help us improve developer efficiency and happiness.
-                </p>
-            </>
-        ),
-        image: LianImage,
-        linkedin: "https://www.linkedin.com/in/lian-li/",
-        twitter: "lianmakesthings",
-        website: "https://lianmakesthings.dev/",
         sessionType: "session",
     },
     "andy-burgin": {
