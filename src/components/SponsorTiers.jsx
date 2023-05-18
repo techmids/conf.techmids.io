@@ -7,7 +7,13 @@ const sponsorTiers = {
     },
     gold: {
         name: "Gold Sponsors",
-        sponsors: []
+        sponsors: [
+            {
+                name: "Akeyless",
+                image: "/sponsors/akeyless.png",
+                url: "https://www.akeyless.io/"
+            }
+        ]
     },
     silver: {
 
@@ -22,6 +28,11 @@ const sponsorTiers = {
                 name: "Jump24",
                 image: "/sponsors/jump24.svg",
                 url: "https://jump24.co.uk/"
+            },
+            {
+                name: "BJSS",
+                image: "/sponsors/bjss.png",
+                url: "https://www.bjss.com/"
             }
         ],
     },
@@ -33,7 +44,11 @@ const sponsorTiers = {
                 image: "/sponsors/stackwizards.png",
                 url: "https://stackwizards.com/"
             },
-
+            {
+                name: "ManyPets",
+                image: "/sponsors/manypets.svg",
+                url: "https://manypets.com/"
+            }
         ]
     },
     lanyard: {

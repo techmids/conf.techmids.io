@@ -1,8 +1,4 @@
-import { ButtonLink } from '@/components/Button'
-import { Container } from '@/components/Container'
-import { MailIcon } from '@heroicons/react/solid'
 import { SponsorTiers } from './SponsorTiers'
-import {Component} from "react";
 import SponsorUsCTA from "@/components/SponsorUsCTA";
 
 export function Sponsors() {
