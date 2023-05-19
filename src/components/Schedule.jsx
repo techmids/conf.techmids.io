@@ -108,7 +108,7 @@ const scheduleTrack1 = [
     ],
   },
   {
-    timeOfDay: 'Auditorium Afternoon Day 2',
+    timeOfDay: 'Auditorium Morning Day 2',
     date: '2023-06-16',
     summary: '08:30 - 13:15 BST',
     dayName: "Day 2",
