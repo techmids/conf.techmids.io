@@ -24,6 +24,7 @@ import MaxWImage from '@/images/avatars/max-woolf.jpg'
 import SalmaANImage from '@/images/avatars/salma-alam-naylor.png'
 import EliHImage from '@/images/avatars/eli-holderness.jpeg'
 import SteveHImage from '@/images/avatars/steve-heyes.png'
+import JoannaSImage from '@/images/avatars/joanna-suau.jpg'
 
 export const Sessions= {
     "antonio-cobo": {
@@ -827,7 +828,9 @@ export const Sessions= {
             <>
                 <p>
                     With the competition for hiring being at an all time high, it;s imperative that you're creating a happy and rewarding environment for your employees. Through Hannah's extensive experience of hiring within the software sector & building tech communities, she’ll provide you with a handy guide to retaining and nurturing your team.
+                    
                     Happiness is not something that is often associated with work life, but Hannah's hear to tell you it can be! With the pressures of day to day tasks we forget that there is more to running and growing a team. Happiness is something that we need to make a priority, and when we do it has amazing results!
+                    
                     We'll be looking at ways you can start the path to happiness at work with practical tips that will have immediate impact, and support with retaining happy, productive teams.
                 </p>
             </>
@@ -853,6 +856,7 @@ export const Sessions= {
             <>
                 <p>
                     About privacy, and how people are scared and uneasy about what's being done with their data. And how we need to stop building new technology and start working out how to explain to everyone that it is possible to build a world where you don't have to feel exploited and frightened and you still have all the same internet superpowers that you have today.
+                    
                     We'll help developers understand how to build web apps that preserve privacy without giving up their technology, help managers to learn how to help users feel in control while still meeting their business goals, and help founders understand that privacy is an advantage that their rivals won't, or can't, compete with. Stuart Langridge, the author of http://web.dev's Learn Privacy course and contributor to Smashing Magazine's Ethics and Privacy, shows how for users, developers, managers, and founders, privacy could be the next big thing
                 </p>
             </>
@@ -878,7 +882,9 @@ export const Sessions= {
             <>
                 <p>
                     Being told that something you worked hard on isn't perfect is uncomfortable. Telling others something that they worked hard on isn't perfect is even harder.
+                    
                     Code review is a critical part of being a software engineer and doing it well can be a huge factor when looking to progress your career to a senior level and beyond. In this 30 minute talk, I'll give a history of how I learned to be a code reviewer, how *you* can be a better reviewer and, most importantly, how not to want to cry and throw in the towel when someone tells you your code isn't perfect.
+                    
                     **We are not our code**, and the quicker we become comfortable with it, the quicker we can reach code review nirvana.
                 </p>
             </>
@@ -902,6 +908,7 @@ export const Sessions= {
             <>
                 <p>
                     As a front end developer you're juggling countless skills. Responsive design, building for accessibility, browser support, page performance — it's a lot. And if you want to go Full Stack™️, it can be a challenge to find the time and brain space to learn how to scale and secure a back end on top of building the app itself. So how can you unlock your full stack potential without the pain? You fake it, don't make it! (The back end, that is.)
+                    
                     In this talk, you'll learn how serverless and edge runtimes are empowering front end developers to be more productive than ever, and how we as front end devs, can leverage this modern tooling to do things we only ever dreamed of.
                 </p>
             </>
@@ -927,8 +934,11 @@ export const Sessions= {
             <>
                 <p>
                     For millennia, humans have known things. Pretty quickly, we started writing them down; our brains aren't particularly good at storing all the things we know reliably, and we needed something more durable.
+                    
                     A long time ago, 'writing things down' looked like clay tablets with cuneiform on them, and affairs have only got more complicated from there. Nowadays, we try and write things down so that computers can understand them too, and that's given us a bewildering array of options - HDDs, SSDs, magnetic tape storage and so much more.
+                    
                     In this talk, we're going to take a look at the history of writing things down, and discuss why some methods have worked better than others. We're going to talk about why writing things down for humans is different than doing it for a computer, and why that makes it difficult to try and do both at the same time (this is what code is). Finally, we'll take a look at what the state-of-the-art is today for keeping data safe, and what the future might hold.
+                    
                     This talk has no prerequisites, although a fondness for weird facts will certainly enhance the experience.
                 </p>
             </>
@@ -959,6 +969,31 @@ export const Sessions= {
         image: SteveHImage,
         linkedin: "https://www.linkedin.com/in/steveheyes/",
         twitter: "https://twitter.com/mrsteveheyes",
+        sessionType: "session",
+    },
+    "joanna-suau": {
+        name: "Joanna Suau",
+        jobTitle: "Developer Educator at Infobip",
+        bio: (
+            <>
+                <p>
+                </p>
+            </>
+        ),
+        talkTitle:
+            "Why docs-as-code peer review should be part of your dev cycle",
+        description: (
+            <>
+                <p>
+                    Docs-as-code is a method of writing documentation in which the documentation is treated like source code and follows a similar workflow.
+
+                    In this talk, Joanna will explore in more detail why the docs-as-code approach is important to both content creators and developers, what's the difference between a normal review cycle and a docs-as-code one, and how exactly such approach benefits the development cycle."
+                </p>
+            </>
+        ),
+        image: JoannaSImage,
+        linkedin: "https://www.linkedin.com/in/joannasuau/",
+        twitter: "https://twitter.com/JoannaSuau",
         sessionType: "session",
     },
     // "": {
