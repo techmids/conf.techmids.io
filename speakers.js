@@ -895,7 +895,7 @@ export const Sessions= {
             </>
         ),
         talkTitle:
-            "How to code review, effectively",
+            "Fake it, don’t make it. How serverless can level up your front end game and unlock your full stack potential",
         description: (
             <>
                 <p>
