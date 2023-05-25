@@ -25,6 +25,7 @@ import SalmaANImage from '@/images/avatars/salma-alam-naylor.png'
 import EliHImage from '@/images/avatars/eli-holderness.jpeg'
 import SteveHImage from '@/images/avatars/steve-heyes.png'
 import JoannaSImage from '@/images/avatars/joanna-suau.jpg'
+import ZakariyaMImage from '@/images/avatars/zakariya-mohummed.jpeg'
 
 export const Sessions= {
     "antonio-cobo": {
@@ -994,6 +995,30 @@ export const Sessions= {
         image: JoannaSImage,
         linkedin: "https://www.linkedin.com/in/joannasuau/",
         twitter: "https://twitter.com/JoannaSuau",
+        sessionType: "session",
+    },
+    "zakariya-mohummed": {
+        name: "Zakariya Mohummed",
+        jobTitle: "Software Engineer at Huel",
+        bio: (
+            <>
+                <p>
+                
+                </p>
+            </>
+        ),
+        talkTitle:
+            "The Unconventional Engineer",
+        description: (
+            <>
+                <p>
+                    In this talk, I'll walk through my experience as a self-taught developer working towards success in the tech industry, while highlighting the value of continuous learning and adaptability.    
+                </p>
+            </>
+        ),
+        image: ZakariyaMImage,
+        linkedin: "https://www.linkedin.com/in/zakariya-mohummed-b97269155/",
+        twitter: "https://twitter.com/ZakMohummed",
         sessionType: "session",
     },
     // "": {
