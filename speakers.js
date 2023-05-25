@@ -11,13 +11,18 @@ import BeckyImage from '@/images/avatars/becky-pauley.jpeg'
 import ViktorImage from '@/images/avatars/viktor-farcic.jpg'
 import DaveImage from '@/images/avatars/dave-shepherd.jpg'
 import KrisztianImage from '@/images/avatars/krisztian-fekete.jpg'
-import  AnaisImage from '@/images/avatars/anais-urlichs.png'
+import AnaisImage from '@/images/avatars/anais-urlichs.png'
 import BaruchImage from '@/images/avatars/baruch-sadogursky.jpg'
 import SimonImage from '@/images/avatars/simon-gurney.jpg'
 import BenImage from '@/images/avatars/ben-madley.png'
 import BenHImage from '@/images/avatars/ben-hirschberg.jpg'
 import CarlyImage from '@/images/avatars/carly-richmond.jpeg'
 import AndyImage from '@/images/avatars/andy-burgin.png'
+import HannahMImage from '@/images/avatars/hannah-mitchell.jpeg'
+import StuartLImage from '@/images/avatars/stuart-langridge.jpeg'
+import MaxWImage from '@/images/avatars/max-woolf.jpg'
+import SalmaANImage from '@/images/avatars/salma-alam-naylor.png'
+
 export const Sessions= {
     "antonio-cobo": {
         name: 'Antonio Cobo',
@@ -803,6 +808,106 @@ export const Sessions= {
         linkedin: "ihttps://www.linkedin.com/in/andyburgin/",
         twitter: "andyburgin",
         website: "https://data.andyburgin.co.uk/",
+        sessionType: "session",
+    },
+    "hannah-mitchell": {
+        name: "Hannah Mitchell",
+        jobTitle: "Director at The Fusion Group",
+        bio: (
+            <>
+                <p>
+                </p>
+            </>
+        ),
+        talkTitle:
+            "Creating 'happy' at work",
+        description: (
+            <>
+                <p>
+                    With the competition for hiring being at an all time high, it;s imperative that you're creating a happy and rewarding environment for your employees. Through Hannah's extensive experience of hiring within the software sector & building tech communities, she’ll provide you with a handy guide to retaining and nurturing your team.
+                    Happiness is not something that is often associated with work life, but Hannah's hear to tell you it can be! With the pressures of day to day tasks we forget that there is more to running and growing a team. Happiness is something that we need to make a priority, and when we do it has amazing results!
+                    We'll be looking at ways you can start the path to happiness at work with practical tips that will have immediate impact, and support with retaining happy, productive teams.
+                </p>
+            </>
+        ),
+        image: HannahMImage,
+        linkedin: "https://www.linkedin.com/in/hannahmitchell-fusiongroup/",
+        twitter: "https://twitter.com/hannah_fusion",
+        website: "https://thefusionhub.co.uk/",
+        sessionType: "session",
+    },
+    "stuart-langridge": {
+        name: "Stuart Langridge",
+        jobTitle: "Director at Kryogenix",
+        bio: (
+            <>
+                <p>
+                </p>
+            </>
+        ),
+        talkTitle:
+            "Privacy Could Be The Next Big Thing",
+        description: (
+            <>
+                <p>
+                    About privacy, and how people are scared and uneasy about what's being done with their data. And how we need to stop building new technology and start working out how to explain to everyone that it is possible to build a world where you don't have to feel exploited and frightened and you still have all the same internet superpowers that you have today.
+                    We'll help developers understand how to build web apps that preserve privacy without giving up their technology, help managers to learn how to help users feel in control while still meeting their business goals, and help founders understand that privacy is an advantage that their rivals won't, or can't, compete with. Stuart Langridge, the author of http://web.dev's Learn Privacy course and contributor to Smashing Magazine's Ethics and Privacy, shows how for users, developers, managers, and founders, privacy could be the next big thing
+                </p>
+            </>
+        ),
+        image: StuartLImage,
+        linkedin: "https://www.linkedin.com/in/stuartlangridge/",
+        twitter: "https://twitter.com/sil",
+        website: "https://www.kryogenix.org/",
+        sessionType: "session",
+    },
+    "max-woolf": {
+        name: "Max Woolf",
+        jobTitle: "Staff Engineer at Gitlab",
+        bio: (
+            <>
+                <p>
+                </p>
+            </>
+        ),
+        talkTitle:
+            "How to code review, effectively",
+        description: (
+            <>
+                <p>
+                    Being told that something you worked hard on isn't perfect is uncomfortable. Telling others something that they worked hard on isn't perfect is even harder.
+                    Code review is a critical part of being a software engineer and doing it well can be a huge factor when looking to progress your career to a senior level and beyond. In this 30 minute talk, I'll give a history of how I learned to be a code reviewer, how *you* can be a better reviewer and, most importantly, how not to want to cry and throw in the towel when someone tells you your code isn't perfect.
+                    **We are not our code**, and the quicker we become comfortable with it, the quicker we can reach code review nirvana.
+                </p>
+            </>
+        ),
+        image: MaxWImage,
+        linkedin: "https://www.linkedin.com/in/maxcodes/",
+        sessionType: "session",
+    },
+    "salma-alam-naylor": {
+        name: "Salma Alam-Naylor",
+        jobTitle: "Senior Staff Developer Experience Engineer at Netlify",
+        bio: (
+            <>
+                <p>
+                </p>
+            </>
+        ),
+        talkTitle:
+            "How to code review, effectively",
+        description: (
+            <>
+                <p>
+                    As a front end developer you're juggling countless skills. Responsive design, building for accessibility, browser support, page performance — it's a lot. And if you want to go Full Stack™️, it can be a challenge to find the time and brain space to learn how to scale and secure a back end on top of building the app itself. So how can you unlock your full stack potential without the pain? You fake it, don't make it! (The back end, that is.)
+                    In this talk, you'll learn how serverless and edge runtimes are empowering front end developers to be more productive than ever, and how we as front end devs, can leverage this modern tooling to do things we only ever dreamed of.
+                </p>
+            </>
+        ),
+        image: SalmaANImage,
+        linkedin: "https://www.linkedin.com/in/whitep4nth3r/",
+        twitter: "https://twitter.com/whitep4nth3r",
+        website: "https://whitep4nth3r.com/",
         sessionType: "session",
     },
     // "": {
