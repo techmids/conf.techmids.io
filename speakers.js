@@ -23,6 +23,7 @@ import StuartLImage from '@/images/avatars/stuart-langridge.jpeg'
 import MaxWImage from '@/images/avatars/max-woolf.jpg'
 import SalmaANImage from '@/images/avatars/salma-alam-naylor.png'
 import EliHImage from '@/images/avatars/eli-holderness.jpeg'
+import SteveHImage from '@/images/avatars/steve-heyes.png'
 
 export const Sessions= {
     "antonio-cobo": {
@@ -935,6 +936,29 @@ export const Sessions= {
         image: EliHImage,
         linkedin: "https://www.linkedin.com/in/eli-holderness-4890b886/",
         twitter: "https://twitter.com/EliHolderness",
+        sessionType: "session",
+    },
+    "steve-heyes": {
+        name: "Steve Heyes",
+        jobTitle: "Engineering Manager at Birdie",
+        bio: (
+            <>
+                <p>
+                </p>
+            </>
+        ),
+        talkTitle:
+            "Debunking The Myths Of Leadership",
+        description: (
+            <>
+                <p>
+                    There are a lot of books and talk about being a good leader, and yet a good leader seems to be rare to find. In this talk Steve will be looking at the myths surrounding leadership and how you don't need to be in the C-Suite or a manager to be one. He'll then get into what a leader actually is and how to grow at being one. 
+                </p>
+            </>
+        ),
+        image: SteveHImage,
+        linkedin: "https://www.linkedin.com/in/steveheyes/",
+        twitter: "https://twitter.com/mrsteveheyes",
         sessionType: "session",
     },
     // "": {
