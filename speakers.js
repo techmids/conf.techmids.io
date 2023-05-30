@@ -26,6 +26,7 @@ import EliHImage from '@/images/avatars/eli-holderness.jpeg'
 import SteveHImage from '@/images/avatars/steve-heyes.png'
 import JoannaSImage from '@/images/avatars/joanna-suau.jpg'
 import ZakariyaMImage from '@/images/avatars/zakariya-mohummed.jpeg'
+import OmarQImage from '@/images/avatars/omar-qureshi.png'
 
 export const Sessions= {
     "antonio-cobo": {
@@ -995,6 +996,29 @@ export const Sessions= {
         image: JoannaSImage,
         linkedin: "https://www.linkedin.com/in/joannasuau/",
         twitter: "https://twitter.com/JoannaSuau",
+        sessionType: "session",
+    },
+    "omar-qureshi": {
+        name: "Omar Qureshi",
+        jobTitle: "Senior Devops Engineer at SEGA HARDlight",
+        bio: (
+            <>
+                <p>
+                
+                </p>
+            </>
+        ),
+        talkTitle:
+            "Breaking Out of Silos",
+        description: (
+            <>
+                <p>
+                    Understanding and embracing the SRE/DevOps mindset goes beyond filling roles—it's a transformative strategy to drive innovation and resilience. In this talk, we'll demystify these philosophies, highlight the hurdles to their adoption in corporate environments, and provide practical guidance on instigating this cultural shift. Join us to explore the potential of SRE/DevOps principles in fostering productivity, innovation, and competitive advantage in your organization.   
+                </p>
+            </>
+        ),
+        image: OmarQImage,
+        linkedin: "https://www.linkedin.com/in/omar-qureshi-24805913/",
         sessionType: "session",
     },
     "zakariya-mohummed": {
