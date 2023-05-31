@@ -27,6 +27,8 @@ import SteveHImage from '@/images/avatars/steve-heyes.png'
 import JoannaSImage from '@/images/avatars/joanna-suau.jpg'
 import ZakariyaMImage from '@/images/avatars/zakariya-mohummed.jpeg'
 import OmarQImage from '@/images/avatars/omar-qureshi.png'
+import ElizbathLImage from '@/images/avatars/elizabeth-lawel.jpg'
+import ZarrahBImage from '@/images/avatars/zarrah-belgian.png'
 
 export const Sessions= {
     "antonio-cobo": {
@@ -1043,6 +1045,59 @@ export const Sessions= {
         image: ZakariyaMImage,
         linkedin: "https://www.linkedin.com/in/zakariya-mohummed-b97269155/",
         twitter: "https://twitter.com/ZakMohummed",
+        sessionType: "session",
+    },
+    "elizabeth-lawel": {
+        name: "Elizabeth Lawel",
+        jobTitle: "Co-Founder, MTAM Group",
+        bio: (
+            <>
+                <p>
+                
+                </p>
+            </>
+        ),
+        talkTitle:
+            "Diversity in Tech: Igniting Creative Innovation and Building a Better Future",
+        description: (
+            <>
+                <p>
+                    In a world grappling with intersecting global challenges, it's time to go beyond the status quo of talent acquisition in diversity and inclusion (D&I) initiatives. What if we could dismantle inequality and drive transformation in the 21st century? 
+
+                    In this era of rapid technological advancement, valuing diversity in tech goes beyond just achieving fairness and representation; it becomes a strategic imperative. By harnessing the collective strength of diverse perspectives, experiences, and skills, we can unlock unparalleled problem-solving abilities, unleash creativity, and deliver groundbreaking solutions and products. 
+
+                    But how do we get there? It starts by re-imagining the talent pipeline.
+                </p>
+            </>
+        ),
+        image: ElizbathLImage,
+        linkedin: "https://www.linkedin.com/in/elizabeth-zeddie-lawal-184264a1/",
+        sessionType: "session",
+    },
+    "zarrah-belgian": {
+        name: "Zarrah Belgian",
+        jobTitle: "Co-Founder, MTAM Group",
+        bio: (
+            <>
+                <p>
+                
+                </p>
+            </>
+        ),
+        talkTitle:
+            "Diversity in Tech: Igniting Creative Innovation and Building a Better Future",
+        description: (
+            <>
+                <p>
+                    In a world grappling with intersecting global challenges, it's time to go beyond the status quo of talent acquisition in diversity and inclusion (D&I) initiatives. What if we could dismantle inequality and drive transformation in the 21st century? 
+
+                    In this era of rapid technological advancement, valuing diversity in tech goes beyond just achieving fairness and representation; it becomes a strategic imperative. By harnessing the collective strength of diverse perspectives, experiences, and skills, we can unlock unparalleled problem-solving abilities, unleash creativity, and deliver groundbreaking solutions and products. 
+
+                    But how do we get there? It starts by re-imagining the talent pipeline.
+                </p>
+            </>
+        ),
+        image: ZarrahBImage,
         sessionType: "session",
     },
     // "": {
