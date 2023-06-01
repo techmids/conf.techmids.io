@@ -3,6 +3,8 @@ import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
+import {Sessions} from "../../speakers";
+import Link from "next/link";
 const scheduleTrack1 = [
   {
     room: "Main Auditorium",
@@ -24,10 +26,13 @@ const scheduleTrack1 = [
         end: '09:15AM',
       },
       {
+        session: 'leon-adato',
         start: '09:20AM',
         end: '09:50AM',
+
       },
       {
+        session: "salma-alam-naylor",
         start: '09:55AM',
         end: '10:25AM',
       },
@@ -38,10 +43,12 @@ const scheduleTrack1 = [
         end: '10:45AM',
       },
       {
+        session: "viktor-farcic",
         start: '10:50AM',
         end: '11:20AM',
       },
       {
+        session: "kat-samperi",
         start: '11:25AM',
         end: '11:55AM',
       },
@@ -78,10 +85,12 @@ const scheduleTrack1 = [
         end: '14:05PM',
       },
       {
+        session: "craig-box",
         start: '14:10PM',
         end: '14:40PM',
       },
       {
+        session: "amanda-brock",
         start: '14:40PM',
         end: '15:10PM',
       },
@@ -92,10 +101,12 @@ const scheduleTrack1 = [
         end: '15:30PM',
       },
       {
+        session: "kris-buytaert",
         start: '15:30PM',
         end: '16:00PM',
       },
       {
+        session: "joanna-suau",
         start: '16:00PM',
         end: '16:30PM',
       },
@@ -126,10 +137,12 @@ const scheduleTrack1 = [
         end: '09:15AM',
       },
       {
+        session: "kat-cosgrove",
         start: '09:20AM',
         end: '09:50AM',
       },
       {
+        session: "stuart-langridge",
         start: '09:55AM',
         end: '10:25AM',
       },
@@ -140,10 +153,12 @@ const scheduleTrack1 = [
         end: '10:45AM',
       },
       {
+        session: "zakariya-mohummed",
         start: '10:50AM',
         end: '11:20AM',
       },
       {
+        session:"baruch-sadogursky",
         start: '11:25AM',
         end: '11:55AM',
       },
@@ -180,10 +195,12 @@ const scheduleTrack1 = [
         end: '14:05PM',
       },
       {
+        session: "hila-fish",
         start: '14:10PM',
         end: '14:40PM',
       },
       {
+        session: "eli-holderness",
         start: '14:40PM',
         end: '15:10PM',
       },
@@ -194,10 +211,12 @@ const scheduleTrack1 = [
         end: '15:30PM',
       },
       {
+        session: "krisztian-fekete",
         start: '15:30PM',
         end: '16:00PM',
       },
       {
+        session: "max-woolf",
         start: '16:00PM',
         end: '16:30PM',
       },
@@ -231,10 +250,12 @@ const scheduleTrack2 = [
         end: '09:15AM',
       },
       {
+        session: "hannah-mitchell",
         start: '09:20AM',
         end: '09:50AM',
       },
       {
+        session: "fawaz-ghali",
         start: '09:55AM',
         end: '10:25AM',
       },
@@ -245,16 +266,17 @@ const scheduleTrack2 = [
         end: '10:45AM',
       },
       {
+        session: "omar-qureshi",
         start: '10:50AM',
         end: '11:20AM',
       },
       {
+        session: "elizabeth-lawel",
         start: '11:25AM',
         end: '11:55AM',
       },
       {
-        name: 'Ignite talks',
-        description: '(6 x 5 minute sessions)',
+        session: "carly-richmond",
         start: '12:00PM',
         end: '12:30PM',
       },
@@ -341,10 +363,12 @@ const scheduleTrack2 = [
         end: '09:15AM',
       },
       {
+        session: "lin-sun",
         start: '09:20AM',
         end: '09:50AM',
       },
       {
+        session: "simon-gurney",
         start: '09:55AM',
         end: '10:25AM',
       },
@@ -355,16 +379,17 @@ const scheduleTrack2 = [
         end: '10:45AM',
       },
       {
+        session: "esther-barthel",
         start: '10:50AM',
         end: '11:20AM',
       },
       {
+        session: "steve-heyes",
         start: '11:25AM',
         end: '11:55AM',
       },
       {
-        name: 'Ignite talks',
-        description: '(6 x 5 minute sessions)',
+        session: "andy-burgin",
         start: '12:00PM',
         end: '12:30PM',
       },
@@ -525,15 +550,31 @@ function TimeSlots({ day, className }) {
               {timeSlotIndex > 0 && (
                   <div className="bg--500/10 mx-auto mb-8 h-px w-48" />
               )}
-              <h4 className="text-lg font-semibold tracking-tight text-yellow-900">
-                {timeSlot.name}
-              </h4>
-              {timeSlot.description && (
-                  <>
+              {timeSlot.session && (
+                  <Link href={`/speakers/${timeSlot.session}`}>
+                    <h4 className="text-lg font-semibold tracking-tight text-yellow-900">
+                      {timeSlot.name}
+                      {Sessions[timeSlot.session]?.name}
+                    </h4>
                     <p className="sr-only">talking about</p>
                     <p className="mt-1 tracking-tight text-yellow-900">
-                      {timeSlot.description}
+                      {Sessions[timeSlot.session]?.talkTitle}
                     </p>
+                  </Link>
+              )}
+              {!timeSlot.session && (
+                  <>
+                    <h4 className="text-lg font-semibold tracking-tight text-yellow-900">
+                      {timeSlot.name}
+                    </h4>
+                    {timeSlot.description && (
+                        <>
+                          <p className="sr-only">talking about</p>
+                          <p className="mt-1 tracking-tight text-yellow-900">
+                            {timeSlot.description}
+                          </p>
+                        </>
+                    )}
                   </>
               )}
               <p className="sr-only">at</p>
@@ -548,6 +589,7 @@ function TimeSlots({ day, className }) {
                 BST
               </p>
             </div>
+
         ))}
       </div>
   )
