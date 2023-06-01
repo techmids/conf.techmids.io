@@ -15,7 +15,6 @@ import AnaisImage from '@/images/avatars/anais-urlichs.png'
 import BaruchImage from '@/images/avatars/baruch-sadogursky.jpg'
 import SimonImage from '@/images/avatars/simon-gurney.jpg'
 import BenImage from '@/images/avatars/ben-madley.png'
-import BenHImage from '@/images/avatars/ben-hirschberg.jpg'
 import CarlyImage from '@/images/avatars/carly-richmond.jpeg'
 import AndyImage from '@/images/avatars/andy-burgin.png'
 import HannahMImage from '@/images/avatars/hannah-mitchell.jpeg'
@@ -27,8 +26,11 @@ import SteveHImage from '@/images/avatars/steve-heyes.png'
 import JoannaSImage from '@/images/avatars/joanna-suau.jpg'
 import ZakariyaMImage from '@/images/avatars/zakariya-mohummed.jpeg'
 import OmarQImage from '@/images/avatars/omar-qureshi.png'
-import ElizbathLImage from '@/images/avatars/elizabeth-lawel.jpg'
+import ElizbathLImage from '@/images/avatars/elizabeth-lawal.jpg'
 import ZarrahBImage from '@/images/avatars/zarrah-belgian.png'
+import CraigImage from '@/images/avatars/craig-box.jpg'
+import KatCosgroveImage from '@/images/avatars/kat-cosgrove.jpg'
+import AmandaBImage from '@/images/avatars/amanda-brock.jpg'
 
 export const Sessions= {
     "antonio-cobo": {
@@ -722,18 +724,16 @@ export const Sessions= {
         website: '',
         sessionType: 'ignite'
     },
-    "ben-hirschberg": {
-        name: "Ben Hirschberg",
+    "craig-box": {
+        name: "Craig Box",
         jobTitle: "VP Engineering & Co-Founder, ARMO",
         bio: (
             <>
                 <p>
-                    Ben is a veteran cybersecurity and DevOps professional, as well as computer science lecturer. Today,
-                    he is the co-founder at ARMO, with a vision of making end-to-end Kubernetes security simple for
-                    everyone, and a core maintainer of the open source Kubescape project. He teaches advanced
-                    information security academically in both undergrad and graduate courses. In his previous
-                    capacities, he has been a security researcher and architect, pen-tester and lead developer at Cisco,
-                    NDS and Siemens.
+                    VP of Open Source and Community at ARMO
+                    Craig Box is VP of Open Source and Community at ARMO, the enterprise company that created the CNCF Kubernetes security platform Kubescape.
+                    Prior to this role, Craig had a number of roles at Google, including as a lead for the Istio open source project, and the Cloud Native developer relations team, responsible for Kubernetes, GKE and Anthos. He was the founder and co-host of the Kubernetes Podcast from Google, producing the top 20 show for over four years.
+                    Craig has worked with Cloud Native customers and communities since the launch of Kubernetes in 2014, and has delivered talks on 6 continents, including a KubeCon keynote. He started his career when DevOps was called "systems administration", and has 20 years of experience in development, deployment, DevOps, consulting, advisory and management roles around the world.
                 </p>
             </>
         ),
@@ -749,7 +749,7 @@ export const Sessions= {
                 </p>
             </>
         ),
-        image: BenHImage,
+        image: CraigImage,
         linkedin: "https://www.linkedin.com/in/benyamin-ben-hirschberg-66141890/",
         twitter: "slashben81",
         website: "https://armosec.io/blog",
@@ -1098,6 +1098,89 @@ export const Sessions= {
             </>
         ),
         image: ZarrahBImage,
+        sessionType: "session",
+    },
+    "kat-cosgrove": {
+        name: "Kat Cosgrove",
+        jobTitle: "Lead Developer Advocate at Dell",
+        bio: (
+            <>
+                <p>
+                    Kat Cosgrove is a Developer Advocate and an actual cyborg. Her professional background has run the gamut from bartender, to video store clerk, to teacher, to software developer. Her specialty is approachable 101-level content for junior developers or anyone else who considers themselves a newbie, with a particular focus on DevOps. She has served on the Kubernetes release team since v1.22.
+                </p>
+                <p>
+                    When she's not building demos or at a conference, she spends her time playing video games, watching horror movies, and reading science fiction. She lives in Scotland with her cat, Espresso, who is the real brains behind the operation and actually ghostwriting all of her tweets.
+                </p>
+            </>
+        ),
+        talkTitle:
+            "Historical Context: Infrastructure as Code",
+        description: (
+            <>
+                <p>
+                    We rely on context a lot as software engineers, passing state around so one function knows what the last did, and how it was impacted by the one before that, and on and on. Without passing around context, a lot of things would be much more difficult to build, or at least much more wordy. People need context too. Sure, we’re smarter than a function that only knows how to do one thing, and we can figure it out eventually, but it’s easier to learn a new tool or concept if someone gives us the historical context.
+                </p>
+                <p>
+                    This is especially true as the cloud native space grows further into the mainstream. Abstractions are great, but they can create a hostile learning environment for anyone touching these tools for the first time, new and experienced engineers alike. You need to be given the historical context for these tools, to understand the technical hurdles and pain points that led to doing things the way we do now. In this talk, I’ll give you the historical context of infrastructure as code – what that means, how we got from Makefiles to here, and why we need it.
+                </p>
+            </>
+        ),
+        image: KatCosgroveImage,
+        linkedin: "https://www.linkedin.com/in/katcosgrove",
+        twitter: "dixie3flatline",
+        website: "",
+        sessionType: "session",
+    },
+    "amanda-brock": {
+        name: "Amanda Brock",
+        jobTitle: "CEO of OpenUK",
+        bio: (
+            <>
+                <p>
+                    Amanda Brock is CEO of OpenUK the UK organisation for the business of Open Technology –
+                    open source software, open hardware and open data - with a purpose of UK Leadership and
+                    International Collaboration in Open Technology and she is the Executive Producer of State
+                    of Open Con https://stateofopencon.com/
+                    </p>
+                <p>
+                    She is a Board Member of the Open Source Initiative; appointed member of the Cabinet
+                    Office's Open Standards Board; Member of the British Computer Society Inaugural Influence
+                    Board; Advisory Board Member, Sustainable Digital Infrastructure Alliance and Mimoto; and
+                    European Representative of the Open Invention Network.
+                    </p>
+                <p>
+                    A lawyer of 25 years’ experience, she previously chaired the Open Source and IP Advisory
+                    Group of the United Nations Technology Innovation Labs, sat on the OASIS Open Projects
+                    and UK Government Energy Sector Digitalisation Task Force Advisory Boards. She was
+                    General Counsel of Canonical for 5 years from 2008 and set up their legal function.
+                    Amanda is a judge in the IDG Foundry CIO 100 2023 having been a Judge in the We are Tech
+                    Women Rising Star Awards 2020-22. She was awarded the Lifetime Achievement Award in
+                    the Women, Influence & Power in Law Awards UK 2022, and included in Computer Weekly’s
+                    Most Influential Women in Tech Long list in 2021 and 2022 and in their UK Tech50
+                    Influencers longlist for 2022 and 2023.
+                    </p>
+                <p>
+                    She was included in the 2022 https://heroes.involverolemodels.org/ Involve HERoes list of
+                    100 global women executives driving change by example.
+                    She is the editor of Open Source Law, Policy and Practice (2nd edition) published by Oxford
+                    University Press in October 2022, with open access thanks to the Vietsch Foundation
+                    https://amandabrock.com/books/.
+
+                </p>
+            </>
+        ),
+        talkTitle:
+            "",
+        description: (
+            <>
+                <p>
+                </p>
+            </>
+        ),
+        image: AmandaBImage,
+        linkedin: "linkedin.com/in/amandabrocktech/",
+        twitter: "@amandabrockUK",
+        website: "https://amandabrock.com/books",
         sessionType: "session",
     },
     // "": {
