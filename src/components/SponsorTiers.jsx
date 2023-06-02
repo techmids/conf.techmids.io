@@ -3,7 +3,13 @@ import Image from "next/image";
 const sponsorTiers = {
     platinum: {
         name: "Platinum Sponsors",
-        sponsors: []
+        sponsors: [
+            {
+                name: "Bluetel",
+                image: "/sponsors/bluetel-logo.png",
+                url: "https://www.bluetel.co.uk"
+            }
+        ]
     },
     gold: {
         name: "Gold Sponsors",
