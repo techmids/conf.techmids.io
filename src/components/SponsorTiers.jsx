@@ -49,6 +49,11 @@ const sponsorTiers = {
                 name: "Elastic",
                 image: "/sponsors/elastic.png",
                 url: "https://www.elastic.co/"
+            },
+            {
+                name: "Newrelic",
+                image: "/sponsors/newrelic.png",
+                url: "https://newrelic.com/"
             }
         ],
     },
