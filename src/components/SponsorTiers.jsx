@@ -44,6 +44,11 @@ const sponsorTiers = {
                 name: "Aqua Security",
                 image: "/sponsors/aqua.svg",
                 url: "https://www.aquasec.com/"
+            },
+            {
+                name: "Elastic",
+                image: "/sponsors/elastic.png",
+                url: "https://www.elastic.co/"
             }
         ],
     },
