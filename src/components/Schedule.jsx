@@ -106,7 +106,7 @@ const scheduleTrack1 = [
         end: '16:00PM',
       },
       {
-        session: "joanna-suau",
+        session: "max-woolf",
         start: '16:00PM',
         end: '16:30PM',
       },
@@ -216,7 +216,7 @@ const scheduleTrack1 = [
         end: '16:00PM',
       },
       {
-        session: "max-woolf",
+        session: "joanna-suau",
         start: '16:00PM',
         end: '16:30PM',
       },
