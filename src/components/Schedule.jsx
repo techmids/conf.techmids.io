@@ -90,7 +90,7 @@ const scheduleTrack1 = [
         end: '14:40PM',
       },
       {
-        session: "amanda-brock",
+        session: "eli-holderness",
         start: '14:40PM',
         end: '15:10PM',
       },
@@ -200,7 +200,7 @@ const scheduleTrack1 = [
         end: '14:40PM',
       },
       {
-        session: "eli-holderness",
+        session: "amanda-brock",
         start: '14:40PM',
         end: '15:10PM',
       },
