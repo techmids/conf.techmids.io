@@ -432,7 +432,7 @@ export const Sessions= {
         sessionType: 'ignite'
     },
     "viktor-farcic": {
-        name: 'Victor Farcic',
+        name: 'Viktor Farcic',
         jobTitle: 'Developer Advocate',
         bio: (
             <>
