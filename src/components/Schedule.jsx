@@ -583,34 +583,18 @@ function DailySchedule({day}){
           <>
     <div className="flex flex-col items-center lg:items-start px-4 sm:px-6 lg:px-8 mx-24">
       <div className="-mx-4 mt-8 sm:-mx-0">
-        <table className="min-w-full divide-y divide-gray-300">
-                <div className="sm:flex sm:items-center mx-auto">
+              <div className="sm:flex sm:items-center mx-auto">
         <div className="sm:flex-auto">
           <h1 className="font-display text-4xl font-medium tracking-tighter text-yellow-600 sm:text-5xl">{day.timeOfDay}</h1>
-          <p className="mt-2 text-lg font-display font-bold sm:text-2xl tracking-tight text-yellow-600">
+          <p className="mt-2 text-md font-display font-bold sm:text-2xl tracking-tight text-yellow-600">
            {day.summary}
           </p>
         </div>
       </div>
-          {/* <thead>
-            <tr>
-              <th scope="col" className="time  py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0">
-                Time ^
-              </th>
-              <th
-                scope="col"
-                className=" px-3 py-3.5 text-left text-sm font-semibold text-gray-900 sm:table-cell"
-              >
-                Speaker ^
-              </th>
-              <th
-                scope="col"
-                className="summary hidden px-3 py-3.5 text-left text-sm font-semibold text-gray-900 lg:table-cell"
-              >
-                Summary ^
-              </th>
-            </tr>
-          </thead> */}
+        <table className="min-w-full divide-y divide-gray-300">
+
+          <thead>
+          </thead>
           <tbody className="divide-y divide-gray-200 bg-white">
             {day.timeSlots.map((timeSlot) => (
               <tr key={timeSlot.time} className='flex flex-wrap align-middle items-center'>
@@ -620,7 +604,7 @@ function DailySchedule({day}){
                 <td className="speaker whitespace-nowrap px-3 py-4 text-sm font-display sm:text-lg tracking-tight text-yellow-900 sm:table-cell">
                   {timeSlot.name ? timeSlot.name : Sessions[timeSlot.session].name}
                 </td>
-                <td className="summary hidden whitespace-nowrap px-3 py-4 text-sm sm:text-md tracking-tight text-yellow-900 lg:table-cell">
+                <td className="summary hidden whitespace-nowrap px-3 py-4 text-sm sm:text-md tracking-tight text-yellow-900 md:table-cell">
                   {timeSlot.description ? timeSlot.description : Sessions[timeSlot.session]?.talkTitle}
                 </td>
               </tr>
@@ -635,7 +619,8 @@ function DailySchedule({day}){
 
 export function Schedule() {
   return (
-    <div className='flex flex-col items-center'>
+    <div className='wrapper flex flex-col items-center'>
+    <div className='flex flex-col '>
       <div className='ml-8'>
         <p className="font-display text-4xl font-medium tracking-tighter text-yellow-600 sm:text-5xl">
           Schedule
@@ -649,6 +634,7 @@ export function Schedule() {
       <DailySchedule day={auditoriumDay2} />
       <DailySchedule day={thinkTankDay1} />
       <DailySchedule day={thinkTankDay2} />
+    </div>
     </div>
   )
 }
