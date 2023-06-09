@@ -430,154 +430,6 @@ const thinkTankDay1 = {
     ],
   }
 
-function ScheduleTabbed({track}) {
-  let [tabOrientation, setTabOrientation] = useState('horizontal')
-
-  useEffect(() => {
-    let smMediaQuery = window.matchMedia('(min-width: 640px)')
-
-    function onMediaQueryChange({ matches }) {
-      setTabOrientation(matches ? 'vertical' : 'horizontal')
-    }
-
-    onMediaQueryChange(smMediaQuery)
-    smMediaQuery.addEventListener('change', onMediaQueryChange)
-
-    return () => {
-      smMediaQuery.removeEventListener('change', onMediaQueryChange)
-    }
-  }, [])
-
-  return (
-      <Tab.Group
-          as="div"
-          className="mx-auto grid grid-cols-1 gap-y-6 sm:grid-cols-3"
-          vertical={tabOrientation === 'vertical'}
-      >
-        <Tab.List className="-mx-4 flex space-x-4 flex-wrap pl-4 pb-4 sm:col-span-1 sm:mx-0 sm:block sm:space-y-10 sm:space-x-0 sm:pb-0 sm:pl-0 sm:pr-8">
-          {({ selectedIndex }) =>
-              track.map((day, dayIndex) => (
-                  <div
-                      key={day.date}
-                      className={clsx(
-                          'relative w-1/2 flex-none pr-4 sm:w-auto sm:pr-0',
-                          {
-                            'opacity-70': dayIndex !== selectedIndex,
-                          }
-                      )}
-                  >
-                    <DaySummary
-                        day={{
-                          ...day,
-                          timeOfDay: (
-                              <Tab className="[&:not(:focus-visible)]:focus:outline-none">
-                                <span className="absolute inset-0" />
-                                {day.timeOfDay}
-                              </Tab>
-                          ),
-                        }}
-                    />
-                  </div>
-              ))
-          }
-        </Tab.List>
-        <Tab.Panels className="sm:col-span-2">
-          {track.map((day) => (
-              <Tab.Panel
-                  key={day.date}
-                  className="[&:not(:focus-visible)]:focus:outline-none"
-              >
-                <TimeSlots day={day} />
-              </Tab.Panel>
-          ))}
-        </Tab.Panels>
-      </Tab.Group>
-  )
-}
-
-function DaySummary({ day }) {
-  return (
-      <>
-        <h3 className="text-2xl font-semibold tracking-tight text-yellow-900">
-          <time date={day.date}>{day.timeOfDay}</time>
-        </h3>
-        <p className="mt-1.5 text-base tracking-tight text-yellow-900">
-          {day.summary}
-        </p>
-      </>
-  )
-}
-
-function TimeSlots({ day, className }) {
-  return (
-      <div
-          className={clsx(
-              className,
-              'space-y-8 bg-white/60 py-14 px-10 text-center shadow-xl shadow-yellow-900/5 backdrop-blur'
-          )}
-      >
-        {day.timeSlots.map((timeSlot, timeSlotIndex) => (
-            <div key={timeSlot.start}>
-              {timeSlotIndex > 0 && (
-                  <div className="bg--500/10 mx-auto w-48" />
-              )}
-              {timeSlot.session && (
-                  <Link href={`/speakers/${timeSlot.session}`}>
-                    <h4 className="text-lg font-semibold tracking-tight text-yellow-900">
-                      {timeSlot.name}
-                      {Sessions[timeSlot.session]?.name}
-                    </h4>
-                    <p className="sr-only">talking about</p>
-                    <p className="mt-1 tracking-tight text-yellow-900">
-                      {Sessions[timeSlot.session]?.talkTitle}
-                    </p>
-                  </Link>
-              )}
-              {!timeSlot.session && (
-                  <>
-                    <h4 className="text-lg font-semibold tracking-tight text-yellow-900">
-                      {timeSlot.name}
-                    </h4>
-                    {timeSlot.description && (
-                        <>
-                          <p className="sr-only">talking about</p>
-                          <p className="mt-1 tracking-tight text-yellow-900">
-                            {timeSlot.description}
-                          </p>
-                        </>
-                    )}
-                  </>
-              )}
-              <p className="sr-only">at</p>
-              <p className="mt-1 font-mono text-sm text-slate-500">
-                <time date={`${day.date}T${timeSlot.start}-08:00`}>
-                  {timeSlot.start}
-                </time>{' '}
-                -{' '}
-                <time date={`${day.date}T${timeSlot.end}-08:00`}>
-                  {timeSlot.end}
-                </time>{' '}
-                BST
-              </p>
-            </div>
-
-        ))}
-      </div>
-  )
-}
-
-// function ScheduleStatic() {
-//   return (
-//       <div className="hidden lg:grid lg:grid-cols-4 lg:gap-x-8">
-//         {scheduleTrack1.map((day) => (
-//             <section key={day.date}>
-//               <DaySummary day={day} />
-//               <TimeSlots day={day} className="mt-10" />
-//             </section>
-//         ))}
-//       </div>
-//   )
-// }
 function DailySchedule({day}){
   return(
           <>
@@ -585,8 +437,8 @@ function DailySchedule({day}){
       <div className="-mx-4 mt-8 sm:-mx-0">
        <div className="sm:flex sm:items-center mx-auto">
         <div className="sm:flex-auto">
-          <h1 className="font-display text-4xl font-medium tracking-tighter text-yellow-600 sm:text-5xl">{day.timeOfDay}</h1>
-          <p className="mt-2 text-md font-display font-bold sm:text-2xl tracking-tight text-yellow-600">
+          <h1 className="font-display text-4xl font-medium tracking-tighter text-yellow-900 sm:text-5xl">{day.timeOfDay}</h1>
+          <p className="mb-6 mt-2 text-md font-display font-bold sm:text-2xl tracking-tight text-yellow-600">
            {day.summary}
           </p>
         </div>
@@ -598,13 +450,13 @@ function DailySchedule({day}){
           <tbody className="divide-y divide-gray-200 bg-white">
             {day.timeSlots.map((timeSlot) => (
               <tr key={timeSlot.time} className='flex  items-center'>
-                <td className="time whitespace-nowrap py-1 pl-4 pr-3 text-sm font-display font-bold sm:text-lg tracking-tight text-yellow-700 sm:pl-0 sm:w-[200px]">
+                <td className="time whitespace-nowrap py-1 pl-4 pr-3 text-sm font-display font-bold sm:text-lg tracking-tight text-yellow-700 sm:pl-0 w-1/2 sm:w-[200px]">
                   {timeSlot.start} - {timeSlot.end}
                 </td>
-                <td className="speaker whitespace-nowrap px-3 text-sm font-display sm:text-lg tracking-tight text-yellow-900 sm:table-cell sm:w-[250px]">
+                <td className="speaker whitespace-nowrap px-3 text-sm font-display sm:text-lg tracking-tight text-yellow-900 sm:table-cell w-1/2 sm:w-[250px]">
                   {timeSlot.name ? timeSlot.name : Sessions[timeSlot.session].name}
                 </td>
-                <td className="summary hidden px-3 text-sm sm:text-md tracking-tight text-yellow-900 md:table-cell w-[400px]">
+                <td className="summary hidden font-semibold px-3 text-sm sm:text-md tracking-tight text-yellow-700 md:table-cell w-[400px]">
                   {timeSlot.description ? timeSlot.description : Sessions[timeSlot.session]?.talkTitle}
                 </td>
               </tr>
@@ -619,11 +471,11 @@ function DailySchedule({day}){
 
 export function Schedule() {
   return (
-    <div className='@container'>
+    
       <div className=' wrapper flex flex-col items-center'>
         <div className='flex flex-col'>
           <div className='ml-8'>
-            <p className="font-display text-4xl font-medium tracking-tighter text-yellow-600 sm:text-5xl">
+            <p className="font-display text-4xl font-medium tracking-tighter text-yellow-500 sm:text-7xl">
               Schedule
             </p>
             <p className="mt-4 font-display text-2xl tracking-tight text-yellow-900">
@@ -637,6 +489,6 @@ export function Schedule() {
           <DailySchedule day={thinkTankDay2} />
         </div>
       </div>
-    </div>
+
   )
 }
