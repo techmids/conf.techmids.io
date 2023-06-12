@@ -429,17 +429,15 @@ const thinkTankDay1 = {
 function DailySchedule({day}){
   return(
           <>
-    <div className="flex flex-col items-center px-4 sm:px-6 lg:px-8 mx-8 sm:m-24">
-      <div className="-mx-4 mt-8 sm:-mx-0">
-       <div className="sm:flex sm:items-center mx-auto">
+    <div className="flex flex-col items-center px-4 sm:px-6 lg:px-8 sm:m-8">
+      <div className="mt-8 sm:-mx-8">
         <div className="sm:flex-auto">
           <h1 className="font-display text-4xl font-medium tracking-tighter text-yellow-900 sm:text-5xl">{day.timeOfDay}</h1>
           <p className="mb-6 mt-2 text-md font-display font-bold sm:text-2xl tracking-tight text-yellow-600">
            {day.summary}
           </p>
-        </div>
       </div>
-        <table className="min-w-full divide-y divide-gray-300 table-auto w-auto">
+        <table className="w-full divide-y divide-gray-300 table-auto">
           <thead>
           </thead>
           <tbody className="divide-y divide-gray-200 bg-white">
