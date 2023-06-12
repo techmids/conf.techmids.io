@@ -5,12 +5,13 @@ import clsx from 'clsx'
 import { Container } from '@/components/Container'
 import {Sessions} from "../../speakers";
 import Link from "next/link";
-const scheduleTrack1 = [
+
+const auditoriumDay1 = 
   {
     room: "Main Auditorium",
-    timeOfDay: 'Auditorium Morning Day 1',
+    timeOfDay: 'Auditorium Day 1',
     date: '2023-06-15',
-    summary: '08:30 - 13:15 BST',
+    summary: '08:30 - 17:00 BST',
     dayName: "Day 1",
     timeSlots: [
       {
@@ -70,14 +71,6 @@ const scheduleTrack1 = [
         start: '12:45PM',
         end: '13:45PM',
       },
-    ],
-  },
-  {
-    timeOfDay: 'Auditorium Afternoon Day 1',
-    date: '2023-06-15',
-    summary: '13:50 - 17:00 BST',
-    dayName: "Day 1",
-    timeSlots: [
       {
         name: 'Afternoon Intro',
         description: 'Event organisers',
@@ -116,12 +109,14 @@ const scheduleTrack1 = [
         start: '16:30PM',
         end: '16:40PM',
       },
-    ],
-  },
-  {
-    timeOfDay: 'Auditorium Morning Day 2',
+    
+    ]
+  }
+
+  const auditoriumDay2 = {
+    timeOfDay: 'Auditorium Day 2',
     date: '2023-06-16',
-    summary: '08:30 - 13:15 BST',
+    summary: '08:30 - 17:00 BST',
     dayName: "Day 2",
     timeSlots: [
       {
@@ -180,14 +175,6 @@ const scheduleTrack1 = [
         start: '12:45PM',
         end: '13:45PM',
       },
-    ],
-  },
-  {
-    timeOfDay: 'Auditorium Afternoon Day 2',
-    date: '2023-06-16',
-    summary: '13:15 - 17:00 BST',
-    dayName: "Day 2",
-    timeSlots: [
       {
         name: 'Afternoon Intro',
         description: 'Event organisers',
@@ -227,14 +214,13 @@ const scheduleTrack1 = [
         end: '16:40PM',
       },
     ],
-  },
-]
+  }
 
-const scheduleTrack2 = [
-  {
-    timeOfDay: 'ThinkTank Morning Day 1',
+
+const thinkTankDay1 = {
+    timeOfDay: 'ThinkTank Day 1',
     date: '2023-06-15',
-    summary: '08:30 - 13:15 BST',
+    summary: '08:30 - 17:00 BST',
     dayName: "Day 1",
     timeSlots: [
       {
@@ -292,14 +278,6 @@ const scheduleTrack2 = [
         start: '12:45PM',
         end: '13:45PM',
       },
-    ],
-  },
-  {
-    timeOfDay: 'ThinkTank Afternoon Day 1',
-    date: '2023-06-15',
-    summary: '13:50 - 17:00 BST',
-    dayName: "Day 1",
-    timeSlots: [
       {
         name: 'Open Space Planning',
         description: 'Event organisers',
@@ -343,11 +321,13 @@ const scheduleTrack2 = [
         end: '16:40PM',
       },
     ],
-  },
-  {
-    timeOfDay: 'ThinkTank Morning Day 2',
+  }
+
+
+  const thinkTankDay2 = {
+    timeOfDay: 'ThinkTank Day 2',
     date: '2023-06-16',
-    summary: '08:30 - 13:15 BST',
+    summary: '08:30 - 17:00 BST',
     dayName: "Day 2",
     timeSlots: [
       {
@@ -405,14 +385,6 @@ const scheduleTrack2 = [
         start: '12:45PM',
         end: '13:45PM',
       },
-    ],
-  },
-  {
-    timeOfDay: 'ThinkTank Afternoon Day 2',
-    date: '2023-06-16',
-    summary: '13:15 - 17:00 BST',
-    dayName: "Day 2",
-    timeSlots: [
       {
         name: 'Open Space Planning',
         description: 'Event organisers',
@@ -456,167 +428,74 @@ const scheduleTrack2 = [
         end: '16:40PM',
       },
     ],
-  },
-]
+  }
 
-function ScheduleTabbed({track}) {
-  let [tabOrientation, setTabOrientation] = useState('horizontal')
+function DailySchedule({day}){
+  return(
+          <>
+    <div className="flex flex-col items-center lg:items-start px-4 sm:px-6 lg:px-8 mx-8  sm:m-24">
+      <div className="-mx-4 mt-8 sm:-mx-0">
+       <div className="sm:flex sm:items-center mx-auto">
+        <div className="sm:flex-auto">
+          <h1 className="font-display text-4xl font-medium tracking-tighter text-yellow-900 sm:text-5xl">{day.timeOfDay}</h1>
+          <p className="mb-6 mt-2 text-md font-display font-bold sm:text-2xl tracking-tight text-yellow-600">
+           {day.summary}
+          </p>
+        </div>
+      </div>
+        <table className="min-w-full divide-y divide-gray-300 table-auto w-auto">
 
-  useEffect(() => {
-    let smMediaQuery = window.matchMedia('(min-width: 640px)')
+          <thead>
+          </thead>
+          <tbody className="divide-y divide-gray-200 bg-white">
+            {day.timeSlots.map((timeSlot) => (
 
-    function onMediaQueryChange({ matches }) {
-      setTabOrientation(matches ? 'vertical' : 'horizontal')
-    }
-
-    onMediaQueryChange(smMediaQuery)
-    smMediaQuery.addEventListener('change', onMediaQueryChange)
-
-    return () => {
-      smMediaQuery.removeEventListener('change', onMediaQueryChange)
-    }
-  }, [])
-
-  return (
-      <Tab.Group
-          as="div"
-          className="mx-auto grid grid-cols-1 gap-y-6 sm:grid-cols-3"
-          vertical={tabOrientation === 'vertical'}
-      >
-        <Tab.List className="-mx-4 flex space-x-4 flex-wrap pl-4 pb-4 sm:col-span-1 sm:mx-0 sm:block sm:space-y-10 sm:space-x-0 sm:pb-0 sm:pl-0 sm:pr-8">
-          {({ selectedIndex }) =>
-              track.map((day, dayIndex) => (
-                  <div
-                      key={day.date}
-                      className={clsx(
-                          'relative w-1/2 flex-none pr-4 sm:w-auto sm:pr-0',
-                          {
-                            'opacity-70': dayIndex !== selectedIndex,
-                          }
-                      )}
-                  >
-                    <DaySummary
-                        day={{
-                          ...day,
-                          timeOfDay: (
-                              <Tab className="[&:not(:focus-visible)]:focus:outline-none">
-                                <span className="absolute inset-0" />
-                                {day.timeOfDay}
-                              </Tab>
-                          ),
-                        }}
-                    />
-                  </div>
-              ))
-          }
-        </Tab.List>
-        <Tab.Panels className="sm:col-span-2">
-          {track.map((day) => (
-              <Tab.Panel
-                  key={day.date}
-                  className="[&:not(:focus-visible)]:focus:outline-none"
-              >
-                <TimeSlots day={day} />
-              </Tab.Panel>
-          ))}
-        </Tab.Panels>
-      </Tab.Group>
-  )
-}
-
-function DaySummary({ day }) {
-  return (
-      <>
-        <h3 className="text-2xl font-semibold tracking-tight text-yellow-900">
-          <time date={day.date}>{day.timeOfDay}</time>
-        </h3>
-        <p className="mt-1.5 text-base tracking-tight text-yellow-900">
-          {day.summary}
-        </p>
-      </>
-  )
-}
-
-function TimeSlots({ day, className }) {
-  return (
-      <div
-          className={clsx(
-              className,
-              'space-y-8 bg-white/60 py-14 px-10 text-center shadow-xl shadow-yellow-900/5 backdrop-blur'
-          )}
-      >
-        {day.timeSlots.map((timeSlot, timeSlotIndex) => (
-            <div key={timeSlot.start}>
-              {timeSlotIndex > 0 && (
-                  <div className="bg--500/10 mx-auto mb-8 h-px w-48" />
-              )}
-              {timeSlot.session && (
-                  <Link href={`/speakers/${timeSlot.session}`}>
-                    <h4 className="text-lg font-semibold tracking-tight text-yellow-900">
-                      {timeSlot.name}
-                      {Sessions[timeSlot.session]?.name}
-                    </h4>
-                    <p className="sr-only">talking about</p>
-                    <p className="mt-1 tracking-tight text-yellow-900">
-                      {Sessions[timeSlot.session]?.talkTitle}
-                    </p>
-                  </Link>
-              )}
-              {!timeSlot.session && (
+                <tr key={timeSlot.time} className='flex items-start'>
+                  {timeSlot.session && (
+                  // <Link href={`/speakers/${timeSlot.session}`} key={timeSlot.time}>
                   <>
-                    <h4 className="text-lg font-semibold tracking-tight text-yellow-900">
-                      {timeSlot.name}
-                    </h4>
-                    {timeSlot.description && (
-                        <>
-                          <p className="sr-only">talking about</p>
-                          <p className="mt-1 tracking-tight text-yellow-900">
-                            {timeSlot.description}
-                          </p>
-                        </>
-                    )}
-                  </>
-              )}
-              <p className="sr-only">at</p>
-              <p className="mt-1 font-mono text-sm text-slate-500">
-                <time date={`${day.date}T${timeSlot.start}-08:00`}>
-                  {timeSlot.start}
-                </time>{' '}
-                -{' '}
-                <time date={`${day.date}T${timeSlot.end}-08:00`}>
-                  {timeSlot.end}
-                </time>{' '}
-                BST
-              </p>
-            </div>
-
-        ))}
+                    <td className="time w-1/2 whitespace-nowrap py-1 text-sm font-display font-bold sm:text-lg tracking-tight text-yellow-700  sm:w-[200px]">
+                      {timeSlot.start} - {timeSlot.end}
+                    </td>
+                    <td className="speaker hidden whitespace-nowrap px-3 text-sm font-display sm:text-lg tracking-tight text-yellow-900 w-1/2 sm:w-[250px] md:table-cell">
+                      {timeSlot.name ? timeSlot.name : Sessions[timeSlot.session].name}
+                    </td>
+                    <td className="summary font-semibold text-sm sm:text-md tracking-tight text-yellow-700 w-1/2 sm:w-[400px]">
+                      {timeSlot.description ? timeSlot.description : Sessions[timeSlot.session]?.talkTitle}
+                    </td>
+                    </>
+                  // {/* </Link> */}
+                  )}
+                  {!timeSlot.session && (
+                      <>
+                        <td className="time w-1/2 whitespace-nowrap py-1 text-sm font-display font-bold sm:text-lg tracking-tight text-yellow-700  sm:w-[200px]">
+                          {timeSlot.start} - {timeSlot.end}
+                        </td>
+                        <td className="speaker hidden whitespace-nowrap px-3 text-sm font-display sm:text-lg tracking-tight text-yellow-900 w-1/2 sm:w-[250px] md:table-cell">
+                          {timeSlot.name ? timeSlot.name : Sessions[timeSlot.session].name}
+                        </td>
+                        <td className="summary font-semibold text-sm sm:text-md tracking-tight text-yellow-700 w-1/2 sm:w-[400px]">
+                          {timeSlot.description ? timeSlot.description : Sessions[timeSlot.session]?.talkTitle}
+                        </td>
+                      </>
+                  )}
+                </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
-  )
-}
-
-function ScheduleStatic() {
-  return (
-      <div className="hidden lg:grid lg:grid-cols-2 lg:gap-x-8">
-        {scheduleTrack1.map((day) => (
-            <section key={day.date}>
-              <DaySummary day={day} />
-              <TimeSlots day={day} className="mt-10" />
-            </section>
-        ))}
-      </div>
+    </div>
+          </>
   )
 }
 
 export function Schedule() {
   return (
-      <section id="schedule" aria-labelledby="schedule-title" className="py-20">
-        <h2 id="schedule-title" className="sr-only">
-          Schedule
-        </h2>
-        <Container className="relative z-10">
-          <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
-            <p className="font-display text-4xl font-medium tracking-tighter text-yellow-600 sm:text-5xl">
+
+      <div className='wrapper flex flex-col items-center'>
+        <div className='flex flex-col'>
+          <div className='flex flex-wrap'>
+            <p className="min-w-full font-display text-4xl font-medium tracking-tighter text-yellow-500 sm:text-7xl">
               Schedule
             </p>
             <p className="mt-4 font-display text-2xl tracking-tight text-yellow-900">
@@ -624,21 +503,12 @@ export function Schedule() {
               ignite talks, including plenty of time to chat.
             </p>
           </div>
-        </Container>
-        <div className="relative mt-14 sm:mt-24">
-          <div className="absolute -inset-x-0 -top-40 -bottom-32 overflow-hidden bg-yellow-50">
-            <div className="absolute left-full top-0 translate-y-[0%] -translate-x-[50%] sm:left-1/2 sm:-translate-y-[15%] sm:-translate-x-[20%] md:translate-x-[0%] lg:translate-x-[5%] lg:translate-y-[4%] xl:-translate-y-[8%] xl:translate-x-[27%]"></div>
-            <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white" />
-            <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white" />
-          </div>
-          <Container className="relative">
-            <ScheduleTabbed track={scheduleTrack1}/>
-            <div className="divide-y py-10">
-            </div>
-            <ScheduleTabbed track={scheduleTrack2}/>
-            {/*<ScheduleStatic />*/}
-          </Container>
+          <DailySchedule day={auditoriumDay1} />
+          <DailySchedule day={thinkTankDay1} />
+          <DailySchedule day={auditoriumDay2} />
+          <DailySchedule day={thinkTankDay2} />
         </div>
-      </section>
+      </div>
+
   )
 }
