@@ -4,6 +4,7 @@ import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Schedule } from '@/components/Schedule';
 import {EVENT} from "../../event";
+import { Sponsors } from '@/components/Sponsors';
 
 export default function Covid() {
   return (
@@ -18,6 +19,7 @@ export default function Covid() {
       <Header />
       <main>
         <Schedule/>
+        <Sponsors/>
       </main>
       <Footer />
     </>

@@ -20,7 +20,7 @@ export function Hero() {
           </h1>
           <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-yellow-900">
             <p>
-              <b>TechMids Conf is an two day full stack conference</b>, on
+              <b>TechMids Conf is a two day full stack conference</b>, on
               15th and 16th June 2023, as a co-located event <b><a href="https://devopsdaysbirmingham.co.uk/" className="underline">part of DevOpsDays Birmingham 2023.</a></b>{' '}
             </p>
             <p>
