@@ -12,13 +12,13 @@ const auditoriumDay1 =
     timeSlots: [
       {
         name: 'Registration',
-        description: '',
+        description: 'Registration',
         start: '08:00AM',
         end: '08:50AM',
       },
       {
-        name: 'Opening Welcome',
-        description: 'Event organisers',
+        name: 'Event organisers',
+        description: 'Opening Welcome',
         start: '09:00AM',
         end: '09:15AM',
       },
@@ -117,13 +117,13 @@ const auditoriumDay1 =
     timeSlots: [
       {
         name: 'Registration',
-        description: '',
+        description: 'Registration',
         start: '08:00AM',
         end: '08:50AM',
       },
       {
-        name: 'Opening Welcome',
-        description: 'Event organisers',
+        name: 'Event organisers',
+        description: 'Opening Welcome',
         start: '09:00AM',
         end: '09:15AM',
       },
@@ -221,13 +221,13 @@ const thinkTankDay1 = {
     timeSlots: [
       {
         name: 'Registration',
-        description: '',
+        description: 'Registration',
         start: '08:00AM',
         end: '08:50AM',
       },
       {
-        name: 'Opening Welcome',
-        description: 'Event organisers',
+        name: 'Event organisers',
+        description: 'Opening Welcome',
         start: '09:00AM',
         end: '09:15AM',
       },
@@ -328,13 +328,13 @@ const thinkTankDay1 = {
     timeSlots: [
       {
         name: 'Registration',
-        description: '',
+        description: 'Registration',
         start: '08:00AM',
         end: '08:50AM',
       },
       {
-        name: 'Opening Welcome',
-        description: 'Event organisers',
+        name: 'Event organisers',
+        description: 'Opening Welcome',
         start: '09:00AM',
         end: '09:15AM',
       },
