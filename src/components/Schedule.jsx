@@ -449,29 +449,47 @@ function DailySchedule({day}){
           </thead>
           <tbody className="divide-y divide-gray-200 bg-white">
             {day.timeSlots.map((timeSlot) => (
-              <tr key={timeSlot.time} className='flex  items-center'>
-                <td className="time whitespace-nowrap py-1 pl-4 pr-3 text-sm font-display font-bold sm:text-lg tracking-tight text-yellow-700 sm:pl-0 w-1/2 sm:w-[200px]">
-                  {timeSlot.start} - {timeSlot.end}
-                </td>
-                <td className="speaker whitespace-nowrap px-3 text-sm font-display sm:text-lg tracking-tight text-yellow-900 sm:table-cell w-1/2 sm:w-[250px]">
-                  {timeSlot.name ? timeSlot.name : Sessions[timeSlot.session].name}
-                </td>
-                <td className="summary hidden font-semibold px-3 text-sm sm:text-md tracking-tight text-yellow-700 md:table-cell w-[400px]">
-                  {timeSlot.description ? timeSlot.description : Sessions[timeSlot.session]?.talkTitle}
-                </td>
-              </tr>
+
+                <tr key={timeSlot.time} className='flex  items-center'>
+                  {timeSlot.session && (
+                  <Link href={`/speakers/${timeSlot.session}`} key={timeSlot.time}>
+                    <td className="time whitespace-nowrap py-1 pl-4 pr-3 text-sm font-display font-bold sm:text-lg tracking-tight text-yellow-700 sm:pl-0 w-1/2 sm:w-[200px]">
+                      {timeSlot.start} - {timeSlot.end}
+                    </td>
+                    <td className="speaker whitespace-nowrap px-3 text-sm font-display sm:text-lg tracking-tight text-yellow-900 sm:table-cell w-1/2 sm:w-[250px]">
+                      {timeSlot.name ? timeSlot.name : Sessions[timeSlot.session].name}
+                    </td>
+                    <td className="summary hidden font-semibold px-3 text-sm sm:text-md tracking-tight text-yellow-700 md:table-cell w-[400px]">
+                      {timeSlot.description ? timeSlot.description : Sessions[timeSlot.session]?.talkTitle}
+                    </td>
+                  </Link>
+                  )}
+                  {!timeSlot.session && (
+                      <>
+                        <td className="time whitespace-nowrap py-1 pl-4 pr-3 text-sm font-display font-bold sm:text-lg tracking-tight text-yellow-700 sm:pl-0 w-1/2 sm:w-[200px]">
+                          {timeSlot.start} - {timeSlot.end}
+                        </td>
+                        <td className="speaker whitespace-nowrap px-3 text-sm font-display sm:text-lg tracking-tight text-yellow-900 sm:table-cell w-1/2 sm:w-[250px]">
+                          {timeSlot.name ? timeSlot.name : Sessions[timeSlot.session].name}
+                        </td>
+                        <td className="summary hidden font-semibold px-3 text-sm sm:text-md tracking-tight text-yellow-700 md:table-cell w-[400px]">
+                          {timeSlot.description ? timeSlot.description : Sessions[timeSlot.session]?.talkTitle}
+                        </td>
+                      </>
+                  )}
+                </tr>
             ))}
           </tbody>
         </table>
       </div>
     </div>
-      </>
+          </>
   )
 }
 
 export function Schedule() {
   return (
-    
+
       <div className=' wrapper flex flex-col items-center'>
         <div className='flex flex-col'>
           <div className='ml-8'>
@@ -479,13 +497,13 @@ export function Schedule() {
               Schedule
             </p>
             <p className="mt-4 font-display text-2xl tracking-tight text-yellow-900">
-            Your day will be composed of 30 minute sessions as well as 5 minute
-            ignite talks, including plenty of time to chat.
+              Your day will be composed of 30 minute sessions as well as 5 minute
+              ignite talks, including plenty of time to chat.
             </p>
-        </div>
+          </div>
           <DailySchedule day={auditoriumDay1} />
-          <DailySchedule day={auditoriumDay2} />
           <DailySchedule day={thinkTankDay1} />
+          <DailySchedule day={auditoriumDay2} />
           <DailySchedule day={thinkTankDay2} />
         </div>
       </div>
