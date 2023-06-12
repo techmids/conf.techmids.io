@@ -433,12 +433,12 @@ const thinkTankDay1 = {
 function DailySchedule({day}){
   return(
           <>
-    <div className="flex flex-col items-center lg:items-start px-4 sm:px-6 lg:px-8 mx-24">
+    <div className="flex flex-col items-center lg:items-start px-4 sm:px-6 lg:px-8 mx-8  sm:m-24">
       <div className="-mx-4 mt-8 sm:-mx-0">
        <div className="sm:flex sm:items-center mx-auto">
         <div className="sm:flex-auto">
-          <h1 className="font-display text-4xl font-medium tracking-tighter text-yellow-900 sm:text-5xl">{day.timeOfDay}</h1>
-          <p className="mb-6 mt-2 text-md font-display font-bold sm:text-2xl tracking-tight text-yellow-600">
+          <h1 className="w-[20px] font-display text-4xl font-medium tracking-tighter text-yellow-900 sm:text-5xl">{day.timeOfDay}</h1>
+          <p className="w-[20px]mb-6 mt-2 text-md font-display font-bold sm:text-2xl tracking-tight text-yellow-600">
            {day.summary}
           </p>
         </div>
@@ -450,29 +450,31 @@ function DailySchedule({day}){
           <tbody className="divide-y divide-gray-200 bg-white">
             {day.timeSlots.map((timeSlot) => (
 
-                <tr key={timeSlot.time} className='flex  items-center'>
+                <tr key={timeSlot.time} className='flex items-start'>
                   {timeSlot.session && (
-                  <Link href={`/speakers/${timeSlot.session}`} key={timeSlot.time}>
-                    <td className="time whitespace-nowrap py-1 pl-4 pr-3 text-sm font-display font-bold sm:text-lg tracking-tight text-yellow-700 sm:pl-0 w-1/2 sm:w-[200px]">
+                  // <Link href={`/speakers/${timeSlot.session}`} key={timeSlot.time}>
+                  <>
+                    <td className="time w-[200px] whitespace-nowrap py-1 text-sm font-display font-bold sm:text-lg tracking-tight text-yellow-700  sm:w-[200px]">
                       {timeSlot.start} - {timeSlot.end}
                     </td>
-                    <td className="speaker whitespace-nowrap px-3 text-sm font-display sm:text-lg tracking-tight text-yellow-900 sm:table-cell w-1/2 sm:w-[250px]">
+                    <td className="speaker hidden whitespace-nowrap px-3 text-sm font-display sm:text-lg tracking-tight text-yellow-900 w-1/2 sm:w-[250px] md:table-cell">
                       {timeSlot.name ? timeSlot.name : Sessions[timeSlot.session].name}
                     </td>
-                    <td className="summary hidden font-semibold px-3 text-sm sm:text-md tracking-tight text-yellow-700 md:table-cell w-[400px]">
+                    <td className="summary font-semibold text-sm sm:text-md tracking-tight text-yellow-700 sm:w-[400px]">
                       {timeSlot.description ? timeSlot.description : Sessions[timeSlot.session]?.talkTitle}
                     </td>
-                  </Link>
+                    </>
+                  // {/* </Link> */}
                   )}
                   {!timeSlot.session && (
                       <>
-                        <td className="time whitespace-nowrap py-1 pl-4 pr-3 text-sm font-display font-bold sm:text-lg tracking-tight text-yellow-700 sm:pl-0 w-1/2 sm:w-[200px]">
+                        <td className="time w-[200px] whitespace-nowrap py-1 text-sm font-display font-bold sm:text-lg tracking-tight text-yellow-700  sm:w-[200px]">
                           {timeSlot.start} - {timeSlot.end}
                         </td>
-                        <td className="speaker whitespace-nowrap px-3 text-sm font-display sm:text-lg tracking-tight text-yellow-900 sm:table-cell w-1/2 sm:w-[250px]">
+                        <td className="speaker hidden whitespace-nowrap px-3 text-sm font-display sm:text-lg tracking-tight text-yellow-900 w-1/2 sm:w-[250px] md:table-cell">
                           {timeSlot.name ? timeSlot.name : Sessions[timeSlot.session].name}
                         </td>
-                        <td className="summary hidden font-semibold px-3 text-sm sm:text-md tracking-tight text-yellow-700 md:table-cell w-[400px]">
+                        <td className="summary font-semibold text-sm sm:text-md tracking-tight text-yellow-700 sm:w-[400px]">
                           {timeSlot.description ? timeSlot.description : Sessions[timeSlot.session]?.talkTitle}
                         </td>
                       </>
@@ -489,24 +491,24 @@ function DailySchedule({day}){
 
 export function Schedule() {
   return (
-
-      <div className=' wrapper flex flex-col items-center'>
-        <div className='flex flex-col'>
-          <div className='ml-8'>
-            <p className="font-display text-4xl font-medium tracking-tighter text-yellow-500 sm:text-7xl">
-              Schedule
-            </p>
-            <p className="mt-4 font-display text-2xl tracking-tight text-yellow-900">
-              Your day will be composed of 30 minute sessions as well as 5 minute
-              ignite talks, including plenty of time to chat.
-            </p>
-          </div>
-          <DailySchedule day={auditoriumDay1} />
-          <DailySchedule day={thinkTankDay1} />
-          <DailySchedule day={auditoriumDay2} />
-          <DailySchedule day={thinkTankDay2} />
-        </div>
-      </div>
+<></>
+      // <div className=' wrapper flex flex-col items-center'>
+      //   <div className='flex flex-col'>
+      //     <div className='ml-8'>
+      //       <p className="font-display text-4xl font-medium tracking-tighter text-yellow-500 sm:text-7xl">
+      //         Schedule
+      //       </p>
+      //       <p className="mt-4 font-display text-2xl tracking-tight text-yellow-900">
+      //         Your day will be composed of 30 minute sessions as well as 5 minute
+      //         ignite talks, including plenty of time to chat.
+      //       </p>
+      //     </div>
+      //     <DailySchedule day={auditoriumDay1} />
+      //     <DailySchedule day={thinkTankDay1} />
+      //     <DailySchedule day={auditoriumDay2} />
+      //     <DailySchedule day={thinkTankDay2} />
+      //   </div>
+      // </div>
 
   )
 }
