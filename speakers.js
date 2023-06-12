@@ -1025,7 +1025,7 @@ export const Sessions= {
     },
     "zakariya-mohummed": {
         name: "Zakariya Mohummed",
-        jobTitle: "Software Engineer at Huel",
+        jobTitle: "Software Engineer",
         bio: (
             <>
                 <p>
