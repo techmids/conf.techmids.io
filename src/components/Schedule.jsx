@@ -1,8 +1,4 @@
-import { useEffect, useState } from 'react'
-import { Tab } from '@headlessui/react'
-import clsx from 'clsx'
-
-import { Container } from '@/components/Container'
+import Image from 'next/image'
 import {Sessions} from "../../speakers";
 import Link from "next/link";
 
@@ -444,27 +440,38 @@ function DailySchedule({day}){
         </div>
       </div>
         <table className="min-w-full divide-y divide-gray-300 table-auto w-auto">
-
           <thead>
           </thead>
           <tbody className="divide-y divide-gray-200 bg-white">
             {day.timeSlots.map((timeSlot) => (
-
-                <tr key={timeSlot.time} className='flex items-start'>
+                <tr key={timeSlot.start} className='flex items-center'>
                   {timeSlot.session && (
-                  // <Link href={`/speakers/${timeSlot.session}`} key={timeSlot.time}>
-                  <>
+                    <>
                     <td className="time w-1/2 whitespace-nowrap py-1 text-sm font-display font-bold sm:text-lg tracking-tight text-yellow-700  sm:w-[200px]">
+                      <Link href={`/speakers/${timeSlot.session}`} key={timeSlot.start}>
                       {timeSlot.start} - {timeSlot.end}
+                      </Link> 
                     </td>
-                    <td className="speaker hidden whitespace-nowrap px-3 text-sm font-display sm:text-lg tracking-tight text-yellow-900 w-1/2 sm:w-[250px] md:table-cell">
-                      {timeSlot.name ? timeSlot.name : Sessions[timeSlot.session].name}
+                    <td className="speaker hidden whitespace-nowrap px-3 text-sm font-display sm:text-lg tracking-tight text-yellow-900 w-1/2 sm:w-[250px] md:flex gap-4">
+                            <Link href={`/speakers/${timeSlot.session}`} key={timeSlot.start}>
+                          <div className="flex-shrink-0">
+                              <Image
+                                className="inline-block h-10 w-10 rounded-full"
+                                src={Sessions[timeSlot.session].image}
+                                alt={Sessions[timeSlot.session].name}
+                              />
+                          </div>
+                            </Link>
+                            <Link href={`/speakers/${timeSlot.session}`} key={timeSlot.start}>
+                              {timeSlot.name ? timeSlot.name : Sessions[timeSlot.session].name}
+                            </Link>
                     </td>
                     <td className="summary font-semibold text-sm sm:text-md tracking-tight text-yellow-700 w-1/2 sm:w-[400px]">
+                      <Link href={`/speakers/${timeSlot.session}`} key={timeSlot.start}>
                       {timeSlot.description ? timeSlot.description : Sessions[timeSlot.session]?.talkTitle}
+                      </Link>
                     </td>
-                    </>
-                  // {/* </Link> */}
+              </>
                   )}
                   {!timeSlot.session && (
                       <>
