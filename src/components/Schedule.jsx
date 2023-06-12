@@ -457,6 +457,7 @@ function DailySchedule({day}){
                                 className="inline-block h-10 w-10 rounded-full"
                                 src={Sessions[timeSlot.session].image}
                                 alt={Sessions[timeSlot.session].name}
+                                	style={{objectFit: 'cover'}}
                               />
                           </div>
                             </Link>
