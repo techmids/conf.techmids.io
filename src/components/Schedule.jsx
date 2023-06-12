@@ -492,10 +492,10 @@ function DailySchedule({day}){
 export function Schedule() {
   return (
 
-      <div className=' wrapper flex flex-col items-center'>
+      <div className='wrapper flex flex-col items-center'>
         <div className='flex flex-col'>
-          <div className='ml-8'>
-            <p className="font-display text-4xl font-medium tracking-tighter text-yellow-500 sm:text-7xl">
+          <div className='flex flex-wrap'>
+            <p className="min-w-full font-display text-4xl font-medium tracking-tighter text-yellow-500 sm:text-7xl">
               Schedule
             </p>
             <p className="mt-4 font-display text-2xl tracking-tight text-yellow-900">
