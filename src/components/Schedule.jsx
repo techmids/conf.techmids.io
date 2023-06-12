@@ -437,8 +437,8 @@ function DailySchedule({day}){
       <div className="-mx-4 mt-8 sm:-mx-0">
        <div className="sm:flex sm:items-center mx-auto">
         <div className="sm:flex-auto">
-          <h1 className="w-[20px] font-display text-4xl font-medium tracking-tighter text-yellow-900 sm:text-5xl">{day.timeOfDay}</h1>
-          <p className="w-[20px]mb-6 mt-2 text-md font-display font-bold sm:text-2xl tracking-tight text-yellow-600">
+          <h1 className="font-display text-4xl font-medium tracking-tighter text-yellow-900 sm:text-5xl">{day.timeOfDay}</h1>
+          <p className="mb-6 mt-2 text-md font-display font-bold sm:text-2xl tracking-tight text-yellow-600">
            {day.summary}
           </p>
         </div>
