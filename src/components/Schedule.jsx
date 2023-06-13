@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react';
+import moment from 'moment';
 import Image from 'next/image'
 import {Sessions} from "../../speakers";
 import Link from "next/link";
@@ -426,9 +428,38 @@ const thinkTankDay1 = {
     ],
   }
 
+
 function DailySchedule({day}){
+
+  // Day of the month
+const [today, setToday] = useState('15') 
+// Timestamp of time in real life
+const [timeIrl, setTimeIrl] = useState(0)
+
+//updates current day of month and timestamp every 20 secs
+  useEffect(() => {
+    const logDate = () => {
+      const currentDate = new Date()
+      console.log('Current date and time:', Math.floor(currentDate.getTime()/1000), currentDate.getDate())
+      setToday(String(currentDate.getDate()))
+      setTimeIrl( Math.floor(currentDate.getTime()/1000))
+      setTimeout(logDate, 20000)
+    }
+    logDate()
+    return () => {
+      clearTimeout()
+    }
+  }, [])
+
+  // console.log(day.date.split('').slice(8).join(''));
+
+// const toime = moment(`06/${today}/2023 ${thinkTankDay2.timeSlots[0].start.split('AM').join('')}:00`).unix()
+// console.log(toime)
+
+// console.log(moment(toime).unix())
   return(
           <>
+          
     <div className="flex flex-col items-center px-4 sm:px-6 lg:px-8 sm:m-8">
       <div className="mt-8 sm:-mx-8">
         <div className="sm:flex-auto">
@@ -442,31 +473,40 @@ function DailySchedule({day}){
           </thead>
           <tbody className="divide-y divide-gray-200 bg-white">
             {day.timeSlots.map((timeSlot) => (
-                <tr key={timeSlot.start} className='flex items-center'>
+                <tr key={`${timeSlot.start}${timeSlot.name}`} 
+                className={
+                timeIrl >= moment(`06/${today}/2023 ${timeSlot.start.split('AM').join('')}:00`).unix() 
+                && 
+                timeIrl < moment(`06/${today}/2023 ${timeSlot.end.split('AM').join('')}:00`).unix()+ 5 * 60 
+                &&
+                day.date.split('').slice(8).join('') === today ? 
+                "flex items-center bg-blue-200" :
+                "flex items-center"
+                }>
                   {timeSlot.session && (
                     <>
                     <td className="time w-1/2 whitespace-nowrap py-1 text-sm font-display font-bold sm:text-lg tracking-tight text-yellow-700  sm:w-[200px]">
-                      <Link href={`/speakers/${timeSlot.session}`} key={timeSlot.start}>
+                      <Link href={`/speakers/${timeSlot.session}`} >
                       {timeSlot.start} - {timeSlot.end}
                       </Link> 
                     </td>
                     <td className="speaker hidden whitespace-nowrap px-3 text-sm font-display sm:text-lg tracking-tight text-yellow-900 w-1/2 sm:w-[250px] md:flex gap-4">
-                            <Link href={`/speakers/${timeSlot.session}`} key={timeSlot.start}>
+                            <Link href={`/speakers/${timeSlot.session}`} >
                           <div className="flex-shrink-0">
                               <Image
                                 className="inline-block h-10 w-10 rounded-full"
                                 src={Sessions[timeSlot.session].image}
                                 alt={Sessions[timeSlot.session].name}
-                                	style={{objectFit: 'cover'}}
+                                style={{objectFit: 'cover'}}
                               />
                           </div>
                             </Link>
-                            <Link href={`/speakers/${timeSlot.session}`} key={timeSlot.start}>
+                            <Link href={`/speakers/${timeSlot.session}`} >
                               {timeSlot.name ? timeSlot.name : Sessions[timeSlot.session].name}
                             </Link>
                     </td>
                     <td className="summary font-semibold text-sm sm:text-md tracking-tight text-yellow-700 w-1/2 sm:w-[400px]">
-                      <Link href={`/speakers/${timeSlot.session}`} key={timeSlot.start}>
+                      <Link href={`/speakers/${timeSlot.session}`} >
                       {timeSlot.description ? timeSlot.description : Sessions[timeSlot.session]?.talkTitle}
                       </Link>
                     </td>
