@@ -473,7 +473,7 @@ const [timeIrl, setTimeIrl] = useState(0)
                     &&
                     day.date.split('').slice(8).join('') === today 
                     ? 
-                    "flex items-center bg-blue-200" :
+                    "flex items-center bg-amber-200" :
                     "flex items-center"
                 }>
                   {timeSlot.session && (
