@@ -8,7 +8,7 @@ const auditoriumDay1 =
   {
     room: "Main Auditorium",
     timeOfDay: 'Auditorium Day 1',
-    date: '2023-06-13',
+    date: '2023-06-15',
     summary: '08:30 - 17:00 BST',
     dayName: "Day 1",
     timeSlots: [
