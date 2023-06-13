@@ -483,7 +483,7 @@ const [timeIrl, setTimeIrl] = useState(0)
                       {timeSlot.start} - {timeSlot.end}
                       </Link> 
                     </td>
-                    <td className="speaker hidden whitespace-nowrap px-3 text-sm font-display sm:text-lg tracking-tight text-yellow-900 w-1/2 sm:w-[250px] md:flex gap-4">
+                    <td className="speaker hidden whitespace-nowrap px-3 text-sm font-display sm:text-lg tracking-tight text-yellow-900 w-1/2 sm:w-[250px] md:flex align-middle gap-4">
                             <Link href={`/speakers/${timeSlot.session}`} >
                           <div className="flex-shrink-0">
                               <Image
