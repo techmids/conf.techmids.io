@@ -8,7 +8,7 @@ const auditoriumDay1 =
   {
     room: "Main Auditorium",
     timeOfDay: 'Auditorium Day 1',
-    date: '2023-06-15',
+    date: '2023-06-13',
     summary: '08:30 - 17:00 BST',
     dayName: "Day 1",
     timeSlots: [
@@ -440,7 +440,6 @@ const [timeIrl, setTimeIrl] = useState(0)
   useEffect(() => {
     const logDate = () => {
       const currentDate = new Date()
-      console.log('Current date and time:', Math.floor(currentDate.getTime()/1000), currentDate.getDate())
       setToday(String(currentDate.getDate()))
       setTimeIrl( Math.floor(currentDate.getTime()/1000))
       setTimeout(logDate, 20000)
@@ -450,16 +449,9 @@ const [timeIrl, setTimeIrl] = useState(0)
       clearTimeout()
     }
   }, [])
-
-  // console.log(day.date.split('').slice(8).join(''));
-
-// const toime = moment(`06/${today}/2023 ${thinkTankDay2.timeSlots[0].start.split('AM').join('')}:00`).unix()
-// console.log(toime)
-
-// console.log(moment(toime).unix())
   return(
-          <>
-          
+    <>
+        
     <div className="flex flex-col items-center px-4 sm:px-6 lg:px-8 sm:m-8">
       <div className="mt-8 sm:-mx-8">
         <div className="sm:flex-auto">
@@ -474,17 +466,18 @@ const [timeIrl, setTimeIrl] = useState(0)
           <tbody className="divide-y divide-gray-200 bg-white">
             {day.timeSlots.map((timeSlot) => (
                 <tr key={`${timeSlot.start}${timeSlot.name}`} 
-                className={
-                timeIrl >= moment(`06/${today}/2023 ${timeSlot.start.split('AM').join('')}:00`).unix() 
-                && 
-                timeIrl < moment(`06/${today}/2023 ${timeSlot.end.split('AM').join('')}:00`).unix()+ 5 * 60 
-                &&
-                day.date.split('').slice(8).join('') === today ? 
-                "flex items-center bg-blue-200" :
-                "flex items-center"
+                    className={
+                    timeIrl >= moment(`06/${today}/2023 ${timeSlot.start.split('').filter((x)=> x.toUpperCase() === x.toLowerCase()).join('')}:00`).unix() 
+                    && 
+                    timeIrl < moment(`06/${today}/2023 ${timeSlot.end.split('').filter((x)=> x.toUpperCase() === x.toLowerCase()).join('')}:00`).unix() + 5 * 60 
+                    &&
+                    day.date.split('').slice(8).join('') === today 
+                    ? 
+                    "flex items-center bg-blue-200" :
+                    "flex items-center"
                 }>
                   {timeSlot.session && (
-                    <>
+                  <>
                     <td className="time w-1/2 whitespace-nowrap py-1 text-sm font-display font-bold sm:text-lg tracking-tight text-yellow-700  sm:w-[200px]">
                       <Link href={`/speakers/${timeSlot.session}`} >
                       {timeSlot.start} - {timeSlot.end}
@@ -510,7 +503,7 @@ const [timeIrl, setTimeIrl] = useState(0)
                       {timeSlot.description ? timeSlot.description : Sessions[timeSlot.session]?.talkTitle}
                       </Link>
                     </td>
-              </>
+                 </>
                   )}
                   {!timeSlot.session && (
                       <>
@@ -531,7 +524,7 @@ const [timeIrl, setTimeIrl] = useState(0)
         </table>
       </div>
     </div>
-          </>
+  </>
   )
 }
 
