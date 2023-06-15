@@ -542,8 +542,8 @@ export function Schedule() {
                         ignite talks, including plenty of time to chat.
                       </p>
                 </div>
-                <DailySchedule day={auditoriumDay1} />
-                <DailySchedule day={thinkTankDay1} />
+                {/*<DailySchedule day={auditoriumDay1} />*/}
+                {/*<DailySchedule day={thinkTankDay1} />*/}
                 <DailySchedule day={auditoriumDay2} />
                 <DailySchedule day={thinkTankDay2} />
             </div>
