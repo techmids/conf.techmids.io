@@ -31,6 +31,8 @@ import ZarrahBImage from '@/images/avatars/zarrah-belgian.png'
 import CraigImage from '@/images/avatars/craig-box.jpg'
 import KatCosgroveImage from '@/images/avatars/kat-cosgrove.jpg'
 import AmandaBImage from '@/images/avatars/amanda-brock.jpg'
+import LouiseImg from '@images/avatars/louise.jpg'
+
 
 export const Sessions= {
     "antonio-cobo": {
@@ -1188,6 +1190,18 @@ export const Sessions= {
         website: "https://amandabrock.com/books",
         sessionType: "session",
     },
+    "louise-paling": {
+        name: "Louise Paling",
+        jobTitle: "",
+        bio: <></>,
+        talkTitle: "Lean Startup",
+        description: "",
+        image: LouiseImg,
+        linkedin: "",
+        twitter: "short_louise",
+        website: "",
+        sessionType: "session",
+    }
     // "": {
     //     name: "",
     //     jobTitle: "",

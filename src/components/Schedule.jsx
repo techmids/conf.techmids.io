@@ -185,7 +185,7 @@ const auditoriumDay1 =
         end: '14:40PM',
       },
       {
-        session: "amanda-brock",
+        session: "andy-burgin",
         start: '14:40PM',
         end: '15:10PM',
       },
@@ -367,7 +367,7 @@ const thinkTankDay1 = {
         end: '11:55AM',
       },
       {
-        session: "andy-burgin",
+        session: "louise-paling",
         start: '12:00PM',
         end: '12:30PM',
       },
