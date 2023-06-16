@@ -346,7 +346,7 @@ const thinkTankDay1 = {
         end: '09:50AM',
       },
       {
-        session: "simon-gurney",
+        session: "daniel-oates-lee",
         start: '09:55AM',
         end: '10:25AM',
       },

@@ -13,7 +13,6 @@ import DaveImage from '@/images/avatars/dave-shepherd.jpg'
 import KrisztianImage from '@/images/avatars/krisztian-fekete.jpg'
 import AnaisImage from '@/images/avatars/anais-urlichs.png'
 import BaruchImage from '@/images/avatars/baruch-sadogursky.jpg'
-import SimonImage from '@/images/avatars/simon-gurney.jpg'
 import BenImage from '@/images/avatars/ben-madley.png'
 import CarlyImage from '@/images/avatars/carly-richmond.jpeg'
 import AndyImage from '@/images/avatars/andy-burgin.png'
@@ -32,7 +31,7 @@ import CraigImage from '@/images/avatars/craig-box.jpg'
 import KatCosgroveImage from '@/images/avatars/kat-cosgrove.jpg'
 import AmandaBImage from '@/images/avatars/amanda-brock.jpg'
 import LouiseImg from '@/images/avatars/louise.jpg'
-
+import AvatarImg from '@/images/avatars/avatar.jpg'
 
 export const Sessions= {
     "antonio-cobo": {
@@ -657,19 +656,19 @@ export const Sessions= {
         website: '',
         sessionType: 'session'
     },
-    "simon-gurney": {
-        name: 'Simon Gurney',
+    "daniel-oates-lee": {
+        name: 'Daniel Oates Lee',
         jobTitle: 'Co-Founder, Punk Security ',
         bio: (
             <>
                 <p>
-                    Simon is one of the Punk Security Co-Founders and a DevSecOps consultant, helping clients integrate
-                    security into their application and infrastructure automation. He has over 15 years experience
-                    working within IT, primarily focused on automation and InfoSec.
+                    Daniel Oates Lee is one of the cofounders of Punk Security, an innovative security company delivering managed DevSecOps. He has over 24 years of commercial IT experience, with 17 years focused on cyber security.
                 </p>
                 <p>
-                    Simon is a vocal advocate for DevOps and is also a keen Python and .NET CORE developer. He has
-                    authored four opensource tools: dnsReaper, SMBeagle, secret magpie and pwnSpoof.
+                    Daniel has worked with some of the largest global financial companies, UK government, and the British military department on various projects ranging from security policy writing to technical implementations, red teaming, and pen-testing.
+                </p>
+                <p>
+                    He has focused on DevSecOps and automating security testing over the last four years. In his spare time, he volunteers to help run and deliver talks at cyber security conferences, whilst also carrying out his own personal research.
                 </p>
             </>
         ),
@@ -689,7 +688,7 @@ export const Sessions= {
                 </p>
             </>
         ),
-        image: SimonImage,
+        image: AvatarImg,
         linkedin: 'https://www.linkedin.com/in/simon-gurney-2396375b',
         twitter: '',
         website: 'https://punksecurity.co.uk',
