@@ -346,7 +346,7 @@ const thinkTankDay1 = {
         end: '09:50AM',
       },
       {
-        session: "daniel-oates-lee",
+        session: "louise-paling",
         start: '09:55AM',
         end: '10:25AM',
       },
@@ -367,7 +367,7 @@ const thinkTankDay1 = {
         end: '11:55AM',
       },
       {
-        session: "louise-paling",
+        session: "daniel-oates-lee",
         start: '12:00PM',
         end: '12:30PM',
       },
