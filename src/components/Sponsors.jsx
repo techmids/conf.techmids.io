@@ -24,19 +24,20 @@ export function Sponsors() {
           <blockquote className="mt-8">
             <div className="relative max-w-3xl text-xl font-medium text-white md:flex-grow">
               <p className="relative">
-                TechMids Conf 2023 is proud to be a part of DevOpsDays Birmingham 2023
+                TechMids Conf October 2023 is proud to be a part of Birmingham Tech Week
               </p>
             </div>
 
             <footer className="mt-4">
-              <a
-                  className="text-base font-semibold text-white underline"
-                  href="https://devopsdaysbirmingham.co.uk/"
-                  target="_blank"
-                  rel="noopener"
-              >
-                Find out more
-              </a>
+              {/*<a*/}
+              {/*    className="text-base font-semibold text-white underline"*/}
+              {/*    // href="https://devopsdaysbirmingham.co.uk/"*/}
+              {/*    */}
+              {/*    target="_blank"*/}
+              {/*    rel="noopener"*/}
+              {/*>*/}
+              {/*  Find out more*/}
+              {/*</a>*/}
             </footer>
           </blockquote>
         </div>

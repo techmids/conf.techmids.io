@@ -1,7 +1,6 @@
-import Image from 'next/image'
-
 import { Container } from '@/components/Container'
 import { ButtonCTA } from '@/components/ButtonCTA'
+import {EVENT, event} from "../../event";
 
 export function Hero() {
   return (
@@ -15,13 +14,14 @@ export function Hero() {
         <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
           <h1 className="font-display text-5xl font-bold tracking-tighter text-yellow-600 sm:text-7xl">
             <span className="sr-only">TechMids Conf - </span>
-            <span className="text-yellow-700">Thursday and Friday 15-16th June 2023</span>
+            <span className="text-yellow-700">{EVENT.date}</span>
             <br /> All day, full stack conference
           </h1>
           <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-yellow-900">
             <p>
-              <b>TechMids Conf is a two day full stack conference</b>, on
-              15th and 16th June 2023, as a co-located event <b><a href="https://devopsdaysbirmingham.co.uk/" className="underline">part of DevOpsDays Birmingham 2023.</a></b>{' '}
+              <b>TechMids Conf is a full stack conference</b>, on
+              {EVENT.date}, part of Birmingham Tech Week 2023.{' '}
+              {/*{EVENT.date}, <b><a href="https://devopsdaysbirmingham.co.uk/" className="underline">part of Birmingham Tech Week 2023.</a></b>{' '}*/}
             </p>
             <p>
               Hear from world class speakers, engage in social chatter, and find

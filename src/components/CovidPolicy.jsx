@@ -135,8 +135,7 @@ export function CovidPolicy() {
           </p>
           <p className="mt-8 text-xl leading-8 text-gray-500">
             While we are not requiring proof of negative lateral flow at the
-            event we kindly ask that you take a test before attending the event
-            both days for everyone&rsquo;s safety.
+            event we kindly ask that you take a test before attending the event.
           </p>
           <p className="mt-8 text-xl leading-8 text-gray-500">
             Lateral flow tests can be ordered online from most pharmacies.

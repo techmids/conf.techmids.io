@@ -1,99 +1,5 @@
 import Image from "next/image";
-
-const sponsorTiers = {
-    platinum: {
-        name: "Platinum Sponsors",
-        sponsors: [
-            {
-                name: "Bluetel",
-                image: "/sponsors/bluetel-logo.png",
-                url: "https://www.bluetel.co.uk"
-            }
-        ]
-    },
-    gold: {
-        name: "Gold Sponsors",
-        sponsors: [
-            {
-                name: "Akeyless",
-                image: "/sponsors/akeyless.png",
-                url: "https://www.akeyless.io/"
-            }
-        ]
-    },
-    silver: {
-
-        name: "Silver Sponsors",
-        sponsors: [
-            {
-                name: "Open UK",
-                image: "/sponsors/openuk.png",
-                url: "https://www.openuk.uk/"
-            },
-            {
-                name: "Jump24",
-                image: "/sponsors/jump24.svg",
-                url: "https://jump24.co.uk/"
-            },
-            {
-                name: "BJSS",
-                image: "/sponsors/bjss.png",
-                url: "https://www.bjss.com/"
-            },
-            {
-                name: "Aqua Security",
-                image: "/sponsors/aqua.svg",
-                url: "https://www.aquasec.com/"
-            },
-            {
-                name: "Elastic",
-                image: "/sponsors/elastic.png",
-                url: "https://www.elastic.co/"
-            },
-            {
-                name: "Newrelic",
-                image: "/sponsors/newrelic.png",
-                url: "https://newrelic.com/"
-            }
-        ],
-    },
-    bronze: {
-        name: "Bronze Sponsors",
-        sponsors: [
-            {
-                name: "The StackWizards",
-                image: "/sponsors/stackwizards.png",
-                url: "https://stackwizards.com/"
-            },
-            {
-                name: "ManyPets",
-                image: "/sponsors/manypets.svg",
-                url: "https://manypets.com/"
-            }
-        ]
-    },
-    lanyard: {
-        name: "Lanyard Sponsor",
-        sponsors: [
-            {
-                name: "Vonage",
-                image: "/sponsors/vonage.png",
-                url: "https://vonage.dev/"
-            }
-        ]
-    },
-    talent: {
-        name: "Talent Solutions Sponsor",
-        sponsors: [
-            {
-                name: "Spinks",
-                image: "/sponsors/spinks.png",
-                url: "https://www.wearespinks.com/"
-            },
-            ]
-    }
-}
-
+import {sponsorTiers} from "../../event";
 const imageDimensions = {
     width: 200,
     height: 200
@@ -135,7 +41,6 @@ export function SponsorTiers() {
             {printSponsors("Silver", sponsorTiers.silver.sponsors)}
             {printSponsors("Bronze", sponsorTiers.bronze.sponsors, 0.5)}
             {printSponsors("Lanyard", sponsorTiers.lanyard.sponsors, 0.5)}
-            {printSponsors("Talent Solutions", sponsorTiers.talent.sponsors, 0.5)}
 
         </div>
     )

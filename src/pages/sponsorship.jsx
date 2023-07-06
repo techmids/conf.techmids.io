@@ -12,8 +12,8 @@ const tiers = [
         name: 'Lanyard',
         id: 'tier-lanyard',
         quantity: 1,
-        quantitySold: 1,
-        price: "SOLD OUT",
+        quantitySold: 0,
+        price: "£3000 + VAT",
         features: [
             'Ability to leave your stickers/swag at our swag drop table',
             'Your logo on our lanyards',
@@ -24,8 +24,8 @@ const tiers = [
         name: ' Talent Solutions',
         id: 'tier-talent',
         quantity: 1,
-        quantitySold: 1,
-        price: "SOLD OUT",
+        quantitySold: 0,
+        price: "£3000 + VAT",
         features: [
             'Ability to leave your stickers/swag at our swag drop table',
             'A table at the conference to provide talent solutions to attendees',
@@ -37,7 +37,7 @@ const tiers = [
         id: 'tier-badge',
         quantity: 1,
         quantitySold: 0,
-        price: "£2500 + VAT",
+        price: "£3000 + VAT",
         features: [
             'Ability to leave your stickers/swag at our swag drop table',
             'Your logo on our Conference Badges',
@@ -49,13 +49,12 @@ const tiers = [
         id: 'tier-bronze',
         quantity: 10,
         quantitySold: 7,
-        price: "£1250 + VAT",
+        price: "£1500 + VAT",
         features: [
             'Small logos on our website',
             'An announcement on Twitter and LinkedIn',
             'Small logo on our slide deck',
             'Ability to leave your stickers/swag at our swag drop table',
-            // 'Two free tickets'
         ],
         featured: false,
     },
@@ -87,8 +86,6 @@ const tiers = [
             'A dedicated tweet and LinkedIn post',
             'Large logo on our slide deck',
             'A table at the conference to talk to attendees',
-            // '50" TV screen at your table',
-            // 'Six free tickets',
         ],
         featured: false,
     },
@@ -138,7 +135,7 @@ const reasons = [
     "We have a diverse audience of developers, designers, testers, managers and more",
     "This is the 'Must Attend' event of the year",
     "We are the best way to get in front of the West Midlands developer community",
-    "We sell out of tickets every year, filling the 350+ seater venue",
+    "We sell out of tickets every year",
     "We have a great reputation in the community",
     "Run by a team of volunteers, we are a not-for-profit event",
     "Associate yourself with a great event and a great community",
@@ -153,7 +150,6 @@ const CredentialsSection = () => {
         { id: 1, name: 'Combined (all years) Event Attendees', value: '1,000+' },
         { id: 2, name: 'Previous Sponsors', value: '35+' },
         { id: 3, name: 'Total Speakers', value: '60+' },
-        { id: 4, name: 'Combined Days', value: '5' },
     ]
 
 return (
@@ -172,10 +168,10 @@ return (
                     </p>
                     <p className="mt-6 text-lg leading-8 text-gray-600">
                         The team behind TechMids have run 4 non-profit conferences over the last 3 years. We have a great reputation
-                        in the community and are the 'Must Attend' event of the year. (A
+                        in the community and are the 'Must Attend' event of the year.
                     </p>
                         <p className="mt-6 text-lg leading-8 text-gray-600">
-                        Each year we sell out, filling the 350+ seater venue.
+                        Each year we sell out
                     </p>
                     <dl className="mt-16 grid max-w-xl grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 xl:mt-16">
                         {stats.map((stat) => (
