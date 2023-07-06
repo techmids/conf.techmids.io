@@ -17,8 +17,8 @@ export function Sponsors() {
           <div>
             <img
                 className="h-12"
-                src="/DevOpsDays.png"
-                alt="devopsdays"
+                src="/btw.png"
+                alt="big tech week logo"
             />
           </div>
           <blockquote className="mt-8">
