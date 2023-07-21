@@ -32,6 +32,20 @@ module.exports = {
         '2xl': '40rem',
       },
       colors: {
+        brand: {
+          DEFAULT: '#23FFF3',
+          50: '#DBFFFD',
+          100: '#C6FFFC',
+          200: '#9DFFFA',
+          300: '#75FFF7',
+          400: '#4CFFF5',
+          500: '#23FFF3',
+          600: '#00EADD',
+          700: '#00B2A8',
+          800: '#007A73',
+          900: '#00423E',
+          950: '#002624'
+        },
         btw: {
           blue: '#171D29',
           cyan: '#23FFF3',

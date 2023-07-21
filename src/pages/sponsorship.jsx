@@ -21,7 +21,7 @@ const tiers = [
         featured: false,
     },
     {
-        name: ' Talent Solutions',
+        name: 'Talent',
         id: 'tier-talent',
         quantity: 1,
         quantitySold: 0,
@@ -48,8 +48,8 @@ const tiers = [
         name: 'Bronze',
         id: 'tier-bronze',
         quantity: 10,
-        quantitySold: 7,
-        price: "£1500 + VAT",
+        quantitySold: 0,
+        price: "£1750 + VAT",
         features: [
             'Small logos on our website',
             'An announcement on Twitter and LinkedIn',
@@ -62,8 +62,8 @@ const tiers = [
         name: 'Silver',
         id: 'tier-silver',
         price: "£3000 + VAT",
-        quantity: 6,
-        quantitySold: 3,
+        quantity: 10,
+        quantitySold: 0,
         features: [
             'Medium logos on our website',
             'A dedicated tweet and LinkedIn post',
@@ -79,7 +79,7 @@ const tiers = [
         id: 'tier-gold',
         price: "£6000 + VAT",
         quantity: 5,
-        quantitySold: 3,
+        quantitySold: 0,
         features: [
             'Everything in Silver',
             'Large logos on our website',
@@ -104,18 +104,18 @@ const tiers = [
         ],
         featured: false,
     },
-    {
-        name: 'Live-Stream',
-        id: 'tier-live',
-        quantity: 1,
-        quantitySold: 0,
-        price: "£6000 + VAT",
-        features: [
-            'Ability to leave your stickers/swag at our swag drop table',
-            'Exclusive branding on the main-track live-stream and recordings',
-        ],
-        featured: false,
-    },
+    // {
+    //     name: 'Live-Stream',
+    //     id: 'tier-live',
+    //     quantity: 1,
+    //     quantitySold: 0,
+    //     price: "£6000 + VAT",
+    //     features: [
+    //         'Ability to leave your stickers/swag at our swag drop table',
+    //         'Exclusive branding on the main-track live-stream and recordings',
+    //     ],
+    //     featured: false,
+    // },
     {
         name: 'Custom',
         id: 'tier-custom',
@@ -153,7 +153,7 @@ const CredentialsSection = () => {
     ]
 
 return (
-    <div className="relative bg-white pt-6">
+    <div className="mt-5 relative bg-white pt-6">
         <img
             className="rounded-3xl h-56 w-full bg-gray-50 object-cover lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-1/2"
             src="/mp-leon-adato.jpg"
@@ -162,7 +162,7 @@ return (
         <div className="mx-auto grid max-w-7xl lg:grid-cols-2">
             <div className="px-6 pb-24 pt-16 sm:pb-32 sm:pt-20 lg:col-start-2 lg:px-8 lg:pt-32">
                 <div className="mx-auto max-w-2xl lg:mr-0 lg:max-w-lg">
-                    <h2 className="text-base font-semibold leading-8 text-yellow-600">Our track record</h2>
+                    <h2 className="text-base font-semibold leading-8 text-brand-900">Our track record</h2>
                     <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                         4 Amazing events over 3 years
                     </p>
@@ -231,7 +231,7 @@ export default function Sponsorship() {
                             We want to work with you to tailor a package that suits your needs.
 
                         </p>
-                        <div className="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-4">
+                        <div className="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                             {tiers.map((tier) => (
                                 <div
                                     key={tier.id}
@@ -279,7 +279,7 @@ export default function Sponsorship() {
                                         href="mailto:hello@techmids.io"
                                         aria-describedby={tier.id}
                                         className={classNames(
-                                            'bg-yellow-300 text-black shadow-sm hover:bg-yellow-400 focus-visible:outline-yellow-400',
+                                            'bg-brand-500 text-black shadow-sm hover:bg-brand-400 focus-visible:outline-brand-400',
                                             'mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2'
                                         )}
                                     >
@@ -295,7 +295,7 @@ export default function Sponsorship() {
                                         {tier.features.map((feature) => (
                                             <li key={feature} className="flex gap-x-3">
                                                 <CheckIcon
-                                                    className={classNames(tier.featured ? 'text-white' : 'text-yellow-300', 'h-6 w-5 flex-none')}
+                                                    className={classNames(tier.featured ? 'text-white' : 'text-brand-500', 'h-6 w-5 flex-none')}
                                                     aria-hidden="true"
                                                 />
                                                 {feature}

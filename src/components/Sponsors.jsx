@@ -17,7 +17,7 @@ export function Sponsors() {
           <div>
             <img
                 className="h-12"
-                src="/btw.png"
+                src="/birmingham-tech-week.png"
                 alt="big tech week logo"
             />
           </div>
@@ -29,15 +29,15 @@ export function Sponsors() {
             </div>
 
             <footer className="mt-4">
-              {/*<a*/}
-              {/*    className="text-base font-semibold text-white underline"*/}
-              {/*    // href="https://devopsdaysbirmingham.co.uk/"*/}
-              {/*    */}
-              {/*    target="_blank"*/}
-              {/*    rel="noopener"*/}
-              {/*>*/}
-              {/*  Find out more*/}
-              {/*</a>*/}
+              <a
+                  className="text-base font-semibold text-brand-500 underline"
+                  href="https://birminghamtechweek.com/"
+
+                  target="_blank"
+                  rel="noopener"
+              >
+                Find out more
+              </a>
             </footer>
           </blockquote>
         </div>

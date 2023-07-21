@@ -1,9 +1,6 @@
 export function Logo(props) {
   return (
-      <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 295.32 152.71" {...props}>
-        <defs>
-          <style>.cls-1{"fill:#020203;"}</style>
-        </defs>
+      <svg id="Layer_1" style={{fill:"#23FFF3"}} className="fill-brand-500" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 295.32 152.71" {...props}>
         <path className="cls-1" d="M31.75,12.78,23.34,65.63H9.57L18,12.78H0L1.79,1.24H51.6L49.81,12.78Z"/>
         <path className="cls-1"
               d="M62.51,65.63,72.7,1.25h41.4l-1.79,11.54H84.68L82.35,27.45h23.43L104,38.54H80.56L78.06,54.1h29l-1.79,11.53Z"/>

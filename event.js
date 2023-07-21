@@ -1,8 +1,8 @@
 export const EVENT = {
     date: '20th October 2023',
     title: 'TechMids - Part of Birmingham Tech Week',
-    venue: 'TBA',
-    address: '',
+    venue: 'The ICC',
+    address: '8 Centenary Sq, B1 2EA',
     startTime: '09:00 AM',
     endTime: '5:00 PM',
     ticketLink: 'https://ti.to/tech-events-birmingham/techmids-october-2023',

@@ -32,8 +32,8 @@ export function ButtonCTA() {
           ['Location', EVENT.address],
         ].map(([name, value]) => (
           <div key={name}>
-            <dt className="font-mono text-sm text-yellow-600">{name}</dt>
-            <dd className="mt-0.5 text-2xl font-semibold tracking-tight text-yellow-900">
+            <dt className="font-mono text-sm text-brand-500">{name}</dt>
+            <dd className="mt-0.5 text-2xl font-semibold tracking-tight text-brand-700">
               {value}
             </dd>
           </div>
