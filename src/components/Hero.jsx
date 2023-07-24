@@ -87,19 +87,4 @@ export function Hero() {
         </div>
       </div>
   )
-  // return (
-  //   <div className="relative pt-10 pb-20 sm:py-24 bg-btw-blue">
-  //     <div className="absolute -inset-x-0 -top-48 -bottom-14 overflow-hidden bg-btw-blue">
-  //       <div className="absolute top-0 left-0 -translate-y-[10%] -translate-x-[55%] -scale-x-100 sm:left-1/2 sm:-translate-y-[6%] sm:-translate-x-[98%] lg:-translate-x-[106%] xl:-translate-x-[122%]"></div>
-  //       <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white" />
-  //       <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white" />
-  //     </div>
-  //     <Container className="relative">
-  //       <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
-
-  //         <ButtonCTA />
-  //       </div>
-  //     </Container>
-  //   </div>
-  // )
 }
