@@ -69,9 +69,7 @@ export function Hero() {
               </p>
               <p>TechMids Conf is a community run, not for profit conference.</p>
             </div>
-            <div className="mt-10 flex items-center gap-x-6">
-              <ButtonCTA />
-            </div>
+
           </div>
           <div className="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
             <div className="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
@@ -84,6 +82,9 @@ export function Hero() {
               />
             </div>
           </div>
+        </div>
+        <div className="flex justify-center mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <ButtonCTA />
         </div>
       </div>
   )
