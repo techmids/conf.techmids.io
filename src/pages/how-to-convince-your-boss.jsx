@@ -16,13 +16,13 @@ export default function HowToConvinceYourBoss() {
             <div className="relative pt-12 pb-16 px-4 sm:pt-16 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:grid lg:grid-cols-2">
                 <div className="lg:col-start-2 lg:pl-8">
                     <div className="text-base max-w-prose mx-auto lg:max-w-lg lg:ml-auto lg:mr-0">
-                        <h2 className="leading-6 text-yellow-600 font-semibold tracking-wide uppercase">Our Guide</h2>
+                        <h2 className="leading-6 text-brand-900 font-semibold tracking-wide uppercase">Our Guide</h2>
                         <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                             How to convince your boss to send you to a conference
                         </h3>
                         <p className="mt-8 text-lg text-gray-500">
                             You are part of a team building software solutions all day every day. How can you convince your
-                            boss to give you a day to attend this amazing conference (They dont even need to buy a ticket! IT'S FREE!!!)
+                            boss to give you a day to attend this amazing conference?
                         </p>
                         <div className="mt-5 prose prose-yellow text-gray-500">
                             <h2>

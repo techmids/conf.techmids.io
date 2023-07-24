@@ -43,11 +43,11 @@ export function Speakers() {
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2
                 id="speakers-title"
-                className="font-display text-4xl font-medium tracking-tighter text-yellow-600 sm:text-5xl"
+                className="font-display text-4xl font-medium tracking-tighter text-brand-800 sm:text-5xl"
             >
               Speakers
             </h2>
-            <p className="mt-4 font-display text-2xl tracking-tight text-yellow-900">
+            <p className="mt-4 font-display text-2xl tracking-tight text-brand-900">
               Come away inspired from a day of talks from experts, ranging from
               front end engineering, to cloud platforms and operations, with
               everything in between.

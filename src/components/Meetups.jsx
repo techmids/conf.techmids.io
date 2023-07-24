@@ -20,10 +20,6 @@ const meetups = [
     image: 'you-equal-tech.png',
   },
   {
-    name: 'DevOps Birmingham',
-    image: '/devopsdays.png',
-  },
-  {
     name: 'BrumAI',
     image: '/brumai.png',
   },
@@ -34,7 +30,7 @@ export function Meetups() {
     <div className="mt-10 bg-white">
       <div className="mx-auto max-w-6xl py-12 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
-          <h2 className="mb-16 text-center font-display text-4xl font-medium tracking-tighter text-yellow-900 sm:text-5xl">
+          <h2 className="mb-16 text-center font-display text-4xl font-medium tracking-tighter text-brand-900 sm:text-5xl">
             Backed by your favourite meetups
           </h2>
         </div>

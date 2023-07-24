@@ -107,7 +107,7 @@ export function CodeOfConduct() {
       <div className="relative px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-prose text-lg">
           <h1>
-            <span className="block text-center text-base font-semibold uppercase tracking-wide text-yellow-600">
+            <span className="block text-center text-base font-semibold uppercase tracking-wide text-brand-900">
               Code Of Conduct
             </span>
             <span className="mt-2 block text-center text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">
@@ -194,7 +194,7 @@ export function CodeOfConduct() {
             <p className="mt-8 text-xl leading-8 text-gray-500">
               The TechMids Conf Code of Conduct is based on{' '}
               <a
-                className="text-yellow-600 underline"
+                className="text-brand-900 underline"
                 href={'https://confcodeofconduct.com'}
               >
                 confcodeofconduct.com.

@@ -5,14 +5,14 @@ import {EVENT} from "../../event";
 
 export function Header() {
   return (
-    <header className="relative z-50 pb-11 lg:pt-11">
+    <header className="relative z-50 pb-11 lg:pt-11 bg-btw-blue">
       <Container className="flex flex-wrap items-center justify-center sm:justify-between lg:flex-nowrap">
         <div className="mt-10 lg:mt-0 lg:grow lg:basis-0">
           <a href="/">
-            <Logo className="h-12 w-auto text-slate-900" />
+            <Logo className="h-12 w-auto" />
           </a>
         </div>
-        <div className="order-first -mx-4 flex flex-auto basis-full overflow-x-auto whitespace-nowrap border-b border-yellow-600/10 py-4 font-mono text-sm text-yellow-600 sm:-mx-6 lg:order-none lg:mx-0 lg:basis-auto lg:border-0 lg:py-0">
+        <div className="order-first -mx-4 flex flex-auto basis-full overflow-x-auto whitespace-nowrap border-b border-brand-600/10 py-4 font-mono text-sm text-brand-500 sm:-mx-6 lg:order-none lg:mx-0 lg:basis-auto lg:border-0 lg:py-0">
           <div className="mx-auto flex flex-col items-center space-x-4 px-4 sm:flex-row">
             <p>
               <time>{EVENT.date}</time>
