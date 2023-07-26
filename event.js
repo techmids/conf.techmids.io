@@ -18,11 +18,11 @@ export const sponsorTiers = {
     platinum: {
         name: "Platinum Sponsors",
         sponsors: [
-            // {
-            //     name: "Bluetel",
-            //     image: "/sponsors/bluetel-logo.png",
-            //     url: "https://www.bluetel.co.uk"
-            // }
+            {
+                name: "Goldman Sachs",
+                image: "/sponsors/goldman-sachs.png",
+                url: "https://www.goldmansachs.com/"
+            }
         ]
     },
     gold: {
@@ -46,4 +46,9 @@ export const sponsorTiers = {
         sponsors: [
         ]
     },
+    badge: {
+        name: "Badge Sponsor",
+        sponsors: [
+        ]
+    }
 }

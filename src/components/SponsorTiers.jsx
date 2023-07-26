@@ -7,10 +7,13 @@ const imageDimensions = {
 
 export function SponsorTiers() {
     function printSponsors(tier, sponsors, imageFactor =1) {
+        if (sponsors.length === 0) {
+            return null
+        }
         return (
             <div className="py-8">
                 <p className="text-center text-base font-semibold uppercase tracking-wider text-gray-600">
-                    {tier} Sponsors
+                    {tier} Sponsor{sponsors.length > 1 ? "s": null}
                 </p>
                 <div className="mx-auto max-w-[70%] mt-6 flex flex-wrap justify-evenly grid-cols-3 gap-0.5 lg:mt-8" >
                     {sponsors.map((sponsor) => (
@@ -41,6 +44,7 @@ export function SponsorTiers() {
             {printSponsors("Silver", sponsorTiers.silver.sponsors)}
             {printSponsors("Bronze", sponsorTiers.bronze.sponsors, 0.5)}
             {printSponsors("Lanyard", sponsorTiers.lanyard.sponsors, 0.5)}
+            {printSponsors("Badge", sponsorTiers.badge.sponsors, 0.5)}
 
         </div>
     )
