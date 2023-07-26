@@ -1,8 +1,5 @@
-import { Container } from '@/components/Container'
 import { ButtonCTA } from '@/components/ButtonCTA'
 import {EVENT} from "../../event";
-import {ChevronRightIcon} from "@heroicons/react/solid";
-import {Logo} from "@/components/Logo";
 
 export function Hero() {
   return (
