@@ -1,4 +1,4 @@
-import { CheckIcon } from '@heroicons/react/solid'
+import {CheckIcon, HeartIcon, MicrophoneIcon, QuestionMarkCircleIcon, UsersIcon} from '@heroicons/react/solid'
 import Head from "next/head";
 import {Header} from "@/components/Header";
 import {Footer} from "@/components/Footer";
@@ -6,6 +6,7 @@ import {Images} from "@/components/Images";
 import SponsorUsCTA from "@/components/SponsorUsCTA";
 import {EVENT} from "../../event";
 import {Sponsors} from "@/components/Sponsors";
+import {TicketIcon, CalendarIcon, GlobeIcon} from "@heroicons/react/outline";
 
 const tiers = [
     {
@@ -135,14 +136,20 @@ const tiers = [
 ]
 
 const reasons = [
-    "TechMids is the only developer conference in the West Midlands",
-    "We have a diverse audience of developers, designers, testers, managers and more",
-    "This is the 'Must Attend' event of the year",
-    "We are the best way to get in front of the West Midlands developer community",
-    "We sell out of tickets every year",
-    "We have a great reputation in the community",
-    "Run by a team of volunteers, we are a not-for-profit event",
-    "Associate yourself with a great event and a great community",
+    { description: "TechMids is the only developer conference in the West Midlands", icon: QuestionMarkCircleIcon},
+    { description: "We have a diverse audience of developers, designers, testers, managers and more", icon: UsersIcon},
+    { description: "This is the 'Must Attend' event of the year", icon: CalendarIcon},
+    { description: "We are the best way to get in front of the West Midlands developer community", icon: MicrophoneIcon},
+    { description: "We sell out of tickets every year", icon: TicketIcon},
+    { description: "We have a great reputation in the community", icon: HeartIcon},
+    { description: "Run by a team of volunteers, we are a not-for-profit event", icon: GlobeIcon},
+    { description: "Associate yourself with a great event and a great community", icon: CheckIcon},
+
+    // "We are the best way to get in front of the West Midlands developer community",
+    // "We sell out of tickets every year",
+    // "We have a great reputation in the community",
+    // "Run by a team of volunteers, we are a not-for-profit event",
+    // "Associate yourself with a great event and a great community",
 ]
 
 function classNames(...classes) {
@@ -192,6 +199,32 @@ return (
 )
 }
 
+const Reasons = () => {
+    return (
+        <div className="bg-btw-blue py-24 sm:py-32">
+            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+                <div className="mx-auto max-w-2xl lg:mx-0">
+                    <h2 className="text-base font-semibold leading-7 text-white">Why us?</h2>
+                    <p className="mt-2 text-3xl font-bold tracking-tight text-brand-500 sm:text-4xl">TechMids October 2023</p>
+                    <p className="mt-6 text-lg leading-8 text-gray-300">
+                        Find out about us and the collaboration opportunities we have available to promote your brand.
+                    </p>
+                </div>
+                <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-16">
+                    {reasons.map((feature) => (
+                        <div key={feature.name} className="relative pl-9">
+                            <dt className="inline font-semibold text-white">
+                                <feature.icon className="absolute left-1 top-1 h-5 w-5 text-brand-500" aria-hidden="true" />
+                                {/*{feature.name}*/}
+                            </dt>{' '}
+                            <dd className="inline">{feature.description}</dd>
+                        </div>
+                    ))}
+                </dl>
+            </div>
+        </div>
+    )
+}
 
 export default function Sponsorship() {
     return (
@@ -206,20 +239,21 @@ export default function Sponsorship() {
             </Head>
             <Header />
             <main>
+                {Reasons()}
                 <div className="bg-white py-12 sm:py-24">
                     <div className="mx-auto px-6 lg:px-8 lg:max-w-[75%]">
-                        <div className="mx-auto max-w-4xl text-center">
-                            <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-                                Why Sponsor Us?
-                            </p>
+                        {/*<div className="mx-auto max-w-4xl text-center">*/}
+                        {/*    <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">*/}
+                        {/*        Why Sponsor Us?*/}
+                        {/*    </p>*/}
 
-                        </div>
-                        <p className="mx-auto mt-6 mb-6 max-w-2xl text-center text-lg leading-8 text-gray-600">
-                            {EVENT.date}
-                        </p>
-                        {reasons.map((reason) => (
-                            <li className="mx-auto max-w-4xl text-left text-lg leading-8 text-gray-600">{reason}</li>
-                        ))}
+                        {/*</div>*/}
+                        {/*<p className="mx-auto mt-6 mb-6 max-w-2xl text-center text-lg leading-8 text-gray-600">*/}
+                        {/*    {EVENT.date}*/}
+                        {/*</p>*/}
+                        {/*{reasons.map((reason) => (*/}
+                        {/*    <li className="mx-auto max-w-4xl text-left text-lg leading-8 text-gray-600">{reason}</li>*/}
+                        {/*))}*/}
 
                         <CredentialsSection/>
 
