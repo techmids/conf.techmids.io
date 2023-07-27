@@ -63,7 +63,7 @@ const images = [
 
 export function Images() {
   return (
-      <div className="grid pt-4 px-4 grid-cols-3 md:grid-cols-5 gap-4">
+      <div key="This-Image" className="grid pt-4 px-4 grid-cols-3 md:grid-cols-5 gap-4">
         {images.map((image, index) => (
             <div key={image.alt}>
               <img className="h-auto max-w-full rounded-lg"

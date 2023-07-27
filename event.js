@@ -39,6 +39,11 @@ export const sponsorTiers = {
     bronze: {
         name: "Bronze Sponsors",
         sponsors: [
+            {
+                name: "StackWizards",
+                image: "/sponsors/stackwizards.png",
+                url: "https://stackwizards.com/"
+            }
         ]
     },
     lanyard: {
