@@ -33,6 +33,10 @@ const meetups = [
   },
   { name: 'codebar',
     image: '/meetups/codebar.png',
+  },
+  {
+    name: 'Code Your Future',
+    image: '/meetups/code-your-future.png',
   }
 ]
 
