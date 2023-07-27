@@ -1,28 +1,32 @@
 const meetups = [
   {
     name: 'Fusion Events',
-    image: '/fusion-events.png',
+    image: '/meetups/fusion-events.png',
   },
   {
     name: 'Brum PHP',
-    image: '/brum-php.png',
+    image: '/meetups/brum-php.png',
   },
   {
     name: 'BrumJS',
-    image: '/brum-js.png',
+    image: '/meetups/brum-js.png',
   },
   {
     name: 'Golang Birmingham',
-    image: '/golang.png',
+    image: '/meetups/golang.png',
   },
   {
     name: '#YouEqualTech Midlands',
-    image: 'you-equal-tech.png',
+    image: '/meetups/you-equal-tech.png',
   },
   {
     name: 'BrumAI',
-    image: '/brumai.png',
+    image: '/meetups/brumai.png',
   },
+  {
+    name: 'ManageOps',
+    image: '/meetups/manageops.png',
+  }
 ]
 
 export function Meetups() {
