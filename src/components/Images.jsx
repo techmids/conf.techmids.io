@@ -16,7 +16,7 @@ const images = [
     source: '/gallery/millenium-point.jpg',
   },
   {
-    name: 'Millenium Point',
+    name: 'Millenium Point Leon Adato',
     source: '/gallery/mp-leon-adato.jpg',
   },
   {
