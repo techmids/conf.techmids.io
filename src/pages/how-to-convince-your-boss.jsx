@@ -8,7 +8,7 @@ export default function HowToConvinceYourBoss() {
                 <div className="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
                     <img
                         className="h-56 w-full object-cover lg:absolute lg:h-full"
-                        src="/venue.jpg"
+                        src="/how-to-convince-your-boss/venue.jpg"
                         alt=""
                     />
                 </div>
@@ -87,7 +87,7 @@ export default function HowToConvinceYourBoss() {
             <div className="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
                 <img
                     className="h-56 w-full object-cover lg:absolute lg:h-full"
-                    src="/chairs.jpg"
+                    src="/how-to-convince-your-boss/chairs.jpg"
                     alt=""
                 />
             </div>

@@ -167,7 +167,7 @@ return (
     <div className="mt-5 relative bg-white pt-6">
         <img
             className="rounded-3xl h-56 w-full bg-gray-50 object-cover lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-1/2"
-            src="/mp-leon-adato.jpg"
+            src="/gallery/mp-leon-adato.jpg"
             alt=""
         />
         <div className="mx-auto grid max-w-7xl lg:grid-cols-2">

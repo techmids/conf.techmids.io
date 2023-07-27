@@ -26,6 +26,10 @@ const meetups = [
   {
     name: 'ManageOps',
     image: '/meetups/manageops.png',
+  },
+  {
+    name: 'Birmingham .NET User Group',
+    image: '/meetups/net.png',
   }
 ]
 
