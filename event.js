@@ -8,8 +8,8 @@ export const EVENT = {
     ticketLink: 'https://ti.to/tech-events-birmingham/techmids-october-2023',
     onSale: true, //swap to true to embed ticket widget
     titoId: 'tech-events-birmingham/techmids-october-2023',
-    CFPLink: "https://docs.google.com/forms/d/e/1FAIpQLSc9p8Ce2eU3LWdvjdoNL5wSo6hIClivw7b-o4EzMkUSUSQmOA/viewform?usp=pp_url",
-    CFPOpen: false,
+    CFPLink: "https://docs.google.com/forms/d/1amKwupLO6vI5BKGpG-maOkXhdhuNusZ48yW3pFqmEIU",
+    CFPOpen: true,
     capacity: 1000,
     tagline: "",
 }
