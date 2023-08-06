@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "link-to-the-past": "node link-to-the-past/link-to-the-past.mjs"
   },
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {
