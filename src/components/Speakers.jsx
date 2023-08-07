@@ -53,8 +53,35 @@ export function Speakers() {
               everything in between.
             </p>
           </div>
+          {Object.keys(Sessions).length === 0 && (
+              // <div className="col-span-full">
+              //   <p className="text-lg text-center text-slate-500">
+              //     We are working hard on the speaker line up. Check back soon!
+              //     You can check out our previous speakers by viewing our past events.
+              //     <a href={"/past-events"}>Past Events</a>
+              //   </p>
+              // </div>
+              <div className="bg-white">
+                <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
+                  <h2 className="text-3xl tracking-tight text-brand-900 sm:text-4xl">
+                    We are working hard on the speaker line up. Check back soon!
+                  </h2>
+                  <div className="mt-10 flex items-center gap-x-6">
+                    <a
+                        href="/past-events"
+                        className="rounded-md bg-brand-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-brand-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-900"
+                    >
+                      Past Events
+                    </a>
+                  </div>
+                </div>
+              </div>
+          )
+          }
             <div className="mt-16 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 space-x-8 space-y-8">
-          {Object.keys(Sessions).map((speaker, speakerIndex) => (
+
+
+              {Object.keys(Sessions).map((speaker, speakerIndex) => (
                   <a
                       href={
                           '/speakers/' + speaker

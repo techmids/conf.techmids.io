@@ -10,7 +10,7 @@ export const EVENT = {
     titoId: 'tech-events-birmingham/techmids-october-2023',
     CFPLink: "https://docs.google.com/forms/d/1amKwupLO6vI5BKGpG-maOkXhdhuNusZ48yW3pFqmEIU",
     CFPOpen: true,
-    capacity: 1000,
+    capacity: 600,
     tagline: "",
 }
 

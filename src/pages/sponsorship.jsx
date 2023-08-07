@@ -9,21 +9,21 @@ import {Sponsors} from "@/components/Sponsors";
 import {TicketIcon, CalendarIcon, GlobeIcon} from "@heroicons/react/outline";
 
 const tiers = [
-    {
-        name: 'Lanyard',
-        id: 'tier-lanyard',
-        quantity: 1,
-        quantitySold: 0,
-        price: "£3000 + VAT",
-        features: [
-            'Your logo on our lanyards',
-            'Ability to leave your stickers/swag at our swag drop table',
-            'Small logos on our website',
-            'An announcement on Twitter and LinkedIn',
-            'Small logo on our slide deck',
-        ],
-        featured: false,
-    },
+    // {
+    //     name: 'Lanyard',
+    //     id: 'tier-lanyard',
+    //     quantity: 1,
+    //     quantitySold: 0,
+    //     price: "£3000 + VAT",
+    //     features: [
+    //         'Your logo on our lanyards',
+    //         'Ability to leave your stickers/swag at our swag drop table',
+    //         'Small logos on our website',
+    //         'An announcement on Twitter and LinkedIn',
+    //         'Small logo on our slide deck',
+    //     ],
+    //     featured: false,
+    // },
     {
         name: 'Badge',
         id: 'tier-badge',

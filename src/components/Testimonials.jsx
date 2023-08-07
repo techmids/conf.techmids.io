@@ -1,19 +1,33 @@
 const featuredTestimonial = {
-    body: 'I really enjoyed all of presentations by on day one especially by David Flanagan and Leon Adato. It was also great to network with fellow coders. There were a lot of interesting products advertised by sponsors. Obviously food and beverages were delicious.',
+    body: 'The TechMids October 2022 event was an absolute delight! The organisers\' dedication was evident in every aspect. The talks were highly engaging, the level of attendance was great, and the overall atmosphere was fantastic. I took away so many great lessons that I\'ve factored into my own working practices, but the main thing I loved was seeing such a large swathe of the midlands tech community (and beyond) show up. 10 out of 10.',
     author: {
-        name: 'TechMids October 2022 attendee',
-        // imageUrl:
-        //     'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80',
-        // logoUrl: 'https://tailwindui.com/img/logos/savvycal-logo-gray-900.svg',
+        name: 'Andy Macdonald, Software Engineer',
+        imageUrl:
+            '/avatars/andy-macdonald.png',
+        logoUrl: '/sponsors/stackwizards.png',
     },
 }
 const testimonials = [
     [
         [
             {
+                body: 'I had such a great time at TechMids Conf, the event had it all: high energy, fantastic speakers from near and afar, the whole Brum Tech community together, loads of interesting chats in between talks, and a great after party too. We used it as an excuse to see people from work in real life, and took lots away from the talks that we now use at work. Can\'t wait for the next one!',
+                author: {
+                    name: 'Luke Browne, Software Engineer',
+                    imageUrl: '/avatars/luke.png',
+                }
+            },
+            {
                 body: 'Another fantastic event, thank you so much to the organisers, it’s wonderful to have such an inclusive conference in Birmingham. Atmosphere was great and I really enjoyed both days',
                 author: {
                     name: 'TechMids July 2023 Attendee',
+                },
+            },
+            {
+                body: 'I really enjoyed all of presentations by on day one especially by David Flanagan and Leon Adato. It was also great to network with fellow coders. There were a lot of interesting products advertised by sponsors. Obviously food and beverages were delicious.',
+                author: {
+                    name: 'TechMids October 2022 attendee'
+                    // imageUrl:
                 },
             },
             // More testimonials...
@@ -36,7 +50,6 @@ const testimonials = [
                     name: 'TechMids July 2023 Attendee',
                 },
             },
-            // More testimonials...
         ],
         [
             {
@@ -45,7 +58,13 @@ const testimonials = [
                     name: 'TechMids July 2023 Attendee',
                 },
             },
-            // More testimonials...
+            {
+                body: 'A really great conference! All of the speakers were really engaging and interesting and there was plenty of time allocated to networking in what was a very friendly and inclusive atmosphere. Loved the dynamic session highlighting on the website too, it helped me keep track of the schedule throughout the day.',
+                author: {
+                    name: 'Mike Rushton, Software Engineer',
+                    imageUrl: '/avatars/mike.png',
+                }
+            }
         ],
     ],
 ]
@@ -95,11 +114,11 @@ const Testimonials = () => {
                         </blockquote>
                         <figcaption className="flex items-center gap-x-4 border-t border-gray-900/10 px-6 py-4">
                             {featuredTestimonial.author.imageUrl &&
-                            <img
-                                className="h-10 w-10 flex-none rounded-full bg-gray-50"
-                                src={featuredTestimonial.author.imageUrl}
-                                alt=""
-                            />
+                                <img
+                                    className="h-10 w-10 flex-none rounded-full bg-gray-50"
+                                    src={featuredTestimonial.author.imageUrl}
+                                    alt=""
+                                />
                             }
                             <div className="flex-auto">
                                 <div className="font-semibold">{featuredTestimonial.author.name}</div>
@@ -122,7 +141,7 @@ const Testimonials = () => {
                                 >
                                     {column.map((testimonial) => (
                                         <figure
-                                            key={testimonial.author.handle}
+                                            key={testimonial.author.name}
                                             className="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5"
                                         >
                                             <blockquote className="text-gray-900">

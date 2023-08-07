@@ -45,7 +45,15 @@ const meetups = [
   {
     name: 'CSS Birmingham University',
     image: '/meetups/css.png',
-  }
+  },
+    {
+      name: 'OWASP Birmingham',
+        image: '/meetups/owasp.png',
+    },
+    {
+      name: 'Hack the Midlands',
+        image: '/meetups/htm.png',
+    }
 ]
 
 export function Meetups() {
