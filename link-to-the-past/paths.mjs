@@ -1,5 +1,6 @@
 import { fileURLToPath } from 'url';
 import * as fs from 'node:fs/promises';
+import { R_OK, W_OK } from 'node:fs';
 import path from 'path';
 
 export async function get_paths() {
@@ -8,7 +9,7 @@ export async function get_paths() {
     const root_folder = path.dirname(script_folder);
     const next_config_js = path.resolve(path.join(script_folder, "..", "next.config.js"));
     try {
-        const ncj_exists = await fs.access(next_config_js, fs.constants.R_OK | fs.constants.W_OK);
+        const ncj_exists = await fs.access(next_config_js, R_OK | W_OK);
     } catch(e) {
         throw new Error(
             `Expected to find the next config in ${next_config_js}, but we didn't.\n` +
@@ -17,7 +18,7 @@ export async function get_paths() {
     }
     const public_dir = path.resolve(path.join(script_folder, "..", "public"));
     try {
-        const public_dir_exists = await fs.access(public_dir, fs.constants.R_OK | fs.constants.W_OK);
+        const public_dir_exists = await fs.access(public_dir, R_OK | W_OK);
     } catch(e) {
         throw new Error(
             `Expected to find the public resources dir in ${public_dir}, but we didn't.\n` +
