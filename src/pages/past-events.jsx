@@ -10,7 +10,20 @@ export const getStaticProps = async () => {
   // read what's in the public/past folder
   // we can't use __dirname for this because of https://stackoverflow.com/a/65861629/1418014
   let past_dir = path.join(process.cwd(), "public", "past");
-  const past_contents = await fs.readdir(past_dir, {withFileTypes: true});
+  let past_contents;
+  try {
+    past_contents = await fs.readdir(past_dir, {withFileTypes: true});
+  } catch(e) {
+    if (e.code == "ENOENT") {
+      // there is no past dir at all
+      // this probably means that we are currently being statically exported!
+      // therefore, the past-events page *in this export* can be blank, since
+      // it should never get seen anyway
+      // so we can happily return an empty list of past events
+      return {props: {past_events: []}}
+    }
+    throw e;
+  }
   const past_sites = past_contents.filter(dirent => dirent.isDirectory()).map(dirent => {
     const [year, month] = dirent.name.split("-");
     const monthname = {
