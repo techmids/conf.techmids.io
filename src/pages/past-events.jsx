@@ -34,7 +34,7 @@ export const getStaticProps = async () => {
     return {
       slug: dirent.name,
       title: `${monthname || month} ${year}`,
-      link: `past/${dirent.name}/index.html`
+      href: `past/${dirent.name}/index.html`
     }
   })
   return {props: {past_events: past_sites}}

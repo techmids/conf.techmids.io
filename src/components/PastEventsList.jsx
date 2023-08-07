@@ -1,26 +1,36 @@
-const pastEvent = [
-  {
-    id: 1,
-    title: 'The inaguural TechMids Conf',
-    href: '/past/2022-10/index.html',
-    imageUrl:
-        '/gallery/audience.jpg',
-    date: 'Friday 14th Oct 2022',
-    slug: '2022-10',
+const pastEventMetadata = {
+  "2022-10": {
+    title: 'The inaugural TechMids Conf',
+    imageUrl: '/gallery/audience.jpg',
+    niceDate: 'Friday 14th Oct 2022'
   },
-  {
-    id: 2,
+  "2023-06": {
     title: 'TechMids co-located with DevOpsDays Birmingham',
-    href: '/past/2023-06/index.html',
-    date: 'Thursday & Friday 15th & 16th June 2023',
     imageUrl: '/gallery/millenium-point.jpg',
-    slug: '2023-06',
+    niceDate: 'Thursday & Friday 15th & 16th June 2023',
   }
   // More past events...
-]
+}
 
 
 export function PastEventsList({past_events}) {
+
+  // The past events list is created by pages/past-events.jsx
+  // However, it doesn't have all the neat imagery and metadata
+  // The imagery and metadata is in the pastEvent object, above
+  // A newly added past event will therefore show up on this page,
+  // but won't have all the cool metadata until that is added to
+  // the pastEvent object above, which needs to be done manually.
+  // So we combine a default object, the object from the past-events
+  // page, and any data from the pastEventMetadata to make the final
+  // collection of info for each event.
+
+  const combinedPastEvents = past_events.map((pe, idx) => {
+    return Object.assign({
+      id: idx,
+      imageUrl: '/gallery/audience.jpg'
+    }, pe, pastEventMetadata[pe.slug] || {})
+  });
 
   return (
     <div className="relative overflow-hidden bg-white py-16">
@@ -136,7 +146,7 @@ export function PastEventsList({past_events}) {
             </p>
           </div>
           <div className="flex place-content-around mx-auto mt-16 max-w-2xl auto-rows-fr gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-            {pastEvent.map((post) => (
+            {combinedPastEvents.map((post) => (
                 <article
                     key={post.id}
                     className="w-1/2 relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80"
@@ -147,7 +157,7 @@ export function PastEventsList({past_events}) {
 
                   <div className="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
                     <time dateTime={post.datetime} className="mr-8">
-                      {post.date}
+                      {post.niceDate || post.date}
                     </time>
                     <div className="-ml-4 flex items-center gap-x-4">
                     </div>
