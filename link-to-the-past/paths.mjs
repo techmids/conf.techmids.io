@@ -12,7 +12,8 @@ export async function get_paths() {
     } catch(e) {
         throw new Error(
             `Expected to find the next config in ${next_config_js}, but we didn't.\n` +
-            "This isn't supposed to happen, and is a bug in this script.");
+            "This isn't supposed to happen, and is a bug in this script.\n" + 
+            `(The actual error we got was this: ${e})`);
     }
     const public_dir = path.resolve(path.join(script_folder, "..", "public"));
     try {
