@@ -11,6 +11,13 @@ const testimonials = [
     [
         [
             {
+                body: 'I had such a great time at TechMids Conf, the event had it all: high energy, fantastic speakers from near and afar, the whole Brum Tech community together, loads of interesting chats in between talks, and a great after party too. We used it as an excuse to see people from work in real life, and took lots away from the talks that we now use at work. Can\'t wait for the next one!',
+                author: {
+                    name: 'Luke Browne, Software Engineer',
+                    imageUrl: '/avatars/luke.png',
+                }
+            },
+            {
                 body: 'Another fantastic event, thank you so much to the organisers, it’s wonderful to have such an inclusive conference in Birmingham. Atmosphere was great and I really enjoyed both days',
                 author: {
                     name: 'TechMids July 2023 Attendee',
@@ -134,7 +141,7 @@ const Testimonials = () => {
                                 >
                                     {column.map((testimonial) => (
                                         <figure
-                                            key={testimonial.author.handle}
+                                            key={testimonial.author.name}
                                             className="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5"
                                         >
                                             <blockquote className="text-gray-900">
