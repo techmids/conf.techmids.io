@@ -2,7 +2,6 @@ import React from "react";
 import {Speakers} from "@/components/Speakers";
 import Head from "next/head";
 import {Header} from "@/components/Header";
-import {Speaker} from "@/components/Speaker";
 import {Sponsors} from "@/components/Sponsors";
 import {Footer} from "@/components/Footer";
 

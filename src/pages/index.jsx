@@ -9,6 +9,7 @@ import { Images } from '@/components/Images'
 import {EVENT} from "../../event";
 import Testimonials from "@/components/Testimonials";
 import Showcase from "@/components/Showcase";
+import Speakers from "@/pages/speakers";
 
 export default function Home() {
     return (
@@ -26,7 +27,7 @@ export default function Home() {
                 <Hero />
                 <Images />
                 {/*<Schedule />*/}
-                {/*<Speakers />*/}
+                <Speakers />
                 <Testimonials />
                 <Showcase />
                 <Sponsors />
