@@ -2,12 +2,14 @@ const pastEventMetadata = {
   "2022-10": {
     title: 'The inaugural TechMids Conf',
     imageUrl: '/gallery/audience.jpg',
-    niceDate: 'Friday 14th Oct 2022'
+    niceDate: 'Friday 14th Oct 2022',
+    datetime: '2022-10-14'
   },
   "2023-06": {
     title: 'TechMids co-located with DevOpsDays Birmingham',
     imageUrl: '/gallery/millenium-point.jpg',
     niceDate: 'Thursday & Friday 15th & 16th June 2023',
+    datetime: '2023-06-15'
   }
   // More past events...
 }
