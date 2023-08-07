@@ -1,4 +1,5 @@
 import * as fs from 'node:fs/promises';
+import { R_OK, W_OK } from 'node:fs';
 import { spawn } from 'child_process';
 
 export async function write_our_config(paths, output_name) {
@@ -30,7 +31,7 @@ export async function assure_output_dir(paths) {
     console.log(`Confirming that we can write to the output directory ${paths.temp_export_dir}`);
     let output_exists;
     try {
-        output_exists = await fs.access(paths.temp_export_dir, fs.constants.R_OK | fs.constants.W_OK);
+        output_exists = await fs.access(paths.temp_export_dir, R_OK | W_OK);
     } catch(e) {
         if (e.code == "ENOENT") {
             // the output directory doesn't exist; this is fine
