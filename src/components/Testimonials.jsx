@@ -39,6 +39,12 @@ const testimonials = [
                     name: 'TechMids July 2023 Attendee',
                 },
             },
+            {
+                body: 'Great to have such variety in sessions, socials and lunch was very good. The stickers to encourage communication were fab too! Very pronoun and gender inclusive, which is great to see.',
+                author: {
+                    name: 'TechMids July 2023 Attendee',
+                },
+            },
             // More testimonials...
         ],
     ],
@@ -53,11 +59,13 @@ const testimonials = [
         ],
         [
             {
-                body: 'Great to have such variety in sessions, socials and lunch was very good. The stickers to encourage communication were fab too! Very pronoun and gender inclusive, which is great to see.',
+                body: 'TechMids - WOW! I\'ve attended and volunteered at the last two conferences that the TechMids team have put together and I\'ve seen and heard, nothing but positive things. On the day the events run smoothly, from checking-in to knowing who\'s on where, it\'s seamless start to finish. The speaker quality and format is also amazing, by varying the types of talks & sessions it keeps everyone engaged and there\'s always something for everyone. Being able to run conferences of this magnitude and with so many free or low cost tickets is just brilliant to see. I can\'t wait for the next one!',
                 author: {
-                    name: 'TechMids July 2023 Attendee',
-                },
+                    name: 'Jack Capel, Director @ Spinks',
+                    imageUrl: '/avatars/jack-capel.png',
+                }
             },
+
             {
                 body: 'A really great conference! All of the speakers were really engaging and interesting and there was plenty of time allocated to networking in what was a very friendly and inclusive atmosphere. Loved the dynamic session highlighting on the website too, it helped me keep track of the schedule throughout the day.',
                 author: {
