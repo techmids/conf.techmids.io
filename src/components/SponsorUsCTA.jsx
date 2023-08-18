@@ -24,13 +24,13 @@ export default class SponsorUsCTA extends Component {
                             Say hi if you're interested in supporting{" "}
                             <span aria-hidden="true">↓</span>
                         </h3>
-                        <ButtonLink
-                            href="/sponsorship"
-                            rel="noopener"
-                            className="my-4 w-full"
-                        >
-                            check out our packages
-                        </ButtonLink>
+                        {/*<ButtonLink*/}
+                        {/*    href="/sponsorship"*/}
+                        {/*    rel="noopener"*/}
+                        {/*    className="my-4 w-full"*/}
+                        {/*>*/}
+                        {/*    check out our packages*/}
+                        {/*</ButtonLink>*/}
                         <ButtonLink
                             href="mailto:hello@techmids.io"
                             rel="noopener"
