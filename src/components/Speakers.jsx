@@ -78,7 +78,7 @@ export function Speakers() {
               </div>
           )
           }
-            <div className="mt-16 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 space-x-8 space-y-8">
+            <div className="mt-16 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 space-x-8">
 
 
               {Object.keys(Sessions).map((speaker, speakerIndex) => (
@@ -94,23 +94,24 @@ export function Speakers() {
                             className={clsx(
                                 'absolute top-0 left-0 right-4 bottom-6 rounded-4xl border transition duration-300 group-hover:scale-95 xl:right-6',
                                 [
-                                  'border-yellow-300',
-                                  'border-yellow-300',
-                                  'border-yellow-300',
+                                  'border-btw-cyan-dark',
+                                  'border-btw-cyan-dark',
+                                  'border-btw-cyan-dark',
                                 ][speakerIndex % 3]
                             )}
                         />
                         <div
-                            className="absolute inset-0 bg-yellow-50"
+                            className="absolute inset-0 bg-btw-cyan-dark"
                             style={{
                               clipPath: `url(#${id}-${speakerIndex % 3})`,
                             }}
                         >
                           <Image
-                              className="transition duration-300 group-hover:scale-110"
+                              className="transition duration-300 group-hover:scale-110 object-cover"
                               src={Sessions[speaker].image}
                               alt=""
                               priority
+                              fill={true}
                               sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
                           />
                         </div>

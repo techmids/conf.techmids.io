@@ -9,7 +9,7 @@ import { Images } from '@/components/Images'
 import {EVENT} from "../../event";
 import Testimonials from "@/components/Testimonials";
 import Showcase from "@/components/Showcase";
-import Speakers from "@/pages/speakers";
+import {Speakers} from "@/components/Speakers";
 
 export default function Home() {
     return (

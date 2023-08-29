@@ -32,9 +32,9 @@ export function Speaker(props) {
         </defs>
       </svg>
       <div className="relative">
-        <div className="absolute -inset-x-0 -top-48 -bottom-14 overflow-hidden bg-yellow-50">
+        <div className="absolute -inset-x-0 -top-48 -bottom-14 overflow-hidden bg-btw-blue">
           <div className="absolute top-0 left-0 -translate-y-[10%] -translate-x-[55%] -scale-x-100 sm:left-1/2 sm:-translate-y-[6%] sm:-translate-x-[98%] lg:-translate-x-[106%] xl:-translate-x-[122%]"></div>
-          <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white" />
+          {/*<div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white" />*/}
           <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white" />
         </div>
         <Container className="relative lg:grid lg:grid-cols-6 lg:gap-8 ">
@@ -44,14 +44,14 @@ export function Speaker(props) {
                 className={clsx(
                   'absolute top-0 left-0 right-4 bottom-6 rounded-4xl border transition duration-300 group-hover:scale-95 xl:right-6',
                   [
-                    'border-yellow-300',
-                    'border-yellow-300',
-                    'border-yellow-300',
+                    'border-btw-cyan-dark',
+                    'border-btw-cyan-dark',
+                    'border-btw-cyan-dark',
                   ][1]
                 )}
               />
               <div
-                className="absolute inset-0 bg-yellow-50"
+                className="absolute inset-0 bg-btw-cyan-dark"
                 style={{
                   clipPath: `url(#1)`,
                 }}
@@ -61,6 +61,7 @@ export function Speaker(props) {
                   src={image}
                   alt=""
                   priority
+                  fill={true}
                   sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
                 />
               </div>
@@ -71,17 +72,17 @@ export function Speaker(props) {
               <div className="mx-auto max-w-xl sm:max-w-3xl lg:max-w-none">
                 <blockquote>
                   <div>
-                    <h1 className="space- font-display text-5xl font-bold tracking-tighter text-yellow-600 sm:text-6xl md:text-7xl">
+                    <h1 className="space- font-display text-5xl font-bold tracking-tighter text-brand sm:text-6xl md:text-7xl">
                       {name}
                     </h1>
                   </div>
                   <div>
-                    <h2 className="space-y-6 text-md font-display font-bold tracking-tighter text-yellow-800 sm:text-lg">
+                    <h2 className="space-y-6 text-md font-display font-bold tracking-tighter text-brand sm:text-lg">
                       <br /> {bio}
                     </h2>
                   </div>
                   <div>
-                    <h2 className="space- font-display text-lg font-bold tracking-tighter text-yellow-600 sm:text-xl">
+                    <h2 className="space- font-display text-lg font-bold tracking-tighter text-brand sm:text-xl">
                       <br /> {jobTitle}
                     </h2>
                   </div>
@@ -90,7 +91,7 @@ export function Speaker(props) {
                       <li>
                         <a
                           href={twitterURL}
-                          className="text-yellow-800"
+                          className="text-brand"
                           rel="noreferrer noopener"
                           target="_blank"
                         >
@@ -110,7 +111,7 @@ export function Speaker(props) {
                       <li>
                         <a
                           href={linkedinURL}
-                          className="text-yellow-800"
+                          className="text-brand"
                           rel="noreferrer noopener"
                           target="_blank"
                         >
@@ -134,7 +135,7 @@ export function Speaker(props) {
                       <li>
                         <a
                           href={youtubeURL}
-                          className="text-yellow-800"
+                          className="text-brand"
                           rel="noreferrer noopener"
                           target="_blank"
                         >
@@ -154,7 +155,7 @@ export function Speaker(props) {
                       <li>
                         <a
                           href={website}
-                          className="text-yellow-900"
+                          className="text-brand"
                           rel="noreferrer noopener"
                           target="_blank"
                         >
@@ -183,10 +184,10 @@ export function Speaker(props) {
       </div>
       <Container className="relative">
         <div className="mx-auto max-w-xl pb-10 sm:max-w-3xl lg:max-w-4xl lg:px-12 lg:pt-8">
-          <h2 className="space-y-12 font-display text-4xl font-bold tracking-tighter text-yellow-600 sm:text-5xl md:text-6xl">
+          <h2 className="space-y-12 font-display text-4xl font-bold tracking-tighter text-brand-900 sm:text-5xl md:text-6xl">
             <br /> {talkTitle}
           </h2>
-          <h3 className="space-y-12 font-display text-2xl font-bold tracking-tighter text-yellow-400 sm:text-2xl">
+          <h3 className="space-y-12 font-display text-2xl font-bold tracking-tighter text-brand-800 sm:text-2xl">
             <br /> Session Type:{' '}
             {sessionType !== 'ignite'? '30 Minute Session' : '5 Minute Ignite'}
           </h3>

@@ -1,9 +1,7 @@
 import {CheckIcon, HeartIcon, MicrophoneIcon, QuestionMarkCircleIcon, UsersIcon} from '@heroicons/react/solid'
 import Head from "next/head";
 import {Header} from "@/components/Header";
-import {Footer} from "@/components/Footer";
 import {Images} from "@/components/Images";
-import SponsorUsCTA from "@/components/SponsorUsCTA";
 import {EVENT} from "../event";
 import {Sponsors} from "@/components/Sponsors";
 import {TicketIcon, CalendarIcon, GlobeIcon} from "@heroicons/react/outline";
@@ -358,7 +356,6 @@ export default function Sponsorship() {
                     <Sponsors/>
                 </div>
             </main>
-            <Footer />
         </>
     )
 }
