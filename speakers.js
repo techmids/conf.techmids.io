@@ -1,6 +1,7 @@
 import jamieTannaImg from "./public/speakers/jamie-tanna.png"
 import estherAgbajeImg from "./public/speakers/esther-agbaje.png"
 import steveMcDougallImg from "./public/speakers/steve-mcdougall.jpg"
+import mollyWattImg from "./public/speakers/molly-watt.png"
 
 export const Sessions= {
     "jamie-tanna": {
@@ -47,31 +48,53 @@ export const Sessions= {
         linkedin: "",
         twitter: "",
         website: "",
-        sessionType: "",
+        sessionType: "session",
     },
     "steve-mcdougall": {
         name: "Steve McDougall",
         jobTitle: "Developer Advocate, Treblle",
         bio: (
-        <>
-        <p>
-        </p>
-        </>
+            <>
+                <p>
+                </p>
+            </>
         ),
         talkTitle: "Fantastic SDKs, and how to build them",
         description: (
-        <>
-        <p>
-        </p>
-        </>
+            <>
+                <p>
+                </p>
+            </>
         ),
         image: steveMcDougallImg,
         linkedin: "",
         twitter: "",
         website: "",
-        sessionType: "",
-        },
-    // {
+        sessionType: "session",
+    },
+    "molly-watt": {
+        name: "Molly Watt",
+        jobTitle: "Accessibility specialist, Nexer Digital",
+        bio: (
+            <>
+                <p>
+                </p>
+            </>
+        ),
+        talkTitle: "",
+        description: (
+            <>
+                <p>
+                </p>
+            </>
+        ),
+        image: mollyWattImg,
+        linkedin: "",
+        twitter: "",
+        website: "",
+        sessionType: "session",
+    },
+    //"": {
     //         name: "",
     //         jobTitle: "",
     //         bio: (
