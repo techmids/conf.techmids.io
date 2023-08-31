@@ -22,7 +22,7 @@ export default function SpeakerPage() {
         return <div></div>
     }
 
-    const speakerCard = speakerProfile.speakerCard? `/speakers/card/${speakerProfile.speakerCard}` : '/public/launch.png'
+    const speakerCard = speakerProfile.speakerCard? `/speakers/card/${speakerProfile.speakerCard}` : '/launch.png'
 
     return (
         <>
