@@ -2,6 +2,9 @@ import jamieTannaImg from "./public/speakers/jamie-tanna.png"
 import estherAgbajeImg from "./public/speakers/esther-agbaje.png"
 import steveMcDougallImg from "./public/speakers/steve-mcdougall.jpg"
 import mollyWattImg from "./public/speakers/molly-watt.png"
+import poojaMistryImg from "./public/speakers/pooja.png"
+import daliImg from "./public/speakers/dali-h.png"
+import chrisPImg from "./public/speakers/chris-p.jpeg"
 
 export const Sessions= {
     "jamie-tanna": {
@@ -116,6 +119,84 @@ export const Sessions= {
         website: "",
         sessionType: "session",
     },
+    "poonja-mistry": {
+            name: "Pooja Mistry",
+            jobTitle: "Developer Advocate, Postman",
+            bio: (
+                <>
+                    <p>
+                    </p>
+                </>
+            ),
+            talkTitle:
+                "Essential Insights into API-first Tooling",
+            description: (
+                <>
+                    <p>
+                        API-first tooling plays a crucial role in the realm of API testing. Nevertheless, users frequently find themselves amazed as they discover the extensive range and diverse set of functionalities that the platform for API tooling encompasses, stretching far beyond the confines of testing alone. During this session, I am here to impart valuable insights and techniques I've acquired throughout my API-first tooling journey that have made me say, "Whoa, that's awesome!"
+                    </p>
+                </>
+            ),
+            image: poojaMistryImg,
+            linkedin: "",
+            twitter: "",
+            website: "",
+            sessionType: "session",
+        },
+    "christopher-phillips": {
+        name: "Christopher Phillips",
+        jobTitle: "",
+        bio: (
+            <>
+                <p>
+                </p>
+            </>
+        ),
+        talkTitle:
+            "If an API is published and no one is told, does it have value?",
+        description: (
+            <>
+                <p>
+                    API Consumers are what dictate the value to an API Estate. This session will go through the key values of an API and how focusing on the consumer allows an API to be successful.
+                </p>
+                <p>
+                    In this talk, we'll go through the changing way that API value is being determined by business. The questions being asked is no longer "how many APIs are we exposing?", but "How many of our APIs are being used?" or even "what value are we gaining from our APIs?".
+                </p>
+            </>
+        ),
+        image: chrisPImg,
+        linkedin: "",
+        twitter: "",
+        website: "",
+        sessionType: "session",
+    },
+    "dalwinder-bagdi": {
+        name: "Dalwinder Bagdi",
+        jobTitle: "",
+        bio: (
+            <>
+                <p>
+                </p>
+            </>
+        ),
+        talkTitle:
+            "If an API is published and no one is told, does it have value?",
+        description: (
+            <>
+                <p>
+                    API Consumers are what dictate the value to an API Estate. This session will go through the key values of an API and how focusing on the consumer allows an API to be successful.
+                </p>
+                <p>
+                    In this talk, we'll go through the changing way that API value is being determined by business. The questions being asked is no longer "how many APIs are we exposing?", but "How many of our APIs are being used?" or even "what value are we gaining from our APIs?".
+                </p>
+            </>
+        ),
+        image: daliImg,
+        linkedin: "",
+        twitter: "",
+        website: "",
+        sessionType: "session",
+    }
     //"": {
     //         name: "",
     //         jobTitle: "",
