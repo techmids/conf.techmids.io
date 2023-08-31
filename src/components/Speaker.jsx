@@ -34,12 +34,11 @@ export function Speaker(props) {
       <div className="relative">
         <div className="absolute -inset-x-0 -top-48 -bottom-14 overflow-hidden bg-btw-blue">
           <div className="absolute top-0 left-0 -translate-y-[10%] -translate-x-[55%] -scale-x-100 sm:left-1/2 sm:-translate-y-[6%] sm:-translate-x-[98%] lg:-translate-x-[106%] xl:-translate-x-[122%]"></div>
-          {/*<div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white" />*/}
           <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white" />
         </div>
         <Container className="relative lg:grid lg:grid-cols-6 lg:gap-8 ">
           <div className="lg:col-span-2">
-            <div className="group relative mx-auto h-[16rem] max-w-xs transform overflow-hidden rounded-4xl sm:h-[18rem] lg:mt-14 lg:h-[22rem]">
+            <div className="group relative aspect-auto mx-auto h-[16rem] max-w-xs transform overflow-hidden rounded-4xl sm:h-[18rem] lg:mt-14 lg:h-[22rem]">
               <div
                 className={clsx(
                   'absolute top-0 left-0 right-4 bottom-6 rounded-4xl border transition duration-300 group-hover:scale-95 xl:right-6',
@@ -57,7 +56,7 @@ export function Speaker(props) {
                 }}
               >
                 <Image
-                  className="transition duration-300 group-hover:scale-110"
+                  className="transition duration-300 group-hover:scale-110 object-cover"
                   src={image}
                   alt=""
                   priority
