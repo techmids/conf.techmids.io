@@ -17,7 +17,7 @@ export default function SpeakerPage({speaker}) {
         return <div></div>
     }
 
-    const speakerCard = speakerProfile.speakerCard? `/speakers/card/${speakerProfile.speakerCard}` : '/launch.png'
+    const speakerCard = speakerProfile.speakerCard? `https://conf.techmids.io/speakers/card/${speakerProfile.speakerCard}` : 'https://conf.techmids.io/launch.png'
 
     return (
         <>
@@ -25,7 +25,7 @@ export default function SpeakerPage({speaker}) {
                 <title>TechMids Conf Speaker - {speakerProfile.name}</title>
                 <meta content={speakerProfile.name} property="og:title" name="title" />
                 <meta content={speakerProfile.talkTitle} property="og:description" name="description" />
-                <meta property="og:image" content={speakerCard} name="image"/>
+                <meta content={speakerCard} property="og:image" name="image"/>
             </Head>
             <Header/>
             <main>
