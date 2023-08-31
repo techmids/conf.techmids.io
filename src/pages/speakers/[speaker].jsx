@@ -5,6 +5,7 @@ import {Footer} from "@/components/Footer";
 import {Speaker} from "@/components/Speaker";
 import {Sessions} from "../../../speakers";
 import { useRouter } from 'next/router'
+import {Meta} from "next/dist/lib/metadata/generate/meta";
 
 
 export default function SpeakerPage() {
@@ -20,14 +21,16 @@ export default function SpeakerPage() {
         router.replace(`/speakers`)
         return <div></div>
     }
+
+    const speakerCard = speakerProfile.speakerCard? `/public/speakers/card/${speakerProfile.speakerCard}` : '/public/launch.png'
+
     return (
         <>
             <Head>
-                <title>TechMids Conf - A community-driven tech conference</title>
-                <meta
-                    name="description"
-                    content={speakerProfile.description}
-                />
+                <title>TechMids Conf Speaker - {speakerProfile.name}</title>
+                <meta content={speakerProfile.name} property="og:title" name="og:title" />
+                <meta content={speakerProfile.talkTitle} property="og:description" name="og:description" />
+                <meta property="og:image" content={speakerCard} name="og:image"/>
             </Head>
             <Header/>
             <main>

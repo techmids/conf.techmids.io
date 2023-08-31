@@ -5,6 +5,7 @@ import mollyWattImg from "./public/speakers/molly-watt.png"
 import poojaMistryImg from "./public/speakers/pooja.png"
 import daliImg from "./public/speakers/dali-h.png"
 import chrisPImg from "./public/speakers/chris-p.jpeg"
+import jamesSecondeImg from "./public/speakers/james-seconde.jpg"
 
 export const Sessions= {
     "jamie-tanna": {
@@ -43,6 +44,7 @@ export const Sessions= {
         twitter: "",
         website: "https://www.jvt.me/",
         sessionType: "session",
+        speakerCard: 'Jamie Tanna.png',
     },
     "esther-agbaje": {
         name: "Esther Agbaje",
@@ -70,6 +72,7 @@ export const Sessions= {
         twitter: "",
         website: "",
         sessionType: "session",
+        speakerCard: 'Esther Agbaje.png',
     },
     "steve-mcdougall": {
         name: "Steve McDougall",
@@ -96,6 +99,7 @@ export const Sessions= {
         twitter: "",
         website: "",
         sessionType: "session",
+        speakerCard: 'Steve McDougall.png',
     },
     "molly-watt": {
         name: "Molly Watt",
@@ -118,34 +122,36 @@ export const Sessions= {
         twitter: "",
         website: "",
         sessionType: "session",
+        speakerCard: 'Molly Watt.png',
     },
     "poonja-mistry": {
-            name: "Pooja Mistry",
-            jobTitle: "Developer Advocate, Postman",
-            bio: (
-                <>
-                    <p>
-                    </p>
-                </>
-            ),
-            talkTitle:
-                "Essential Insights into API-first Tooling",
-            description: (
-                <>
-                    <p>
-                        API-first tooling plays a crucial role in the realm of API testing. Nevertheless, users frequently find themselves amazed as they discover the extensive range and diverse set of functionalities that the platform for API tooling encompasses, stretching far beyond the confines of testing alone. During this session, I am here to impart valuable insights and techniques I've acquired throughout my API-first tooling journey that have made me say, "Whoa, that's awesome!"
-                    </p>
-                </>
-            ),
-            image: poojaMistryImg,
-            linkedin: "",
-            twitter: "",
-            website: "",
-            sessionType: "session",
-        },
+        name: "Pooja Mistry",
+        jobTitle: "Developer Advocate, Postman",
+        bio: (
+            <>
+                <p>
+                </p>
+            </>
+        ),
+        talkTitle:
+            "Essential Insights into API-first Tooling",
+        description: (
+            <>
+                <p>
+                    API-first tooling plays a crucial role in the realm of API testing. Nevertheless, users frequently find themselves amazed as they discover the extensive range and diverse set of functionalities that the platform for API tooling encompasses, stretching far beyond the confines of testing alone. During this session, I am here to impart valuable insights and techniques I've acquired throughout my API-first tooling journey that have made me say, "Whoa, that's awesome!"
+                </p>
+            </>
+        ),
+        image: poojaMistryImg,
+        linkedin: "",
+        twitter: "",
+        website: "",
+        sessionType: "session",
+        speakerCard: undefined,
+    },
     "christopher-phillips": {
         name: "Christopher Phillips",
-        jobTitle: "Senior Technical Staff Member, IBM",
+        jobTitle: "IBM STSM and Integration Architect",
         bio: (
             <>
                 <p>
@@ -169,10 +175,11 @@ export const Sessions= {
         twitter: "",
         website: "",
         sessionType: "session",
+        speakerCard: undefined,
     },
     "dalwinder-bagdi": {
         name: "Dalwinder Bagdi",
-        jobTitle: "",
+        jobTitle: "Client Success Manager, IBM",
         bio: (
             <>
                 <p>
@@ -196,7 +203,36 @@ export const Sessions= {
         twitter: "",
         website: "",
         sessionType: "session",
-    }
+        speakerCard: undefined,
+    },
+    "james-seconde": {
+            name: "James Seconde",
+            jobTitle: "Senior Developer Advocate, Vonage",
+            bio: (
+                <>
+                    <p>
+                    </p>
+                </>
+            ),
+            talkTitle:
+                "Awful APIs: A History Lesson in Painful Industry Mistakes",
+            description: (
+                <>
+                    <p>
+                        In 1905, the Spanish philosopher George Santayana famously wrote the line "Those who cannot remember the past are condemned to repeat it." Nothing can escape this inevitability: like death and taxes, we have all looked at our screens in bewilderment at an HTTP 200 OK response that contains text in the body reading "er, actually this is an error", or marvelled at pagination design that creates an infinite loop for you to consume.
+                    </p>
+                    <p>
+                        How did we get here? In this session I will be meandering through history, real examples and anecdotes. The internet is littered with a graveyard of poorly designed APIs. Instead of launching yourself head-first into this murky world of quirks, maybe take a moment to learn the history of APIs and their mistakes so you don't repeat them.
+                    </p>
+                </>
+            ),
+            image: jamesSecondeImg,
+            linkedin: "secondej",
+            twitter: "secondej",
+            website: "",
+            sessionType: "session",
+            speakerCard: undefined,
+        },
     //"": {
     //         name: "",
     //         jobTitle: "",
@@ -219,5 +255,6 @@ export const Sessions= {
     //         twitter: "",
     //         website: "",
     //         sessionType: "",
+    //         speakerCard: undefined,
     //     },
 }
