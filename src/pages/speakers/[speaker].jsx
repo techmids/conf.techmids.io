@@ -5,15 +5,10 @@ import {Footer} from "@/components/Footer";
 import {Speaker} from "@/components/Speaker";
 import {Sessions} from "../../../speakers";
 import { useRouter } from 'next/router'
-import {Meta} from "next/dist/lib/metadata/generate/meta";
 
 
-export default function SpeakerPage() {
+export default function SpeakerPage({speaker}) {
     const router = useRouter()
-    const speaker = router.query["speaker"]
-    if (!speaker) {
-        return <div></div>
-    }
 
     const speakerProfile = Sessions[speaker]
 
@@ -40,4 +35,21 @@ export default function SpeakerPage() {
             <Footer/>
         </>
     )
+}
+
+export async function getStaticPaths() {
+    const paths = Object.keys(Sessions).map((speaker) => ({
+        params: { speaker },
+    }))
+
+    return { paths, fallback: false }
+}
+
+export async function getStaticProps({ params }) {
+    const speaker = params.speaker
+    return {
+        props: {
+            speaker,
+        },
+    }
 }
