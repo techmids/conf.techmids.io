@@ -22,13 +22,13 @@ export default function SpeakerPage() {
         return <div></div>
     }
 
-    const speakerCard = speakerProfile.speakerCard? `/public/speakers/card/${speakerProfile.speakerCard}` : '/public/launch.png'
+    const speakerCard = speakerProfile.speakerCard? `/speakers/card/${speakerProfile.speakerCard}` : '/public/launch.png'
 
     return (
         <>
             <Head>
                 <title>TechMids Conf Speaker - {speakerProfile.name}</title>
-                <meta content={speakerProfile.name} property="og:title" name="og:title" />
+                <meta content={speakerProfile.name} property="og:title" name="title" />
                 <meta content={speakerProfile.talkTitle} property="og:description" name="description" />
                 <meta property="og:image" content={speakerCard} name="image"/>
             </Head>
