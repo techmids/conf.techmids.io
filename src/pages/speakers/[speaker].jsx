@@ -29,8 +29,8 @@ export default function SpeakerPage() {
             <Head>
                 <title>TechMids Conf Speaker - {speakerProfile.name}</title>
                 <meta content={speakerProfile.name} property="og:title" name="og:title" />
-                <meta content={speakerProfile.talkTitle} property="og:description" name="og:description" />
-                <meta property="og:image" content={speakerCard} name="og:image"/>
+                <meta content={speakerProfile.talkTitle} property="og:description" name="description" />
+                <meta property="og:image" content={speakerCard} name="image"/>
             </Head>
             <Header/>
             <main>
