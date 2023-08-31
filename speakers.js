@@ -145,7 +145,7 @@ export const Sessions= {
         },
     "christopher-phillips": {
         name: "Christopher Phillips",
-        jobTitle: "",
+        jobTitle: "Senior Technical Staff Member, IBM",
         bio: (
             <>
                 <p>
