@@ -19,7 +19,7 @@ const SharingCard = ({ talkTitle, speaker }) => {
             className="font-display"
             style={{
 
-                backgroundImage: 'url("http://localhost:3000/card-template.png")',
+                backgroundImage: 'url("/card-template.png")',
                 backgroundSize: 'cover',
                 height: 630,
                 width: 1200,
