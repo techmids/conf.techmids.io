@@ -45,7 +45,7 @@ export const Sessions= {
         twitter: "",
         website: "https://www.jvt.me/",
         sessionType: "session",
-        speakerCard: 'Jamie Tanna.png',
+        speakerCard: true,
     },
     "esther-agbaje": {
         name: "Esther Agbaje",
@@ -73,7 +73,7 @@ export const Sessions= {
         twitter: "",
         website: "",
         sessionType: "session",
-        speakerCard: 'Esther Agbaje.png',
+        speakerCard: true,
     },
     "steve-mcdougall": {
         name: "Steve McDougall",
@@ -100,7 +100,7 @@ export const Sessions= {
         twitter: "",
         website: "",
         sessionType: "session",
-        speakerCard: 'Steve McDougall.png',
+        speakerCard: true,
     },
     "molly-watt": {
         name: "Molly Watt",
@@ -123,7 +123,7 @@ export const Sessions= {
         twitter: "",
         website: "",
         sessionType: "session",
-        speakerCard: 'Molly Watt.png',
+        speakerCard: true,
     },
     "poonja-mistry": {
         name: "Pooja Mistry",
@@ -148,7 +148,7 @@ export const Sessions= {
         twitter: "",
         website: "",
         sessionType: "session",
-        speakerCard: undefined,
+        speakerCard: true,
     },
     "christopher-phillips": {
         name: "Christopher Phillips",
@@ -176,7 +176,7 @@ export const Sessions= {
         twitter: "",
         website: "",
         sessionType: "session",
-        speakerCard: undefined,
+        speakerCard: true,
     },
     "dalwinder-bagdi": {
         name: "Dalwinder Bagdi",
@@ -204,7 +204,7 @@ export const Sessions= {
         twitter: "",
         website: "",
         sessionType: "session",
-        speakerCard: undefined,
+        speakerCard: true,
     },
     "james-seconde": {
             name: "James Seconde",
@@ -232,7 +232,7 @@ export const Sessions= {
             twitter: "secondej",
             website: "",
             sessionType: "session",
-            speakerCard: undefined,
+            speakerCard: true,
         },
     "david-simmons": {
             name: "David G Simmons",
@@ -261,7 +261,7 @@ export const Sessions= {
             twitter: "",
             website: "",
             sessionType: "session",
-            speakerCard: undefined,
+            speakerCard: true,
         },
     //"": {
     //         name: "",

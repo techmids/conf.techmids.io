@@ -17,7 +17,7 @@ export default function SpeakerPage({speaker}) {
         return <div></div>
     }
 
-    const speakerCard = speakerProfile.speakerCard? `https://conf.techmids.io/speakers/card/${speakerProfile.speakerCard}` : 'https://conf.techmids.io/launch.png'
+    const speakerCard = speakerProfile.speakerCard? `https://conf.techmids.io/speakers/card/${speakerProfile.name}.png` : 'https://conf.techmids.io/launch.png'
 
     return (
         <>
