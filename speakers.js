@@ -6,6 +6,7 @@ import poojaMistryImg from "./public/speakers/pooja.png"
 import daliImg from "./public/speakers/dali-h.png"
 import chrisPImg from "./public/speakers/chris-p.jpeg"
 import jamesSecondeImg from "./public/speakers/james-seconde.jpg"
+import davidSimmonsImg from "./public/speakers/david-simmons.jpeg"
 
 export const Sessions= {
     "jamie-tanna": {
@@ -229,6 +230,35 @@ export const Sessions= {
             image: jamesSecondeImg,
             linkedin: "secondej",
             twitter: "secondej",
+            website: "",
+            sessionType: "session",
+            speakerCard: undefined,
+        },
+    "david-simmons": {
+            name: "David G Simmons",
+            jobTitle: "" +
+                "Head of Developer Relations, Otterize",
+            bio: (
+                <>
+                    <p>
+                    </p>
+                </>
+            ),
+            talkTitle:
+                "How I learned to deploy network policies to a Kubernetes cluster without knowing anything about them",
+            description: (
+                <>
+                    <p>
+                        I took a job earlier this year as Head of DevRel at a Kubernetes company. I know noting about Kubernetes. So I started learning. But it's such a vast subject area I knew it would take forever. But using the tools from Otterize, I managed to roll out Network Policies to a cluster in under 5 minutes and guess what? I still know nothing about Network Policies!
+                    </p>
+                    <p>
+                        In this talk I'll show you how I used Intent Based Access Controls (IBAC) to quickly secure the services without making a major project out of it."
+                    </p>
+                </>
+            ),
+            image: davidSimmonsImg,
+            linkedin: "",
+            twitter: "",
             website: "",
             sessionType: "session",
             speakerCard: undefined,

@@ -20,7 +20,7 @@ export default function Home() {
                     name="description"
                     content={`TechMids Conf is an all day, full stack conference on ${EVENT.date} Come along for a day of inspiring talks, social chatter and fun.`}
                 />
-                <meta name="image" property="og:image" content="/launch.png"/>
+                <meta name="image" property="og:image" content="https://conf.techmids.io/launch.png"/>
             </Head>
             <Header />
             <main>
