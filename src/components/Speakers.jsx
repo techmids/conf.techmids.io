@@ -5,7 +5,7 @@ import clsx from 'clsx'
 import { Container } from '@/components/Container'
 import {Sessions} from "../../speakers";
 
-export function Speakers() {
+export function Speakers({sharing = false}) {
   let id = useId()
   let [tabOrientation, setTabOrientation] = useState('horizontal')
 
@@ -84,7 +84,8 @@ export function Speakers() {
               {Object.keys(Sessions).map((speaker, speakerIndex) => (
                   <a
                       href={
-                          '/speakers/' + speaker
+                          // '/speakers/' + speaker
+                          `${sharing? `/sharing/${speaker}` : `/speakers/${speaker}` }`
                       }
                       key={speakerIndex}
                   >
