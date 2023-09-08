@@ -131,7 +131,7 @@ export const Sessions= {
         speakerCard: true,
         speakerCardImage: "molly-watt.png",
     },
-    "poonja-mistry": {
+    "pooja-mistry": {
         name: "Pooja Mistry",
         jobTitle: "Developer Advocate, Postman",
         bio: (
@@ -246,8 +246,7 @@ export const Sessions= {
     },
     "david-simmons": {
         name: "David G Simmons",
-        jobTitle: "" +
-            "Head of Developer Relations, Otterize",
+        jobTitle: "Head of Developer Relations, Otterize",
         bio: (
             <>
                 <p>

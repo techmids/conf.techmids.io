@@ -1,101 +1,122 @@
-const auditoriumDay1 =
+const mainHall =
     {
         room: "Main Stage",
         timeOfDay: 'Main Stage',
         date: '2023-06-15',
-        summary: '08:30 - 17:00 BST',
+        summary: '08:00 - 17:00 BST',
         dayName: "Day 1",
         timeSlots: [
-            {
-                name: 'Conference',
-                description: 'Conference',
-                start: '08:30AM',
-                end: '17:00PM',
-            }
             // {
-            //     name: 'Registration',
-            //     description: 'Registration',
+            //     name: 'Conference',
+            //     description: 'Conference',
             //     start: '08:00AM',
-            //     end: '08:50AM',
-            // },
-            // {
-            //     name: 'Event organisers',
-            //     description: 'Opening Welcome',
-            //     start: '09:00AM',
-            //     end: '09:15AM',
-            // },
-            // {
-            //     session: 'leon-adato',
-            //     start: '09:20AM',
-            //     end: '09:50AM',
-            //
-            // },
-            // {
-            //     session: "salma-alam-naylor",
-            //     start: '09:55AM',
-            //     end: '10:25AM',
-            // },
-            // {
-            //     name: 'Coffee, Snacks, Sponsors, Chat!',
-            //     description: 'Morning Break',
-            //     start: '10:25AM',
-            //     end: '10:45AM',
-            // },
-            // {
-            //     session: "viktor-farcic",
-            //     start: '10:50AM',
-            //     end: '11:20AM',
-            // },
-            // {
-            //     session: "kat-samperi",
-            //     start: '11:25AM',
-            //     end: '11:55AM',
-            // },
-            // {
-            //     name: 'Ignite talks',
-            //     description: '(6 x 5 minute sessions)',
-            //     start: '12:00PM',
-            //     end: '12:30PM',
-            // },
-            // {
-            //     name: 'Open Space Introduction',
-            //     description: 'Learn how open spaces work',
-            //     start: '12:30PM',
-            //     end: '12:45PM',
-            // },
-            // {
-            //     name: 'Lunch',
-            //     description: 'Lunch',
-            //     start: '12:45PM',
-            //     end: '13:45PM',
-            // },
-            // {
-            //     name: 'Event organisers',
-            //     description: 'Afternoon Intro',
-            //     start: '13:50PM',
-            //     end: '14:05PM',
-            // },
-            // {
-            //     session: "craig-box",
-            //     start: '14:10PM',
-            //     end: '14:40PM',
-            // },
-            // {
-            //     session: "eli-holderness",
-            //     start: '14:40PM',
-            //     end: '15:10PM',
-            // },
-            // {
-            //     name: 'Coffee, Snacks, Sponsors, Chat!',
-            //     description: 'Afternoon Break',
-            //     start: '15:10PM',
-            //     end: '15:30PM',
-            // },
-            // {
-            //     session: "kris-buytaert",
-            //     start: '15:30PM',
-            //     end: '16:00PM',
-            // },
+            //     end: '17:15PM',
+            // }
+            {
+                name: 'Registration',
+                description: 'Registration',
+                start: '08:00AM',
+                end: '08:50AM',
+            },
+            {
+                name: 'Event organisers',
+                description: 'Opening Welcome',
+                start: '09:00AM',
+                end: '09:15AM',
+            },
+            {
+                session: ['molly-watt'],
+                start: '09:15AM',
+                end: '09:45AM',
+
+            },
+            {
+                session: ["jamie-tanna"],
+                start: '09:45AM',
+                end: '10:15AM',
+            },
+            {
+                name: 'TBA!',
+                description: 'TBA!',
+                start: '10:15AM',
+                end: '10:25AM',
+            },
+            {
+                name: 'Coffee, Snacks, Sponsors, Chat!',
+                description: 'Morning Break',
+                start: '10:25AM',
+                end: '10:55PM',
+            },
+            {
+                session: ["esther-agbaje"],
+                start: '11:00AM',
+                end: '11:30AM',
+            },
+            {
+                session: ["steve-mcdougall"],
+                start: '11:30AM',
+                end: '12:00PM',
+            },
+            {
+                session: ['pooja-mistry'],
+                start: '12:00PM',
+                end: '12:30PM',
+            },
+            {
+                session: ['jake-clarkson'],
+                start: '12:30PM',
+                end: '12:40PM',
+            },
+            {
+                name: 'Lunch',
+                description: 'Lunch',
+                start: '12:40PM',
+                end: '13:40PM',
+            },
+            {
+                session: ["christopher-phillips", "dalwinder-bagdi"],
+                start: '13:45PM',
+                end: '14:15PM',
+            },
+            {
+                session: ["david-simmons"],
+                start: '14:15PM',
+                end: '14:45PM',
+            },
+            {
+                session: ['lorna-mitchell'],
+                start: '14:45PM',
+                end: '15:15PM',
+            },
+            {
+                name: 'Coffee, Snacks, Sponsors, Chat!',
+                description: 'Afternoon Break',
+                start: '15:15AM',
+                end: '15:45PM',
+            },
+            {
+                name: 'TBA!',
+                description: 'TBA!',
+                start: '15:50PM',
+                end: '16:20PM',
+            },
+            {
+                session: ["james-seconde"],
+                start: '16:20PM',
+                end: '16:50PM',
+            },
+            {
+                name: 'TBA!',
+                description: 'TBA!',
+                start: '16:50AM',
+                end: '17:10PM',
+            },
+            {
+                name: 'Event organisers',
+                description: 'Closing Remarks',
+                start: '17:10PM',
+                end: '17:15PM',
+            }
             // {
             //     session: "max-woolf",
             //     start: '16:00PM',
@@ -428,12 +449,7 @@ const auditoriumDay1 =
 // }
 
 export const Schedule = {
-    // thinkTank: {
-    //     day1: thinkTankDay1,
-    //     day2: thinkTankDay2,
-    // },
-    auditorium: {
-        day1: auditoriumDay1,
-        // day2: auditoriumDay2,
+    mainHall: {
+        day1: mainHall,
     }
 }
