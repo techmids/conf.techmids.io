@@ -302,7 +302,7 @@ export const Sessions= {
         speakerCardImage: "jake-clarkson.png",
     },
     "lorna-mitchell": {
-        name: "lorna-mitchell",
+        name: "Lorna Mitchell",
         jobTitle: "VP Developer Experience, Redocly",
         bio: (
             <>
