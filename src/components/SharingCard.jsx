@@ -45,7 +45,7 @@ const SharingCard = ({ talkTitle, speaker }) => {
                 }} >
                     {talkTitle}
                 </div>
-                <div style={{
+                <div className="rounded" style={{
                     backgroundColor: "#23FFF3",
                     marginTop: '30px',
                     marginLeft: 100,
@@ -61,16 +61,15 @@ const SharingCard = ({ talkTitle, speaker }) => {
                     fontWeight: 600,
                     fontSize: 18
                 }}>
-                    <span>20TH OCTOBER 2023</span>
+                    <span >20TH OCTOBER 2023</span>
                 </div>
             </div>
             <div style={{ display: 'flex', marginRight: 50, flexDirection: 'column', width: 350, justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}>
-                <Image
-                    className="transition h-72 rounded-full mb-8 border-8 w-72 duration-300 group-hover:scale-110 object-cover"
-                    src={speaker.image}
-                    alt=""
-                    priority
-                    sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
+                <div
+                    className="transition h-72 rounded-full mb-8 border-8 w-72  object-cover"
+                    style={{backgroundImage: `url(/speakers/${speaker.speakerCardImage})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',}}
                 />
                 <div style={{
                     fontSize: 40,
@@ -99,11 +98,11 @@ const SharingCard = ({ talkTitle, speaker }) => {
                 </div>
             </div>
         </div>
-        <button className="my-10 mx-10 border-2 px-2 b" onClick={() => takeScreenshot()}>
-            Generate Screenshot
-        </button>
-        <div id="output" />
-    </>
+            <button className="my-10 mx-10 border-2 px-2 b" onClick={() => takeScreenshot()}>
+                Generate Screenshot
+            </button>
+            <div id="output" />
+        </>
 
     )
 }

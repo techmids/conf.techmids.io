@@ -124,7 +124,7 @@ export function Speakers({sharing = false}) {
                       <p className="mt-1 text-base tracking-tight text-slate-500">
                         {Sessions[speaker].sessionType === 'session'
                             ? '30 Minute Session'
-                            : '5 Minute Ignite'}
+                            : '10 Minute Session'}
                       </p>
                     </div>
                   </a>

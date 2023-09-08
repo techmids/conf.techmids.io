@@ -188,7 +188,7 @@ export function Speaker(props) {
           </h2>
           <h3 className="space-y-12 font-display text-2xl font-bold tracking-tighter text-brand-800 sm:text-2xl">
             <br /> Session Type:{' '}
-            {sessionType !== 'ignite'? '30 Minute Session' : '5 Minute Ignite'}
+            {sessionType !== 'ignite'? '30 Minute Session' : '10 Minute Session'}
           </h3>
           <div className="text-md mt-6 space-y-6 font-display tracking-tight text-black sm:text-lg">
             {description}

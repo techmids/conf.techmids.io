@@ -7,6 +7,8 @@ import daliImg from "./public/speakers/dali-h.png"
 import chrisPImg from "./public/speakers/chris-p.jpeg"
 import jamesSecondeImg from "./public/speakers/james-seconde.jpg"
 import davidSimmonsImg from "./public/speakers/david-simmons.jpeg"
+import jakeClarksonImg from "./public/speakers/jake-clarkson.png"
+import lornaMitchellImg from "./public/speakers/lorna-mitchell.jpg"
 
 export const Sessions= {
     "jamie-tanna": {
@@ -46,6 +48,7 @@ export const Sessions= {
         website: "https://www.jvt.me/",
         sessionType: "session",
         speakerCard: true,
+        speakerCardImage: "jamie-tanna.png",
     },
     "esther-agbaje": {
         name: "Esther Agbaje",
@@ -74,6 +77,7 @@ export const Sessions= {
         website: "",
         sessionType: "session",
         speakerCard: true,
+        speakerCardImage: "esther-agbaje.png",
     },
     "steve-mcdougall": {
         name: "Steve McDougall",
@@ -101,6 +105,7 @@ export const Sessions= {
         website: "",
         sessionType: "session",
         speakerCard: true,
+        speakerCardImage: "steve-mcdougall.jpg",
     },
     "molly-watt": {
         name: "Molly Watt",
@@ -124,6 +129,7 @@ export const Sessions= {
         website: "",
         sessionType: "session",
         speakerCard: true,
+        speakerCardImage: "molly-watt.png",
     },
     "poonja-mistry": {
         name: "Pooja Mistry",
@@ -149,6 +155,7 @@ export const Sessions= {
         website: "",
         sessionType: "session",
         speakerCard: true,
+        speakerCardImage: "pooja.png",
     },
     "christopher-phillips": {
         name: "Christopher Phillips",
@@ -177,6 +184,7 @@ export const Sessions= {
         website: "",
         sessionType: "session",
         speakerCard: true,
+        speakerCardImage: "chris-p.jpeg",
     },
     "dalwinder-bagdi": {
         name: "Dalwinder Bagdi",
@@ -205,64 +213,119 @@ export const Sessions= {
         website: "",
         sessionType: "session",
         speakerCard: true,
+        speakerCardImage: "dali-h.png",
     },
     "james-seconde": {
-            name: "James Seconde",
-            jobTitle: "Senior Developer Advocate, Vonage",
-            bio: (
-                <>
-                    <p>
-                    </p>
-                </>
-            ),
-            talkTitle:
-                "Awful APIs: A History Lesson in Painful Industry Mistakes",
-            description: (
-                <>
-                    <p>
-                        In 1905, the Spanish philosopher George Santayana famously wrote the line "Those who cannot remember the past are condemned to repeat it." Nothing can escape this inevitability: like death and taxes, we have all looked at our screens in bewilderment at an HTTP 200 OK response that contains text in the body reading "er, actually this is an error", or marvelled at pagination design that creates an infinite loop for you to consume.
-                    </p>
-                    <p>
-                        How did we get here? In this session I will be meandering through history, real examples and anecdotes. The internet is littered with a graveyard of poorly designed APIs. Instead of launching yourself head-first into this murky world of quirks, maybe take a moment to learn the history of APIs and their mistakes so you don't repeat them.
-                    </p>
-                </>
-            ),
-            image: jamesSecondeImg,
-            linkedin: "secondej",
-            twitter: "secondej",
-            website: "",
-            sessionType: "session",
-            speakerCard: true,
-        },
+        name: "James Seconde",
+        jobTitle: "Senior Developer Advocate, Vonage",
+        bio: (
+            <>
+                <p>
+                </p>
+            </>
+        ),
+        talkTitle:
+            "Awful APIs: A History Lesson in Painful Industry Mistakes",
+        description: (
+            <>
+                <p>
+                    In 1905, the Spanish philosopher George Santayana famously wrote the line "Those who cannot remember the past are condemned to repeat it." Nothing can escape this inevitability: like death and taxes, we have all looked at our screens in bewilderment at an HTTP 200 OK response that contains text in the body reading "er, actually this is an error", or marvelled at pagination design that creates an infinite loop for you to consume.
+                </p>
+                <p>
+                    How did we get here? In this session I will be meandering through history, real examples and anecdotes. The internet is littered with a graveyard of poorly designed APIs. Instead of launching yourself head-first into this murky world of quirks, maybe take a moment to learn the history of APIs and their mistakes so you don't repeat them.
+                </p>
+            </>
+        ),
+        image: jamesSecondeImg,
+        linkedin: "secondej",
+        twitter: "secondej",
+        website: "",
+        sessionType: "session",
+        speakerCard: true,
+        speakerCardImage: "james-seconde.jpg",
+    },
     "david-simmons": {
-            name: "David G Simmons",
-            jobTitle: "" +
-                "Head of Developer Relations, Otterize",
-            bio: (
-                <>
-                    <p>
-                    </p>
-                </>
-            ),
-            talkTitle:
-                "How I learned to deploy network policies to a Kubernetes cluster without knowing anything about them",
-            description: (
-                <>
-                    <p>
-                        I took a job earlier this year as Head of DevRel at a Kubernetes company. I know noting about Kubernetes. So I started learning. But it's such a vast subject area I knew it would take forever. But using the tools from Otterize, I managed to roll out Network Policies to a cluster in under 5 minutes and guess what? I still know nothing about Network Policies!
-                    </p>
-                    <p>
-                        In this talk I'll show you how I used Intent Based Access Controls (IBAC) to quickly secure the services without making a major project out of it."
-                    </p>
-                </>
-            ),
-            image: davidSimmonsImg,
-            linkedin: "",
-            twitter: "",
-            website: "",
-            sessionType: "session",
-            speakerCard: true,
-        },
+        name: "David G Simmons",
+        jobTitle: "" +
+            "Head of Developer Relations, Otterize",
+        bio: (
+            <>
+                <p>
+                </p>
+            </>
+        ),
+        talkTitle:
+            "How I learned to deploy network policies to a Kubernetes cluster without knowing anything about them",
+        description: (
+            <>
+                <p>
+                    I took a job earlier this year as Head of DevRel at a Kubernetes company. I know noting about Kubernetes. So I started learning. But it's such a vast subject area I knew it would take forever. But using the tools from Otterize, I managed to roll out Network Policies to a cluster in under 5 minutes and guess what? I still know nothing about Network Policies!
+                </p>
+                <p>
+                    In this talk I'll show you how I used Intent Based Access Controls (IBAC) to quickly secure the services without making a major project out of it."
+                </p>
+            </>
+        ),
+        image: davidSimmonsImg,
+        linkedin: "",
+        twitter: "",
+        website: "",
+        sessionType: "session",
+        speakerCard: true,
+        speakerCardImage: "david-simmons.jpeg",
+    },
+    "jake-clarkson": {
+        name: "Jake Clarkson",
+        jobTitle: "CTO, Good Growth",
+        bio: (
+            <>
+                <p>
+                    A software engineer by trade (and passion – his wife regularly questions his choice of holiday books, the most recent being “UNIX: A history and a memoir”), Jake has spent 15 years coding, architecting, and managing the delivery of planet scale software systems.
+                </p>
+            </>
+        ),
+        talkTitle:
+            "Junior Developer to CTO - battle-hardened principles to live by",
+        description: (
+            <>
+                <p>
+                    Kent Beck once said "I'm not a great developer, I'm a good developer with great habits", but what are these habits, and how should they evolve as one's career does likewise? Using a compression ratio of ~1:1e6, Jake will condense his 15 years' experience into a set of digestible, actionable and memorable principles that will resonate no matter where you find yourself in your career in software.
+                </p>
+            </>
+        ),
+        image: jakeClarksonImg,
+        linkedin: "https://www.linkedin.com/in/jacob-clarkson/",
+        twitter: "ihttps://twitter.com/jabclab",
+        website: "https://stackoverflow.com/users/1071383/jabclab",
+        sessionType: "ignite",
+        speakerCard: undefined,
+        speakerCardImage: "jake-clarkson.png",
+    },
+    "lorna-mitchell": {
+        name: "lorna-mitchell",
+        jobTitle: "VP Developer Experience, Redocly",
+        bio: (
+            <>
+                <p>
+                </p>
+            </>
+        ),
+        talkTitle:
+            "Docs as Code, For Coders",
+        description: (
+            <>
+                <p>
+                </p>
+            </>
+        ),
+        image: lornaMitchellImg,
+        linkedin: "",
+        twitter: "",
+        website: "",
+        sessionType: "session",
+        speakerCard: true,
+        speakerCardImage: "lorna-mitchell.jpg",
+    },
     //"": {
     //         name: "",
     //         jobTitle: "",
@@ -286,5 +349,6 @@ export const Sessions= {
     //         website: "",
     //         sessionType: "",
     //         speakerCard: undefined,
+    //         speakerCardImage: "",
     //     },
 }
