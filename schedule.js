@@ -95,8 +95,7 @@ const mainHall =
                 end: '15:45PM',
             },
             {
-                name: 'TBA!',
-                description: 'TBA!',
+                session: ["matheus-guimaraes"],
                 start: '15:50PM',
                 end: '16:20PM',
             },

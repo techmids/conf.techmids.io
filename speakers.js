@@ -9,6 +9,7 @@ import jamesSecondeImg from "./public/speakers/james-seconde.jpg"
 import davidSimmonsImg from "./public/speakers/david-simmons.jpeg"
 import jakeClarksonImg from "./public/speakers/jake-clarkson.png"
 import lornaMitchellImg from "./public/speakers/lorna-mitchell.jpg"
+import matheusGuimaraesImg from "./public/speakers/matheus-guimaraes.png"
 
 export const Sessions= {
     "jamie-tanna": {
@@ -325,6 +326,32 @@ export const Sessions= {
         speakerCard: true,
         speakerCardImage: "lorna-mitchell.jpg",
     },
+    "matheus-guimaraes": {
+            name: "Matheus Guimaraes",
+            jobTitle: "Senior Developer Advocate, AWS EMEA",
+            bio: (
+                <>
+                    <p>
+                        Matheus Guimaraes began his career over 20 years ago as junior video game programmer when C/C++ still ruled the world and HTML was an extra credit class. Much like the industry itself, his career evolved at pace over the years allowing him to be exposed to many different technologies and methodologies that all served to enrich his wide technical and field knowledge. Throughout his journey he maintained a hands-on approach to code and architecture as he went from developer to CTO and everything else in between. Matheus remains very passionate about the role that technology plays in bridging the present with all the possibilities for our future.
+                    </p>
+                </>
+            ),
+            talkTitle:
+                "",
+            description: (
+                <>
+                    <p>
+                    </p>
+                </>
+            ),
+            image: matheusGuimaraesImg,
+            linkedin: "",
+            twitter: "",
+            website: "",
+            sessionType: "session",
+            speakerCard: undefined,
+            speakerCardImage: "matheus-guimaraes.png",
+        },
     //"": {
     //         name: "",
     //         jobTitle: "",
