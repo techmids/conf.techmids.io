@@ -10,6 +10,7 @@ import davidSimmonsImg from "./public/speakers/david-simmons.jpeg"
 import jakeClarksonImg from "./public/speakers/jake-clarkson.png"
 import lornaMitchellImg from "./public/speakers/lorna-mitchell.jpg"
 import matheusGuimaraesImg from "./public/speakers/matheus-guimaraes.png"
+import kirstyImg from "./public/speakers/kirsty.jpg"
 
 export const Sessions= {
     "jamie-tanna": {
@@ -351,6 +352,31 @@ export const Sessions= {
             sessionType: "session",
             speakerCard: undefined,
             speakerCardImage: "matheus-guimaraes.png",
+        },
+    "kirsty-thomas-brown": {
+            name: "Kirsty Thomas-Brown",
+            jobTitle: "Tech Recruitment Consultant, Spinks",
+            bio: (
+                <>
+                    <p>
+                    </p>
+                </>
+            ),
+            talkTitle:
+                "",
+            description: (
+                <>
+                    <p>
+                    </p>
+                </>
+            ),
+            image: kirstyImg,
+            linkedin: "",
+            twitter: "",
+            website: "",
+            sessionType: "ignite",
+            speakerCard: undefined,
+            speakerCardImage: "kirsty.jpg",
         },
     //"": {
     //         name: "",

@@ -36,8 +36,7 @@ const mainHall =
                 end: '10:15AM',
             },
             {
-                name: 'TBA!',
-                description: 'TBA!',
+                session: ["kirsty-thomas-brown"],
                 start: '10:15AM',
                 end: '10:25AM',
             },
