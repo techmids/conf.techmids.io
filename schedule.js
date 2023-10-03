@@ -104,8 +104,7 @@ const mainHall =
                 end: '16:50PM',
             },
             {
-                name: 'TBA!',
-                description: 'TBA!',
+                session: ["mark-perkin", "caroline-brown"],
                 start: '16:50AM',
                 end: '17:10PM',
             },

@@ -11,6 +11,8 @@ import jakeClarksonImg from "./public/speakers/jake-clarkson.png"
 import lornaMitchellImg from "./public/speakers/lorna-mitchell.jpg"
 import matheusGuimaraesImg from "./public/speakers/matheus-guimaraes.png"
 import kirstyImg from "./public/speakers/kirsty.jpg"
+import markPerkinImg from "./public/speakers/mark-perkin.jpg"
+import carolineBrownImg from "./public/speakers/caroline-brown.jpeg"
 
 export const Sessions= {
     "jamie-tanna": {
@@ -378,29 +380,54 @@ export const Sessions= {
             speakerCard: undefined,
             speakerCardImage: "kirsty.jpg",
         },
-    //"": {
-    //         name: "",
-    //         jobTitle: "",
-    //         bio: (
-    //             <>
-    //                 <p>
-    //                 </p>
-    //             </>
-    //         ),
-    //         talkTitle:
-    //             "",
-    //         description: (
-    //             <>
-    //                 <p>
-    //                 </p>
-    //             </>
-    //         ),
-    //         image: "",
-    //         linkedin: "",
-    //         twitter: "",
-    //         website: "",
-    //         sessionType: "",
-    //         speakerCard: undefined,
-    //         speakerCardImage: "",
-    //     },
+    "mark-perkin": {
+            name: "Mark Perkin",
+            jobTitle: "Executive Director, Goldman Sachs Accelerate Business Entrepreneur",
+            bio: (
+                <>
+                    <p>
+                    </p>
+                </>
+            ),
+            talkTitle:
+                "",
+            description: (
+                <>
+                    <p>
+                    </p>
+                </>
+            ),
+            image: markPerkinImg,
+            linkedin: "",
+            twitter: "",
+            website: "",
+            sessionType: "10-min",
+            speakerCard: undefined,
+            speakerCardImage: "mark-perkin.jpg",
+        },
+    "caroline-brown": {
+            name: "Caroline Brown",
+            jobTitle: "Executive Director, Goldman Sachs Accelerate Business Entrepreneur",
+            bio: (
+                <>
+                    <p>
+                    </p>
+                </>
+            ),
+            talkTitle:
+                "",
+            description: (
+                <>
+                    <p>
+                    </p>
+                </>
+            ),
+            image: carolineBrownImg,
+            linkedin: "",
+            twitter: "",
+            website: "",
+            sessionType: "10-min",
+            speakerCard: undefined,
+            speakerCardImage: "caroline-brown.jpeg",
+        },
 }
