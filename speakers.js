@@ -340,10 +340,11 @@ export const Sessions= {
                 </>
             ),
             talkTitle:
-                "",
+                "Level Up Your Application with AWS AI Services",
             description: (
                 <>
                     <p>
+                        Let's take a full-stack deep-dive as we reason about the front-end, backend and architectural choices made to build a serverless text-adventure game which gets progressively smarter as we integrate it with AWS AI services such as Amazon Translate and Amazon Polly to add advanced capabilities in minutes without needing any knowledge or experience of machine learning.
                     </p>
                 </>
             ),

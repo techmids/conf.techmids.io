@@ -43,8 +43,8 @@ export function SponsorTiers() {
             {printSponsors("Gold", sponsorTiers.gold.sponsors)}
             {printSponsors("Silver", sponsorTiers.silver.sponsors)}
             {printSponsors("Bronze", sponsorTiers.bronze.sponsors, 0.5)}
-            {printSponsors("Lanyard", sponsorTiers.lanyard.sponsors, 0.5)}
-            {printSponsors("Badge", sponsorTiers.badge.sponsors, 0.5)}
+            {/*{printSponsors("Lanyard", sponsorTiers.lanyard.sponsors, 0.5)}*/}
+            {/*{printSponsors("Badge", sponsorTiers.badge.sponsors, 0.5)}*/}
 
         </div>
     )

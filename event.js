@@ -28,6 +28,16 @@ export const sponsorTiers = {
     gold: {
         name: "Gold Sponsors",
         sponsors: [
+            {
+                name: "SF Technology",
+                image: "/sponsors/sf-technology.png",
+                url: "https://www.sfrecruitment.com/technology",
+            },
+            {
+                name: "Version 1",
+                image: "/sponsors/version-1.png",
+                url: "https://version1.com/"
+            }
         ]
     },
     silver: {
@@ -46,14 +56,14 @@ export const sponsorTiers = {
             }
         ]
     },
-    lanyard: {
-        name: "Lanyard Sponsor",
-        sponsors: [
-        ]
-    },
-    badge: {
-        name: "Badge Sponsor",
-        sponsors: [
-        ]
-    }
+    // lanyard: {
+    //     name: "Lanyard Sponsor",
+    //     sponsors: [
+    //     ]
+    // },
+    // badge: {
+    //     name: "Badge Sponsor",
+    //     sponsors: [
+    //     ]
+    // }
 }
