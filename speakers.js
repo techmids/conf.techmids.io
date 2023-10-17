@@ -391,10 +391,11 @@ export const Sessions= {
                 </>
             ),
             talkTitle:
-                "",
+                "When software goes wrong",
             description: (
                 <>
                     <p>
+                        Join Goldman Sachs in investigating the impact small software bugs can cause and their real-world consequences. See how you would handle debugging an incident against the clock to prevent reputational damage in a high pressure environment and the importance of learning from incidents. Discover how we put measures in place to capture signals of failure before they become real issues, and design resilient systems that deal with failure by design.
                     </p>
                 </>
             ),
@@ -402,7 +403,7 @@ export const Sessions= {
             linkedin: "",
             twitter: "",
             website: "",
-            sessionType: "10-min",
+            sessionType: "ignite",
             speakerCard: undefined,
             speakerCardImage: "mark-perkin.jpg",
         },
@@ -412,11 +413,12 @@ export const Sessions= {
             bio: (
                 <>
                     <p>
+                        Join Goldman Sachs in investigating the impact small software bugs can cause and their real-world consequences. See how you would handle debugging an incident against the clock to prevent reputational damage in a high pressure environment and the importance of learning from incidents. Discover how we put measures in place to capture signals of failure before they become real issues, and design resilient systems that deal with failure by design.
                     </p>
                 </>
             ),
             talkTitle:
-                "",
+                "When software goes wrong",
             description: (
                 <>
                     <p>
@@ -427,7 +429,7 @@ export const Sessions= {
             linkedin: "",
             twitter: "",
             website: "",
-            sessionType: "10-min",
+            sessionType: "ignite",
             speakerCard: undefined,
             speakerCardImage: "caroline-brown.jpeg",
         },
