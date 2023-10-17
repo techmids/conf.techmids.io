@@ -44,6 +44,11 @@ export const sponsorTiers = {
 
         name: "Silver Sponsors",
         sponsors: [
+            {
+                name: "Infobip",
+                image: "/sponsors/infobip.png",
+                url: "https://www.infobip.com/"
+            }
         ],
     },
     bronze: {
