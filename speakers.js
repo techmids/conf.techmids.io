@@ -117,13 +117,21 @@ export const Sessions= {
         bio: (
             <>
                 <p>
+                    Molly is a deafblind speaker and accessibility consultant who aims to raise awareness of a variety of access needs. She uses her own experiences to help designers, developers and many other roles to understand the importance of inclusion.
+                </p>
+                <p>
+                    As someone passionate about user centred design, combatting stereotypes and getting organisations to better understand the variety of users help them creat better services, better end user experiences and in turn - invite more users to use/ attend/ join an experience, environment, a job or a service.
                 </p>
             </>
         ),
-        talkTitle: "",
+        talkTitle: "Thinking about Inclusion with Molly",
         description: (
             <>
                 <p>
+                    Her experiences as someone who uses assistive technology also help attendees understand the complexities, however how simple it can be to help cater to a variety of needs. Molly is not asking for experts, but for people to listen and to in turn build better experiences for everybody.
+                </p>
+                <p>
+                    Whether it’s designing a website, recruiting, building an environment or delivering a service - each and every organisation have an obligation to consider inclusion in their day to day. The more inclusive, the more accessible, the more users, the better. Why not be the next to set an example?
                 </p>
             </>
         ),
@@ -330,107 +338,107 @@ export const Sessions= {
         speakerCardImage: "lorna-mitchell.jpg",
     },
     "matheus-guimaraes": {
-            name: "Matheus Guimaraes",
-            jobTitle: "Senior Developer Advocate, AWS EMEA",
-            bio: (
-                <>
-                    <p>
-                        Matheus Guimaraes began his career over 20 years ago as junior video game programmer when C/C++ still ruled the world and HTML was an extra credit class. Much like the industry itself, his career evolved at pace over the years allowing him to be exposed to many different technologies and methodologies that all served to enrich his wide technical and field knowledge. Throughout his journey he maintained a hands-on approach to code and architecture as he went from developer to CTO and everything else in between. Matheus remains very passionate about the role that technology plays in bridging the present with all the possibilities for our future.
-                    </p>
-                </>
-            ),
-            talkTitle:
-                "Level Up Your Application with AWS AI Services",
-            description: (
-                <>
-                    <p>
-                        Let's take a full-stack deep-dive as we reason about the front-end, backend and architectural choices made to build a serverless text-adventure game which gets progressively smarter as we integrate it with AWS AI services such as Amazon Translate and Amazon Polly to add advanced capabilities in minutes without needing any knowledge or experience of machine learning.
-                    </p>
-                </>
-            ),
-            image: matheusGuimaraesImg,
-            linkedin: "",
-            twitter: "",
-            website: "",
-            sessionType: "session",
-            speakerCard: undefined,
-            speakerCardImage: "matheus-guimaraes.png",
-        },
+        name: "Matheus Guimaraes",
+        jobTitle: "Senior Developer Advocate, AWS EMEA",
+        bio: (
+            <>
+                <p>
+                    Matheus Guimaraes began his career over 20 years ago as junior video game programmer when C/C++ still ruled the world and HTML was an extra credit class. Much like the industry itself, his career evolved at pace over the years allowing him to be exposed to many different technologies and methodologies that all served to enrich his wide technical and field knowledge. Throughout his journey he maintained a hands-on approach to code and architecture as he went from developer to CTO and everything else in between. Matheus remains very passionate about the role that technology plays in bridging the present with all the possibilities for our future.
+                </p>
+            </>
+        ),
+        talkTitle:
+            "Level Up Your Application with AWS AI Services",
+        description: (
+            <>
+                <p>
+                    Let's take a full-stack deep-dive as we reason about the front-end, backend and architectural choices made to build a serverless text-adventure game which gets progressively smarter as we integrate it with AWS AI services such as Amazon Translate and Amazon Polly to add advanced capabilities in minutes without needing any knowledge or experience of machine learning.
+                </p>
+            </>
+        ),
+        image: matheusGuimaraesImg,
+        linkedin: "",
+        twitter: "",
+        website: "",
+        sessionType: "session",
+        speakerCard: undefined,
+        speakerCardImage: "matheus-guimaraes.png",
+    },
     "kirsty-thomas-brown": {
-            name: "Kirsty Thomas-Brown",
-            jobTitle: "Tech Recruitment Consultant, Spinks",
-            bio: (
-                <>
-                    <p>
-                    </p>
-                </>
-            ),
-            talkTitle:
-                "",
-            description: (
-                <>
-                    <p>
-                    </p>
-                </>
-            ),
-            image: kirstyImg,
-            linkedin: "",
-            twitter: "",
-            website: "",
-            sessionType: "ignite",
-            speakerCard: undefined,
-            speakerCardImage: "kirsty.jpg",
-        },
+        name: "Kirsty Thomas-Brown",
+        jobTitle: "Tech Recruitment Consultant, Spinks",
+        bio: (
+            <>
+                <p>
+                </p>
+            </>
+        ),
+        talkTitle:
+            "Beyond the Business Case: embracing Diversity and Inclusion for lasting Impact",
+        description: (
+            <>
+                <p>
+                </p>
+            </>
+        ),
+        image: kirstyImg,
+        linkedin: "",
+        twitter: "",
+        website: "",
+        sessionType: "ignite",
+        speakerCard: undefined,
+        speakerCardImage: "kirsty.jpg",
+    },
     "mark-perkin": {
-            name: "Mark Perkin",
-            jobTitle: "Executive Director, Goldman Sachs Accelerate Business Entrepreneur",
-            bio: (
-                <>
-                    <p>
-                    </p>
-                </>
-            ),
-            talkTitle:
-                "When software goes wrong",
-            description: (
-                <>
-                    <p>
-                        Join Goldman Sachs in investigating the impact small software bugs can cause and their real-world consequences. See how you would handle debugging an incident against the clock to prevent reputational damage in a high pressure environment and the importance of learning from incidents. Discover how we put measures in place to capture signals of failure before they become real issues, and design resilient systems that deal with failure by design.
-                    </p>
-                </>
-            ),
-            image: markPerkinImg,
-            linkedin: "",
-            twitter: "",
-            website: "",
-            sessionType: "ignite",
-            speakerCard: undefined,
-            speakerCardImage: "mark-perkin.jpg",
-        },
+        name: "Mark Perkin",
+        jobTitle: "Executive Director, Goldman Sachs Accelerate Business Entrepreneur",
+        bio: (
+            <>
+                <p>
+                </p>
+            </>
+        ),
+        talkTitle:
+            "When software goes wrong",
+        description: (
+            <>
+                <p>
+                    Join Goldman Sachs in investigating the impact small software bugs can cause and their real-world consequences. See how you would handle debugging an incident against the clock to prevent reputational damage in a high pressure environment and the importance of learning from incidents. Discover how we put measures in place to capture signals of failure before they become real issues, and design resilient systems that deal with failure by design.
+                </p>
+            </>
+        ),
+        image: markPerkinImg,
+        linkedin: "",
+        twitter: "",
+        website: "",
+        sessionType: "ignite",
+        speakerCard: undefined,
+        speakerCardImage: "mark-perkin.jpg",
+    },
     "caroline-brown": {
-            name: "Caroline Brown",
-            jobTitle: "Executive Director, Goldman Sachs Accelerate Business Entrepreneur",
-            bio: (
-                <>
-                    <p>
-                        Join Goldman Sachs in investigating the impact small software bugs can cause and their real-world consequences. See how you would handle debugging an incident against the clock to prevent reputational damage in a high pressure environment and the importance of learning from incidents. Discover how we put measures in place to capture signals of failure before they become real issues, and design resilient systems that deal with failure by design.
-                    </p>
-                </>
-            ),
-            talkTitle:
-                "When software goes wrong",
-            description: (
-                <>
-                    <p>
-                    </p>
-                </>
-            ),
-            image: carolineBrownImg,
-            linkedin: "",
-            twitter: "",
-            website: "",
-            sessionType: "ignite",
-            speakerCard: undefined,
-            speakerCardImage: "caroline-brown.jpeg",
-        },
+        name: "Caroline Brown",
+        jobTitle: "Executive Director, Goldman Sachs Accelerate Business Entrepreneur",
+        bio: (
+            <>
+                <p>
+                    Join Goldman Sachs in investigating the impact small software bugs can cause and their real-world consequences. See how you would handle debugging an incident against the clock to prevent reputational damage in a high pressure environment and the importance of learning from incidents. Discover how we put measures in place to capture signals of failure before they become real issues, and design resilient systems that deal with failure by design.
+                </p>
+            </>
+        ),
+        talkTitle:
+            "When software goes wrong",
+        description: (
+            <>
+                <p>
+                </p>
+            </>
+        ),
+        image: carolineBrownImg,
+        linkedin: "",
+        twitter: "",
+        website: "",
+        sessionType: "ignite",
+        speakerCard: undefined,
+        speakerCardImage: "caroline-brown.jpeg",
+    },
 }
