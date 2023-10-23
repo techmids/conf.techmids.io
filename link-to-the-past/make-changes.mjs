@@ -16,6 +16,7 @@ const nextConfig = {
   output: 'export',
   distDir: '${paths.temp_export_dir_short}',
   basePath: '/past/${output_name}',
+  assetPrefix: '/past/${output_name}',
   images: {
     unoptimized: true,
   }

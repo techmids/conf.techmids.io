@@ -10,6 +10,12 @@ const pastEventMetadata = {
     imageUrl: '/gallery/millenium-point.jpg',
     niceDate: 'Thursday & Friday 15th & 16th June 2023',
     datetime: '2023-06-15'
+  },
+  "2023-10": {
+    title: 'TechMids Conf October 2023',
+    imageUrl: '/gallery/audience-icc.jpg',
+    niceDate: 'Friday 20th Oct 2023',
+    datetime: '2023-10-20'
   }
   // More past events...
 }
