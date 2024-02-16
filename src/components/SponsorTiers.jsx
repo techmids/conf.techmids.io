@@ -7,7 +7,7 @@ const imageDimensions = {
 
 export function SponsorTiers() {
     function printSponsors(tier, sponsors, imageFactor =1) {
-        if (sponsors.length === 0) {
+        if (sponsors?.length === 0) {
             return null
         }
         return (

@@ -20,7 +20,6 @@ export function ButtonCTA() {
                         <tito-widget
                             event={EVENT.titoId}
                         ></tito-widget>
-                        </>:
 
                         <ButtonLink
                         href={EVENT.ticketLink}
@@ -30,7 +29,8 @@ export function ButtonCTA() {
                 >
                     Get your ticket now
                 </ButtonLink>
-                }
+                        </>
+                : null}
             </div>
             {EVENT.CFPOpen &&
                 <div className="my-10 grid grid-cols-1 gap-10">

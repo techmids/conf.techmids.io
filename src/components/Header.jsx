@@ -31,6 +31,7 @@ export function Header() {
           </div>
         </div>
         <div className="hidden sm:mt-10 sm:flex lg:mt-0 lg:grow lg:basis-0 lg:justify-end">
+          {EVENT.onSale ? (
           <ButtonLink
             href={EVENT.ticketLink}
             rel="noopener"
@@ -38,6 +39,7 @@ export function Header() {
           >
             Get your tickets now
           </ButtonLink>
+            ) : null}
         </div>
       </Container>
     </header>

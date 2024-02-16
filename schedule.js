@@ -1,132 +1,132 @@
-const mainHall =
-    {
+const mainHall = {
         room: "Main Stage",
         timeOfDay: 'Main Stage',
-        date: '2023-06-15',
-        summary: '08:00 - 17:00 BST',
+        date: '2024-10-25',
+        summary: '09:00 - 17:00 BST',
         dayName: "Day 1",
-        timeSlots: [
-            // {
-            //     name: 'Conference',
-            //     description: 'Conference',
-            //     start: '08:00AM',
-            //     end: '17:15PM',
-            // }
-            {
-                name: 'Registration',
-                description: 'Registration',
-                start: '08:00AM',
-                end: '08:50AM',
-            },
-            {
-                name: 'Event organisers',
-                description: 'Opening Welcome',
-                start: '09:00AM',
-                end: '09:15AM',
-            },
-            {
-                session: ['molly-watt'],
-                start: '09:15AM',
-                end: '09:45AM',
-
-            },
-            {
-                session: ["jamie-tanna"],
-                start: '09:45AM',
-                end: '10:15AM',
-            },
-            {
-                session: ["kirsty-thomas-brown"],
-                start: '10:15AM',
-                end: '10:25AM',
-            },
-            {
-                name: 'Coffee, Snacks, Sponsors, Chat!',
-                description: 'Morning Break',
-                start: '10:25AM',
-                end: '10:55PM',
-            },
-            {
-                session: ["esther-agbaje"],
-                start: '11:00AM',
-                end: '11:30AM',
-            },
-            {
-                session: ["steve-mcdougall"],
-                start: '11:30AM',
-                end: '12:00PM',
-            },
-            {
-                session: ['pooja-mistry'],
-                start: '12:00PM',
-                end: '12:30PM',
-            },
-            {
-                session: ['jake-clarkson'],
-                start: '12:30PM',
-                end: '12:40PM',
-            },
-            {
-                name: 'Lunch',
-                description: 'Lunch',
-                start: '12:40PM',
-                end: '13:40PM',
-            },
-            {
-                session: ["christopher-phillips", "dalwinder-bagdi"],
-                start: '13:45PM',
-                end: '14:15PM',
-            },
-            {
-                session: ["david-simmons"],
-                start: '14:15PM',
-                end: '14:45PM',
-            },
-            {
-                session: ['lorna-mitchell'],
-                start: '14:45PM',
-                end: '15:15PM',
-            },
-            {
-                name: 'Coffee, Snacks, Sponsors, Chat!',
-                description: 'Afternoon Break',
-                start: '15:15AM',
-                end: '15:45PM',
-            },
-            {
-                session: ["matheus-guimaraes"],
-                start: '15:50PM',
-                end: '16:20PM',
-            },
-            {
-                session: ["james-seconde"],
-                start: '16:20PM',
-                end: '16:50PM',
-            },
-            {
-                session: ["mark-perkin", "caroline-brown"],
-                start: '16:50AM',
-                end: '17:10PM',
-            },
-            {
-                name: 'Event organisers',
-                description: 'Closing Remarks',
-                start: '17:10PM',
-                end: '17:15PM',
-            }
-            // {
-            //     session: "max-woolf",
-            //     start: '16:00PM',
-            //     end: '16:30PM',
-            // },
-            // {
-            //     name: 'Event organisers',
-            //     description: 'Closing Remarks',
-            //     start: '16:30PM',
-            //     end: '16:40PM',
-            // },
-        ]
+        timeSlots: []
     }
+
+    //         // {
+    //         //     name: 'Conference',
+    //         //     description: 'Conference',
+    //         //     start: '08:00AM',
+    //         //     end: '17:15PM',
+    //         // }
+    //         {
+    //             name: 'Registration',
+    //             description: 'Registration',
+    //             start: '08:00AM',
+    //             end: '08:50AM',
+    //         },
+    //         {
+    //             name: 'Event organisers',
+    //             description: 'Opening Welcome',
+    //             start: '09:00AM',
+    //             end: '09:15AM',
+    //         },
+    //         {
+    //             session: ['molly-watt'],
+    //             start: '09:15AM',
+    //             end: '09:45AM',
+    //
+    //         },
+    //         {
+    //             session: ["jamie-tanna"],
+    //             start: '09:45AM',
+    //             end: '10:15AM',
+    //         },
+    //         {
+    //             session: ["kirsty-thomas-brown"],
+    //             start: '10:15AM',
+    //             end: '10:25AM',
+    //         },
+    //         {
+    //             name: 'Coffee, Snacks, Sponsors, Chat!',
+    //             description: 'Morning Break',
+    //             start: '10:25AM',
+    //             end: '10:55PM',
+    //         },
+    //         {
+    //             session: ["esther-agbaje"],
+    //             start: '11:00AM',
+    //             end: '11:30AM',
+    //         },
+    //         {
+    //             session: ["steve-mcdougall"],
+    //             start: '11:30AM',
+    //             end: '12:00PM',
+    //         },
+    //         {
+    //             session: ['pooja-mistry'],
+    //             start: '12:00PM',
+    //             end: '12:30PM',
+    //         },
+    //         {
+    //             session: ['jake-clarkson'],
+    //             start: '12:30PM',
+    //             end: '12:40PM',
+    //         },
+    //         {
+    //             name: 'Lunch',
+    //             description: 'Lunch',
+    //             start: '12:40PM',
+    //             end: '13:40PM',
+    //         },
+    //         {
+    //             session: ["christopher-phillips", "dalwinder-bagdi"],
+    //             start: '13:45PM',
+    //             end: '14:15PM',
+    //         },
+    //         {
+    //             session: ["david-simmons"],
+    //             start: '14:15PM',
+    //             end: '14:45PM',
+    //         },
+    //         {
+    //             session: ['lorna-mitchell'],
+    //             start: '14:45PM',
+    //             end: '15:15PM',
+    //         },
+    //         {
+    //             name: 'Coffee, Snacks, Sponsors, Chat!',
+    //             description: 'Afternoon Break',
+    //             start: '15:15AM',
+    //             end: '15:45PM',
+    //         },
+    //         {
+    //             session: ["matheus-guimaraes"],
+    //             start: '15:50PM',
+    //             end: '16:20PM',
+    //         },
+    //         {
+    //             session: ["james-seconde"],
+    //             start: '16:20PM',
+    //             end: '16:50PM',
+    //         },
+    //         {
+    //             session: ["mark-perkin", "caroline-brown"],
+    //             start: '16:50AM',
+    //             end: '17:10PM',
+    //         },
+    //         {
+    //             name: 'Event organisers',
+    //             description: 'Closing Remarks',
+    //             start: '17:10PM',
+    //             end: '17:15PM',
+    //         }
+    //         // {
+    //         //     session: "max-woolf",
+    //         //     start: '16:00PM',
+    //         //     end: '16:30PM',
+    //         // },
+    //         // {
+    //         //     name: 'Event organisers',
+    //         //     description: 'Closing Remarks',
+    //         //     start: '16:30PM',
+    //         //     end: '16:40PM',
+    //         // },
+    //     ]
 
 // const auditoriumDay2 = {
 //     timeOfDay: 'Auditorium Day 2',
