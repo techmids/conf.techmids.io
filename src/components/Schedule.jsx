@@ -121,8 +121,7 @@ export function Schedule() {
                         Schedule
                       </p>
                       <p className="w-full mt-4 font-display text-2xl text-brand-900">
-                        Your day will be composed of 30 minute sessions as well as 10 minute
-                        talks, including plenty of time to chat.
+                        Your day will be composed of 20 minute sessions including plenty of time to chat and network.
                       </p>
                 </div>
               {Object.keys(schedule).map((track) => {

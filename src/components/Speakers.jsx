@@ -123,7 +123,7 @@ export function Speakers({sharing = false}) {
                       <p>{Sessions[speaker].jobTitle}</p>
                       <p className="mt-1 text-base tracking-tight text-slate-500">
                         {Sessions[speaker].sessionType === 'session'
-                            ? '30 Minute Session'
+                            ? '20 Minute Session'
                             : '10 Minute Session'}
                       </p>
                     </div>

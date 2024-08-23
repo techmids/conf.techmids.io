@@ -1,4 +1,5 @@
 import html2canvas from "html2canvas";
+import {EVENT} from "../../event";
 
 const SharingCard = ({ talkTitle, speaker }) => {
     function takeScreenshot() {
@@ -33,6 +34,47 @@ const SharingCard = ({ talkTitle, speaker }) => {
                 flexDirection: 'column',
             }}>
                 <div style={{
+                    width: 500,
+                    display: 'flex',
+                }}>
+                    <div className="rounded" style={{
+                        backgroundColor: "#23FFF3",
+                        marginTop: '60px',
+                        marginLeft: 93,
+                        textAlign: "center",
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        alignContent: 'center',
+                        paddingTop: -8,
+                        paddingBottom: 16,
+                        width: 180,
+                        color: "black",
+                        fontWeight: 600,
+                        fontSize: 18
+                    }}>
+                        <span>{`#TECHMIDS${EVENT.date.slice(-2)}`}</span>
+                    </div>
+                    <div className="rounded" style={{
+                        backgroundColor: "#23FFF3",
+                        marginTop: '60px',
+                        marginLeft: 10,
+                        textAlign: "center",
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        alignContent: 'center',
+                        paddingTop: -8,
+                        paddingBottom: 16,
+                        width: 180,
+                        color: "black",
+                        fontWeight: 600,
+                        fontSize: 18
+                    }}>
+                        <span>{`#BTW${EVENT.date.slice(-2)}`}</span>
+                    </div>
+                </div>
+                <div style={{
                     fontSize: talkTitle?.length > 60 ? 28 : 40,
                     fontStyle: 'normal',
                     letterSpacing: '-0.025em',
@@ -41,7 +83,7 @@ const SharingCard = ({ talkTitle, speaker }) => {
                     padding: '0 0 0 100px',
                     lineHeight: 1.4,
                     fontWeight: 700,
-                }} >
+                }}>
                     {talkTitle}
                 </div>
                 <div className="rounded" style={{
@@ -60,15 +102,25 @@ const SharingCard = ({ talkTitle, speaker }) => {
                     fontWeight: 600,
                     fontSize: 18
                 }}>
-                    <span >20TH OCTOBER 2023</span>
+                    <span>{EVENT.date}</span>
                 </div>
             </div>
-            <div style={{ display: 'flex', marginRight: 50, flexDirection: 'column', width: 350, justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}>
+            <div style={{
+                display: 'flex',
+                marginRight: 50,
+                flexDirection: 'column',
+                width: 350,
+                justifyContent: 'center',
+                alignItems: 'center',
+                textAlign: 'center'
+            }}>
                 <div
                     className="transition h-72 rounded-full mb-8 border-8 w-72  object-cover"
-                    style={{backgroundImage: `url(/speakers/${speaker.speakerCardImage})`,
+                    style={{
+                        backgroundImage: `url(/speakers/${speaker.speakerCardImage})`,
                         backgroundSize: 'cover',
-                        backgroundPosition: 'center',}}
+                        backgroundPosition: 'center',
+                    }}
                 />
                 <div style={{
                     fontSize: 40,
