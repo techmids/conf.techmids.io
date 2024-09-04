@@ -239,16 +239,11 @@ export const Sessions = {
       </>
     ),
     talkTitle:
-      "From bastions and patching to automation and serverless on AWS",
+      "Building a full stack application with AWS serverless technology",
     description: (
       <>
         <p>
-          In this talk I will explore how server infrastructure has changed as companies use more managed cloud native technologies and how this has altered the way we interact with servers.
-          The talk will include practical demos of these concepts, showing the audience best practices for managing their systems.
-        </p>
-        <p>
-          I will show practical examples of how Amazon EC2 instances can be managed using systems manager to remove bastion hosts and apply fine grained access control for remotely connecting into those instances using AWS user credentials, no longer having to manage SSH keys.
-          I will also touch on automated patching and how to automate responses to threats/risks that arise as events in your cloud monitoring. This automation includes creating rules that get triggered by certain events which then call an action to resolve the issue.
+            In this talk I will walkthrough how to build a full stack application hosted on AWS using serverless technology. This will include how to host a frontend website on S3 and CloudFront and how to host the backend using API Gateway and Lambda, retrieving information stored in a DynamoDB table. As part of the talk, I will explain the considerations when using the technology as well as the benefits regarding managed infrastructure, costs and scalability. If time allows, I could explain how authentication can be integrated into the architecture.
         </p>
       </>
     ),
@@ -299,6 +294,82 @@ export const Sessions = {
     speakerCard: false,
     //speakerCardImage: "placeholder.png",
   },
+    "SimonEmms": {
+    name: "Simon Emms",
+    jobTitle: "",
+    bio: (
+        <>
+            <p>
+                Simon has been working as a software engineer since 2006, in which time he's done work for the likes of Gitpod, DPD, Specsavers, British Pathé, the Red Cross and others. Initially specialising in the NodeJS ecosystem, he's used pretty much all of the major languages over the years and since 2017 has been focused on building DevOps solutions and Cloud-native applications that help engineers to work faster and more productively.
+            </p>
+            <p>
+                When not behind a computer he's a keen gardener, beekeeper and makes his own sausages.
+            </p>
+        </>
+    ),
+        talkTitle:
+            "Tech is broken and AI won't fix it",
+        description: (
+            <>
+                <p>
+                    Tech is at a crisis point. Companies are complaining about a lack of skilled engineers, but won't recruit junior engineers to train up. Agile was designed to improve productivity, but ceremonies are followed ritualistically with little consideration of value. Recruitment often focuses on meaningless trivia rather than preparation for the job at hand.
+                </p>
+                <p>
+                    The current trend in industry is to look to AI as a panacea. Unless we solve the underlying issues, AI will compound these and many other problems rather than being the solution.
+                </p>
+            </>
+        ),
+        image: placeholderImg,
+        linkedin: "",
+        twitter: "twitter.com/theshroppiebeek",
+        website: "simonemms.com",
+        sessionType: "session",
+        speakerCard: false,
+        //speakerCardImage: "placeholder.png",
+    },
+    "StuartHarrison": {
+    name: "Stuart Harrison",
+    jobTitle: "",
+    bio: (
+        <>
+            <p>
+                I'm a software developer of almost 15 years standing, progressing from journalism, into we editing and finally into software development. I have worked in the public sector most of my working life, working on projects for the Ministry of Justice, Department for Education as well as countless local authorities and arms length bodies. I am a grade 3 saxophonist, sometime DJ, lapsed homebrewer and tired dad of two (and one dog)
+            </p>
+        </>
+    ),
+    talkTitle:
+        "Progressing into senior leadership with ADHD",
+    description: (
+        <>
+            <p>
+                My name's Stu and I have ADHD. It's been a blessing and a curse for a good chunk of my life, but I manage it with both coping strategies and medication. However, as I've progressed up the ladder into a tech lead position, I've found I need to adapt how I work to be as effective as possible.
+            </p>
+            <p>
+
+                In this talk I'll talk about:
+
+            </p>
+            <p>
+                - What ADHD is (and isn't)
+                - My personal history with my diagnosis
+                - How it affects me in my working life
+                - What strategies I used to help me be an effective tech lead
+
+            </p>
+            <p>
+                I'm hoping people will come away from this session, not only with an understanding of ADHD as a condition, but also how they can use the strategies I use to help them in their working life, whether they have ADHD or not.
+            </p>
+        </>
+    ),
+        image: placeholderImg,
+        linkedin: "",
+        twitter: "",
+        website: "",
+        sessionType: "session",
+        speakerCard: false,
+        //speakerCardImage: "placeholder.png",
+    },
+
 }
 
 
