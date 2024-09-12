@@ -5,7 +5,7 @@ import KathrynLupinImg from "./public/speakers/KathrynLupin.jpeg"
 import JoshMoImg from "./public/speakers/JoshuaMo.png"
 import AbbyBangserImg from "./public/speakers/AbbyBangser.jpeg"
 import AndrewFitzpatrickImg from "./public/speakers/AndrewFitzpatrick.jpeg"
-import BeckiFloydImg from "./public/speakers/BeckyFloyd.jpeg"
+import BeckiFloydImg from "./public/speakers/BeckiFloyd.jpeg"
 import BeckettLeclaireImg from "./public/speakers/BeckettLeclaire.jpeg"
 import LauraHyattImg from "./public/speakers/LauraHyatt.png"
 import LeonardoGiordaniImg from "./public/speakers/LeonadioGiordani.jpeg"
@@ -73,7 +73,7 @@ export const Sessions = {
         website: "https://carlyrichmond.com/",
         sessionType: "session",
         speakerCard: false,
-        // speakerCardImage: "placeholder.png",
+        // speakerCardImage: ".png",
     },
     "JoshuaMo": {
         name: "Joshua Mo",
@@ -100,7 +100,7 @@ export const Sessions = {
         website: " https://github.com/joshua-mo-143/",
         sessionType: "session",
         speakerCard: false,
-        // speakerCardImage: "placeholder.png",
+        speakerCardImage: "JoshuaMo.png",
     },
     "SteveWade": {
         name: "Steve Wade",
@@ -145,7 +145,7 @@ export const Sessions = {
         website: "",
         sessionType: "session",
         speakerCard: false,
-        // speakerCardImage: "placeholder.png",
+        speakerCardImage: "SteveWade.jpeg",
     },
     "PaulDragoonis": {
         name: "Paul Dragoonis",
@@ -179,7 +179,7 @@ export const Sessions = {
         website: "",
         sessionType: "session",
         speakerCard: false,
-        // speakerCardImage: "placeholder.png",
+        speakerCardImage: "PaulDragoonis.png",
     },
     "MaxWoolf": {
         name: "Max Woolf",
@@ -242,7 +242,7 @@ export const Sessions = {
         website: "",
         sessionType: "session",
         speakerCard: false,
-        //speakerCardImage: "placeholder.png",
+        speakerCardImage: "BeckettLeclaire.jpeg",
     },
     "RyanHardwick": {
         name: "Ryan Hardwick",
@@ -272,7 +272,7 @@ export const Sessions = {
         website: "",
         sessionType: "session",
         speakerCard: false,
-        //speakerCardImage: "placeholder.png",
+        speakerCardImage: "RyanHardwick.jpeg",
     },
     "CallumWhyte": {
         name: "Callum Whyte",
@@ -311,7 +311,7 @@ export const Sessions = {
         website: "https://github.com/callumbwhyte",
         sessionType: "session",
         speakerCard: false,
-        //speakerCardImage: "placeholder.png",
+        speakerCardImage: "CallumWhyte.jpeg",
     },
     "SimonEmms": {
         name: "Simon Emms",
@@ -344,7 +344,7 @@ export const Sessions = {
         website: "simonemms.com",
         sessionType: "session",
         speakerCard: false,
-        //speakerCardImage: "placeholder.png",
+        speakerCardImage: "SimonEmms.jpeg",
     },
     "StuartHarrison": {
         name: "Stuart Harrison",
@@ -386,7 +386,7 @@ export const Sessions = {
         website: "",
         sessionType: "session",
         speakerCard: false,
-        //speakerCardImage: "placeholder.png",
+        speakerCardImage: "StuartHarrison.jpg",
     },
     "SimonGurney": {
         name: "Simon Gurney",
@@ -416,7 +416,7 @@ export const Sessions = {
         website: "",
         sessionType: "session",
         speakerCard: false,
-        //speakerCardImage: "placeholder.png",
+        speakerCardImage: "SimonGurney.jpeg",
     },
     "BeckiFloyd": {
         name: "Becki Floyd",
@@ -451,7 +451,7 @@ export const Sessions = {
         website: "",
         sessionType: "session",
         speakerCard: false,
-        //speakerCardImage: "placeholder.png",
+        speakerCardImage: "BeckiFloyd.jpeg",
     },
     "MaceijSzmulka": {
         name: "Maceij Szmulka",
@@ -518,7 +518,7 @@ export const Sessions = {
         website: "",
         sessionType: "session",
         speakerCard: false,
-        //speakerCardImage: "placeholder.png",
+        speakerCardImage: "AbbyBangser.jpeg",
     },
     "LauraHyatt": {
         name: "Laura Hyatt",
@@ -548,7 +548,7 @@ export const Sessions = {
         website: "",
         sessionType: "session",
         speakerCard: false,
-        //speakerCardImage: "placeholder.png",
+        speakerCardImage: "LauraHyatt.png",
     },
     "LeonardoGiordani": {
         name: "Leonardo Giordani",
@@ -591,7 +591,7 @@ export const Sessions = {
         website: "",
         sessionType: "session",
         speakerCard: false,
-        //speakerCardImage: "placeholder.png",
+        speakerCardImage: "LeonardioGiordani.jpeg",
     },
     "AndrewFitzpatrick": {
         name: "Andrew Fitzpatrick",
@@ -618,7 +618,7 @@ export const Sessions = {
         website: "",
         sessionType: "session",
         speakerCard: false,
-        //speakerCardImage: "placeholder.png",
+        speakerCardImage: "AndrewFitzpatrick.jpeg",
     },
     "MarkSimpson": {
         name: "Mark Simpson",
@@ -659,7 +659,7 @@ export const Sessions = {
         website: "",
         sessionType: "session",
         speakerCard: false,
-        //speakerCardImage: "placeholder.png",
+        speakerCardImage: "MarkSimpson.jpeg",
     },
     "AmeenAlade": {
         name: "Ameen Alade",
@@ -716,7 +716,7 @@ export const Sessions = {
         website: "",
         sessionType: "session",
         speakerCard: false,
-        //speakerCardImage: "placeholder.png",
+        speakerCardImage: "JamesPrince.jpeg",
     },
     "DanielTallentire": {
         name: "Daniel Tallentire",
@@ -749,7 +749,7 @@ export const Sessions = {
         website: "",
         sessionType: "session",
         speakerCard: false,
-        //speakerCardImage: "placeholder.png",
+        speakerCardImage: "DanielTallentire.jpeg",
     },
     "AndyBell": {
         name: "Andy Bell",
@@ -809,7 +809,7 @@ export const Sessions = {
         website: "",
         sessionType: "session",
         speakerCard: false,
-        //speakerCardImage: "placeholder.png",
+        speakerCardImage: "KathrynLupin.jpeg",
     },
 }
 
