@@ -1,4 +1,7 @@
 import placeholderImg from "./public/speakers/Person_Image_Placeholder.png"
+import DanielTallentireImg from "./public/speakers/DanielTallentire.jpeg"
+import JamesPrinceImg from "./public/speakers/JamesPrince.jpeg"
+import KathrynLupinImg from "./public/speakers/KathrynLupin.jpeg"
 
 export const Sessions = {
     "CarlyRichmond": {
@@ -661,6 +664,129 @@ export const Sessions = {
             </>
         ),
         image: placeholderImg,
+        linkedin: "",
+        twitter: "",
+        website: "",
+        sessionType: "session",
+        speakerCard: false,
+        //speakerCardImage: "placeholder.png",
+    },
+    "JamesPrince": {
+    name: "James Prince",
+    jobTitle: "",
+    bio: (
+        <>
+            <p>
+                I'm James I'm 30 and a Software Engineer based in Warwick, I have 13 years experience in the software industry and I currently work for Celcat who supply timetabling software to Universities and Colleges worldwide. I absolutely love software development and have a constant desire to improve my skills and help my team do the same.
+                </p>
+            <p>
+                Outside of work I enjoy other non-tech hobbies such as playing in my band and any sport I sport I have an opportunity to play. I also have a YouTube channel "Coffee, Music and Coding" on which I have posted some basic coding tutorials mostly for me to refer back to when I've forgotten silly things.
+            </p>
+        </>
+    ),
+        talkTitle:
+            "Hackathons: Igniting Innovation, Empowering Teams",
+        description: (
+            <>
+                <p>
+                    Explore the power of hackathons, learn how these dynamic events drive rapid innovation, foster collaboration, and empower teams to tackle challenges creatively.
+                </p>
+            </>
+        ),
+        image: JamesPrinceImg,
+        linkedin: "",
+        twitter: "",
+        website: "",
+        sessionType: "session",
+        speakerCard: false,
+        //speakerCardImage: "placeholder.png",
+    },
+    "DanielTallentire": {
+        name: "Daniel Tallentire",
+        jobTitle: "",
+        bio: (
+            <>
+                <p>
+                    17 years experience in SaaS. I work best on supporting the learning and development of those I'm working with. I've mentored and coached multiple engineers throughout my career.
+                </p>
+                <p>
+                    My MBA helps me to understand people and team dynamics more completely, and gave me some academic background on the topic of learning.
+                </p>
+                <p>
+                    I've previously spoken at AI World in Boston.
+                </p>
+            </>
+        ),
+        talkTitle:
+            "Jack of all trades - master of learning",
+        description: (
+            <>
+                <p>
+                    How to utilise your quick learning/adaption skills as a generalist in software engineering / related fields.
+                </p>
+            </>
+        ),
+        image: DanielTallentireImg,
+        linkedin: "",
+        twitter: "",
+        website: "",
+        sessionType: "session",
+        speakerCard: false,
+        //speakerCardImage: "placeholder.png",
+    },
+    "AndyBell": {
+        name: "Andy Bell",
+        jobTitle: "",
+        bio: (
+            <>
+                <p>
+                    Andy is the founder of <a href="https://piccalil.li/">Piccalilli</a> and design agency, <a href={"https://set.studio/"}>Set Studio</a>. He mostly specialises in CSS — whether that is <a href={"https://web.dev/learn/css/"}>writing a CSS course for Google</a>, <a href={"https://every-layout.dev/"}>co-authoring a book on CSS layout</a>, or <a href={" https://cube.fyi/"}>creating a methodology to help people write better CSS</a>.
+                </p>
+                <p>
+                    He <b>obsesses</b> about designing and building for everyone with a sharp focus on <a href={"https://piccalil.li/blog/its-about-time-i-tried-to-explain-what-progressive-enhancement-actually-is"}>progressive enhancement</a> and <a href={"https://buildexcellentwebsit.es/"}>being the browser’s mentor, not its micromanager</a>.
+                </p>
+            </>
+        ),
+        talkTitle:
+            "Get the core right and the resilient code will follow",
+        description: (
+            <>
+                <p>
+                    More often than not, front-end developers will focus purely on improving their technical skills. I’m going to show you a better way by demonstrating how you can produce simpler, more resilient codebases by improving your planning & core skills — specifically improving how you provide and receive feedback from designer colleagues.
+                </p>
+            </>
+        ),
+        image: placeholderImg,
+        linkedin: "",
+        twitter: "",
+        website: "",
+        sessionType: "session",
+        speakerCard: false,
+        //speakerCardImage: "placeholder.png",
+    },
+    "KathrynLupin": {
+        name: "Kathryn Lupin",
+        jobTitle: "",
+        bio: (
+            <>
+                <p>
+                    Kathryn loves post it notes, smooth meetings and sharing ideas, and especially loves that Agile offers her all three in her day to day work. Since falling into Scrum mastery by way of a chance training course, Kathryn has chased an Agile way of working across technical and non technical organisations. She is passionate about helping teams find new and better ways of working, that result in a better work life for her team and high quality deliverables.
+                </p>
+                <p>
+                    Kathryn is a Scrum Alliance certified Scrum Master, and from 2017-2020 ran a meet up for Scrum Masters in Birmingham.  She is currently a Delivery Manager within the NHS, specialising in software implementation within non-technical teams.
+                </p>
+            </>
+        ),
+        talkTitle:
+            "Taking the Jargon Out of Agile - a case study on introducing a new team to Agile",
+        description: (
+            <>
+                <p>
+                    This is the story of one scrum master, who, fresh from the tech world, came to work with a non-technical team to get them up to speed in Agile. Join me in this case study, as I cover why Agile struck fear into the hearts of the team I joined, how I fell into the jargon trap before working out how to introduce agile concepts successfully, and what working well for us.
+                </p>
+            </>
+        ),
+        image: KathrynLupinImg,
         linkedin: "",
         twitter: "",
         website: "",
