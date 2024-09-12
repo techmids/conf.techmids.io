@@ -17,7 +17,10 @@ import SimonGurneyImg from "./public/speakers/SimonGurney.jpeg"
 import StuartHarrisonImg from "./public/speakers/StuartHarrison.jpg"
 import SteveWadeImg from "./public/speakers/SteveWade.jpeg"
 import CallumWhyteImg from "./public/speakers/CallumWhyte.jpeg"
-
+import AmeenAladeImg from "./public/speakers/AmeenAlade.jpeg"
+import AndyBellImg from "./public/speakers/AndyBell.jpeg"
+import CarlyRichmondImg from "./public/speakers/CarlyRichmond.jpeg"
+import MaxWoolfImg from "./public/speakers/MaxWoolf.jpeg"
 
 
 export const Sessions = {
@@ -67,13 +70,13 @@ export const Sessions = {
                 </p>
             </>
         ),
-        image: placeholderImg,
+        image: CarlyRichmondImg,
         linkedin: "https://www.linkedin.com/in/carly-richmond/",
         twitter: "https://twitter.com/CarlyLRichmond",
         website: "https://carlyrichmond.com/",
         sessionType: "session",
         speakerCard: false,
-        // speakerCardImage: ".png",
+        speakerCardImage: "CarlyRichmond.jpeg",
     },
     "JoshuaMo": {
         name: "Joshua Mo",
@@ -206,13 +209,13 @@ export const Sessions = {
                 </p>
             </>
         ),
-        image: placeholderImg,
+        image: MaxWoolfImg,
         linkedin: "",
         twitter: "",
         website: "https://max.woolf.io",
         sessionType: "session",
         speakerCard: false,
-        //speakerCardImage: "placeholder.png",
+        speakerCardImage: "MaxWoolf.jpeg",
     },
     "BeckettLeclaire": {
         name: "Beckett Leclaire",
@@ -680,13 +683,13 @@ export const Sessions = {
                 </p>
             </>
         ),
-        image: placeholderImg,
+        image: AmeenAladeImg,
         linkedin: "",
         twitter: "",
         website: "",
         sessionType: "session",
         speakerCard: false,
-        //speakerCardImage: "placeholder.png",
+        speakerCardImage: "AmeenAlade.png",
     },
     "JamesPrince": {
     name: "James Prince",
@@ -773,13 +776,13 @@ export const Sessions = {
                 </p>
             </>
         ),
-        image: placeholderImg,
+        image: AndyBellImg,
         linkedin: "",
         twitter: "",
         website: "",
         sessionType: "session",
         speakerCard: false,
-        //speakerCardImage: "placeholder.png",
+        speakerCardImage: "AndyBell.jpeg",
     },
     "KathrynLupin": {
         name: "Kathryn Lupin",
