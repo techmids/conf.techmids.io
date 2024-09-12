@@ -2,6 +2,23 @@ import placeholderImg from "./public/speakers/Person_Image_Placeholder.png"
 import DanielTallentireImg from "./public/speakers/DanielTallentire.jpeg"
 import JamesPrinceImg from "./public/speakers/JamesPrince.jpeg"
 import KathrynLupinImg from "./public/speakers/KathrynLupin.jpeg"
+import JoshMoImg from "./public/speakers/JoshuaMo.png"
+import AbbyBangserImg from "./public/speakers/AbbyBangser.jpeg"
+import AndrewFitzpatrickImg from "./public/speakers/AndrewFitzpatrick.jpeg"
+import BeckiFloydImg from "./public/speakers/BeckyFloyd.jpeg"
+import BeckettLeclaireImg from "./public/speakers/BeckettLeclaire.jpeg"
+import LauraHyattImg from "./public/speakers/LauraHyatt.png"
+import LeonardoGiordaniImg from "./public/speakers/LeonadioGiordani.jpeg"
+import MarkSimpsonImg from "./public/speakers/MarkSimpson.jpeg"
+import PaulDragoonisImg from "./public/speakers/PaulDragoonis.png"
+import RyanHardwickImg from "./public/speakers/RyanHardwick.jpeg"
+import SimonEmmsImg from "./public/speakers/SimonEmms.jpeg"
+import SimonGurneyImg from "./public/speakers/SimonGurney.jpeg"
+import StuartHarrisonImg from "./public/speakers/StuartHarrison.jpg"
+import SteveWadeImg from "./public/speakers/SteveWade.jpeg"
+import CallumWhyteImg from "./public/speakers/CallumWhyte.jpeg"
+
+
 
 export const Sessions = {
     "CarlyRichmond": {
@@ -77,7 +94,7 @@ export const Sessions = {
                 </p>
             </>
         ),
-        image: placeholderImg,
+        image: JoshMoImg,
         linkedin: "https://www.linkedin.com/in/joshua-mo-4146aa220/",
         twitter: "https://x.com/joshmo_dev",
         website: " https://github.com/joshua-mo-143/",
@@ -122,7 +139,7 @@ export const Sessions = {
                 </p>
             </>
         ),
-        image: placeholderImg,
+        image: SteveWadeImg,
         linkedin: "https://www.linkedin.com/in/stevendavidwade",
         twitter: "https://twitter.com/swade1987",
         website: "",
@@ -156,7 +173,7 @@ export const Sessions = {
                 </p>
             </>
         ),
-        image: placeholderImg,
+        image: PaulDragoonisImg,
         linkedin: "https://www.linkedin.com/in/pauldragoonis/",
         twitter: "https://twitter.com/dr4goonis",
         website: "",
@@ -219,7 +236,7 @@ export const Sessions = {
                 </p>
             </>
         ),
-        image: placeholderImg,
+        image: BeckettLeclaireImg,
         linkedin: "https://www.linkedin.com/in/beckett-l-687b7713b",
         twitter: "",
         website: "",
@@ -249,7 +266,7 @@ export const Sessions = {
                 </p>
             </>
         ),
-        image: placeholderImg,
+        image: RyanHardwickImg,
         linkedin: "https://www.linkedin.com/in/ryan-hardwick-028a281a0/",
         twitter: "",
         website: "",
@@ -288,7 +305,7 @@ export const Sessions = {
                 </p>
             </>
         ),
-        image: placeholderImg,
+        image: CallumWhyteImg,
         linkedin: "https://www.linkedin.com/in/callumbwhyte/",
         twitter: "https://twitter.com/callumbwhyte",
         website: "https://github.com/callumbwhyte",
@@ -321,7 +338,7 @@ export const Sessions = {
                 </p>
             </>
         ),
-        image: placeholderImg,
+        image: SimonEmmsImg,
         linkedin: "",
         twitter: "twitter.com/theshroppiebeek",
         website: "simonemms.com",
@@ -363,7 +380,7 @@ export const Sessions = {
                 </p>
             </>
         ),
-        image: placeholderImg,
+        image: StuartHarrisonImg,
         linkedin: "",
         twitter: "",
         website: "",
@@ -393,7 +410,7 @@ export const Sessions = {
                 </p>
             </>
         ),
-        image: placeholderImg,
+        image: SimonGurneyImg,
         linkedin: "",
         twitter: "",
         website: "",
@@ -428,7 +445,7 @@ export const Sessions = {
                 </p>
             </>
         ),
-        image: placeholderImg,
+        image: BeckiFloydImg,
         linkedin: "",
         twitter: "",
         website: "",
@@ -495,7 +512,7 @@ export const Sessions = {
                 </p>
             </>
         ),
-        image: placeholderImg,
+        image: AbbyBangserImg,
         linkedin: "",
         twitter: "",
         website: "",
@@ -525,7 +542,7 @@ export const Sessions = {
                 </p>
             </>
         ),
-        image: placeholderImg,
+        image: LauraHyattImg,
         linkedin: "",
         twitter: "",
         website: "",
@@ -568,7 +585,7 @@ export const Sessions = {
                 </p>
             </>
         ),
-        image: placeholderImg,
+        image: LeonardoGiordaniImg,
         linkedin: "",
         twitter: "",
         website: "",
@@ -595,7 +612,7 @@ export const Sessions = {
                 </p>
             </>
         ),
-        image: placeholderImg,
+        image: AndrewFitzpatrickImg,
         linkedin: "",
         twitter: "",
         website: "",
@@ -636,7 +653,7 @@ export const Sessions = {
                 </p>
             </>
         ),
-        image: placeholderImg,
+        image: MarkSimpsonImg,
         linkedin: "",
         twitter: "",
         website: "",
