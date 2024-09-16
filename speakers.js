@@ -45,7 +45,7 @@ export const Sessions = {
                     Retention of DevOps engineers is a difficult challenge for teams. In 2023, 37.5% of the Infragistics Reveal Survey said they expect to find it difficult to find developers in 2023.To keep Software Engineers happy, we need to know how to make them unhappy.
                 </p>
                 <p>
-                    Join me as I talk about antipatterns in management, development, testing and monitoring patterns that can stop you from retaining awesome DevOps engineers. Specifically I'll cover:
+                    Join me as I talk about antipatterns in management, development, testing and monitoring patterns that can stop you from retaining awesome Software Engineers. Specifically I'll cover:
                 </p>
                 <p>
                     1. Alert volume evaluation, and how we alert bombardment leads to burnout and alert fatigue. I'll also cover best practices for on-call rotation and BYOD usage to stop engineer burnout even when they're not on call.
