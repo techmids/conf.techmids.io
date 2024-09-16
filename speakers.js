@@ -42,7 +42,7 @@ export const Sessions = {
         description: (
             <>
                 <p>
-                    Retention of DevOps engineers is a difficult challenge for teams. In 2023, 37.5% of the Infragistics Reveal Survey said they expect to find it difficult to find developers in 2023.To keep Software Engineers happy, we need to know how to make them unhappy.
+                    Retention of Software Engineers is a difficult challenge for teams. In 2023, 37.5% of the Infragistics Reveal Survey said they expect to find it difficult to find developers in 2023. To keep Software Engineers happy, we need to know how to make them unhappy.
                 </p>
                 <p>
                     Join me as I talk about antipatterns in management, development, testing and monitoring patterns that can stop you from retaining awesome Software Engineers. Specifically I'll cover:
