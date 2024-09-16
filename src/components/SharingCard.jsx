@@ -2,6 +2,8 @@ import html2canvas from "html2canvas";
 import {EVENT} from "../../event";
 
 const SharingCard = ({ talkTitle, speaker }) => {
+
+    console.log(talkTitle?.length)
     function takeScreenshot() {
         let div =
             document.getElementById('social-card');
@@ -29,12 +31,12 @@ const SharingCard = ({ talkTitle, speaker }) => {
             }}
         >
             <div style={{
-                width: 500,
+                width: 700,
                 display: 'flex',
                 flexDirection: 'column',
             }}>
                 <div style={{
-                    width: 500,
+                    width: 700,
                     display: 'flex',
                 }}>
                     <div className="rounded" style={{
@@ -79,7 +81,8 @@ const SharingCard = ({ talkTitle, speaker }) => {
                     fontStyle: 'normal',
                     letterSpacing: '-0.025em',
                     color: 'white',
-                    marginTop: 170,
+                    marginTop: 130,
+                    marginBottom: 30,
                     padding: '0 0 0 100px',
                     lineHeight: 1.4,
                     fontWeight: 700,
