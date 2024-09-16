@@ -9,35 +9,40 @@ export const EVENT = {
     onSale: true, //swap to true to embed ticket widget
     titoId: 'tech-events-birmingham/techmids-october-2024',
     CFPLink: "https://forms.gle/V3ZD6GTjkAmj2woq6",
-    CFPOpen: true,
+    CFPOpen: false,
     capacity: 400,
     tagline: "",
 }
 
 export const sponsorTiers = {
-    platinum: {
-        // name: "Platinum Sponsors",
+    headline: {
+        name: "Headline Sponsor",
         sponsors: [
-        //     {
-        //         name: "Goldman Sachs",
-        //         image: "/sponsors/goldman-sachs.png",
-        //         url: "https://www.goldmansachs.com/"
-        //     }
+            {
+                name: "Goldman Sachs",
+                image: "/sponsors/goldman-sachs.png",
+                url: "https://www.goldmansachs.com/"
+            }
         ]
     },
-    gold: {
-        name: "Gold Sponsors",
+    event: {
+        name: "Valued Sponsors",
         sponsors: [
-            // {
-            //     name: "SF Technology",
-            //     image: "/sponsors/sf-technology.png",
-            //     url: "https://www.sfrecruitment.com/technology",
-            // },
-            // {
-            //     name: "Version 1",
-            //     image: "/sponsors/version-1.png",
-            //     url: "https://version1.com/"
-            // }
+            {
+                name: "Flutter International",
+                image: "/sponsors/Flutter.png",
+            },
+            {
+                name: "Elastic",
+                image: "/sponsors/elastic.png",
+                url: "https://www.elastic.co/"
+            },
+            {
+                name: "BT",
+                image: "/sponsors/BT.png",
+                url: "https://www.bt.com/"
+            }
+
         ]
     },
     silver: {

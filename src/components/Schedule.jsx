@@ -113,7 +113,6 @@ const [timeIrl, setTimeIrl] = useState(0)
 
 export function Schedule() {
   return (
-
       <div className='mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pt-10'>
             <div className='flex flex-col mx-auto'>
                 <div className='flex flex-wrap items-center '>
@@ -133,6 +132,5 @@ export function Schedule() {
               }
             </div>
       </div>
-
   )
 }

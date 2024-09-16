@@ -39,12 +39,8 @@ export function SponsorTiers() {
 
     return (
         <div className="mt-12 mb-8 bg-white">
-            {printSponsors("Platinum", sponsorTiers.platinum.sponsors, 2)}
-            {printSponsors("Gold", sponsorTiers.gold.sponsors)}
-            {printSponsors("Silver", sponsorTiers.silver.sponsors)}
-            {printSponsors("Bronze", sponsorTiers.bronze.sponsors, 0.5)}
-            {/*{printSponsors("Lanyard", sponsorTiers.lanyard.sponsors, 0.5)}*/}
-            {/*{printSponsors("Badge", sponsorTiers.badge.sponsors, 0.5)}*/}
+            {printSponsors("Headline", sponsorTiers.headline.sponsors, 2)}
+            {printSponsors("Event", sponsorTiers.event.sponsors)}
 
         </div>
     )
