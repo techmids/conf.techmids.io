@@ -160,13 +160,13 @@ const mainHall = {
             end: afternoonBreakEnd,
         },
         {
-            session: ['AndyBell'],
+            name: 'To be announced',
+            description: 'To be announced',
             start: session8Start,
             end: session8End,
         },
         {
-            name: 'To be announced',
-            description: 'To be announced',
+            session: ['AndyBell'],
             start: session9Start,
             end: session9End,
         },
