@@ -94,8 +94,8 @@ const conferenceSchedule = {
 
 
 const mainHall = {
-    room: "Main Stage",
-    timeOfDay: 'Main Stage',
+    room: "The Colosseum",
+    timeOfDay: 'The Colosseum',
     date: '2024-10-25',
     summary: '09:00 - 16:00 BST',
     dayName: "Day 1",
@@ -180,8 +180,8 @@ const mainHall = {
 }
 
 const stageA = {
-    room: "Stage A",
-    timeOfDay: 'Stage A',
+    room: "The Agora",
+    timeOfDay: 'The Agora',
     date: '2024-10-25',
     summary: '09:00 - 16:00 BST',
     dayName: "Day 1",
@@ -254,8 +254,8 @@ const stageA = {
 }
 
 const stageOne = {
-    room: "Stage One",
-    timeOfDay: 'Stage One',
+    room: "The Forum",
+    timeOfDay: 'The Forum',
     date: '2024-10-25',
     summary: '09:00 - 16:00 BST',
     dayName: "Day 1",
