@@ -8,7 +8,6 @@ import AndrewFitzpatrickImg from "./public/speakers/AndrewFitzpatrick.jpeg"
 import BeckiFloydImg from "./public/speakers/BeckiFloyd.jpeg"
 import BeckettLeclaireImg from "./public/speakers/BeckettLeclaire.jpeg"
 import LauraHyattImg from "./public/speakers/LauraHyatt.png"
-import LeonardoGiordaniImg from "./public/speakers/LeonadioGiordani.jpeg"
 import MarkSimpsonImg from "./public/speakers/MarkSimpson.jpeg"
 import PaulDragoonisImg from "./public/speakers/PaulDragoonis.png"
 import RyanHardwickImg from "./public/speakers/RyanHardwick.jpeg"
@@ -552,49 +551,6 @@ export const Sessions = {
         sessionType: "session",
         speakerCard: false,
         speakerCardImage: "LauraHyatt.png",
-    },
-    "LeonardoGiordani": {
-        name: "Leonardo Giordani",
-        jobTitle: "",
-        bio: (
-            <>
-                <p>
-                    Born in 1977 together with Star Wars, bash, Apple ][, Dire Straits, The Silmarillion, and many other great things.
-                </p>
-                <p>
-
-                    I started coding in April 1987 on a Sinclair ZX Spectrum. I then moved to MS-DOS PCs and in 1996 I started using Linux and became interested in operating system internals. I love software architectures, algorithms, mathematics and cryptography.
-                </p>
-                <p>
-                    I’m mainly interested in open source software. I like both the theoretical and practical aspects of computer science.
-                </p>
-                <p>
-                    From 2013 I blog some technical thoughts at http://thedigitalcatonline.com.
-                </p>
-                <p>
-                    In 2018 I published the free book “Clean Architectures in Python” http://bit.ly/getpycabook
-                </p>
-            </>
-        ),
-        talkTitle:
-            "The Clean Architecture - A layered approach for a more civilized age",
-        description: (
-            <>
-                <p>
-                    Architectural considerations are often overlooked by developers or completely delegated to a framework. We should start once again discussing how applications are structured, how components are connected and how to lower coupling between different parts of a system, to avoid creating software that cannot easily be maintained or changed.
-                </p>
-                <p>
-                    The "clean architecture" model predates Robert Martin, who recently brought it back to the attention of the community, and is a way of structuring applications that leverages layers separation and internal APIs to achieve a very tidy, fully-tested, and loosely coupled system.
-                </p>
-            </>
-        ),
-        image: LeonardoGiordaniImg,
-        linkedin: "",
-        twitter: "",
-        website: "",
-        sessionType: "session",
-        speakerCard: false,
-        speakerCardImage: "LeonardioGiordani.jpeg",
     },
     "AndrewFitzpatrick": {
         name: "Andrew Fitzpatrick",
