@@ -90,13 +90,15 @@ export function Hero() {
                       <span className="block xl:inline">Check out last year's event</span>
                   </h1>
               </div>
-              <div className="flex justify-center">
-              <div className="md:w-[80%] aspect-w-16 aspect-h-9 w-full">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/5P_iCOXKxfA?si=QiTDrD2wPBs9l6Ne"
-                          title="YouTube video player" frameBorder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                          referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-              </div>
+              <div className="flex justify-center ">
+                  <div className="h-full xl:w-[60%] md:w-[80%] w-full">
+                      <div className="aspect-w-16 aspect-h-9 w-full">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/5P_iCOXKxfA?si=QiTDrD2wPBs9l6Ne"
+                                  title="YouTube video player" frameBorder="0"
+                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                  referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                      </div>
+                  </div>
               </div>
           </div>
           <div className="flex justify-center mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
