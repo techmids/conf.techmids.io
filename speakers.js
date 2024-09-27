@@ -679,17 +679,15 @@ export const Sessions = {
     },
     "DanielTallentire": {
         name: "Daniel Tallentire",
-        jobTitle: "",
+        jobTitle: "Engineering Manager at Citation Group",
         bio: (
             <>
                 <p>
-                    17 years experience in SaaS. I work best on supporting the learning and development of those I'm working with. I've mentored and coached multiple engineers throughout my career.
+                    Daniel is a software engineer and engineering manager with nearly 20 years experience developing SaaS software. 
+                    He has a passion for learning and development and has mentored and coached multiple engineers and managers throughout his career.
                 </p>
                 <p>
-                    My MBA helps me to understand people and team dynamics more completely, and gave me some academic background on the topic of learning.
-                </p>
-                <p>
-                    I've previously spoken at AI World in Boston.
+                    Outside of work, Daniel enjoys good food and a good hike in the Peak District.
                 </p>
             </>
         ),
@@ -698,14 +696,23 @@ export const Sessions = {
         description: (
             <>
                 <p>
-                    How to utilise your quick learning/adaption skills as a generalist in software engineering / related fields.
+                    In software engineering, some people believe that being specialised will give you a more satisfaction in your career.
+                    However, I believe that being a generalist can be just as rewarding, and is highly valuable especially inside small businesses.
+                    In this talk, I will discuss:
                 </p>
+                <ul>
+                    <li>- Generalists vs specialists - what's the difference?</li>
+                    <li>- Why being a generalist is valuable</li>
+                    <li>- How to get better at learning quickly - finding how you learn and using that to your advantage</li>
+                    <li>- T-shaped people (and maybe some other shapes too)</li>
+                    <li>- How to sell yourself as a generalist to potential employers</li>
+                </ul>
             </>
         ),
         image: DanielTallentireImg,
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/danieltallentire/",
         twitter: "",
-        website: "",
+        website: "https://tallentire.dev",
         sessionType: "session",
         speakerCard: false,
         speakerCardImage: "DanielTallentire.jpeg",
