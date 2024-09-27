@@ -34,16 +34,16 @@ export default function Home() {
             </Head>
             <Header />
             <main>
-                <Hero />
-                <Images />
-                <Schedule />
-                <Speakers />
-                <Testimonials />
-                <Showcase />
-                <Sponsors />
-                <Meetups />
+                <Hero/>
+                <Images/>
+                <Schedule/>
+                <Speakers/>
+                <Testimonials/>
+                <Showcase/>
+                <Sponsors/>
+                <Meetups/>
             </main>
-            <Footer />
+            <Footer/>
         </>
     )
 }
