@@ -209,8 +209,7 @@ const stageA = {
             end: session3End,
         },
         {
-            name: 'To be announced',
-            description: 'To be announced',
+            session: ['PhillipMarks'],
             start: session4Start,
             end: session4End,
         },

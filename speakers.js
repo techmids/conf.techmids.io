@@ -20,6 +20,7 @@ import AmeenAladeImg from "./public/speakers/AmeenAlade.jpeg"
 import AndyBellImg from "./public/speakers/AndyBell.jpeg"
 import CarlyRichmondImg from "./public/speakers/CarlyRichmond.jpeg"
 import MaxWoolfImg from "./public/speakers/MaxWoolf.jpeg"
+import PhillipMarksImg from "./public/speakers/PhillipMarks.jpeg"
 
 
 export const Sessions = {
@@ -683,7 +684,7 @@ export const Sessions = {
         bio: (
             <>
                 <p>
-                    Daniel is a software engineer and engineering manager with nearly 20 years experience developing SaaS software. 
+                    Daniel is a software engineer and engineering manager with nearly 20 years experience developing SaaS software.
                     He has a passion for learning and development and has mentored and coached multiple engineers and managers throughout his career.
                 </p>
                 <p>
@@ -700,12 +701,12 @@ export const Sessions = {
                     However, I believe that being a generalist can be just as rewarding, and is highly valuable especially inside small businesses.
                     In this talk, I will discuss:
                 </p>
-                <ul>
-                    <li>- Generalists vs specialists - what's the difference?</li>
-                    <li>- Why being a generalist is valuable</li>
-                    <li>- How to get better at learning quickly - finding how you learn and using that to your advantage</li>
-                    <li>- T-shaped people (and maybe some other shapes too)</li>
-                    <li>- How to sell yourself as a generalist to potential employers</li>
+                <ul className="list-disc">
+                    <li> Generalists vs specialists - what's the difference?</li>
+                    <li> Why being a generalist is valuable</li>
+                    <li> How to get better at learning quickly - finding how you learn and using that to your advantage</li>
+                    <li> T-shaped people (and maybe some other shapes too)</li>
+                    <li> How to sell yourself as a generalist to potential employers</li>
                 </ul>
             </>
         ),
@@ -777,6 +778,34 @@ export const Sessions = {
         speakerCard: false,
         speakerCardImage: "KathrynLupin.jpeg",
     },
+    "PhillipMarks": {
+    name: "Phillip Marks",
+    jobTitle: "",
+    bio: (
+        <>
+            <p>
+                Phillip is a climate fintech entrepreneur and engineering lead. He holds a DPhil in computational physics from Oxford, where he modelled zero-carbon fuels for use in the transport sector. Phillip is a co-founder of Unwritten, a venture-backed tech startup building models for the financial sector to invest in the climate transition, and align capital allocation with climate science. Before Unwritten, he founded and led Climate at Palantir—building software to enable data-driven decarbonisation.
+            </p>
+        </>
+    ),
+    talkTitle:
+        "How to build a supercomputer-scale model without a supercomputer: climate modelling in the cloud.",
+    description: (
+        <>
+            <p>
+                This talk is designed for a general audience, focusing on the role of supercomputers and cloud computing in tackling large-scale, real-world data challenges, with climate change as a case study. Key themes include modern data architecture, advancements in data science, the technical challenges in founding a startup from scratch, and engineering solutions for climate change.
+            </p>
+        </>
+    ),
+    image: PhillipMarksImg,
+    linkedin: "",
+    twitter: "",
+    website: "",
+    sessionType: "session",
+    speakerCard: false,
+    //speakerCardImage: "placeholder.png",
+},
+
 }
 
 
