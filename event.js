@@ -33,11 +33,6 @@ export const sponsorTiers = {
                 image: "/sponsors/Flutter.png",
             },
             {
-                name: "Elastic",
-                image: "/sponsors/elastic.png",
-                url: "https://www.elastic.co/"
-            },
-            {
                 name: "BT",
                 image: "/sponsors/BT.png",
                 url: "https://www.bt.com/"
