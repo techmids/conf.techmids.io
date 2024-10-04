@@ -37,11 +37,9 @@ export const sponsorTiers = {
                 image: "/sponsors/BT.png",
                 url: "https://www.bt.com/"
             }
-
         ]
     },
     silver: {
-
         name: "Silver Sponsors",
         sponsors: [
             // {
