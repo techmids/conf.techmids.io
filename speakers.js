@@ -798,7 +798,7 @@ export const Sessions = {
     website: "",
     sessionType: "session",
     speakerCard: false,
-    //speakerCardImage: "placeholder.png",
+    speakerCardImage: "jacobBlackburn.png",
 },
 
 }
