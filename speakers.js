@@ -456,37 +456,6 @@ export const Sessions = {
         speakerCard: false,
         speakerCardImage: "BeckiFloyd.jpeg",
     },
-    "MaceijSzmulka": {
-        name: "Maceij Szmulka",
-        jobTitle: "",
-        bio: (
-            <>
-                <p>
-                    Heading User Centred Design teams of service designers, user
-                    researchers, interaction designers and working closely with business analysts and technical architects let me understand nuances of digital delivery, its constraints, timescales and pragmatic approach.
-                </p>
-                <p>
-                    Having over fourteen years of digital delivery and user-centred design leadership and function implementation experience under diverse database environments and e-commerce platforms within multimillion projects focused on organisational transformation, user experience and organisational benefits. I participated in the development of numerous digital platforms, applications and projects which involved both technical and business understanding. I am skilled in business architecture supported by over 10 years of experience in financial projects and I’m using my practical background to develop creative solutions supporting end to end user journeys I have extended experience of public sector working for 8 plus years in digital transformations.
-                </p>
-            </>
-        ),
-        talkTitle:
-            "We have AI do we still need User Centred Design ?",
-        description: (
-            <>
-                <p>
-                    AI start taking more and more place in the modern world, however tech leaders forget that most of solutions are for people and users. UCD is kept treated as fringe science when it is solving real live problems and can save a development money or just to avoide investment decision which are undesireble by end users/customers. Now there are a lot of trying to replace UCD practitionaires by AI UCD  which can backfire as AI do not recognise the needs and best practices.
-                </p>
-            </>
-        ),
-        image: placeholderImg,
-        linkedin: "",
-        twitter: "",
-        website: "",
-        sessionType: "session",
-        speakerCard: false,
-        //speakerCardImage: "placeholder.png",
-    },
     "AbbyBangser": {
         name: "Abby Bangser",
         jobTitle: "",
