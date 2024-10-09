@@ -1,4 +1,3 @@
-import placeholderImg from "./public/speakers/Person_Image_Placeholder.png"
 import DanielTallentireImg from "./public/speakers/DanielTallentire.jpeg"
 import JamesPrinceImg from "./public/speakers/JamesPrince.jpeg"
 import KathrynLupinImg from "./public/speakers/KathrynLupin.jpeg"
@@ -21,7 +20,7 @@ import AndyBellImg from "./public/speakers/AndyBell.jpeg"
 import CarlyRichmondImg from "./public/speakers/CarlyRichmond.jpeg"
 import MaxWoolfImg from "./public/speakers/MaxWoolf.jpeg"
 import PhillipMarksImg from "./public/speakers/PhillipMarks.jpeg"
-
+import jacobBlackburnImg from "./public/speakers/jacobBlackburn.png"
 
 export const Sessions = {
     "CarlyRichmond": {
@@ -767,6 +766,33 @@ export const Sessions = {
         </>
     ),
     image: PhillipMarksImg,
+    linkedin: "",
+    twitter: "",
+    website: "",
+    sessionType: "session",
+    speakerCard: false,
+    //speakerCardImage: "placeholder.png",
+},
+    "JacobBlackburn": {
+    name: "Jacob Blackburn",
+    jobTitle: "Software Developer at Good Growth",
+    bio: (
+        <>
+            <p>
+                After four years as an NHS Doctor, Jacob Blackburn made a successful transition to software development, driven by his long-standing passion for technology. Since joining Good Growth, he has gained extensive client experience and currently serves as a Tech Lead for the company’s biggest client. Jacob actively promotes a culture of professional growth and adaptability within the team, contributing to innovative projects across a diverse technology stack.
+            </p>
+        </>
+    ),
+    talkTitle:
+        "Doctor to Developer: Refactoring Career and Code",
+    description: (
+        <>
+            <p>
+                Join Jacob Blackburn as he recounts his transformation from a career in medicine to one in software development. He’ll explore the impact of transferrable skills, career empowerment, and the Good Growth culture that promotes professional growth and adaptability in an ever-evolving industry.
+            </p>
+        </>
+    ),
+    image: jacobBlackburnImg,
     linkedin: "",
     twitter: "",
     website: "",

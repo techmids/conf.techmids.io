@@ -283,8 +283,7 @@ const stageOne = {
             end: session3End,
         },
         {
-            name: 'To be announced',
-            description: 'To be announced',
+            session: ['JacobBlackburn'],
             start: session4Start,
             end: session4End,
         },
