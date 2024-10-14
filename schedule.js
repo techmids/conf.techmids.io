@@ -128,8 +128,7 @@ const mainHall = {
             end: session3End,
         },
         {
-            name: 'To be announced',
-            description: 'To be announced',
+            session: ['GoldmanSachs'],
             start: session4Start,
             end: session4End,
         },
@@ -161,8 +160,7 @@ const mainHall = {
             end: afternoonBreakEnd,
         },
         {
-            name: 'To be announced',
-            description: 'To be announced',
+            session: ['IBM'],
             start: session8Start,
             end: session8End,
         },
@@ -294,13 +292,12 @@ const stageOne = {
             end: lunchEnd,
         },
         {
-            session: ['BeckettLeclaire'],
+            session: ['BeckettLeclair'],
             start: session5Start,
             end: session5End,
         },
         {
-            name: 'To be announced',
-            description: 'To be announced',
+            session: ['ChristopherMiller'],
             start: session6Start,
             end: session6End,
         },

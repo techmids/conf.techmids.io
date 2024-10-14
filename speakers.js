@@ -5,7 +5,7 @@ import JoshMoImg from "./public/speakers/JoshuaMo.png"
 import AbbyBangserImg from "./public/speakers/AbbyBangser.jpeg"
 import AndrewFitzpatrickImg from "./public/speakers/AndrewFitzpatrick.jpeg"
 import BeckiFloydImg from "./public/speakers/BeckiFloyd.jpeg"
-import BeckettLeclaireImg from "./public/speakers/BeckettLeclaire.jpeg"
+import BeckettLeclairImg from "./public/speakers/BeckettLeclaire.jpeg"
 import LauraHyattImg from "./public/speakers/LauraHyatt.png"
 import MarkSimpsonImg from "./public/speakers/MarkSimpson.jpeg"
 import PaulDragoonisImg from "./public/speakers/PaulDragoonis.png"
@@ -21,6 +21,7 @@ import CarlyRichmondImg from "./public/speakers/CarlyRichmond.jpeg"
 import MaxWoolfImg from "./public/speakers/MaxWoolf.jpeg"
 import PhillipMarksImg from "./public/speakers/PhillipMarks.jpeg"
 import jacobBlackburnImg from "./public/speakers/jacobBlackburn.png"
+import PlaceholderImg from "./public/speakers/Person_Image_Placeholder.png"
 
 export const Sessions = {
     "CarlyRichmond": {
@@ -216,13 +217,13 @@ export const Sessions = {
         speakerCard: false,
         speakerCardImage: "MaxWoolf.jpeg",
     },
-    "BeckettLeclaire": {
-        name: "Beckett Leclaire",
+    "BeckettLeclair": {
+        name: "Beckett Leclair",
         jobTitle: "",
         bio: (
             <>
                 <p>
-                    Beckett LeClair (MSc, MBCS, MIScT) is a Senior Engineer with an interest ethical technology and innovation. He is also a passionate advocate for D&I in tech.
+                    Beckett LeClair (MSc, MBCS) is the Head of Compliance at 5Rights. His main area of work is responsible technology and standards development, with a background in AI R&D.
                 </p>
             </>
         ),
@@ -238,13 +239,13 @@ export const Sessions = {
                 </p>
             </>
         ),
-        image: BeckettLeclaireImg,
+        image: BeckettLeclairImg,
         linkedin: "https://www.linkedin.com/in/beckett-l-687b7713b",
         twitter: "",
         website: "",
         sessionType: "session",
         speakerCard: false,
-        speakerCardImage: "BeckettLeclaire.jpeg",
+        speakerCardImage: "BeckettLeclair.jpeg",
     },
     "RyanHardwick": {
         name: "Ryan Hardwick",
@@ -617,18 +618,18 @@ export const Sessions = {
         speakerCardImage: "AmeenAlade.png",
     },
     "JamesPrince": {
-    name: "James Prince",
-    jobTitle: "",
-    bio: (
-        <>
-            <p>
-                I'm James I'm 30 and a Software Engineer based in Warwick, I have 13 years experience in the software industry and I currently work for Celcat who supply timetabling software to Universities and Colleges worldwide. I absolutely love software development and have a constant desire to improve my skills and help my team do the same.
+        name: "James Prince",
+        jobTitle: "",
+        bio: (
+            <>
+                <p>
+                    I'm James I'm 30 and a Software Engineer based in Warwick, I have 13 years experience in the software industry and I currently work for Celcat who supply timetabling software to Universities and Colleges worldwide. I absolutely love software development and have a constant desire to improve my skills and help my team do the same.
                 </p>
-            <p>
-                Outside of work I enjoy other non-tech hobbies such as playing in my band and any sport I sport I have an opportunity to play. I also have a YouTube channel "Coffee, Music and Coding" on which I have posted some basic coding tutorials mostly for me to refer back to when I've forgotten silly things.
-            </p>
-        </>
-    ),
+                <p>
+                    Outside of work I enjoy other non-tech hobbies such as playing in my band and any sport I sport I have an opportunity to play. I also have a YouTube channel "Coffee, Music and Coding" on which I have posted some basic coding tutorials mostly for me to refer back to when I've forgotten silly things.
+                </p>
+            </>
+        ),
         talkTitle:
             "Hackathons: Igniting Innovation, Empowering Teams",
         description: (
@@ -747,25 +748,114 @@ export const Sessions = {
         speakerCardImage: "KathrynLupin.jpeg",
     },
     "PhillipMarks": {
-    name: "Phillip Marks",
+        name: "Phillip Marks",
+        jobTitle: "",
+        bio: (
+            <>
+                <p>
+                    Phillip is a climate fintech entrepreneur and engineering lead. He holds a DPhil in computational physics from Oxford, where he modelled zero-carbon fuels for use in the transport sector. Phillip is a co-founder of Unwritten, a venture-backed tech startup building models for the financial sector to invest in the climate transition, and align capital allocation with climate science. Before Unwritten, he founded and led Climate at Palantir—building software to enable data-driven decarbonisation.
+                </p>
+            </>
+        ),
+        talkTitle:
+            "How to build a supercomputer-scale model without a supercomputer: climate modelling in the cloud.",
+        description: (
+            <>
+                <p>
+                    This talk is designed for a general audience, focusing on the role of supercomputers and cloud computing in tackling large-scale, real-world data challenges, with climate change as a case study. Key themes include modern data architecture, advancements in data science, the technical challenges in founding a startup from scratch, and engineering solutions for climate change.
+                </p>
+            </>
+        ),
+        image: PhillipMarksImg,
+        linkedin: "",
+        twitter: "",
+        website: "",
+        sessionType: "session",
+        speakerCard: false,
+        //speakerCardImage: "placeholder.png",
+    },
+    "JacobBlackburn": {
+        name: "Jacob Blackburn",
+        jobTitle: "Software Developer at Good Growth",
+        bio: (
+            <>
+                <p>
+                    After four years as an NHS Doctor, Jacob Blackburn made a successful transition to software development, driven by his long-standing passion for technology. Since joining Good Growth, he has gained extensive client experience and currently serves as a Tech Lead for the company’s biggest client. Jacob actively promotes a culture of professional growth and adaptability within the team, contributing to innovative projects across a diverse technology stack.
+                </p>
+            </>
+        ),
+        talkTitle:
+            "Doctor to Developer: Refactoring Career and Code",
+        description: (
+            <>
+                <p>
+                    Join Jacob Blackburn as he recounts his transformation from a career in medicine to one in software development. He’ll explore the impact of transferrable skills, career empowerment, and the Good Growth culture that promotes professional growth and adaptability in an ever-evolving industry.
+                </p>
+            </>
+        ),
+        image: jacobBlackburnImg,
+        linkedin: "",
+        twitter: "",
+        website: "",
+        sessionType: "session",
+        speakerCard: false,
+        speakerCardImage: "jacobBlackburn.png",
+    },
+    "ChristopherMiller": {
+        name: "Christopher Miller",
+        jobTitle: "",
+        bio: (
+            <>
+                <p>
+                    "Christopher remembers getting his first introduction to computing in 1985, at around age three. His dad came home from work one day with a box – it contained a soldering iron, a book and some bits. They sat at a table together and built a computer. It was a ZX Spectrum 48k. He vividly remembers the feelings of excitement and joy, as he watched this piece of technology come together, followed by fascination, as it was plugged into the television for the first time and came to life – the sheer ecstasy of watching some blocky graphics move on a screen in eight different colours, the sense of anticipation as the tape loaded a game for him and his dad to play.
+                </p>
+                <p>
+                    That day changed Christopher’s life for good. He started to learn the concept of typing things to make other things happen on screen and found a love for making computers do what he wanted to do. He learned this was called programming and he liked it. He wrote games that were published in Spectrum magazines and knew he was destined to one day work with computers and create software.
+                </p>
+                <p>
+                    Today, Christopher is a Full Stack Developer for MMS Marketing. He is often found preparing his next talk, learning about the next new technology, or mentoring newcomers to the technology scene.
+                </p>
+                <p>
+                    Christopher takes great pride in being able to produce highly efficient code, logical debugging, seeing the bigger picture when looking at a feature request from a client, and suggesting changes that would improve process efficiency for Customers. Customers often comment on Christophers ability to turn tech jargon into easy to understand concepts, helping them to understand the problem, and the solution, often helping them to see the future possibilities of their applications."
+                </p>
+            </>
+        ),
+        talkTitle:
+            "Fear The Walking Dead: How AI Helped Burnout Recovery",
+        description: (
+            <>
+                <p>
+                    Join me for a candid, humorous, yet poignant exploration of my personal journey through developer burnout and the path to recovery. This talk will take you on an emotional rollercoaster, blending laughter with serious introspection, as we dive into the realities of burnout in the tech industry and how AI played an unexpected role in my healing process.
+                </p>
+            </>
+        ),
+        image: PlaceholderImg,
+        linkedin: "",
+        twitter: "ccmiller2018",
+        website: "",
+        sessionType: "session",
+        speakerCard: false,
+        //speakerCardImage: "placeholder.png",
+    },
+    "IBM": {
+    name: "IBM Session",
     jobTitle: "",
     bio: (
         <>
             <p>
-                Phillip is a climate fintech entrepreneur and engineering lead. He holds a DPhil in computational physics from Oxford, where he modelled zero-carbon fuels for use in the transport sector. Phillip is a co-founder of Unwritten, a venture-backed tech startup building models for the financial sector to invest in the climate transition, and align capital allocation with climate science. Before Unwritten, he founded and led Climate at Palantir—building software to enable data-driven decarbonisation.
             </p>
         </>
     ),
     talkTitle:
-        "How to build a supercomputer-scale model without a supercomputer: climate modelling in the cloud.",
+        "To Be Announced",
     description: (
         <>
             <p>
-                This talk is designed for a general audience, focusing on the role of supercomputers and cloud computing in tackling large-scale, real-world data challenges, with climate change as a case study. Key themes include modern data architecture, advancements in data science, the technical challenges in founding a startup from scratch, and engineering solutions for climate change.
+                A session from IBM.
             </p>
         </>
     ),
-    image: PhillipMarksImg,
+    image: PlaceholderImg,
     linkedin: "",
     twitter: "",
     website: "",
@@ -773,32 +863,30 @@ export const Sessions = {
     speakerCard: false,
     //speakerCardImage: "placeholder.png",
 },
-    "JacobBlackburn": {
-    name: "Jacob Blackburn",
-    jobTitle: "Software Developer at Good Growth",
+    "GoldmanSachs": {
+    name: "Goldman Sachs Session",
+    jobTitle: "",
     bio: (
         <>
             <p>
-                After four years as an NHS Doctor, Jacob Blackburn made a successful transition to software development, driven by his long-standing passion for technology. Since joining Good Growth, he has gained extensive client experience and currently serves as a Tech Lead for the company’s biggest client. Jacob actively promotes a culture of professional growth and adaptability within the team, contributing to innovative projects across a diverse technology stack.
             </p>
         </>
     ),
     talkTitle:
-        "Doctor to Developer: Refactoring Career and Code",
+        "To Be Announced",
     description: (
         <>
             <p>
-                Join Jacob Blackburn as he recounts his transformation from a career in medicine to one in software development. He’ll explore the impact of transferrable skills, career empowerment, and the Good Growth culture that promotes professional growth and adaptability in an ever-evolving industry.
             </p>
         </>
     ),
-    image: jacobBlackburnImg,
+    image: PlaceholderImg,
     linkedin: "",
     twitter: "",
     website: "",
     sessionType: "session",
     speakerCard: false,
-    speakerCardImage: "jacobBlackburn.png",
+    //speakerCardImage: "placeholder.png",
 },
 
 }
