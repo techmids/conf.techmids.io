@@ -160,7 +160,7 @@ const mainHall = {
             end: afternoonBreakEnd,
         },
         {
-            session: ['IBM'],
+            session: ['AbdiTimer'],
             start: session8Start,
             end: session8End,
         },

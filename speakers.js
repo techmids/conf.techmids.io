@@ -22,6 +22,8 @@ import MaxWoolfImg from "./public/speakers/MaxWoolf.jpeg"
 import PhillipMarksImg from "./public/speakers/PhillipMarks.jpeg"
 import jacobBlackburnImg from "./public/speakers/jacobBlackburn.png"
 import PlaceholderImg from "./public/speakers/Person_Image_Placeholder.png"
+import AbdiTimerImg from "./public/speakers/AbdiTimer.jpg"
+import ChrisMillerImg from "./public/speakers/ChrisMiller.png"
 
 export const Sessions = {
     "CarlyRichmond": {
@@ -829,7 +831,7 @@ export const Sessions = {
                 </p>
             </>
         ),
-        image: PlaceholderImg,
+        image: ChrisMillerImg,
         linkedin: "",
         twitter: "ccmiller2018",
         website: "",
@@ -837,12 +839,13 @@ export const Sessions = {
         speakerCard: false,
         //speakerCardImage: "placeholder.png",
     },
-    "IBM": {
-    name: "IBM Session",
-    jobTitle: "",
+    "AbdiTimer": {
+    name: "Abdi Timer",
+    jobTitle: "IBM Advisory Data Scientist",
     bio: (
         <>
             <p>
+                Abdi is a data leader at IBM with expertise in financial services, insurance, and technology. As a Data Scientist and Data Engineer, he leverages his skills to sell advanced Data & AI products and solutions to a diverse array of customers. His technical knowledge and strategic approach enable him to solve real-world business problems and create substantial value for his clients. Previously, Abdi served as a Data Scientist at Capco and a Machine Learning Engineer at Legal & General. His experience includes model development, data analysis, visualization, and optimizing data pipelines. Abdi’s academic background in computer science and engineering, coupled with his industry experience, showcases his adaptability and deep understanding of the data landscape. His ability to craft and implement successful data-driven strategies makes him a key player in the field of data science and engineering.
             </p>
         </>
     ),
@@ -855,8 +858,8 @@ export const Sessions = {
             </p>
         </>
     ),
-    image: PlaceholderImg,
-    linkedin: "",
+    image: AbdiTimerImg,
+    linkedin: "https://uk.linkedin.com/in/abditimer",
     twitter: "",
     website: "",
     sessionType: "session",
