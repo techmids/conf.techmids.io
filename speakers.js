@@ -753,7 +753,7 @@ export const Sessions = {
         bio: (
             <>
                 <p>
-                    Phillip is a climate fintech entrepreneur and engineering lead. He holds a DPhil in computational physics from Oxford, where he modelled zero-carbon fuels for use in the transport sector. Phillip is a co-founder of Unwritten, a venture-backed tech startup building models for the financial sector to invest in the climate transition, and align capital allocation with climate science. Before Unwritten, he founded and led Climate at Palantir—building software to enable data-driven decarbonisation.
+                    Phillip is the co-founder and CTO of Unwritten, a venture-backed climate fintech startup building models for the financial sector to invest in the climate transition, and align capital allocation with climate science. Before Unwritten, he founded the climate data platform at Palantir, building software to enable data-driven decarbonisation. Phillip holds a DPhil in computational physics from Oxford, where he modelled zero-carbon fuels for use in the transport sector.
                 </p>
             </>
         ),
@@ -762,7 +762,7 @@ export const Sessions = {
         description: (
             <>
                 <p>
-                    This talk is designed for a general audience, focusing on the role of supercomputers and cloud computing in tackling large-scale, real-world data challenges, with climate change as a case study. Key themes include modern data architecture, advancements in data science, the technical challenges in founding a startup from scratch, and engineering solutions for climate change.
+                    This talk will focus on the role of supercomputers and cloud computing in tackling large-scale, real-world data challenges, with climate change as a case study. Key themes include modern data architecture, advancements in data science, the technical challenges in founding a startup from scratch, and engineering solutions for climate change.
                 </p>
             </>
         ),
