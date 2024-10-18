@@ -128,8 +128,13 @@ const mainHall = {
             end: session3End,
         },
         {
-            session: ['GoldmanSachs'],
+            session: ['MatthiasPatzold','KevinMaingi'],
             start: session4Start,
+            end: '11:35AM',
+        },
+        {
+            session: ['MikolajMaciejak'],
+            start: '11:35AM',
             end: session4End,
         },
         {
