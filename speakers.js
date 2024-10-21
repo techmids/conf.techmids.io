@@ -16,7 +16,6 @@ import StuartHarrisonImg from "./public/speakers/StuartHarrison.jpg"
 import SteveWadeImg from "./public/speakers/SteveWade.jpeg"
 import CallumWhyteImg from "./public/speakers/CallumWhyte.jpeg"
 import AmeenAladeImg from "./public/speakers/AmeenAlade.jpeg"
-import AndyBellImg from "./public/speakers/AndyBell.jpeg"
 import CarlyRichmondImg from "./public/speakers/CarlyRichmond.jpeg"
 import MaxWoolfImg from "./public/speakers/MaxWoolf.jpeg"
 import PhillipMarksImg from "./public/speakers/PhillipMarks.jpeg"
@@ -852,46 +851,6 @@ export const Sessions = {
         speakerCard: false,
         speakerCardImage: "DanielTallentire.jpeg",
     },
-    "AndyBell": {
-        name: "Andy Bell",
-        jobTitle: "",
-        bio: (
-            <>
-                <p>
-                    Andy is the founder of <a href="https://piccalil.li/">Piccalilli</a> and design agency, <a
-                    href={"https://set.studio/"}>Set Studio</a>. He mostly specialises in CSS — whether that is <a
-                    href={"https://web.dev/learn/css/"}>writing a CSS course for Google</a>, <a
-                    href={"https://every-layout.dev/"}>co-authoring a book on CSS layout</a>, or <a
-                    href={" https://cube.fyi/"}>creating a methodology to help people write better CSS</a>.
-                </p>
-                <p>
-                    He <b>obsesses</b> about designing and building for everyone with a sharp focus on <a
-                    href={"https://piccalil.li/blog/its-about-time-i-tried-to-explain-what-progressive-enhancement-actually-is"}>progressive
-                    enhancement</a> and <a href={"https://buildexcellentwebsit.es/"}>being the browser’s mentor, not its
-                    micromanager</a>.
-                </p>
-            </>
-        ),
-        talkTitle:
-            "Get the core right and the resilient code will follow",
-        description: (
-            <>
-                <p>
-                    More often than not, front-end developers will focus purely on improving their technical skills. I’m
-                    going to show you a better way by demonstrating how you can produce simpler, more resilient
-                    codebases by improving your planning & core skills — specifically improving how you provide and
-                    receive feedback from designer colleagues.
-                </p>
-            </>
-        ),
-        image: AndyBellImg,
-        linkedin: "",
-        twitter: "",
-        website: "",
-        sessionType: "session",
-        speakerCard: false,
-        speakerCardImage: "AndyBell.jpeg",
-    },
     "KathrynLupin": {
         name: "Kathryn Lupin",
         jobTitle: "",
@@ -1071,7 +1030,7 @@ export const Sessions = {
             </>
         ),
         talkTitle:
-            "To Be Announced",
+            "A session from our sponsors IBM",
         description: (
             <>
                 <p>
