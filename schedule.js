@@ -170,8 +170,7 @@ const mainHall = {
             end: session8End,
         },
         {
-            name: 'To be Announced',
-            description: 'To be Announced',
+            session: ['DominicCooperWootton'],
             start: session9Start,
             end: session9End,
         },

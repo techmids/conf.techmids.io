@@ -63,7 +63,7 @@ function DailySchedule({ day }) {
                                                 {timeSlot.start} - {timeSlot.end}
                                             </Link>
                                         </td>
-                                        <td className="flex-col speaker hidden whitespace-nowrap px-3 text-sm font-display sm:text-lg tracking-tight text-brand-800 w-1/2 sm:w-[250px] md:flex items-center">
+                                        <td className="flex-col speaker hidden px-3 text-sm font-display sm:text-lg tracking-tight text-brand-800 w-1/2 sm:w-[250px] md:flex items-center">
                                             {timeSlot.session.map((speaker) => {
                                                 return (
                                                     <div className="w-full flex" key={speaker}>
