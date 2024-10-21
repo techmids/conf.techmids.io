@@ -24,6 +24,9 @@ import jacobBlackburnImg from "./public/speakers/jacobBlackburn.png"
 import PlaceholderImg from "./public/speakers/Person_Image_Placeholder.png"
 import AbdiTimerImg from "./public/speakers/AbdiTimer.jpg"
 import ChrisMillerImg from "./public/speakers/ChrisMiller.png"
+import KevinMaingiImg from "./public/speakers/KevinMaingi.png"
+import MatthiasPatzoldImg from "./public/speakers/MatthiasPatzold.png"
+import MikolajMaciejakImg from "./public/speakers/MikolajMaciejak.png"
 
 export const Sessions = {
     "CarlyRichmond": {
@@ -1090,6 +1093,10 @@ export const Sessions = {
         bio: (
             <>
                 <p>
+                    Matthias Patzold is an Executive Director at Goldman Sachs. Matthias is a member of the Loan Agency team in Investment Banking Engineering.
+                </p>
+                <p>
+                    Matthias joined Goldman Sachs in 2007.
                 </p>
             </>
         ),
@@ -1101,7 +1108,7 @@ export const Sessions = {
                 </p>
             </>
         ),
-        image: PlaceholderImg,
+        image: MatthiasPatzoldImg,
         linkedin: "",
         twitter: "",
         website: "",
@@ -1115,6 +1122,10 @@ export const Sessions = {
         bio: (
             <>
                 <p>
+                    Kevin Maingi is an Executive Director at Goldman Sachs. Kevin is a member of the Loan Agency team in Investment Banking Engineering.
+                </p>
+                <p>
+                    Kevin joined Goldman Sachs in 2021.
                 </p>
             </>
         ),
@@ -1126,7 +1137,7 @@ export const Sessions = {
                 </p>
             </>
         ),
-        image: PlaceholderImg,
+        image: KevinMaingiImg,
         linkedin: "",
         twitter: "",
         website: "",
@@ -1140,6 +1151,10 @@ export const Sessions = {
         bio: (
             <>
                 <p>
+                    Mikolaj Maciejak is an Executive Director at Goldman Sachs. Mikolaj is a member of Asset & Wealth Management Engineering.
+                </p>
+                <p>
+                    Mikolaj joined Goldman Sachs in 2016.
                 </p>
             </>
         ),
@@ -1151,7 +1166,7 @@ export const Sessions = {
                 </p>
             </>
         ),
-        image: PlaceholderImg,
+        image: MikolajMaciejakImg,
         linkedin: "",
         twitter: "",
         website: "",
