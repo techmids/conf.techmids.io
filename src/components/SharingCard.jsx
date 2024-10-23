@@ -3,7 +3,6 @@ import {EVENT} from "../../event";
 
 const SharingCard = ({ talkTitle, speaker }) => {
 
-    console.log(talkTitle?.length)
     function takeScreenshot() {
         let div =
             document.getElementById('social-card');

@@ -299,7 +299,7 @@ export const Sessions = {
         website: "",
         sessionType: "20 Minute Session",
         speakerCard: false,
-        speakerCardImage: "BeckettLeclair.jpeg",
+        speakerCardImage: "BeckettLeclaire.jpeg",
     },
     "RyanHardwick": {
         name: "Ryan Hardwick",
@@ -767,7 +767,7 @@ export const Sessions = {
         website: "",
         sessionType: "20 Minute Session",
         speakerCard: false,
-        speakerCardImage: "AmeenAlade.png",
+        speakerCardImage: "AmeenAlade.jpeg",
     },
     "JamesPrince": {
         name: "James Prince",
@@ -923,7 +923,7 @@ export const Sessions = {
         website: "",
         sessionType: "20 Minute Session",
         speakerCard: false,
-        //speakerCardImage: "placeholder.png",
+        speakerCardImage: "PhillipMarks.jpeg",
     },
     "JacobBlackburn": {
         name: "Jacob Blackburn",
@@ -1009,7 +1009,7 @@ export const Sessions = {
         website: "",
         sessionType: "20 Minute Session",
         speakerCard: false,
-        //speakerCardImage: "placeholder.png",
+        speakerCardImage: "ChrisMiller.png",
     },
     "AbdiTimer": {
         name: "Abdi Timer",
@@ -1045,7 +1045,7 @@ export const Sessions = {
         website: "",
         sessionType: "20 Minute Session",
         speakerCard: false,
-        //speakerCardImage: "placeholder.png",
+        speakerCardImage: "AbdiTimer.jpg",
     },
     "MatthiasPatzold": {
         name: "Matthias Patzold",
@@ -1074,7 +1074,7 @@ export const Sessions = {
         website: "",
         sessionType: "10 Minute Session",
         speakerCard: false,
-        //speakerCardImage: "placeholder.png",
+        speakerCardImage: "MatthiasPatzold.png",
     },
     "KevinMaingi": {
         name: "Kevin Maingi",
@@ -1103,7 +1103,7 @@ export const Sessions = {
         website: "",
         sessionType: "10 Minute Session",
         speakerCard: false,
-        //speakerCardImage: "placeholder.png",
+        speakerCardImage: "KevinMaingi.png",
     },
     "MikolajMaciejak": {
         name: "Mikolaj Maciejak",
@@ -1132,38 +1132,38 @@ export const Sessions = {
         website: "",
         sessionType: "10 Minute Session",
         speakerCard: false,
-        //speakerCardImage: "placeholder.png",
+        speakerCardImage: "MikolajMaciejak.png",
     },
     "DominicCooperWootton": {
-    name: "Dominic Cooper-Wootton",
-    jobTitle: "Head of Engineering @ Receiptable",
-    bio: (
-        <>
-            <p>
-                Dominic is the Head of Engineering at Receiptable. He is a software engineer with a passion for tech for good and startups. Having worked in: Fintech, Banking, HR, Sports, Events and Public Health, he has seen a wide array of programming problems in varying different industries.
-            </p>
-            <p>
-                He enjoys climbing outdoors, local music and likes to understand software's environmental impact.
-            </p>
-        </>
-    ),
-    talkTitle:
-        "Programming in Public Health",
-    description: (
-        <>
-            <p>
-                What if your coding skills could help shape the future of scientific fields? In this talk, I’ll share my journey from building products and services in the private sector to working with Yale, the CDC, and Gates Foundation to develop cutting-edge tools for academic research. Discover how non-CS scientists struggle with coding challenges, and how engineers can step in to transform their research with optimized tools, scalable scripts, and impactful solutions. If you're passionate about using technology for good this talk will help you to understand the inner workings of academia and where you could make an impact.
-            </p>
-        </>
-    ),
-    image: DominicImg,
-    linkedin: "",
-    twitter: "",
-    website: "",
-    sessionType: "20 Minute Session",
-    speakerCard: false,
-    //speakerCardImage: "placeholder.png",
-},
+        name: "Dominic Cooper-Wootton",
+        jobTitle: "Head of Engineering @ Receiptable",
+        bio: (
+            <>
+                <p>
+                    Dominic is the Head of Engineering at Receiptable. He is a software engineer with a passion for tech for good and startups. Having worked in: Fintech, Banking, HR, Sports, Events and Public Health, he has seen a wide array of programming problems in varying different industries.
+                </p>
+                <p>
+                    He enjoys climbing outdoors, local music and likes to understand software's environmental impact.
+                </p>
+            </>
+        ),
+        talkTitle:
+            "Programming in Public Health",
+        description: (
+            <>
+                <p>
+                    What if your coding skills could help shape the future of scientific fields? In this talk, I’ll share my journey from building products and services in the private sector to working with Yale, the CDC, and Gates Foundation to develop cutting-edge tools for academic research. Discover how non-CS scientists struggle with coding challenges, and how engineers can step in to transform their research with optimized tools, scalable scripts, and impactful solutions. If you're passionate about using technology for good this talk will help you to understand the inner workings of academia and where you could make an impact.
+                </p>
+            </>
+        ),
+        image: DominicImg,
+        linkedin: "",
+        twitter: "",
+        website: "",
+        sessionType: "20 Minute Session",
+        speakerCard: false,
+        speakerCardImage: "Dominic.jpg",
+    },
 }
 
 
