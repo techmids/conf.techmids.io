@@ -6,7 +6,8 @@ export const EVENT = {
     startTime: '09:00 AM',
     endTime: '4:00 PM',
     ticketLink: 'https://ti.to/tech-events-birmingham/techmids-october-2024',
-    onSale: true, //swap to true to embed ticket widget
+    onSale: false, //swap to true to embed ticket widget
+    soldOut: true,
     titoId: 'tech-events-birmingham/techmids-october-2024',
     CFPLink: "https://forms.gle/V3ZD6GTjkAmj2woq6",
     CFPOpen: false,
