@@ -6,15 +6,28 @@ import { Hero } from '@/components/Hero'
 import { Meetups } from '@/components/Meetups'
 import { Sponsors } from '@/components/Sponsors'
 import { Images } from '@/components/Images'
-import {EVENT} from "../../event";
+import {EVENT, AVAILABLE_INFORMATION} from "../../event";
 import Testimonials from "@/components/Testimonials";
-import Showcase from "@/components/Showcase";
 import {Speakers} from "@/components/Speakers";
 import {Schedule} from "@/components/Schedule";
 
 export default function Home() {
     return (
-        <>
+        <HomePageWrapper>
+            <Hero/>            
+            <Images/>
+            {AVAILABLE_INFORMATION.scheduleAvailable && <Schedule/>}
+            {AVAILABLE_INFORMATION.speakersAvailable && <Speakers/>}
+            <Testimonials/>
+            <Sponsors/>
+            <Meetups/>
+        </HomePageWrapper>
+    )
+}
+
+
+const HomePageWrapper = ({children}) => {
+    return <>
             <Head>
                 <title>TechMids Conf - A community-driven tech conference</title>
                 <meta
@@ -33,17 +46,9 @@ export default function Home() {
                 }/>
             </Head>
             <Header />
-            <main>
-                <Hero/>
-                <Images/>
-                <Schedule/>
-                <Speakers/>
-                <Testimonials/>
-                <Showcase/>
-                <Sponsors/>
-                <Meetups/>
-            </main>
-            <Footer/>
-        </>
-    )
+        <main>
+            {children}
+        </main>
+        <Footer />
+    </>
 }

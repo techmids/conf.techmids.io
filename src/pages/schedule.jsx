@@ -3,10 +3,11 @@ import Head from 'next/head'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Schedule } from '@/components/Schedule';
-import {EVENT} from "../../event";
+import {EVENT, AVAILABLE_INFORMATION} from "../../event";
 import { Sponsors } from '@/components/Sponsors';
 
 export default function Covid() {
+  
   return (
     <>
       <Head>
@@ -18,8 +19,17 @@ export default function Covid() {
       </Head>
       <Header />
       <main>
-        <Schedule/>
-        <Sponsors/>
+        {AVAILABLE_INFORMATION.scheduleAvailable ? (
+          <main>
+            <h1 className="text-4xl font-bold text-center my-8">Schedule</h1>
+            <Schedule/>
+            <Sponsors/>
+          </main>
+        ) : (
+          <h1 className="text-4xl font-bold text-center my-8">Schedule Coming Soon</h1>
+        )}
+        
+        
       </main>
       <Footer />
     </>
