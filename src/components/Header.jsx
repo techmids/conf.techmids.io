@@ -27,7 +27,7 @@ export function Header() {
                 strokeLinejoin="round"
               />
             </svg>
-            <p>part of Birmingham Tech Week</p>
+            <p>Tech Mids</p>
           </div>
         </div>
         <div className="hidden sm:mt-10 sm:flex lg:mt-0 lg:grow lg:basis-0 lg:justify-end">

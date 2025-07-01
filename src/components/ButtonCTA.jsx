@@ -1,5 +1,5 @@
 import { ButtonLink } from '@/components/Button'
-import {EVENT} from "../../event";
+import {EVENT, AVAILABLE_INFORMATION} from "../../event";
 import Head from "next/head";
 
 export function ButtonCTA() {
@@ -54,7 +54,8 @@ export function ButtonCTA() {
               </ButtonLink>
             </div>
           )}
-          <dl className="grid grid-cols-2 gap-y-6 sm:mt-16 sm:gap-y-10 sm:gap-x-16 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
+          {AVAILABLE_INFORMATION.locationAvailable  && (
+            <dl className="grid grid-cols-2 gap-y-6 sm:mt-16 sm:gap-y-10 sm:gap-x-16 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
             {[
               ['Spaces', `Limited to ${EVENT.capacity} seats`],
               ['Venue', EVENT.venue],
@@ -68,6 +69,7 @@ export function ButtonCTA() {
               </div>
             ))}
           </dl>
+          )}
         </div>
       </>
     )
