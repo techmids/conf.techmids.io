@@ -20,7 +20,7 @@ export const AVAILABLE_INFORMATION = {
     scheduleAvailable: false,
     locationAvailable: true, 
     speakersAvailable: false,
-    sponsorsAvailable: false,
+    sponsorsAvailable: true,
 }
 
 export const sponsorTiers = {
@@ -34,19 +34,14 @@ export const sponsorTiers = {
             }
         ]
     },
-    event: {
-        name: "Valued Sponsors",
-        sponsors: [
-        ]
-    },
-    silver: {
-        name: "Silver Sponsors",
-        sponsors: [
-        ],
-    },
     bronze: {
         name: "Bronze Sponsors",
         sponsors: [
+             {
+                name: "Spinks",
+                image: "/sponsors/Spinks.svg",
+                url: "https://www.wearespinks.com//"
+            }
         ]
     },
 }

@@ -5,7 +5,7 @@ import SponsorUsCTA from "@/components/SponsorUsCTA";
 export function Sponsors() {
   return (
     <section className="pt-16">
-      {AVAILABLE_INFORMATION.speakersAvailable && <SponsorTiers/>}
+      {AVAILABLE_INFORMATION.sponsorsAvailable && <SponsorTiers/>}
       <SponsorUsCTA/>
     </section>
   )
