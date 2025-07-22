@@ -17,7 +17,7 @@ export function SponsorTiers() {
                 </p>
                 <div className="mx-auto max-w-[70%] mt-6 flex flex-wrap justify-evenly grid-cols-3 gap-0.5 lg:mt-8" >
                     {sponsors.map((sponsor) => (
-                        <div key={sponsor.name} className="flex justify-center items-center bg-gray-50 p-10">
+                        <div key={sponsor.name} className="flex justify-center items-center p-10">
                             <a
                                 href={sponsor.url}
                                 target="_blank"
