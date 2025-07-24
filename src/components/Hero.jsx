@@ -51,8 +51,9 @@ export function Hero() {
                   </h1>
                   <div className="mt-6 space-y-6 font-display text-lg text-gray-300">
                       <p>
-                          <b>TechMids Conf is a full stack conference</b>, back for 2025!
-                         
+                          <b>TechMids Conf is a full stack conference</b>, on{' '}
+                          {EVENT.date}, part of Birmingham Tech Week.{' '}
+                          {/*{EVENT.date}, <b><a href="https://devopsdaysbirmingham.co.uk/" className="underline">part of Birmingham Tech Week 2023.</a></b>{' '}*/}
                       </p>
                       <p>
                           Hear from world class speakers, engage in social chatter, and find
@@ -86,7 +87,7 @@ export function Hero() {
           <div className="flex flex-col justify-center">
               <div className="my-10 grid grid-cols-1 gap-10 mx-auto">
                   <h1 className="font-display text-4xl font-bold tracking-tighter text-white sm:text-6xl">
-                      <span className="block xl:inline">Check out some of our events from prior years</span>
+                      <span className="block xl:inline">Check out last year's event</span>
                   </h1>
               </div>
               <div className="flex justify-center ">

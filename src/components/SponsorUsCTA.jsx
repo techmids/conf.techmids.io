@@ -32,13 +32,13 @@ export default class SponsorUsCTA extends Component {
                         {/*    check out our packages*/}
                         {/*</ButtonLink>*/}
                         <ButtonLink
-                            href="mailto:techmidsconf@gmail.com"
+                            href="mailto:hello@techmids.io"
                             rel="noopener"
                             target="_blank"
                             className="my-4 w-full"
                         >
                             <MailIcon className="-ml-1 mr-3 h-5 w-5" aria-hidden="true"/>
-                            techmidsconf@gmail.com
+                            hello@techmids.io
                         </ButtonLink>
                     </div>
                 </div>
