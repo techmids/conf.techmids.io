@@ -1,1 +1,0 @@
-self.__SSG_MANIFEST=new Set(["\u002Fpast-events","\u002Fsharing\u002F[speaker]","\u002Fspeakers\u002F[speaker]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

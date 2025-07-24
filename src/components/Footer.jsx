@@ -10,6 +10,12 @@ export function Footer() {
         </a>
         <div>
           <a
+            href="/covid"
+            className="mt-10 block text-center underline md:mt-0 md:text-left"
+          >
+            COVID Policy
+          </a>
+          <a
             href="/code-of-conduct"
             className="mt-4 block text-center underline md:mt-0 md:text-left"
           >
@@ -22,7 +28,8 @@ export function Footer() {
             Past Events
           </a>
           <p className="mt-6 text-base text-slate-500 md:mt-0">
-            Copyright &copy; {new Date().getFullYear()} Tech Mids conf. All rights reserved.
+            Copyright &copy; {new Date().getFullYear()} Tech Events Birmingham
+            Limited. All rights reserved.
           </p>
         </div>
       </Container>
