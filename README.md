@@ -1,5 +1,5 @@
 > [!WARNING]
-> This project has has been moved to and is no longer being maintained here https://github.com/techmids-conf/conf.techmids.io
+> This project has has been moved and is no longer being maintained here https://github.com/techmids-conf/conf.techmids.io/
 
 
 # Keynote
