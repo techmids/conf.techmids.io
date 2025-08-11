@@ -1,3 +1,7 @@
+> [!WARNING]
+> This project has has been moved and is no longer being maintained here https://github.com/techmids-conf/conf.techmids.io/
+
+
 # Keynote
 
 Keynote is a [Tailwind UI](https://tailwindui.com) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
