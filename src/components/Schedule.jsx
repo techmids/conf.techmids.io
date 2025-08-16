@@ -4,8 +4,7 @@ import Image from 'next/image'
 import { Sessions } from "../../speakers";
 import Link from "next/link";
 import { Schedule as schedule } from "../../schedule";
-import {EVENT} from "../../event";
-
+import { EVENT } from "../../event";
 
 function DailySchedule({ day }) {
     // Day of the month
@@ -45,73 +44,82 @@ function DailySchedule({ day }) {
                     <table className="w-full divide-y divide-brand-700 table-auto">
                         <thead></thead>
                         <tbody className="divide-y divide-brand-700 bg-white">
-                        {day.timeSlots.map((timeSlot) => (
-                            <tr
-                                key={`${timeSlot.start}${timeSlot.name}`}
-                                className={
-                                    timeIrl >= moment(`${parsedDate} ${timeSlot.start.split('').filter((x) => x.toUpperCase() === x.toLowerCase()).join('')}:00`).unix() &&
-                                    timeIrl < moment(`${parsedDate} ${timeSlot.end.split('').filter((x) => x.toUpperCase() === x.toLowerCase()).join('')}:00`).unix() + 5 * 60 &&
-                                    moment(parsedDate).date() === parseInt(today)
-                                        ? "flex items-center bg-brand-400 justify-between"
-                                        : "flex items-center justify-between"
-                                }
-                            >
-                                {timeSlot.session && (
-                                    <>
-                                        <td className="time w-1/2 whitespace-nowrap py-1 text-sm font-display font-bold sm:text-lg tracking-tight text-brand-900 sm:w-[200px]">
-                                            <Link href={`/speakers/${timeSlot.session}`}>
-                                                {timeSlot.start} - {timeSlot.end}
-                                            </Link>
-                                        </td>
-                                        <td className="flex-col speaker hidden px-3 text-sm font-display sm:text-lg tracking-tight text-brand-800 w-1/2 sm:w-[250px] md:flex items-center">
-                                            {timeSlot.session.map((speaker) => {
-                                                return (
-                                                    <div className="w-full flex" key={speaker}>
-                                                        <Link href={`/speakers/${timeSlot.session}`}>
-                                                            <div className="flex-sh-0 pr-2">
-                                                                <Image
-                                                                    className="inline-block h-10 w-10 rounded-full"
-                                                                    src={Sessions[speaker].image}
-                                                                    alt={Sessions[speaker].name}
-                                                                    style={{ objectFit: 'cover' }}
-                                                                />
+                            {day.timeSlots.map((timeSlot) => {
+                                // Build full datetime strings for start/end, using explicit format
+                                const fullStart = `${parsedDate} ${timeSlot.start}:00`;
+                                const fullEnd = `${parsedDate} ${timeSlot.end}:00`;
+                                const startUnix = moment(fullStart, 'MM/DD/YYYY HH:mm:ss').unix();
+                                const endUnix = moment(fullEnd, 'MM/DD/YYYY HH:mm:ss').unix();
+                                const currentDate = moment(parsedDate, 'MM/DD/YYYY').date();
+
+                                return (
+                                    <tr
+                                        key={`${timeSlot.start}${timeSlot.name}`}
+                                        className={
+                                            timeIrl >= startUnix &&
+                                            timeIrl < endUnix + 5 * 60 &&
+                                            currentDate === parseInt(today)
+                                                ? "flex items-center bg-brand-400 justify-between"
+                                                : "flex items-center justify-between"
+                                        }
+                                    >
+                                        {timeSlot.session && (
+                                            <>
+                                                <td className="time w-1/2 whitespace-nowrap py-1 text-sm font-display font-bold sm:text-lg tracking-tight text-brand-900 sm:w-[200px]">
+                                                    <Link href={`/speakers/${timeSlot.session}`}>
+                                                        {timeSlot.start} - {timeSlot.end}
+                                                    </Link>
+                                                </td>
+                                                <td className="flex-col speaker hidden px-3 text-sm font-display sm:text-lg tracking-tight text-brand-800 w-1/2 sm:w-[250px] md:flex items-center">
+                                                    {timeSlot.session.map((speaker) => {
+                                                        return (
+                                                            <div className="w-full flex" key={speaker}>
+                                                                <Link href={`/speakers/${timeSlot.session}`}>
+                                                                    <div className="flex-sh-0 pr-2">
+                                                                        <Image
+                                                                            className="inline-block h-10 w-10 rounded-full"
+                                                                            src={Sessions[speaker].image}
+                                                                            alt={Sessions[speaker].name}
+                                                                            style={{ objectFit: 'cover' }}
+                                                                        />
+                                                                    </div>
+                                                                </Link>
+                                                                <Link href={`/speakers/${speaker}`}>
+                                                                    {timeSlot.name ? timeSlot.name : Sessions[speaker].name}
+                                                                </Link>
                                                             </div>
-                                                        </Link>
-                                                        <Link href={`/speakers/${speaker}`}>
-                                                            {timeSlot.name ? timeSlot.name : Sessions[speaker].name}
-                                                        </Link>
-                                                    </div>
-                                                );
-                                            })}
-                                        </td>
-                                        <td className="summary font-semibold text-sm sm:text-md tracking-tight text-brand-700 w-1/2 sm:w-[400px]">
-                                            <Link href={`/speakers/${timeSlot.session[0]}`}>
-                                                {timeSlot.description ? timeSlot.description : Sessions[timeSlot.session[0]]?.talkTitle}
-                                            </Link>
-                                        </td>
-                                    </>
-                                )}
-                                {!timeSlot.session && (
-                                    <>
-                                        <td className="time w-1/2 whitespace-nowrap py-1 text-sm font-display font-bold sm:text-lg tracking-tight text-brand-900 sm:w-[200px]">
-                                            {timeSlot.start} - {timeSlot.end}
-                                        </td>
-                                        <td className="speaker hidden whitespace-nowrap px-3 text-sm font-display sm:text-lg tracking-tight text-brand-800 w-1/2 sm:w-[250px] md:table-cell">
-                                            {timeSlot.name === 'Coffee, Snacks, Sponsors, Chat!' ? (
-                                                <div className="text-sm">Coffee, Snacks, Sponsors, Chat!</div>
-                                            ) : timeSlot.name ? (
-                                                timeSlot.name
-                                            ) : (
-                                                Sessions[timeSlot.session].name
-                                            )}
-                                        </td>
-                                        <td className="summary font-semibold text-sm sm:text-md tracking-tight text-brand-900 w-1/2 sm:w-[400px]">
-                                            {timeSlot.description ? timeSlot.description : Sessions[timeSlot.session]?.talkTitle}
-                                        </td>
-                                    </>
-                                )}
-                            </tr>
-                        ))}
+                                                        );
+                                                    })}
+                                                </td>
+                                                <td className="summary font-semibold text-sm sm:text-md tracking-tight text-brand-700 w-1/2 sm:w-[400px]">
+                                                    <Link href={`/speakers/${timeSlot.session[0]}`}>
+                                                        {timeSlot.description ? timeSlot.description : Sessions[timeSlot.session[0]]?.talkTitle}
+                                                    </Link>
+                                                </td>
+                                            </>
+                                        )}
+                                        {!timeSlot.session && (
+                                            <>
+                                                <td className="time w-1/2 whitespace-nowrap py-1 text-sm font-display font-bold sm:text-lg tracking-tight text-brand-900 sm:w-[200px]">
+                                                    {timeSlot.start} - {timeSlot.end}
+                                                </td>
+                                                <td className="speaker hidden whitespace-nowrap px-3 text-sm font-display sm:text-lg tracking-tight text-brand-800 w-1/2 sm:w-[250px] md:table-cell">
+                                                    {timeSlot.name === 'Coffee, Snacks, Sponsors, Chat!' ? (
+                                                        <div className="text-sm">Coffee, Snacks, Sponsors, Chat!</div>
+                                                    ) : timeSlot.name ? (
+                                                        timeSlot.name
+                                                    ) : (
+                                                        Sessions[timeSlot.session]?.name
+                                                    )}
+                                                </td>
+                                                <td className="summary font-semibold text-sm sm:text-md tracking-tight text-brand-900 w-1/2 sm:w-[400px]">
+                                                    {timeSlot.description ? timeSlot.description : Sessions[timeSlot.session]?.talkTitle}
+                                                </td>
+                                            </>
+                                        )}
+                                    </tr>
+                                );
+                            })}
                         </tbody>
                     </table>
                 </div>
@@ -144,3 +152,4 @@ export function Schedule() {
         </div>
     );
 }
+
